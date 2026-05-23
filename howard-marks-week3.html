@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投资经典：Howard Marks 周期论 — Week 3</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+
+/* Cycle wave (SVG container) */
+.cycle-wrap{margin:18px 0;padding:22px 14px 16px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.cycle-wrap .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:10px;letter-spacing:1px}
+.cycle-wrap svg{width:100%;height:auto;display:block}
+.cycle-legend{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;font-size:0.78rem;color:#5a4418}
+.cycle-legend span::before{content:"●";margin-right:5px}
+.cycle-legend .euph::before{color:#b8893a}
+.cycle-legend .panic::before{color:#7a5c1f}
+
+/* Pendulum */
+.pendulum{margin:18px 0;padding:20px 14px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.pendulum .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:8px;letter-spacing:1px}
+.pendulum svg{width:100%;height:auto;display:block}
+.pendulum-axis{display:flex;justify-content:space-between;font-size:0.78rem;color:#5a4418;margin-top:4px;padding:0 4px}
+.pendulum-axis strong{color:#7a5c1f;display:block;font-size:0.86rem;margin-bottom:2px}
+
+/* Risk asymmetry chart */
+.risk-chart{margin:18px 0;padding:18px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.risk-chart .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.risk-grid{display:grid;grid-template-columns:120px 1fr 80px;gap:6px 10px;align-items:center;font-size:0.84rem;color:#3a3220}
+.risk-grid .loss-label{text-align:right;color:#7a5c1f;font-weight:600}
+.risk-grid .bar{height:18px;background:linear-gradient(90deg,#b8893a,#7a5c1f);border-radius:3px}
+.risk-grid .recover{font-weight:700;color:#7a5c1f;text-align:right;font-size:0.88rem}
+
+/* Second level table */
+.level2-table{margin:18px 0;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0;overflow:hidden}
+.level2-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #e8d8b0}
+.level2-row:last-child{border-bottom:none}
+.level2-row.head{background:#7a5c1f;color:#fcf9f0;font-weight:700;font-size:0.84rem;letter-spacing:1px}
+.level2-cell{padding:12px 14px;font-size:0.88rem;color:#3a3220}
+.level2-cell.first{border-right:1px solid #e8d8b0;background:#faf0d8;color:#8b7150}
+.level2-cell.second{background:#fff;color:#5a4418;font-weight:500}
+.level2-row.head .level2-cell{background:#7a5c1f;color:#fcf9f0;border-right:1px solid #b8893a}
+
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.6rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.risk-grid{grid-template-columns:90px 1fr 60px}
+.level2-row{grid-template-columns:1fr}
+.level2-cell.first{border-right:none;border-bottom:1px dashed #d4b87a}
+}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 03</div>
+  <h1>投资经典：Howard Marks 周期论<span class="accent">Mastering the Market Cycle</span></h1>
+  <div class="meta"><span>2026年6月1日</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Howard Marks 是 Oaktree Capital 的创始人，过去三十年坚持以备忘录的形式与持有人沟通。Buffett 说"看到 Howard 的 memo 我会马上放下手头的事"。Marks 的核心贡献不是预测，而是<strong>对"周期"和"风险"两件事的深刻清醒</strong>——他承认未来不可知，却告诉我们如何在不可知中做出更好的位置选择。本周从《The Most Important Thing》(2011) 与《Mastering the Market Cycle》(2018) 出发，回到四件 Marks 留给长期投资者的兵器。
+</div>
+
+<!-- Card 1: Cycles are inevitable -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>周期不可避免<span class="en">Cycles Always Prevail</span></h2>
+    <span class="tag">市场结构</span>
+  </div>
+
+  <div class="section"><div class="label">原则表述</div>
+    <div class="principle">市场不会走直线，也不会永远向上。经济、信用、心理、估值四条周期相互嵌套并放大彼此，投资者的工作不是逃避周期，而是认识自己此刻站在周期的哪一段。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处</div>
+    <p>Howard Marks《Mastering the Market Cycle》(2018) 第 1—3 章，及备忘录《You Can't Predict. You Can Prepare.》(2001)。</p>
+    <div class="quote">"Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one."
+    <span class="cite">— Howard Marks, The Most Important Thing (2011)</span>
+    <span class="cn">第一条规则：绝大多数事物最终都会显现周期性。第二条规则：最大的盈亏机会，往往出现在别人忘掉第一条规则的时候。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>Marks 把周期拆成四层，依次放大：① 经济周期（GDP、就业、产能利用率）；② 利润周期（杠杆效应让企业盈利波动远大于 GDP）；③ 信用周期（银行与债市的"开门—关门"在底部和顶部都极端）；④ 心理周期（恐惧与贪婪给前三层加上情绪杠杆）。当四条周期同向叠加时，市场上涨或下跌都会"超过应有的幅度"。Marks 的关键洞察：周期不是钟表上的整点，而是一个<strong>条件概率分布</strong>——在估值高、信用宽、情绪亢奋时，未来回报区间整体左移；反之右移。这就是为什么"现在算贵不等于明年崩盘"，但<strong>"现在不贵的资产，长期回报必然更好"</strong>。</p>
+  </div>
+
+  <div class="cycle-wrap">
+    <div class="caption">— 周期的四层嵌套：经济 → 盈利 → 信用 → 心理 —</div>
+    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+      <line x1="20" y1="120" x2="580" y2="120" stroke="#d4b87a" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="22" y="115" font-size="10" fill="#8b7150" font-style="italic">长期趋势线</text>
+      <path d="M20,120 Q90,108 160,120 T300,120 T440,120 T580,120" stroke="#c9a55c" stroke-width="1.5" fill="none" opacity="0.5"/>
+      <path d="M20,120 Q90,90 160,120 T300,120 T440,120 T580,120" stroke="#b8893a" stroke-width="2" fill="none" opacity="0.7"/>
+      <path d="M20,120 Q90,68 160,120 Q230,172 300,120 Q370,68 440,120 Q510,172 580,120" stroke="#7a5c1f" stroke-width="2.2" fill="none"/>
+      <path d="M20,120 Q90,40 160,120 Q230,200 300,120 Q370,40 440,120 Q510,200 580,120" stroke="#5a4418" stroke-width="2.5" fill="none" stroke-dasharray="6 3"/>
+      <circle cx="90" cy="48" r="4" fill="#b8893a"/><text x="98" y="44" font-size="11" fill="#7a5c1f" font-weight="600">Euphoria 狂热顶</text>
+      <circle cx="230" cy="192" r="4" fill="#7a5c1f"/><text x="180" y="212" font-size="11" fill="#7a5c1f" font-weight="600">Capitulation 恐慌底</text>
+      <circle cx="370" cy="48" r="4" fill="#b8893a"/>
+      <circle cx="510" cy="192" r="4" fill="#7a5c1f"/>
+      <text x="535" y="135" font-size="9" fill="#8b7150">经济</text>
+      <text x="535" y="148" font-size="9" fill="#8b7150">盈利</text>
+      <text x="535" y="161" font-size="9" fill="#8b7150">信用</text>
+      <text x="535" y="174" font-size="9" fill="#8b7150">心理</text>
+    </svg>
+    <div class="cycle-legend">
+      <span class="euph">同向放大时 → 顶部超调</span>
+      <span class="panic">反向叠加时 → 底部超跌</span>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>2006—2009 美国次贷与 GFC：① 经济过热接近峰值；② 企业利润率达到二战后高点；③ 信用极度宽松（NINJA loans、CDO 评级失真、杠杆 30 倍以上）；④ 心理上"房价不会全国同时下跌"成为信仰。四条周期同向极端化，让随后的下行也极端化——S&P 500 从 2007/10 高点到 2009/3 低点跌 57%，金融股跌 80%+。Marks 在 2007/7 写下《The Race to the Bottom》："当任何人愿意以任何价格做任何生意，灾难就在路上。"那篇 memo 之后 14 个月，雷曼倒下。他没有预测时间，但准确指出位置。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制</div>
+    <p>常见误用：① 把"识别周期"当成"预测拐点"——Marks 反复强调时机不可知，只能知道"位置"；② 看到指标极端就立刻反向操作（卖空 2017 的美股、抄底 2008/3 的雷曼），结果在被证明对之前先被市场打死；③ 把所有资产用同一个周期框架套——商品、信用、科技、房地产的周期长度和驱动因素完全不同。Marks 的姿势是<strong>调温度而非择时</strong>：在判断周期偏顶时降低组合风险，偏底时增加，幅度温和、可承受错判。</p>
+  </div>
+
+  <div class="section"><div class="label">决策检查表</div>
+    <ul class="checklist">
+      <li>当前经济、盈利、信用、心理四条周期分别处于"早/中/晚"哪一段？</li>
+      <li>这四条周期是同向放大还是相互抵消？同向时极度警惕。</li>
+      <li>市场最近的回报来自基本面改善，还是来自估值扩张？</li>
+      <li>信用条件是变宽还是变紧？谁正在轻易拿到钱？</li>
+      <li>我此刻的仓位姿势，是在"为顶部做准备"还是"为底部做准备"？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"We may never know where we're going, but we'd better have a good idea where we are."</em> — Howard Marks</p>
+  </div>
+
+  <div class="section"><div class="label">本周反思</div>
+    <div class="reflect">为你目前最大的三笔持仓，分别写出它所处行业的周期定位（早/中/晚/筑底）。如果三笔都处于"晚周期"，思考你的仓位是否反映了这种集中度。</div>
+  </div>
+</div>
+
+<!-- Card 2: The Pendulum -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>钟摆隐喻<span class="en">The Pendulum of Investor Psychology</span></h2>
+    <span class="tag">市场心理</span>
+  </div>
+
+  <div class="section"><div class="label">原则表述</div>
+    <div class="principle">投资者情绪像钟摆，永远在两极之间穿过中间，但极少停在中间。理解钟摆当下偏向哪一端，比预测它具体到哪一格更重要。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处</div>
+    <p>Howard Marks《The Most Important Thing》(2011) 第 9 章 "Awareness of the Pendulum"，原概念最早出现于 1991 年备忘录《First Quarter Performance》。</p>
+    <div class="quote">"The mood swings of the securities market resemble the movement of a pendulum. Although the midpoint best describes the location of the pendulum 'on average,' it actually spends very little of its time there. Instead, it is almost always swinging toward or away from the extremes of its arc."
+    <span class="cite">— Howard Marks, The Most Important Thing (2011)</span>
+    <span class="cn">证券市场的情绪波动像钟摆。虽然"平均位置"在中点，但钟摆几乎从不停在那里——它总是在朝两个极端中的一个摆动，或者刚从一个极端往回走。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>钟摆有三对极端：① 贪婪 vs 恐惧；② 乐观 vs 悲观；③ 风险容忍 vs 风险厌恶。三者并不独立——通常一起摆。Marks 的关键洞察：钟摆在中点的速度最快——也就是说，"看起来正常"的时刻，市场可能正在迅速冲向某个极端。这就是为什么"温和涨"往往是"狂热涨"的前奏。投资者的工作是<strong>识别极端而非中点</strong>。极端的信号包括：发行端无脑（IPO 倍数订阅）、产品端无脑（高杠杆 ETF 创新高）、参与者无脑（出租车司机讨论股票）、估值无锚（"这次不一样"的故事代替 DCF）。在极端时，资本被迫追逐越来越差的项目，未来回报必然贫瘠；反向极端则是机会的来源。</p>
+  </div>
+
+  <div class="pendulum">
+    <div class="caption">— Investor Psychology Pendulum · 投资者心理钟摆 —</div>
+    <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <line x1="300" y1="20" x2="300" y2="30" stroke="#7a5c1f" stroke-width="2"/>
+      <circle cx="300" cy="20" r="6" fill="#7a5c1f"/>
+      <line x1="300" y1="30" x2="450" y2="160" stroke="#b8893a" stroke-width="3"/>
+      <circle cx="450" cy="160" r="22" fill="#b8893a" stroke="#7a5c1f" stroke-width="2"/>
+      <text x="450" y="165" font-size="11" text-anchor="middle" fill="#fcf9f0" font-weight="700">贪婪</text>
+      <path d="M 110 160 A 200 200 0 0 1 490 160" stroke="#d4b87a" stroke-width="1" fill="none" stroke-dasharray="3 4"/>
+      <text x="110" y="180" font-size="11" fill="#7a5c1f" font-weight="600" text-anchor="middle">恐惧 · 悲观</text>
+      <text x="110" y="194" font-size="10" fill="#8b7150" text-anchor="middle">"再不会涨了"</text>
+      <text x="300" y="180" font-size="11" fill="#8b7150" text-anchor="middle" font-style="italic">中点 · 几乎不停留</text>
+      <text x="490" y="180" font-size="11" fill="#7a5c1f" font-weight="600" text-anchor="middle">贪婪 · 乐观</text>
+      <text x="490" y="194" font-size="10" fill="#8b7150" text-anchor="middle">"这次不一样"</text>
+      <text x="180" y="80" font-size="10" fill="#7a5c1f" font-style="italic">← 极度便宜</text>
+      <text x="420" y="80" font-size="10" fill="#7a5c1f" font-style="italic">极度昂贵 →</text>
+    </svg>
+    <div class="pendulum-axis">
+      <div><strong>底部信号</strong>抛售无差别、媒体头条悲观、新基金募资困难</div>
+      <div><strong>顶部信号</strong>IPO 火热、杠杆走高、"这次不一样"</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>1999 vs 2002 的 Nasdaq：1999 年钟摆摆到极右——日内交易员辞职专职炒股、Pets.com 不盈利上市市值 $290M、Cisco 一度成为全球最大市值公司、PE 中位数 60 倍。Marks 在 2000/1 写下《Bubble.com》——著名的"看见的人觉得显而易见，看不见的人会一直看不见"。两年后钟摆摆到极左：Nasdaq 从 5048 跌到 1114（-78%），优质公司 Amazon 跌 95%、Apple 跌 75%，许多分析师"再也不碰科技股"。买在 2002 年钟摆最左侧的 Amazon，22 年涨了约 200 倍。<strong>同样的资产，两个时点，回报差异天壤之别——区别不在公司，而在钟摆位置。</strong></p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制</div>
+    <p>常见误用：① 把"钟摆在中间"当成"无信息"，结果在中点持有过重风险；② 用钟摆判断作为唯一依据做大型反向交易——钟摆可以在极端停留数年（Nasdaq 1998—2000 持续在右极仍涨了 2x）；③ 把所有资产归到同一钟摆——美股、A 股、信用、商品的情绪钟摆各跑各的。正确做法：把钟摆位置作为<strong>仓位调节信号</strong>而非择时信号。极端时温和调整 10—20% 的仓位姿势，而不是清仓或满仓。Marks 的反例：他自己在 2005—2006 就开始减信用风险，错过了最后一年的涨幅，但保住了 2008/9 的子弹。</p>
+  </div>
+
+  <div class="section"><div class="label">决策检查表</div>
+    <ul class="checklist">
+      <li>用 1—10 给当前市场情绪打分，1=恐惧极端，10=贪婪极端，现在是几？</li>
+      <li>过去 12 个月这个分数变化了多少？方向是哪一边？</li>
+      <li>哪些"无脑"信号在出现：杠杆 ETF、IPO、零售融资额、媒体头条？</li>
+      <li>我自己的情绪基线是否与市场钟摆同步？（同步时最危险）</li>
+      <li>如果钟摆在 12 个月内回到中点，我的组合会赚还是亏？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"In the world of investing, nothing is as dependable as cycles. Fundamentals, psychology, prices and returns will rise and fall, presenting opportunities to make mistakes or to profit from the mistakes of others."</em> — Howard Marks</p>
+  </div>
+
+  <div class="section"><div class="label">本周反思</div>
+    <div class="reflect">回到 2020/3、2022/10、2024/Q4 这三个时点，回忆你当时的情绪与仓位决定。哪一次你跟着钟摆走？哪一次你能逆着走？你的"逆钟摆肌肉"是变强了还是变弱了？</div>
+  </div>
+</div>
+
+<!-- Card 3: Risk awareness and control -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>风险认知与控制<span class="en">Understanding & Controlling Risk</span></h2>
+    <span class="tag">风险管理</span>
+  </div>
+
+  <div class="section"><div class="label">原则表述</div>
+    <div class="principle">风险不是波动率，是永久损失资本的概率。它在事前永远看不见，在事后只显形一次。卓越投资不是高回报，而是<strong>每单位风险</strong>的回报。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处</div>
+    <p>Howard Marks《The Most Important Thing》(2011) 第 5—7 章 "Understanding Risk / Recognizing Risk / Controlling Risk"。</p>
+    <div class="quote">"Risk means more things can happen than will happen. Investing consists of exactly one thing: dealing with the future. And because none of us can know the future with certainty, risk is inescapable. Thus, dealing with risk is an essential — I think the essential — element in investing."
+    <span class="cite">— Howard Marks, The Most Important Thing (2011)</span>
+    <span class="cn">风险意味着：可能发生的事，多于将会发生的事。投资本质上只做一件事——处理未来。而由于没人能确定地知道未来，风险无法逃避。处理风险，因此是投资中本质——我认为是最本质——的要素。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>Marks 反对学术界把风险等同于标准差。波动率只是"价格抖动"，真正杀人的是<strong>永久性资本损失</strong>——一只下跌 90% 的股票，跟一只下跌 30% 后反弹的股票，传统统计上波动率可能相似，但对长期复利的破坏是数量级差异。他给出三层风险认知：① <strong>认识风险</strong>——"在估值高、信用松、心理热的时候，风险其实在悄悄升高，尽管价格还在涨"；② <strong>测量风险</strong>——不能事后用回报反推，必须事前评估损失情境的概率和深度；③ <strong>控制风险</strong>——通过买入价、分散、结构性保护（优先级、契约条款）。最深刻的一句：<strong>"高回报来自承担风险，但承担风险不必然带来高回报"</strong>。</p>
+  </div>
+
+  <div class="risk-chart">
+    <div class="caption">— 损失—复原非对称性 · 永久损失的代价 —</div>
+    <div class="risk-grid">
+      <div class="loss-label">亏 10%</div><div class="bar" style="width:10%"></div><div class="recover">需涨 11%</div>
+      <div class="loss-label">亏 25%</div><div class="bar" style="width:25%"></div><div class="recover">需涨 33%</div>
+      <div class="loss-label">亏 50%</div><div class="bar" style="width:50%"></div><div class="recover">需涨 100%</div>
+      <div class="loss-label">亏 75%</div><div class="bar" style="width:75%"></div><div class="recover">需涨 300%</div>
+      <div class="loss-label">亏 90%</div><div class="bar" style="width:90%"></div><div class="recover">需涨 900%</div>
+      <div class="loss-label">亏 95%</div><div class="bar" style="width:95%"></div><div class="recover">需涨 1900%</div>
+    </div>
+    <div style="text-align:center;font-size:0.82rem;color:#5a4418;margin-top:10px;font-style:italic">控制下行的代价远小于追逐上行的诱惑。复利讨厌深坑。</div>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>2023/3 Silicon Valley Bank 倒闭：账面看，SVB 的资产（长久期国债与 MBS）<em>信用风险几乎为零</em>，传统风险模型给出极低 VaR。但 Marks 框架下的真正风险是：① 存款集中（科技初创高度同质化客户）；② 久期错配（持有十年期债券对应短期可赎回存款）；③ 心理风险（社交媒体加速的银行挤兑）。三者一旦同时点燃，48 小时蒸发千亿存款。这印证了 Marks 的话——风险在事前看不见，因为价格平静；事后才显形，但只显形一次。<strong>真正的风险管理是审视那些"价格平静但结构脆弱"的位置</strong>，而非看历史波动率。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制</div>
+    <p>常见误用：① 把"低波动"当成"低风险"——长期国债 2020—2022 标准差不高，但久期风险一旦触发损失 30%+；② 用 VaR 等模型给自己虚假安全感——LTCM 1998 的 VaR 说每日损失上限 $50M，实际单日损失 $550M；③ 通过"分散"逃避风险，却分散到相关性极高的资产（2008 房地产相关的几乎所有资产同跌）；④ 因风险厌恶变成"永不下注"——错过复利。Marks 的正解：风险不是要消除，而是要<strong>定价</strong>——只在被充分补偿时才承担。</p>
+  </div>
+
+  <div class="section"><div class="label">决策检查表</div>
+    <ul class="checklist">
+      <li>这笔投资在最坏 10% 情境下的永久损失是多少？我是否能承受？</li>
+      <li>我的"看不见的风险"清单是什么：流动性、相关性、杠杆、单点依赖？</li>
+      <li>历史波动率是否在低估真实风险？（特别是"长期平静"的资产）</li>
+      <li>如果同样的回报有更低风险的替代品，我为什么不换？</li>
+      <li>我现在承担风险，是被"市场补偿"还是被"自己乐观"驱动？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"There are old investors, and there are bold investors, but there are no old bold investors."</em> — Howard Marks</p>
+  </div>
+
+  <div class="section"><div class="label">本周反思</div>
+    <div class="reflect">对组合内每个头寸，写下一行"永久损失情境"（不是回撤，而是不归路）。如果这一行你写不出，可能是你还没真正理解这笔投资的风险。</div>
+  </div>
+</div>
+
+<!-- Card 4: Second-Level Thinking -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>第二层思考<span class="en">Second-Level Thinking</span></h2>
+    <span class="tag">认知优势</span>
+  </div>
+
+  <div class="section"><div class="label">原则表述</div>
+    <div class="principle">想跑赢市场，你的思考必须比市场更深一层。第一层思考是"这家公司好/不好"；第二层思考是"市场预期已经如何，价格已经反映了多少？我的看法在共识之外还成立吗？"</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处</div>
+    <p>Howard Marks《The Most Important Thing》(2011) 第 1 章 "Second-Level Thinking"。</p>
+    <div class="quote">"First-level thinking says, 'It's a good company; let's buy the stock.' Second-level thinking says, 'It's a good company, but everyone thinks it's a great company, and it's not. So the stock's overrated and overpriced; let's sell.' First-level thinkers think the same way other first-level thinkers do about the same things, and they generally reach the same conclusions. By definition, this can't be the route to above-average results."
+    <span class="cite">— Howard Marks, The Most Important Thing (2011)</span>
+    <span class="cn">第一层思考说："这是家好公司，买入。"第二层思考说："这是家好公司，但所有人都把它当成了伟大公司，其实它不是。所以股票被高估，应该卖出。"第一层思考者对同样的事得出同样的结论——按定义，这条路不可能带来超额回报。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>市场价格是<strong>共识预期的快照</strong>。要赚超额收益，必须满足两个条件同时成立：① 你对未来的看法<strong>与共识不同</strong>；② 你对，他们错（variant perception that turns out to be correct）。Marks 把这称为"找到错误定价"。第一层思考的特征：① 用直觉与表象判断（"AI 是趋势，买"）；② 信息来源与他人相同；③ 结论易被复制。第二层思考的特征：① 持续问"还有谁知道这件事？已经反映多少？"；② 把基本面预期与市场情绪预期分开评估；③ 主动构建反方论点。Marks 提醒：第二层思考不是"逆向"——逆向只是机械反对，第二层是<strong>在差异化判断上正确</strong>。无差异化的认同（买大家都看好的）和无差异化的反对（卖大家都看好的）都不构成 edge。</p>
+  </div>
+
+  <div class="level2-table">
+    <div class="level2-row head">
+      <div class="level2-cell">第一层思考 First-Level</div>
+      <div class="level2-cell">第二层思考 Second-Level</div>
+    </div>
+    <div class="level2-row">
+      <div class="level2-cell first">这是家好公司，应该买。</div>
+      <div class="level2-cell second">市场已经把它当成完美公司——价格里没有留任何瑕疵的余地。我的判断与共识有何不同？</div>
+    </div>
+    <div class="level2-row">
+      <div class="level2-cell first">经济不好，应该卖。</div>
+      <div class="level2-cell second">经济不好是共识——价格已经反映多深？卖出意味着我比市场更准确地预测了"更糟糕"。</div>
+    </div>
+    <div class="level2-row">
+      <div class="level2-cell first">这家公司财报不及预期，要跌。</div>
+      <div class="level2-cell second">不及预期的程度是否已被卖方预先调整？市场短线反应是否过度，给我提供了好价格？</div>
+    </div>
+    <div class="level2-row">
+      <div class="level2-cell first">利率上升对股票不利。</div>
+      <div class="level2-cell second">"利率上升"是过去 18 个月最被讨论的事——它已经被定价多少？真正的边际信息是变化的速度与终点。</div>
+    </div>
+    <div class="level2-row">
+      <div class="level2-cell first">市盈率高就是贵。</div>
+      <div class="level2-cell second">市盈率反映的是"分母"上市场预期的盈利路径。我对未来 5 年 EPS 与终值的判断与共识在哪个分位？</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>2008/9—2009/3 信用市场底部，Oaktree 部署了约 $100 亿元抄底困境债务（distressed debt）。第一层思考："雷曼倒了，全球金融系统崩溃，远离债。"第二层思考：① 高收益债收益率达到 22%——历史上从未在此水平继续亏钱五年；② 抛售方主要是被迫卖家（基金赎回、保证金追加），价格脱离基本面；③ 即便违约率上升到大萧条水平，预期回报仍优于股票。Oaktree 这批投资在随后 3—5 年获得 50%+ 回报。<strong>关键不在"看对了反弹"，而在看清"价格已极度悲观、卖家被迫、风险已被超额定价"——共识之外的清醒判断</strong>。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制</div>
+    <p>常见误用：① 把"和共识不同"等同于第二层思考——你也可能只是错；② 沉迷于"独立观点"以致每次都站在共识对面——共识在大多数时候是对的；③ 把第二层思考变成无尽的内心辩论，错过执行；④ 没有正反馈机制——你需要事后验证：当你的看法与共识不同时，你的胜率有多高？如果低于 50%，你不是在做第二层思考，你只是在固执。Marks 的反例："要做第二层思考者，你必须能想出共识可能错的<strong>具体的、可证伪的</strong>理由，而不仅仅是'我觉得他们错'。"</p>
+  </div>
+
+  <div class="section"><div class="label">决策检查表</div>
+    <ul class="checklist">
+      <li>市场关于这笔投资的共识是什么？我能用一句话准确复述吗？</li>
+      <li>我的看法与共识具体在哪一点不同？这个差异是否可证伪？</li>
+      <li>如果我对，谁会输给我？如果我错，谁会赢？</li>
+      <li>我的信息来源是否就是大家的信息来源？还有什么没人在看的角度？</li>
+      <li>过去 10 次"与共识不同"的判断，我的胜率是多少？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"You can't do the same things others do and expect to outperform."</em> — Howard Marks</p>
+  </div>
+
+  <div class="section"><div class="label">本周反思</div>
+    <div class="reflect">为你最大的持仓写两段话：(A) 这只股票当前的市场共识是什么；(B) 我的判断与共识具体在哪一点不同。如果 (B) 与 (A) 没有可识别的差异，你拥有它的理由可能只是"跟随"，而非 edge。</div>
+  </div>
+</div>
+
+<nav><a href="index.html">← 返回 每周投资经典</a></nav>
+<footer>BigCat · Investing Weekly · Week 03 · 2026</footer>
+
+</div><script src="https://cissy0802.github.io/comments.js" defer></script>
+<script src="https://cissy0802.github.io/search.js" defer></script>
+<script src="https://cissy0802.github.io/index-button.js" defer></script>
+</body></html>
