@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Value Investing Foundations — Week 4</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+
+/* Margin of Safety bridge diagram */
+.mos-wrap{margin:18px 0;padding:22px 16px 16px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.mos-wrap .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.mos-wrap svg{width:100%;height:auto;display:block}
+
+/* Cigar vs quality comparison */
+.cmp-table{margin:18px 0;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0;overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:120px 1fr 1fr;border-bottom:1px solid #e8d8b0}
+.cmp-row:last-child{border-bottom:none}
+.cmp-row.head{background:#7a5c1f;color:#fcf9f0;font-weight:700;font-size:0.84rem;letter-spacing:1px}
+.cmp-cell{padding:12px 14px;font-size:0.88rem;color:#3a3220}
+.cmp-cell.first{border-right:1px solid #e8d8b0;background:#faf0d8;color:#7a5c1f;font-weight:600;font-size:0.84rem}
+.cmp-cell.mid{border-right:1px solid #e8d8b0;background:#fff;color:#5a4418}
+.cmp-cell.end{background:#fff;color:#5a4418}
+.cmp-row.head .cmp-cell{background:#7a5c1f;color:#fcf9f0;border-right:1px solid #b8893a}
+
+/* Mr. Market mood swings */
+.mrmkt-wrap{margin:18px 0;padding:22px 16px 16px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.mrmkt-wrap .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.mrmkt-wrap svg{width:100%;height:auto;display:block}
+
+/* Quant vs qual matrix */
+.matrix{margin:18px 0;padding:20px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.matrix .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.matrix-grid{display:grid;grid-template-columns:80px 1fr 1fr;gap:6px}
+.matrix-cell{padding:14px 12px;background:#fff;border-radius:4px;font-size:0.86rem;color:#3a3220;border:1px solid #e8d8b0;min-height:90px}
+.matrix-cell.head{background:#7a5c1f;color:#fcf9f0;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;min-height:auto;padding:8px 6px;font-size:0.82rem;letter-spacing:1px}
+.matrix-cell.axis{background:#b8893a;color:#fcf9f0;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;font-size:0.82rem;letter-spacing:1px;writing-mode:vertical-rl;transform:rotate(180deg)}
+.matrix-cell strong{display:block;color:#7a5c1f;font-size:0.92rem;margin-bottom:4px}
+.matrix-cell.bad strong{color:#7a5c1f}
+.matrix-cell.good{background:#faf0d8;border:2px solid #7a5c1f}
+
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.6rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.cmp-row{grid-template-columns:1fr}
+.cmp-cell.first,.cmp-cell.mid{border-right:none;border-bottom:1px dashed #d4b87a}
+.matrix-grid{grid-template-columns:50px 1fr 1fr}
+.matrix-cell{min-height:auto;padding:10px 8px;font-size:0.82rem}
+}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 04</div>
+  <h1>Investing Classics: Value Investing Foundations<span class="accent">The Bedrock — Graham, Margin of Safety & Mr. Market</span></h1>
+  <div class="meta"><span>June 8, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Benjamin Graham (1894–1976) is the person Buffett calls "the second most important figure in my career." In <i>Security Analysis</i> (1934) and <i>The Intelligent Investor</i> (1949) he turned investing from "gambling + gut feel" into a <strong>principled, methodical discipline</strong> for the first time. This week we go back to the four foundation stones of value investing — the bedrock under everything Buffett, Munger, and Klarman built on top, and the unavoidable first lessons for any long-term investor. By the end you will see that value investing has never been a "style" — it is a <strong>posture for dealing with uncertainty</strong>.
+</div>
+
+<!-- Card 1: Margin of Safety -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Margin of Safety<span class="en">Margin of Safety</span></h2>
+    <span class="tag">Core principle</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Buy only at a price well below intrinsic value. The gap between price and value is a buffer for errors in your own judgment, for unknowable future outcomes, and for unexpected shocks — it is not your source of excess return.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Benjamin Graham, <i>The Intelligent Investor</i> (1949, revised 1973), Chapter 20: "Margin of Safety as the Central Concept of Investment." Graham called it "the most central, most important chapter in the whole book."</p>
+    <div class="quote">"Confronted with a challenge to distill the secret of sound investment into three words, we venture the motto, MARGIN OF SAFETY."
+    <span class="cite">— Benjamin Graham, The Intelligent Investor (1973)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Graham's insight came out of the bankruptcies he lived through in 1929–1932: even when your read on a company's fundamentals is right, a valuation model is no oracle — it depends on inputs (future cash flow, discount rate, terminal value) <strong>nobody can know with certainty</strong>. So the purchase price must be cheap enough that even if your valuation is 30% too high, even if macro surprises hit, even if management is worse than you thought, <strong>you still do not lose principal</strong>. Klarman extends the idea in <i>Margin of Safety</i> (1991): "Value investing is not about predicting the future — it is about ensuring that, however the future unfolds, you are not hurt by it." Margin of safety is not a fixed number ("buy at 70 cents on the dollar"); it <strong>scales with asset quality and certainty</strong>. A stable consumer business might be adequately safe at a 25% discount; a cyclical, highly levered business needs 50%+. In essence it is the <strong>load rating on a bridge</strong>: design the bridge for 30 tons but only let a 10-ton truck cross — the remaining 20 tons are reserved for storms, earthquakes, and rust, not for the temptation to overload and squeeze out a little more revenue.</p>
+  </div>
+
+  <div class="mos-wrap">
+    <div class="caption">— Margin of Safety = Intrinsic Value − Purchase Price · load-bearing, not profit —</div>
+    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+      <line x1="40" y1="200" x2="560" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <rect x="60" y="80" width="120" height="120" fill="#faf0d8" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="120" y="70" font-size="12" fill="#7a5c1f" text-anchor="middle" font-weight="700">Intrinsic Value $100</text>
+      <text x="120" y="145" font-size="11" fill="#5a4418" text-anchor="middle">Intrinsic</text>
+      <text x="120" y="160" font-size="11" fill="#5a4418" text-anchor="middle">Value</text>
+      <rect x="240" y="140" width="120" height="60" fill="#b8893a" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="300" y="130" font-size="12" fill="#7a5c1f" text-anchor="middle" font-weight="700">Purchase $60</text>
+      <text x="300" y="178" font-size="11" fill="#fcf9f0" text-anchor="middle">Purchase</text>
+      <rect x="420" y="100" width="120" height="100" fill="#fff" stroke="#7a5c1f" stroke-width="1.5" stroke-dasharray="5 3"/>
+      <text x="480" y="92" font-size="12" fill="#7a5c1f" text-anchor="middle" font-weight="700">Margin of Safety 40%</text>
+      <text x="480" y="135" font-size="10" fill="#5a4418" text-anchor="middle">Buffer for valuation error</text>
+      <text x="480" y="152" font-size="10" fill="#5a4418" text-anchor="middle">Absorbs unexpected shocks</text>
+      <text x="480" y="169" font-size="10" fill="#5a4418" text-anchor="middle">Insurance against bad judgment</text>
+      <text x="480" y="186" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">— not profit space</text>
+      <path d="M 180 160 L 240 160" stroke="#7a5c1f" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <path d="M 360 160 L 420 160" stroke="#7a5c1f" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#7a5c1f"/></marker></defs>
+      <text x="40" y="218" font-size="10" fill="#8b7150" font-style="italic">Value ← → Price ← → Buffer</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>The 1973–74 US bear market: the S&P 500 fell 48% from its peak; Washington Post (WPO) market cap dropped to roughly $80M, while the Graham school estimated intrinsic value at $400M+ (the reporting talent and the TV-station licenses alone were worth that). Buffett bought roughly 9% of the company in September 1973 for about $10.6M — margin of safety above 75%. Even if macro got worse, even if his intrinsic-value estimate was 50% too high, he still bought cheaply. By 1985 the position had grown to about $200M; on exit in 2007 the cumulative return exceeded 100x. In his 1984 Columbia speech "The Superinvestors of Graham-and-Doddsville," Buffett put it plainly: "We are not doing complex mathematics — we are <strong>buying dollars for fifty cents</strong>."</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) treating "low P/E" as margin of safety — a low P/E can be reflecting real risk (structural decline, accounting fraud, single-customer dependence), traps outnumber opportunities; (2) applying one static formula (like 70% of NAV) to every asset — cyclicals, growth stocks, and commodity stocks have wildly different intrinsic-value volatility; (3) refusing every "expensive-looking" asset and missing the lesson Munger taught Buffett: <strong>"a fair price for a wonderful company is better than a wonderful price for a fair company."</strong> Graham himself conceded later in life that he had been too conservative on growth companies. The boundary of margin of safety is this: you must first <strong>be able to estimate intrinsic value</strong> — "cheap" outside your circle of competence is not margin of safety, just ignorance.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Did I cross-check intrinsic value with three independent methods (DCF, relative, asset)?</li>
+      <li>What is the discount of the current price to my central-case estimate? Does that discount reflect real risk?</li>
+      <li>If my valuation is 30% too high, do I still break even?</li>
+      <li>In the worst case (industry recession + leverage trigger), what is the permanent loss?</li>
+      <li>Is this margin of safety the "stable quality → moderate discount" kind, or the "high risk → must be deeply discounted" kind?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"The margin of safety is always dependent on the price paid. It will be large at one price, small at some higher price, nonexistent at some still higher price."</em> — Benjamin Graham</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Pick the two positions in your portfolio you are most confident in. For each, write down: (A) the central-case intrinsic value, (B) the pessimistic-scenario value, (C) current cost vs (B). If any position has no discount or even a premium to (B), its margin of safety lives only inside your optimistic assumptions.</div>
+  </div>
+</div>
+
+<!-- Card 2: Cigar Butt vs Quality Company -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Cigar Butts vs Wonderful Businesses<span class="en">Cigar Butts vs Wonderful Businesses</span></h2>
+    <span class="tag">Evolution of value</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Value investing has two classical postures: Graham's "cigar butts" — buying mediocre companies at extremely low prices to capture one last free puff; and Munger's evolution to "wonderful businesses" — buying compounding good businesses at fair prices and letting time do the work. Both work, but <strong>cigar butts require constantly switching cigars, and the compounding comes from the relay; wonderful businesses can be held for a decade on one buy, and the compounding comes from the business itself</strong>.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Buffett's 1989 letter to shareholders contained his first systematic reflection: the "cigar butt" concept came from Graham, and his shift away from it was driven by Munger.</p>
+    <div class="quote">"Unless you are a liquidator, that kind of approach to buying businesses is foolish... It is far better to buy a wonderful company at a fair price than a fair company at a wonderful price."
+    <span class="cite">— Warren Buffett, 1989 Letter to Shareholders</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>In Graham's era (1930s–1950s) the market was inefficient and many companies traded below net current asset value (net-net), i.e., "<strong>the business for zero, plus a refund in cash</strong>." The key variable in the cigar-butt strategy is <strong>purchase price vs liquidation value</strong>; quality of the business barely matters — find it cheap enough and you collect the "last free puff." It requires high turnover, broad diversification, and patience. But Buffett's 1962 purchase of Berkshire Hathaway — a textile mill — was his single biggest lesson in the limits of cigar-butt investing: textiles were in structural decline and the company was continuously destroying value; no price low enough could save it — <strong>"time is the friend of the wonderful business, the enemy of the mediocre."</strong> From 1965 onward Munger gradually persuaded Buffett to pivot toward "wonderful businesses": See's Candies (1972, $25M), Coca-Cola (1988, $1.3B), Apple (2016, $36B). None of these were "discounted assets"; they were <strong>compounding machines that could reinvest free cash flow at high ROIC for decades</strong>. The essential distinction: cigar-butt returns are capped at "liquidation value / purchase price − 1," with no second wind; wonderful-business returns depend on <strong>20-year compound growth of intrinsic value</strong>, with no theoretical ceiling. Today's market is vastly more efficient than in the 1950s — pure cigar butts have nearly disappeared, and the main battleground of value investing has moved to <strong>"fair price for a wonderful business."</strong></p>
+  </div>
+
+  <div class="cmp-table">
+    <div class="cmp-row head">
+      <div class="cmp-cell">Dimension</div>
+      <div class="cmp-cell">Cigar Butt</div>
+      <div class="cmp-cell">Quality Compounder</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Source of return</div>
+      <div class="cmp-cell mid">Discount on purchase → reversion to value</div>
+      <div class="cmp-cell end">Annual compounding of intrinsic value</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Holding period</div>
+      <div class="cmp-cell mid">1–3 years (rotate after realization)</div>
+      <div class="cmp-cell end">10+ years ("forever" is the default)</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Diversification</div>
+      <div class="cmp-cell mid">30–50 names (high single-name bankruptcy risk)</div>
+      <div class="cmp-cell end">5–15 names (concentrated bets on the truly good)</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Key skill</div>
+      <div class="cmp-cell mid">Financial-statement literacy + liquidation-value calculation</div>
+      <div class="cmp-cell end">Business judgment + long-term view + valuation patience</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Tax efficiency</div>
+      <div class="cmp-cell mid">Poor (frequent trades trigger tax)</div>
+      <div class="cmp-cell end">Excellent (deferred tax = hidden leverage)</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Capacity ceiling</div>
+      <div class="cmp-cell mid">Low (few opportunities, small capacity)</div>
+      <div class="cmp-cell end">High (Berkshire shows it scales to hundreds of billions)</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>See's Candies (1972): Buffett & Munger paid $25M; book net assets were only $8M (a 3x price-to-book) — "expensive" by Graham cigar-butt standards. But See's had a near-monopoly brand in Southern California, around 25% pre-tax ROIC, and could grow slowly with almost no incremental capital. From 1972 to 2007 it delivered $1.35B in cumulative pre-tax earnings to Berkshire, 54x the original investment. Buffett said in 2014: "See's changed the trajectory of our lives — it was the first time we truly understood ROIC × retention = compounding." <strong>Compare Berkshire Hathaway's textile operations, held from 1962 until shutdown in 1985, losing money throughout. Two investments in the same portfolio — the result speaks for itself.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) slapping the "quality compounder" label on every "growth stock" you own — real compounding machines are rare; most companies can sustain high ROIC for only 5–10 years; (2) accepting any valuation just because of the word "quality" — when the SaaS bubble cracked in Q4 2021, many "compounders" fell 70%+; (3) declaring Graham "obsolete" and abandoning cigar-butt thinking entirely — at bear-market extremes, in special situations, and in small-cap corners, net-net opportunities still appear (Japanese small caps 2009–2013, some Hong Kong names in October 2022); (4) confusing the two postures and holding a bad company for ten years. Buffett's counterexample: his 2016 IBM investment was a "quality"-labeled cigar-butt mistake — he liquidated at a loss in 2018. <strong>What matters is seeing clearly which category you are buying and managing it with the matching strategy.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Am I buying this stock as a cigar butt or as a compounder? Exit criteria differ completely.</li>
+      <li>If a cigar butt: is liquidation value / purchase price > 1.5? Do I have the patience to wait for reversion?</li>
+      <li>If a quality compounder: can ROIC stay at 15%+ for the next decade? Are reinvestment opportunities ample?</li>
+      <li>Does the "compounding profit" actually accrue to shareholders? (Dilution, capex, comp packages all eat into it.)</li>
+      <li>Am I using "quality" as a label to excuse a high valuation?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"Time is the friend of the wonderful business, the enemy of the mediocre."</em> — Warren Buffett, 1989</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">List your two highest-return and two lowest-return positions over the past three years. Judge: did the high return come from "purchase-price discount" or from "growth in intrinsic value"? Did the low return come from "value never reverting" or from "the company itself decaying"? Are you using the right posture for each?</div>
+  </div>
+</div>
+
+<!-- Card 3: Mr. Market -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>The Parable of Mr. Market<span class="en">The Parable of Mr. Market</span></h2>
+    <span class="tag">Market psychology</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Imagine you co-own a private business with an emotionally unstable partner named Mr. Market — every day he knocks on your door with a buy or sell quote, manic one day and depressed the next. He exists to <strong>serve</strong> you, not to <strong>guide</strong> you. Trade with him only when his price is foolish; ignore him the rest of the time.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Benjamin Graham, <i>The Intelligent Investor</i> (1949), Chapter 8 "The Investor and Market Fluctuations." This is Graham's most famous parable. Buffett calls it "the most useful metaphor in the history of investing."</p>
+    <div class="quote">"Imagine that in some private business you own a small share that cost you $1,000. One of your partners, named Mr. Market, is very obliging indeed. Every day he tells you what he thinks your interest is worth and furthermore offers either to buy you out or to sell you an additional interest on that basis. Sometimes his idea of value appears plausible and justified by business developments and prospects as you know them. Often, on the other hand, Mr. Market lets his enthusiasm or his fears run away with him, and the value he proposes seems to you a little short of silly."
+    <span class="cite">— Benjamin Graham, The Intelligent Investor (1949)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>The Mr. Market parable changed an investor's relationship with price. In conventional thinking, price is assumed to be "fair and informative" — a drop means I was wrong, a rise means I was right. Graham inverted the relationship: <strong>price is Mr. Market's mood, value is the company's fact</strong>. The two diverge constantly, and that divergence is the source of your edge. The parable carries three layers: (1) <strong>the market serves you, it does not think for you</strong> — if you need today's price to know whether you are right, you are fighting your own shadow; (2) <strong>Mr. Market's extreme quotes are the source of opportunity</strong> — sell to him when he is euphoric, buy from him when he is depressed; (3) <strong>you can refuse to trade</strong> — this is the most important feature of the private-business analogy. You are not forced to respond every day. Buffett extended it in his 1987 letter: "If you would not be willing to hold this stock if the market closed for five years, you should never have bought it." That line is the parable in action.</p>
+  </div>
+
+  <div class="mrmkt-wrap">
+    <div class="caption">— Mr. Market's mood-driven quotes vs intrinsic value —</div>
+    <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+      <line x1="40" y1="110" x2="580" y2="110" stroke="#7a5c1f" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="46" y="104" font-size="11" fill="#7a5c1f" font-weight="600">Intrinsic value (relatively stable)</text>
+      <path d="M40,110 Q90,40 140,110 Q190,180 240,110 Q290,30 340,110 Q390,190 440,110 Q490,50 540,110 L580,110"
+            stroke="#b8893a" stroke-width="2.5" fill="none"/>
+      <circle cx="90" cy="55" r="5" fill="#b8893a"/><text x="92" y="42" font-size="10" fill="#7a5c1f">Euphoria</text>
+      <text x="92" y="32" font-size="9" fill="#8b7150" font-style="italic">→ sell to him</text>
+      <circle cx="190" cy="170" r="5" fill="#7a5c1f"/><text x="190" y="195" font-size="10" fill="#7a5c1f" text-anchor="middle">Panic</text>
+      <text x="190" y="208" font-size="9" fill="#8b7150" font-style="italic" text-anchor="middle">→ buy from him</text>
+      <circle cx="290" cy="48" r="5" fill="#b8893a"/>
+      <text x="290" y="38" font-size="10" fill="#7a5c1f" text-anchor="middle">Extreme optimism</text>
+      <circle cx="390" cy="180" r="5" fill="#7a5c1f"/>
+      <text x="390" y="200" font-size="10" fill="#7a5c1f" text-anchor="middle">Extreme pessimism</text>
+      <text x="500" y="55" font-size="11" fill="#7a5c1f" font-weight="600">Market quote (wide swings)</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>The March 2020 COVID crash: Mr. Market sliced the S&P 500 quote by 34% in four weeks, hammering many high-quality companies back to 2016 valuations. At the May annual meeting Buffett said clearly "America will get through this," but admitted "we can't see six months ahead for the airline industry." Mr. Market's quotes contained, simultaneously: (1) <strong>reasonable mark-downs</strong> (airlines, cruise lines genuinely hit short-term); (2) <strong>over-pessimism</strong> (Microsoft and Apple, where SaaS subscriptions and cash positions were barely affected, were nonetheless marked down 30%); (3) <strong>pure emotion</strong> (some utilities fell 25% with no fundamental link). Investors who could distinguish the three added in April at Mr. Market's "panic prices" — the S&P 500 rebounded 75% over the next 12 months. <strong>The key was not predicting the pandemic's path but seeing that Mr. Market was discounting everything indiscriminately — that "undifferentiated selling" is the modern textbook for Graham's parable.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) reading "Mr. Market is unreliable" as "I must be right and the market wrong" — most of the time the market is approximately right; opportunities appear only at extremes; (2) confusing "ignoring the market" with "ignoring changes in fundamentals" — value is the company's fact; when the facts change, the valuation must update; (3) using the parable to rationalize holding a losing position ("if I don't sell, it's not a loss") — that is cognitive confusion. The parable's prerequisite is that <strong>you have estimated intrinsic value when you bought</strong>, so you can judge whether Mr. Market's quote has diverged. Without that anchor, you are just passively accepting the quote. Buffett's counterexample: after buying Washington Post in 1973 the stock fell another 25%; he was not shaken by Mr. Market's further panic — but only because he had his own independent view of intrinsic value.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Without looking at the screen, can I independently estimate the intrinsic-value range of this company?</li>
+      <li>If the market closed for five years, would I still want to hold this stock?</li>
+      <li>Is the last 6 months of price movement Mr. Market's mood, or a reflection of real fundamental change?</li>
+      <li>When Mr. Market goes to an extreme, do I have cash to trade with him? (Liquidity is the parable's enabling condition.)</li>
+      <li>Am I watching this stock too closely? The tighter you watch, the more the quote pulls you around.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"You are neither right nor wrong because the crowd disagrees with you. You are right because your data and reasoning are right."</em> — Benjamin Graham</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Recall the most anxious screen-watching moment of the past 12 months. What did Mr. Market's quote make you want to do? If you had done it, was it right or wrong in hindsight? The point of the exercise is not self-criticism — it is to recognize your "reaction pattern": are you more easily carried by euphoria, or by panic?</div>
+  </div>
+</div>
+
+<!-- Card 4: Qualitative vs Quantitative -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Qualitative vs Quantitative<span class="en">Qualitative vs Quantitative Analysis</span></h2>
+    <span class="tag">Method of analysis</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Quantitative analysis tells you "what happened in this company's past and what it is worth today"; qualitative analysis tells you "whether it will get better or worse in the future, and why." <strong>Qualitative without quantitative is storytelling; quantitative without qualitative is staring in the rearview mirror. Good investors use both, and know exactly where each judgment is supported.</strong></div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Benjamin Graham & David Dodd, <i>Security Analysis</i> (1934), Chapter 3 "Sources of Information" — Graham's first systematic statement that quantitative and qualitative are two legs of one stride.</p>
+    <div class="quote">"The qualitative factors upon which most stress is laid are the nature of the business and the character of management. These are exceedingly important, but they are also extremely difficult to deal with intelligently... In a typical case the quantitative data are easily ascertainable. The qualitative data are usually not so easily obtained, and they are subject to wider differences of opinion."
+    <span class="cite">— Graham & Dodd, Security Analysis (1934)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Early Graham leaned heavily quantitative (financial ratios, liquidation value, net assets) because he distrusted "stories that cannot be verified." At Columbia, Buffett learned this quantitative method; under Munger's influence he gradually realized that <strong>what actually determines a company's returns over the next twenty years is not the current balance sheet but the sustainability of the business model itself</strong> — and that depends heavily on qualitative judgment (brand strength, customer stickiness, management's capital-allocation skill, industry structure). In his 1992 letter Buffett wrote: "If forced to choose, qualitative is more important than quantitative — because qualitative determines direction, quantitative only determines speed." But he warned of the inverse danger: pure qualitative investors fall in love with stories and abandon valuation discipline — the classic failure mode of bubble periods. The healthy practice: (1) <strong>quantitative as the floor</strong> — confirm the company has no structural financial crisis and the current valuation is not astronomical; (2) <strong>qualitative as the ceiling</strong> — judge the sustainability of future cash flow and the source of growth; (3) <strong>cross-validate</strong> — qualitative judgments must land on quantitative evidence ("it has a moat" must show up as "ROIC has stayed at least 5pp above peers"), and quantitative results must have a qualitative explanation ("why does it sustain high ROIC?"). <strong>Qualitative that cannot be quantified is just a story; quantitative that cannot be explained qualitatively is just a coincidence.</strong></p>
+  </div>
+
+  <div class="matrix">
+    <div class="caption">— Qualitative × Quantitative matrix · four quadrants of investment decisions —</div>
+    <div class="matrix-grid">
+      <div class="matrix-cell head">　</div>
+      <div class="matrix-cell head">Weak quant<br>Expensive / weak financials</div>
+      <div class="matrix-cell head">Strong quant<br>Fair valuation / good financials</div>
+      <div class="matrix-cell axis">Strong qual</div>
+      <div class="matrix-cell"><strong>Bubble trap</strong>Great story but valuation already overdrawn ·<br>2021 SaaS, 2000 Cisco</div>
+      <div class="matrix-cell good"><strong>★ Compounding sweet spot</strong>Great business + fair price ·<br>2009 Wells Fargo, 1988 Coca-Cola</div>
+      <div class="matrix-cell axis">Weak qual</div>
+      <div class="matrix-cell bad"><strong>Value destruction</strong>Bad business and expensive — stay away ·<br>2014–2018 Sears, Macy's</div>
+      <div class="matrix-cell"><strong>Value trap</strong>Financials look pretty but industry is decaying ·<br>2014 IBM, 2010s newspapers</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>Coca-Cola, 1988: quantitatively Buffett bought at roughly 15x P/E and 5x P/B — "not cheap" by Graham cigar-butt standards. Qualitatively he saw: (1) <strong>the world's strongest consumer brand</strong> (top market share in 128 countries); (2) <strong>extremely low reinvestment needs</strong> (bottling and distribution done by franchisees); (3) <strong>pricing power</strong> (4–6% price increases each year barely dent volume); (4) <strong>new management under Goizueta</strong> (first-class capital allocator, exiting bad businesses). All four qualitative judgments mapped onto quantitative evidence: ROE 32%, FCF conversion 95%+, rising overseas share, accelerating buybacks. From 1988 to 1998 the investment rose roughly 11x. <strong>Counterexample: IBM 2014–2017.</strong> The quantitative data looked attractive (high dividend, low P/E, aggressive buybacks), but qualitatively the cloud-computing revolution had already eroded IBM's moat. Buffett later admitted: "I saw the continuity of the reported numbers, but not the change in customer behavior." Exiting at a loss confirms that <strong>quantitative evidence not supported by qualitative logic is just rearview-mirror data</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) using "qualitatively excellent" to excuse a high valuation — every bubble's standard line is "this is a qualitative question"; (2) becoming addicted to DCF and other "precise quantitative" models, mistaking a 60% error band for 2% precision — Munger: "I prefer the fuzzy correct to the precisely wrong"; (3) treating "management is good" as the whole of qualitative analysis — people change, institutions persist; (4) making qualitative calls on ESG / AI buzzwords with zero quantitative discipline. Damodaran's counterexample: he repeatedly valued Tesla as "overvalued" — his quantitative work was correct, but he underestimated Musk's execution (qualitative) for a long time and missed the 2020 run. Conclusion: neither qualitative nor quantitative is a stand-alone answer; <strong>they are two paths that check each other — close one eye and you are flying blind</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Does this company's moat (qualitative) show up in ROIC, gross margin, and retention (quantitative)?</li>
+      <li>Can I explain the business logic (qualitative) behind the financial numbers (quantitative) in one paragraph?</li>
+      <li>If a key qualitative assumption breaks in the next 5 years (brand weakens, regulation changes), how do the quantitative data change?</li>
+      <li>Is my buy thesis 70% qualitative + 30% quantitative, or the reverse? Does that weighting match the company type?</li>
+      <li>Am I mistaking "I like this company" for "this is a good investment"? Liking is qualitative — but it is not analysis.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"It is better to be approximately right than precisely wrong."</em> — Carveth Read, often quoted by Buffett & Munger</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">For your largest position, write two short paragraphs: (A) the three most important qualitative judgments (moat, industry structure, management), each paired with a quantitative piece of evidence; (B) the three most important quantitative data points (ROIC, gross margin, FCF growth), each paired with a qualitative explanation. Any item that can only be qualitative without quantitative support, or only quantitative without qualitative explanation, marks a fragile link in your reasoning.</div>
+  </div>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Weekly</a></nav>
+<footer>BigCat · Investing Weekly · Week 04 · 2026</footer>
+
+</div></body></html>
