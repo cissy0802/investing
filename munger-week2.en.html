@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Munger's Mind — Week 2</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+
+/* Lattice diagram */
+.lattice{margin:18px 0;padding:24px 18px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.lattice .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:18px;letter-spacing:1px}
+.lattice-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 8px;position:relative}
+.lattice-node{background:#fff;border:1.5px solid #b8893a;border-radius:50%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;text-align:center;font-size:0.7rem;color:#7a5c1f;font-weight:600;padding:4px;line-height:1.15;box-shadow:0 1px 4px rgba(122,92,31,0.12);position:relative;z-index:2}
+.lattice-node.core{background:#7a5c1f;color:#fcf9f0;border-color:#7a5c1f}
+.lattice-legend{margin-top:14px;text-align:center;font-size:0.78rem;color:#5a4418}
+
+/* Inversion flow */
+.invert-flow{margin:18px 0;display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:stretch}
+.invert-box{padding:16px 14px;border-radius:6px;text-align:center;font-size:0.88rem;line-height:1.5}
+.invert-box.forward{background:#faf0d8;border:1px solid #d4b87a;color:#5a4418}
+.invert-box.reverse{background:#fdf6e3;border:1.5px dashed #7a5c1f;color:#7a5c1f;font-weight:600}
+.invert-arrow{display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:#b8893a}
+.invert-box .label-sm{display:block;font-size:0.72rem;color:#8b7150;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+
+/* Misjudgment matrix */
+.misj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0}
+.misj-item{background:#faf5e8;padding:10px 12px;border-radius:4px;border-left:3px solid #b8893a;font-size:0.84rem;color:#3a3220}
+.misj-item strong{color:#7a5c1f;display:block;font-size:0.78rem;letter-spacing:0.5px;margin-bottom:3px}
+
+/* Two-step diagram */
+.twostep{margin:18px 0;background:#fdf6e3;padding:22px 18px;border-radius:6px;border:1px solid #e8d8b0}
+.twostep-row{display:flex;align-items:center;gap:14px;margin:10px 0;font-size:0.9rem}
+.twostep-num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#7a5c1f;color:#fcf9f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.95rem}
+.twostep-body{flex:1;color:#3a3220}
+.twostep-body strong{color:#7a5c1f}
+.twostep-arrow{text-align:center;color:#b8893a;font-size:1.2rem;margin:2px 0 2px 16px}
+
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.6rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.lattice-grid{grid-template-columns:repeat(3,1fr)}
+.invert-flow{grid-template-columns:1fr;}
+.invert-arrow{transform:rotate(90deg)}
+.misj-grid{grid-template-columns:1fr}
+}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 02</div>
+  <h1>Investing Classics: Munger's Mind<span class="accent">The Latticework of Worldly Wisdom</span></h1>
+  <div class="meta"><span>May 25, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Charlie Munger is not Buffett's shadow but the other load-bearing column of the Berkshire philosophy. He treats investing as an application of <strong>worldly wisdom</strong>: to make fewer bad decisions, you cannot rely on cleverness inside a single discipline; you must weave the foundational models of mathematics, psychology, biology, physics, and history into a network. This week we go back to Munger's own words and <i>Poor Charlie's Almanack</i>, and re-read the four "mental weapons" he leaves behind.
+</div>
+
+<!-- Card 1: Latticework of Mental Models -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Latticework of Mental Models<span class="en">Latticework of Mental Models</span></h2>
+    <span class="tag">Worldly wisdom</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Real-world problems do not arrive sorted by academic discipline. To decide well, you must assemble the core models from many disciplines into a latticework and let each observation be checked from multiple angles.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Munger's 1994 speech at USC Marshall, "A Lesson on Elementary, Worldly Wisdom as It Relates to Investment Management and Business," later collected in <i>Poor Charlie's Almanack</i>.</p>
+    <div class="quote">"You've got to have models in your head. And you've got to array your experience — both vicarious and direct — on this latticework of models. The first rule is that you can't really know anything if you just remember isolated facts and try and bang 'em back. If the facts don't hang together on a latticework of theory, you don't have them in a usable form."
+    <span class="cite">— Charlie Munger, USC 1994</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Munger estimates the "truly important models" number about 80–90, drawn from many disciplines. The frequent fliers: mathematics (compounding, probability, permutations, Bayes), psychology (incentives, social proof, loss aversion), physics (tipping points, momentum, the second law of thermodynamics), biology (evolution, niches, symbiosis), economics (scale economies, moats, prisoner's dilemma), and accounting (cash flow vs profit). One model explains maybe 30% of a phenomenon; three or four cross-checking each other get you to 90%. This is why Munger rejects "specialist thinking": to the man with only a hammer, every problem looks like a nail. The most common disasters in investing come from judging through a single frame (only P/E, only management narrative).</p>
+  </div>
+
+  <div class="lattice">
+    <div class="caption">— A Latticework of Mental Models —</div>
+    <div class="lattice-grid">
+      <div class="lattice-node">Compounding</div>
+      <div class="lattice-node">Probability</div>
+      <div class="lattice-node">Incentives</div>
+      <div class="lattice-node">Scale</div>
+      <div class="lattice-node">Inversion</div>
+      <div class="lattice-node core">Investment<br/>Decision</div>
+      <div class="lattice-node core">Business<br/>Analysis</div>
+      <div class="lattice-node">Moat</div>
+      <div class="lattice-node">Tipping<br/>Point</div>
+      <div class="lattice-node">Social<br/>Proof</div>
+      <div class="lattice-node">Evolution</div>
+      <div class="lattice-node">Bayesian</div>
+      <div class="lattice-node">Loss<br/>Aversion</div>
+      <div class="lattice-node">Opportunity<br/>Cost</div>
+      <div class="lattice-node">Cash Flow</div>
+      <div class="lattice-node">Game<br/>Theory</div>
+    </div>
+    <div class="lattice-legend">Every real decision should be cross-illuminated by at least 3–5 models from different disciplines.</div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>Costco is a position Munger has held for years, and he sat on its board. On a single-metric financial view, Costco's net margin is only about 2%, far below most retailers; cross-checked through multiple models, the picture inverts: (1) scale economies (procurement costs 15%+ below peers); (2) reciprocity in psychology (the membership fee creates commitment); (3) a flywheel (low price → more members → more bargaining power); (4) "less is more" via tight SKU curation. The result: a roughly 16% annualized return in Costco's stock from 1985 through 2024. Looking only at P/E, it always seems expensive. Through the latticework, you finally see where it is cheap.</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) collecting models becomes stamp-collecting — when something happens, you still decide by gut; (2) treating "using many models" as a license to gather more reasons to support a conclusion you already hold — confirmation bias in a more sophisticated outfit; (3) believing more models is always better — Munger insists on a few dozen of the most powerful ones, used repeatedly until internalized. Another trap: cross-disciplinary borrowing easily over-analogizes (jamming biological evolution onto corporate competition); you have to know each model's boundary of applicability.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>How many models did I use on this decision? Using only one is extremely dangerous.</li>
+      <li>Do the different models confirm or contradict each other? The contradictions usually carry the most information.</li>
+      <li>Am I using the models to find an answer, or to find evidence for an answer I already have?</li>
+      <li>What is the boundary of applicability of this model in this situation?</li>
+      <li>If an expert from a different discipline looked at this, what would she say I am missing?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"To the man with only a hammer, every problem looks pretty much like a nail."</em> — Charlie Munger</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Pick your most recent significant investment decision and write down, by name, the mental models you actually used. If you find fewer than three, run a "post-hoc multi-model review" this weekend.</div>
+  </div>
+</div>
+
+<!-- Card 2: Inversion -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Invert, Always Invert<span class="en">Invert, Always Invert</span></h2>
+    <span class="tag">Method of thought</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">To know how to succeed, first study how to fail; to get something done, first ask what would utterly wreck it. Turning the problem around is often a faster route to the answer than charging at it head-on.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Munger borrowed "Invert, always invert" from the 19th-century German mathematician Carl Jacobi, and systematized it in his 1986 Harvard School commencement speech "How to Guarantee a Life of Misery."</p>
+    <div class="quote">"It is in the nature of things that many hard problems are best solved when they are addressed backward… What do I want to avoid? What dumb thing am I doing that, if I just stopped doing, would make my life better?"
+    <span class="cite">— Charlie Munger, Harvard School 1986</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Forward thinking asks "how do I win?" Inverted thinking asks "how do I lose the most?" In investing the flip is especially potent because <strong>avoiding big mistakes</strong> contributes more to long-term compounding than <strong>catching big winners</strong> — a 50% loss requires a 100% gain just to get back to even. Munger sums it up: "avoid stupidity rather than seek brilliance." Practical moves: (1) pre-mortem — assume the investment has failed in five years and reverse-engineer the reasons; (2) inverted valuation — instead of "what is it worth," ask "under what assumptions is it worth nothing"; (3) inverted due diligence — actively hunt the bear case and the strongest counter-thesis first.</p>
+  </div>
+
+  <div class="invert-flow">
+    <div class="invert-box forward">
+      <span class="label-sm">FORWARD</span>
+      How do I pick the winners of the next ten years?
+    </div>
+    <div class="invert-arrow">⇆</div>
+    <div class="invert-box reverse">
+      <span class="label-sm">INVERTED</span>
+      Which companies are very likely to fail outright over the next ten years — and can I simply avoid them?
+    </div>
+  </div>
+  <div class="invert-flow">
+    <div class="invert-box forward">
+      <span class="label-sm">FORWARD</span>
+      How do I make the portfolio surge?
+    </div>
+    <div class="invert-arrow">⇆</div>
+    <div class="invert-box reverse">
+      <span class="label-sm">INVERTED</span>
+      What would permanently impair the portfolio by 50%? Am I actively moving toward any of those scenarios?
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>The 1998 collapse of LTCM (Long-Term Capital Management): two Nobel laureates and a Goldman-tier quant team, leverage roughly 25x. Looking back, had the partners done a pre-mortem asking "what scenario could wipe out 90% of our NAV in a single week?" they would almost certainly have written down "simultaneous liquidity drain + sudden change in correlations." But they were buried in the forward math of "how to win" and barely studied "how to lose." Then Russia defaulted, every trade moved against them at once, and the Fed had to convene 14 banks to organize a rescue. Munger later said: "They were extremely smart — smart enough to forget to invert."</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Inversion is not pessimism; it is clarity. Common misuses: (1) turning "imagine failure" into chronic anxiety — never betting at all; (2) using the worst case to veto every investment (every investment has a theoretical path to ruin); (3) inverting without probability weighting — some failure modes are extremely unlikely. The correct posture: list the failure paths → estimate probabilities → evaluate the cost → look for controllable hedges. Munger's inversion is <strong>structured</strong>, not emotional.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>If this investment is a complete failure in five years, what are the three most likely reasons?</li>
+      <li>Are any early signals of those reasons visible right now?</li>
+      <li>Who is on the other side of this trade? Can their thesis convince me?</li>
+      <li>If I had to short this company, which argument would I use?</li>
+      <li>Which "dumb thing" am I doing right now that, if I just stopped, would immediately improve the portfolio?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"All I want to know is where I'm going to die, so I'll never go there."</em> — Charlie Munger</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Write an independent 500-word bear case for your largest position. When you finish, ask yourself: if a stranger had written this, would I reconsider my sizing?</div>
+  </div>
+</div>
+
+<!-- Card 3: 25 Standard Causes of Human Misjudgment -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>25 Causes of Human Misjudgment<span class="en">25 Standard Causes of Human Misjudgment</span></h2>
+    <span class="tag">Behavioral finance</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">The human brain was not built for being right; it was built for surviving. Recognizing your cognitive biases and resisting them systematically will improve long-term returns more than finding better stocks.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Munger's 1995 Harvard Law School talk "The Psychology of Human Misjudgment," later expanded into Chapter 11 of <i>Poor Charlie's Almanack</i> (2005), listing 25 psychological tendencies.</p>
+    <div class="quote">"I came to the psychology of human misjudgment almost against my will; I rejected it until I realized that my attitude was costing me a lot of money, and reduced my ability to help everything I loved."
+    <span class="cite">— Charlie Munger, Harvard Law 1995</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Munger's 25 are not isolated textbook concepts. He re-ranks them by "frequency of appearance on the investing battlefield": (1) incentives — "tell me the incentive and I'll tell you the outcome"; (2) liking/disliking (halo or one-strike-and-out); (3) doubt avoidance (we hate uncertainty, so we close the question quickly); (4) inconsistency avoidance (once we have bought, we collect evidence we were right); (5) curiosity; (6) fairness / reciprocity; (7) over-optimism; (8) loss aversion (the pain of loss ≈ twice the pleasure of an equal gain); (9) social proof; (10) contrast (an expensive thing next to a more expensive thing); (11) stress-induced; (12) availability (what we can recall feels probable); (13) use-it-or-lose-it; (14) chemical-induced (alcohol, drugs); (15) senescence; (16) authority; (17) twaddle; (18) reason-respecting; (19) mathematical illusions; (20) Lollapalooza — the supersized effect of several biases firing at once. Munger considers the last the most dangerous: pyramid schemes, cults, and market tops are all classic Lollapaloozas.</p>
+  </div>
+
+  <div class="misj-grid">
+    <div class="misj-item"><strong>(1) Incentive-Caused Bias</strong>Pay fund managers on AUM, and you get AUM maximization — not return maximization.</div>
+    <div class="misj-item"><strong>(4) Consistency Bias</strong>Once we have bought, we hunt evidence we were right — especially after losses.</div>
+    <div class="misj-item"><strong>(8) Loss Aversion</strong>A 20% gain begs to be banked; a 20% loss we refuse to cut.</div>
+    <div class="misj-item"><strong>(9) Social Proof</strong>"Everyone is buying AI stocks" — is that an argument, or is it signal noise?</div>
+    <div class="misj-item"><strong>(12) Availability</strong>The most recent crash is the most vivid memory, distorting short-term risk pricing.</div>
+    <div class="misj-item"><strong>(20) Lollapalooza</strong>Story + social proof + FOMO + scarcity = the top of a bubble.</div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>The 2021 GameStop short squeeze: (1) social proof (r/wallstreetbets crowd energy); (2) availability (constant feed saturation); (3) reciprocity (the "retail vs the institutions" narrative kindled tribal feeling); (4) over-confidence; (5) Lollapalooza — all of them firing at once. The stock ran from $20 to an intraday $483, then fell back to the $40 range; many bought above $300 and took a permanent loss of 70%+ within weeks. This was not a story about GME fundamentals — it was a clinical sample of Munger's 25 lit up together. The same script has played out in the South Sea Bubble of 1720, the dot-com run in 1999, the 2017 crypto mania, and the 2024 memecoin wave.</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) confusing "knowing the biases" with "being immune to them" — research suggests awareness barely reduces self-bias; (2) labeling other investors' behavior with the bias list ("retail is FOMO-ing") to reinforce one's own sense of superiority, which is itself overconfidence; (3) abusing the psychology vocabulary to rationalize bad decisions. What actually works is <strong>institutionalized counter-pressure</strong>: checklists, decision journals, enforced cooling-off periods, reviews paired with someone who holds the opposite view — not the silent self-reminder "I know this is loss aversion."</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>What incentives are driving me on this decision (commission, social approval, beating colleagues)?</li>
+      <li>After reaching my conclusion, am I still actively looking for counter-evidence?</li>
+      <li>Do I feel I should act because "everyone is doing it"?</li>
+      <li>Am I overweighting events that have happened recently?</li>
+      <li>Are three or more biases firing simultaneously in this situation? If so, enforce a 48-hour cooling-off.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"Show me the incentive, and I will show you the outcome."</em> — Charlie Munger</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Look back at the trade you most regret over the past 12 months. Cross-reference Munger's 25 and identify at least three biases that were triggered. Are any of them still present in your current holdings?</div>
+  </div>
+</div>
+
+<!-- Card 4: Two-Step Thinking -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Two-Track Analysis<span class="en">Two-Track Analysis</span></h2>
+    <span class="tag">Decision framework</span>
+  </div>
+
+  <div class="section"><div class="label">Statement of the Principle</div>
+    <div class="principle">Every important decision must run on two tracks: first, "rationally, what objective factors govern the outcome?"; second, "subconsciously, how is my mind already misleading me?" Neither track may be skipped.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <p>Munger, <i>Poor Charlie's Almanack</i> (2005), at the close of "The Psychology of Human Misjudgment," and explicitly stated in the 1995 Harvard talk.</p>
+    <div class="quote">"Personally, I've gotten so that I now use a kind of two-track analysis. First, what are the factors that really govern the interests involved, rationally considered? And second, what are the subconscious influences where the brain at a subconscious level is automatically doing these things — which by and large are useful, but which often misfunction?"
+    <span class="cite">— Charlie Munger, Harvard Law 1995</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>This is Munger's final operating system, integrating the latticework with the 25 biases. Track 1 is <strong>objective analysis</strong>: unit economics, ROIC, competitive structure, valuation range, macro scenarios — everything that fits in a spreadsheet. Track 2 is <strong>subjective audit</strong>: current emotional state, social influences, the aftershock of recent losses or gains, fondness for management, incentive misalignment. Most investors run only Track 1, and end up buying expensive things at the bull-market top with elegant DCFs and dodging golden chances at the bear-market bottom with overly pessimistic discount rates. Munger himself admits "it took me thirty years to make two-track analysis muscle memory." It is also why Berkshire's investing rhythm looks "boring": they spend most of their time examining their own minds, not the market.</p>
+  </div>
+
+  <div class="twostep">
+    <div class="twostep-row">
+      <div class="twostep-num">1</div>
+      <div class="twostep-body"><strong>Track 1 · Objective:</strong> the business's unit economics, ROIC, moat, terminal value, fair-value range. <em>Answered with spreadsheets and historical data.</em></div>
+    </div>
+    <div class="twostep-arrow">↓</div>
+    <div class="twostep-row">
+      <div class="twostep-num">2</div>
+      <div class="twostep-body"><strong>Track 2 · Psychological:</strong> my current emotion, social influence, incentives, recent-memory distortion, preference for the narrative. <em>Answered with a decision journal and peer review.</em></div>
+    </div>
+    <div class="twostep-arrow">↓</div>
+    <div class="twostep-row">
+      <div class="twostep-num">✓</div>
+      <div class="twostep-body"><strong>Integration:</strong> bet large only when both tracks point the same way and no major bias signal is firing; if they conflict, pause and re-review.</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>Berkshire's $5 billion investment in Goldman Sachs preferred in September 2008. Track 1 objective: 10% dividend plus warrants; Goldman's cash flow could service it; the Fed was about to backstop systemically important financials; Goldman's investment-banking moat was intact. Track 2 psychological: Buffett publicly admitted that "market panic is inflating my own risk perception — I have to separate real risk from emotional contagion." He noticed availability bias affecting him too (the Lehman images were too vivid). The integration concluded that the objective return far exceeded the emotionally-priced risk. The position produced roughly $3 billion in profit over five years. Many institutions with the same data ran only Track 1, but Track 2 made their hands shake.</p>
+  </div>
+
+  <div class="section"><div class="label">Counterexamples and Limits</div>
+    <p>Common misuses: (1) running only Track 2 turns into endless self-doubt ("am I being over-optimistic again?") and missing every opportunity; (2) using Track 2 to override an unwelcome Track-1 conclusion ("maybe I am just being too pessimistic") — psychological auditing weaponized to rationalize preference; (3) treating Track 2 as a one-time step rather than a continuous review across the holding period. Correct practice: let Track 1 drive the buy thesis, and let Track 2 drive sizing and holding patience. Both tracks need re-running on different time horizons.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Track 1: Can I describe the key economics of this business in five numbers?</li>
+      <li>Track 1: Under conservative assumptions, what is the 5-year annualized return range?</li>
+      <li>Track 2: What is my emotional baseline today? (Angry / excited / fearful / calm)</li>
+      <li>Track 2: Is any of the 25 biases quietly nudging this decision?</li>
+      <li>When the tracks conflict, am I enforcing at least a 24–72 hour cooling-off on myself?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">English Insight</div>
+    <p><em>"It's not supposed to be easy. Anyone who finds it easy is stupid."</em> — Charlie Munger</p>
+  </div>
+
+  <div class="section"><div class="label">Reflection This Week</div>
+    <div class="reflect">Before your next likely trade, pre-write a two-column note: Track 1 objective points on the left, Track 2 psychological audit on the right. Check that both columns point to the same action — if they disagree, stop and figure out why before acting.</div>
+  </div>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Weekly</a></nav>
+<footer>BigCat · Investing Weekly · Week 02 · 2026</footer>
+
+</div></body></html>
