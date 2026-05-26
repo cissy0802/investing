@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Weekly: Damodaran on Valuation — Week 6</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.viz{margin:18px 0;padding:22px 16px 16px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.viz .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.viz svg{width:100%;height:auto;display:block}
+.cmp-table{margin:18px 0;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0;overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:130px 1fr 1fr;border-bottom:1px solid #e8d8b0}
+.cmp-row:last-child{border-bottom:none}
+.cmp-row.head{background:#7a5c1f;color:#fcf9f0;font-weight:700;font-size:0.84rem;letter-spacing:1px}
+.cmp-cell{padding:12px 14px;font-size:0.88rem;color:#3a3220}
+.cmp-cell.first{border-right:1px solid #e8d8b0;background:#faf0d8;color:#7a5c1f;font-weight:600;font-size:0.84rem}
+.cmp-cell.mid{border-right:1px solid #e8d8b0;background:#fff;color:#5a4418}
+.cmp-cell.end{background:#fff;color:#5a4418}
+.cmp-row.head .cmp-cell{background:#7a5c1f;color:#fcf9f0;border-right:1px solid #b8893a}
+.resources{background:#fdf6e3;padding:18px 22px 18px 38px;border-radius:6px;border-left:3px solid #b8893a;margin:18px 0}
+.resources li{font-size:0.92rem;color:#3a3220;margin:8px 0;padding-left:4px}
+.deepq details{background:#fff;border:1px solid #e8d8b0;border-radius:6px;margin:10px 0;padding:14px 18px;box-shadow:0 1px 4px rgba(122,92,31,0.05)}
+.deepq summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.98rem;list-style:none;padding-right:24px;position:relative}
+.deepq summary::after{content:"▸";position:absolute;right:0;top:0;color:#b8893a;transition:transform 0.2s}
+.deepq details[open] summary::after{transform:rotate(90deg)}
+.deepq details[open] summary{border-bottom:1px dashed #d4b87a;padding-bottom:10px;margin-bottom:10px}
+.deepq div{font-size:0.92rem;color:#3a3220;line-height:1.7}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.6rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.cmp-row{grid-template-columns:1fr}
+.cmp-cell.first,.cmp-cell.mid{border-right:none;border-bottom:1px dashed #d4b87a}
+}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 06</div>
+  <h1>Investing Classics: Damodaran on Valuation<span class="accent">Aswath Damodaran — The Craft of Valuation</span></h1>
+  <div class="meta"><span>June 22, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Aswath Damodaran has taught NYU Stern's valuation course for over 30 years and is widely called the "<strong>Dean of Valuation</strong>." Every year he publishes his own valuations of Apple, Tesla, Uber, Aramco, Nvidia — along with the underlying spreadsheets and every assumption. In his view, valuation is not a math game: <strong>"Valuation is a craft, not a science; a discipline of judgment, not the application of formulas."</strong> This week we return to Damodaran's four pillars — not to teach you how to compute a "target price," but to clarify <strong>the relationship between price, value, and the story you can actually defend</strong>.
+</div>
+
+<!-- Card 1: DCF Principles & Limits -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>DCF — Principles, Power & Limits<span class="en">Discounted Cash Flow as a Discipline</span></h2>
+    <span class="tag">Intrinsic Value</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">An asset's intrinsic value equals <strong>all the future cash flows it will produce, discounted back to today at a rate reflecting its risk</strong>. This is valuation's first principle. But DCF's power is not in "producing a number" — it is in <strong>forcing you to decompose your judgment about a business into testable assumptions</strong>: growth, margins, reinvestment intensity, risk premium, terminal value. Each number is a bet, and seeing the bets matters more than seeing the final price tag.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Aswath Damodaran, <em>Investment Valuation: Tools and Techniques for Determining the Value of Any Asset</em> (Wiley, 3rd ed. 2012), Chapters 1–4; the more concise <em>The Little Book of Valuation</em> (Wiley, 2011), Ch. 2 "Power Tools of the Trade." Damodaran's free NYU Stern course videos and his blog at musingsonmarkets.blogspot.com have been continuously updated for over a decade.</p>
+    <div class="quote">"A valuation is a bridge between story and numbers. The discounted cash flow model is not a black box — it is a discipline that forces you to be explicit about your beliefs."
+    <span class="cite">— Aswath Damodaran, Narrative and Numbers (Columbia Business Press, 2017)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>The point of the DCF model is not the formula, but the <strong>value-driver structure it reveals</strong>: (1) how much free cash flow the company can produce (growth × margin − reinvestment); (2) how risky those cash flows are (discount rate / WACC); (3) how long growth can persist (high-growth period length); (4) what it is worth in steady state (terminal value, often 60–80% of total DCF value). Damodaran repeats two points: first, <strong>"inputs are outputs"</strong> — changing g from 3% to 5%, or WACC from 9% to 7%, can double fair value. This is not a weakness of the model; the model is telling you "<em>here is what really matters</em>." Second, <strong>DCF's limits are honest limits</strong> — it demands explicit assumptions, while relative valuation hides equally murky assumptions under the cover of "market averages." The former forces thought; the latter rewards laziness.</p>
+  </div>
+
+  <div class="viz">
+    <div class="caption">— Decomposing DCF Value · Terminal Value Often Dominates —</div>
+    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+      <line x1="50" y1="200" x2="560" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <line x1="50" y1="40" x2="50" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="46" y="44" font-size="10" fill="#7a5c1f" text-anchor="end">100%</text>
+      <text x="46" y="120" font-size="10" fill="#7a5c1f" text-anchor="end">50%</text>
+      <text x="46" y="200" font-size="10" fill="#7a5c1f" text-anchor="end">0</text>
+      <text x="30" y="120" font-size="11" fill="#7a5c1f" font-weight="600" transform="rotate(-90 30 120)">% of Value</text>
+      <rect x="100" y="80" width="80" height="120" fill="#f4e9cd" stroke="#b8893a" stroke-width="1.5"/>
+      <rect x="100" y="80" width="80" height="40" fill="#b8893a" opacity="0.4"/>
+      <text x="140" y="140" font-size="10" fill="#5a4418" text-anchor="middle" font-weight="600">High-growth CF</text>
+      <text x="140" y="155" font-size="10" fill="#5a4418" text-anchor="middle">~20–30%</text>
+      <text x="140" y="100" font-size="9" fill="#5a4418" text-anchor="middle" font-style="italic">Next 5–10 yr</text>
+      <text x="140" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Mature Co.</text>
+      <rect x="240" y="50" width="80" height="150" fill="#f4e9cd" stroke="#b8893a" stroke-width="1.5"/>
+      <rect x="240" y="50" width="80" height="105" fill="#b8893a" opacity="0.4"/>
+      <text x="280" y="135" font-size="10" fill="#5a4418" text-anchor="middle" font-weight="600">High-growth CF</text>
+      <text x="280" y="150" font-size="10" fill="#5a4418" text-anchor="middle">~70%</text>
+      <text x="280" y="70" font-size="9" fill="#5a4418" text-anchor="middle" font-style="italic">Next 10 yr</text>
+      <text x="280" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Growth Co.</text>
+      <rect x="380" y="100" width="80" height="100" fill="#f4e9cd" stroke="#b8893a" stroke-width="1.5"/>
+      <rect x="380" y="100" width="80" height="20" fill="#b8893a" opacity="0.4"/>
+      <text x="420" y="155" font-size="10" fill="#5a4418" text-anchor="middle" font-weight="600">High-growth CF</text>
+      <text x="420" y="170" font-size="10" fill="#5a4418" text-anchor="middle">~10%</text>
+      <text x="420" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Early / Story Co.</text>
+      <text x="510" y="60" font-size="11" fill="#7a5c1f" font-weight="600">⬛ High-growth</text>
+      <text x="510" y="78" font-size="11" fill="#7a5c1f" font-weight="600">⬜ Terminal</text>
+      <text x="510" y="100" font-size="9" fill="#8b7150" font-style="italic">Terminal value</text>
+      <text x="510" y="113" font-size="9" fill="#8b7150" font-style="italic">is the lever</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p>In June 2014, Damodaran publicly valued Uber: 6% annual revenue growth, 40% steady-state operating margin, addressable market limited to traditional taxis — fair value $5.9B. The same month, Bill Gurley (Benchmark) published a rebuttal: Uber is not a taxi substitute; it is the operating system for on-demand logistics, and the market is the entire city's logistics — $25B+. <strong>Two DCFs, two stories, a 4× gap — not a math error, a narrative gap</strong>. Damodaran progressively revised upward as Uber expanded (UberX, UberEats, cross-city), arriving at ~$58B before the 2019 IPO (close to the actual $69B). <strong>Lesson</strong>: a DCF is not a one-shot answer — it is a <strong>working document to be revised as facts arrive</strong>. Second case: Damodaran's 2024 Nvidia valuation made clear that a 70% terminal-value weighting meant the market was betting "AI compute demand will continue compounding for the next 10 years" — any slowdown signal will trigger violent re-rating. Not a prediction, but clarity about what is being bet.</p>
+  </div>
+
+  <div class="section"><div class="label">Counter-examples & Limits</div>
+    <p>Typical DCF failure modes: (1) <strong>Early-stage or cash-burning companies</strong> — almost any assumption can justify almost any value (WeWork's 2019 pre-IPO valuation collapsed from $47B to $8B simply by changing the narrative); (2) <strong>Cyclical companies</strong> — using any single year as the base badly distorts; you need "normalized earnings"; (3) <strong>Financial institutions</strong> — traditional DCF struggles with float, capital adequacy, regulatory costs; use DDM or excess-return models instead; (4) <strong>Commodity-price-sensitive businesses</strong> — oil ±$20 determines everything. <strong>Damodaran himself has missed</strong>: in 2014 he underestimated Tesla's narrative elasticity (insisting on auto-only), and in 2018 underestimated Amazon's pivot in capital returns. <strong>DCF is not a truth-prediction machine — it is a tool for organizing your own thinking</strong>. Its value is not in "giving you the answer" but in "exposing the assumptions you depend on."</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>What fraction of my DCF value is terminal value? If more than 70%, am I valuing the company or betting on a distant steady state?</li>
+      <li>Vary g and r by ±1% each — how much does value change? Sensitivity tells me which variable really matters.</li>
+      <li>Is my "high-growth period length" assumption backed by industry evidence (penetration, competitive structure, tech cycle), or just 10 years by default?</li>
+      <li>Is steady-state ROIC above WACC? If not, the company is fundamentally not creating value.</li>
+      <li>Can I describe in one sentence "the business story equivalent to this DCF"? If I can compute but cannot speak, I may not understand.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">One-Line Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>A DCF's value is not in its answer but in the questions it forces you to write down.</strong>"&nbsp;&nbsp;Reflection: Pick a company you hold long-term. Write down your assumed "revenue growth / operating margin / reinvestment rate / terminal multiple" for the next 10 years. If you cannot write these four numbers, you bought a stock, not a company.</div>
+  </div>
+</div>
+
+<!-- Card 2: Relative Valuation Traps -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Relative Valuation — Power and Pitfalls<span class="en">Multiples Are Not Shortcuts</span></h2>
+    <span class="tag">Multiples</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Relative valuation (P/E, EV/EBITDA, P/B, EV/Sales) is fast and market-anchored, which is why 80% of sell-side reports and investment decisions rely on it. But its convenience hides three implicit assumptions: that the comparables are <strong>truly comparable</strong>, that the market's pricing of that group is <strong>reasonable</strong>, and that current multiples are <strong>sustainable</strong>. If any one fails, the multiple method moves from "fast valuation" to "fast mis-valuation." Damodaran's core warning: <strong>the question is never "is a P/E of 20× cheap or expensive?" — it is "what P/E should this company have?" — and that question takes you right back to the same DCF drivers</strong>.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Damodaran, <em>Investment Valuation</em>, Chapters 17–20 on Relative Valuation; <em>The Dark Side of Valuation</em> (Wiley, 2nd ed. 2009) systematically documents multiple-method failures in tech, emerging markets, cyclicals, and financials. His annually updated Industry Multiples database at NYU Stern covers 90+ global industries.</p>
+    <div class="quote">"Every multiple has a story attached to it. It is critical that you tell the story and tie it to the fundamentals. If you cannot, you are using the multiple as a black box — and black boxes are dangerous."
+    <span class="cite">— Aswath Damodaran, The Little Book of Valuation (2011)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Any multiple can be derived from a DCF. For example, P/E = (payout ratio × (1+g)) / (r − g) — meaning P/E is a <strong>joint function of growth g, risk r, and payout</strong>. Two companies at P/E 15× can be utterly incomparable: Company A with ROE 25%, g 8%, low risk → 15× is cheap; Company B with ROE 8%, g 2%, high risk → 15× is expensive. Damodaran's discipline is "<strong>controlled comparison</strong>": (1) find genuinely comparable companies (same industry + same lifecycle + similar capital structure); (2) explain current multiple differences (real fundamental gap or market mispricing?); (3) beware "sector multiples" — anchoring to industry averages drags you up into industry bubbles. <strong>Multiples are not a shortcut around DCF; they are a sanity check on DCF</strong>.</p>
+  </div>
+
+  <div class="cmp-table">
+    <div class="cmp-row head">
+      <div class="cmp-cell">Multiple</div>
+      <div class="cmp-cell">Best Used For</div>
+      <div class="cmp-cell">Most Prone to Fail When</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">P/E</div>
+      <div class="cmp-cell mid">Stable earnings, low reinvestment, mature firms</div>
+      <div class="cmp-cell end">Cyclicals (peak earnings), losses, one-time accounting items</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">EV/EBITDA</div>
+      <div class="cmp-cell mid">Capital-intensive firms with different leverage profiles</div>
+      <div class="cmp-cell end">High-capex but low-depreciation sectors (telecom towers, rail) — real cash generation overstated</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">P/B</div>
+      <div class="cmp-cell mid">Financials, asset-backed firms (insurance, banks, REITs)</div>
+      <div class="cmp-cell end">Asset-light firms (software, brands) — book value and business value diverge</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">EV/Sales</div>
+      <div class="cmp-cell mid">Early-stage high-growth firms with temporary losses</div>
+      <div class="cmp-cell end">Permanently low or unsustainable margins (2000 dot-com, 2021 SaaS peak)</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">P/GMV</div>
+      <div class="cmp-cell mid">Early platform companies when unit economics unclear</div>
+      <div class="cmp-cell end">Almost always — GMV is not revenue, much less profit</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>2000 dot-com bubble</strong>: Investment banks collectively abandoned P/E (most companies were unprofitable) and switched to P/Sales, P/Eyeballs, P/Clicks. Cisco at its March 2000 peak traded at P/E ~200, market cap $550B — and looked normal on "industry comparable multiples" (Cisco was at the median of its peer group). <strong>Because everything was expensive</strong>, relative valuation produced a "looks reasonable" answer. The stock fell 89% from 2000 to 2002 and as of 2024 had not regained its 2000 peak. <strong>2021 SPAC and SaaS rerun</strong>: Snowflake's post-IPO P/Sales was ~200×; IB reports wrote "industry comparable companies average 80×, room for adjustment." The stock fell 70% in 2021–2022. <strong>Counter-example</strong>: at the 2008 financial-crisis bottom, P/E averages fell below 10× (whole groups cheap during panic) — relative valuation produced "looks reasonable" reasons to <strong>not buy</strong> when the entire group was undervalued. <strong>Key insight: relative valuation reflects how the market is pricing, not how it should price</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Counter-examples & Limits</div>
+    <p>Relative valuation is not useless — it has three real uses: (1) short-term <strong>market-sentiment barometer</strong> — extreme multiples are loud warnings; (2) <strong>reverse-check on DCF assumptions</strong> — if your DCF implies P/E 80× while the industry averages 15×, you'd better explain why; (3) communication shortcut — clearer for clients and teams. Damodaran himself uses multiples, but insists "<strong>every multiple must come with a story</strong>." Common misuse: (1) using "industry average" as a target price (the industry itself may be in a bubble or trough); (2) cross-cycle comparison (using 2007 P/E as an anchor for today is meaningless); (3) when using forward P/E, the denominator (forecast EPS) already embeds future growth — then hunting for "low P/E" becomes self-deception. <strong>Underlying principle: a multiple is never an answer; it is a phenomenon that requires explanation</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Are my "comparable companies" actually comparable in lifecycle, capital structure, and geographic risk — or do they just share an industry code?</li>
+      <li>Is the company's multiple higher/lower than the peer group due to real fundamentals (ROIC, g, risk) or market mispricing?</li>
+      <li>Am I using TTM or forward multiples? If forward, whose EPS forecast, and what is their historical accuracy?</li>
+      <li>What percentile of the past 10 years does the industry's current average multiple sit in (90th? 30th?)? How likely is the whole group cheap or expensive?</li>
+      <li>Can I explain in one sentence why this multiple is reasonable? If not, I'm using multiples to skip thinking.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">One-Line Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>Relative valuation tells you what the market thinks; DCF tells you what you think. The gap is where opportunity lives.</strong>"&nbsp;&nbsp;Reflection: pick a company on your watchlist and write down its current P/E vs. its 5-year average. Then write whether the difference reflects fundamentals (→ may be reasonable) or sentiment (→ may be opportunity).</div>
+  </div>
+</div>
+
+<!-- Card 3: Narrative & Numbers -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>Narrative & Numbers<span class="en">The Two-Way Bridge</span></h2>
+    <span class="tag">Story Discipline</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">A competent valuation has two inseparable components: <strong>a story you can tell + numbers the story disciplines</strong>. Pure numbers (DCF with arbitrary assumptions) are "false precision" — you compute to two decimals, but every decimal rests on sand. Pure narrative ("this is the AI revolution, valuation doesn't matter") is "unmoored fantasy" — any price can be rationalized. The two must constrain each other: <strong>story determines what numbers should look like; numbers expose whether story is self-consistent</strong>.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Aswath Damodaran, <em>Narrative and Numbers: The Value of Stories in Business</em> (Columbia Business Press, 2017) — a systematization of his 30 years of valuation teaching. The book lays out a full "story-driven valuation" method: first the story, then translate it into numbers, then let the numbers test the story.</p>
+    <div class="quote">"Numbers without a narrative are exercises in modeling; narratives without numbers are flights of fancy. Good valuation is the bridge between these two extremes — and the bridge is built in both directions."
+    <span class="cite">— Aswath Damodaran, Narrative and Numbers (2017)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Damodaran's five-step method: (1) <strong>build the story</strong> — what is this company, for whom, how does it make money, what is its moat, what could it become in 5–10 years; (2) <strong>stress-test the story</strong> — possible, plausible, probable. Telling a story about a 30% probability event is fine, but don't price it at 100%; (3) <strong>translate story to numbers</strong> — market size → revenue growth ceiling, industry margin → steady-state operating margin, competitive density → ROIC, capital intensity → reinvestment rate; (4) <strong>compute the DCF</strong>; (5) <strong>use the result to back-test the story</strong> — if DCF comes out 5× above current price, ask "am I over-optimistic?" If 80% below, ask "what did I miss?" This is a <strong>two-way bridge</strong>: story constrains numbers, numbers test story.</p>
+  </div>
+
+  <div class="viz">
+    <div class="caption">— Story ↔ Numbers · A Two-Way Feedback Loop —</div>
+    <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+      <rect x="60" y="60" width="180" height="100" fill="#faf0d8" stroke="#b8893a" stroke-width="2" rx="6"/>
+      <text x="150" y="100" font-size="14" fill="#7a5c1f" text-anchor="middle" font-weight="700">Narrative</text>
+      <text x="150" y="125" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">Business model</text>
+      <text x="150" y="140" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">Market · Moat · End-state</text>
+      <rect x="360" y="60" width="180" height="100" fill="#faf0d8" stroke="#b8893a" stroke-width="2" rx="6"/>
+      <text x="450" y="100" font-size="14" fill="#7a5c1f" text-anchor="middle" font-weight="700">Numbers</text>
+      <text x="450" y="125" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">Growth · Margin</text>
+      <text x="450" y="140" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">Reinvestment · Risk · TV</text>
+      <path d="M 240 90 Q 300 60 360 90" stroke="#7a5c1f" stroke-width="2.5" fill="none" marker-end="url(#arrow1)"/>
+      <path d="M 360 130 Q 300 160 240 130" stroke="#7a5c1f" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
+      <defs>
+        <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#7a5c1f"/>
+        </marker>
+        <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#7a5c1f"/>
+        </marker>
+      </defs>
+      <text x="300" y="55" font-size="11" fill="#7a5c1f" text-anchor="middle" font-weight="600">Translate → assumptions</text>
+      <text x="300" y="185" font-size="11" fill="#7a5c1f" text-anchor="middle" font-weight="600">Test self-consistency</text>
+      <text x="300" y="208" font-size="10" fill="#8b7150" text-anchor="middle" font-style="italic">DCF can't justify → story is wrong, not numbers</text>
+      <text x="300" y="35" font-size="11" fill="#b8893a" text-anchor="middle" font-style="italic">One-way: false precision OR groundless fantasy</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>Uber 2014–2019 narrative evolution</strong>: In June 2014 Damodaran published "Uber Isn't Worth $17 Billion," using a "taxi substitute" story to compute $5.9B. Bill Gurley publicly rebutted: "You've mis-sized the market — Uber is not a taxi substitute; it's the operating system for on-demand logistics." No mathematical dispute, just a narrative gap — Damodaran's market estimate was $100B; Gurley's was $450B+. As Uber expanded into food delivery (UberEats), freight (Uber Freight), and autonomous driving, the story really did widen. Damodaran publicly revised: 2014 $5.9B → 2015 $23.4B → 2017 $46B → 2019 pre-IPO $58B. <strong>He admitted</strong>: "I was wrong about the story, but I was right that the story has to be told clearly and constrained by numbers." <strong>This is the power of narrative discipline — it doesn't guarantee you're right, but it guarantees you know where you were wrong when you are</strong>. <strong>Counter-example: WeWork 2019</strong>: the S-1 used a "lifestyle + community + tech company" narrative to justify $47B — but the numbers crumbled instantly: revenue $1.8B, loss $1.6B, growth far outpacing sustainable economics. Narrative completely unconstrained by numbers; IPO pulled, valuation shrank to $8B in nine months.</p>
+  </div>
+
+  <div class="section"><div class="label">Counter-examples & Limits</div>
+    <p>Common misuse: (1) <strong>using grand narrative as a substitute for valuation</strong> — "this is the AI era's electricity" is a story, not a valuation. Ask "what's the margin and ROIC of electricity providers? Can this company match?" to enter the numbers; (2) <strong>using numerical precision to fake certainty</strong> — DCF says $147.32/share, but every assumption has 30% error, so the real range is $90–$220; (3) <strong>narrative consistency bias</strong> — the initial story was wrong, but because you've already bought in, you unconsciously use new data to reinforce the old story instead of updating it. Damodaran's prescription: "<strong>force-restate the story after every quarterly report</strong> and ask whether it was confirmed or refuted." <strong>A deeper trap</strong>: narratives are social — when friends, media, and analysts collectively tell the same story, independent story-testing becomes extremely hard. That's why Damodaran always publishes his spreadsheets — exposing assumptions to criticism is the only defense against "collective narrative drift."</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Can I tell this company's story in 5 sentences? (Business, customer, moat, end-state, key risk)</li>
+      <li>What are the key numerical metrics implied by my story? Revenue growth, margin, ROIC, reinvestment — do these four numbers actually match my story?</li>
+      <li>Is my story possible, plausible, or probable? Am I pricing a 20%-probability outcome at 100%?</li>
+      <li>After new quarterly or industry news, do I force-restate the story? Or do I just check whether numbers "confirm" my prior view?</li>
+      <li>If the story turns out to be wrong (core assumption falsified), what signal will tell me? Write down exit conditions.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">One-Line Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>Valuation is not calculating the future — it is expressing a belief about the future, and letting that belief submit to the discipline of numbers.</strong>"&nbsp;&nbsp;Reflection: pick a stock you bought recently. Write down "why I bought it" as a 5-sentence story. Then ask: what numerical assumption corresponds to each sentence? If you cannot match them, you bought a narrative, not a company.</div>
+  </div>
+</div>
+
+<!-- Card 4: Growth vs Value -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Growth vs Value Valuation<span class="en">A False Dichotomy</span></h2>
+    <span class="tag">Concept Clarity</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">"Growth stocks vs value stocks" is a financial-industry marketing phrase, <strong>not a real valuation taxonomy</strong>. Damodaran insists: growth and value are not opposing choices — growth is an input to valuation; value is the output. Every valuation runs through the same DCF framework; the only difference is whether <strong>value comes from the company's existing cash flows</strong> (mature companies) or <strong>from future growth opportunities</strong> (growth companies). The practical consequence: you are not "choosing a style," you are <strong>judging the credibility of different sources of value</strong>.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Damodaran, <em>Investment Valuation</em>, Chapter 12 "Estimating Growth"; many blog posts and NYU lectures address the growth/value conceptual confusion. Representative paper: "Growth Investing: Betting on the Future" (NYU Stern Working Paper, 2012).</p>
+    <div class="quote">"Growth and value investing are not opposing investment strategies; they are the two ingredients in every valuation. Every investor is a value investor, in the sense that they want to pay less than what the asset is worth. The disagreement is about where that worth comes from."
+    <span class="cite">— Aswath Damodaran, NYU Stern Lecture (2014)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Decompose any company's value into two parts: <strong>assets in place + growth assets</strong>. (1) Mature value stocks (Coca-Cola, Procter & Gamble): 90% of value from existing business; growth is the icing. Easy to verify (cash flows already exist), low risk, limited upside; (2) Growth stocks (early SaaS, biotech, AI platforms): 60–80% of value from unrealized future growth. Hard to verify (numbers not yet visible), high risk, open upside. <strong>Key insight</strong>: growth itself does not create value — only <strong>growth with ROIC > cost of capital</strong> creates value. If a company reinvests heavily but ROIC sits below WACC, faster growth destroys more value (Bed Bath & Beyond, WeWork, bike sharing, fresh-food e-commerce, and many late-2010s "growth" retail/mobility companies died this way). Damodaran calls this "<strong>value-destroying growth</strong>" — growth is not free; every unit of growth must answer "is it worth the capital it consumed?"</p>
+  </div>
+
+  <div class="cmp-table">
+    <div class="cmp-row head">
+      <div class="cmp-cell">Dimension</div>
+      <div class="cmp-cell">Value from Assets in Place</div>
+      <div class="cmp-cell">Value from Growth Assets</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Value Share</div>
+      <div class="cmp-cell mid">Existing assets 70–90%</div>
+      <div class="cmp-cell end">Future growth 60–85%</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Uncertainty Source</div>
+      <div class="cmp-cell mid">Whether business decays, whether ROIC holds</div>
+      <div class="cmp-cell end">Market size · adoption speed · end-state margin</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Key Diagnostics</div>
+      <div class="cmp-cell mid">ROIC trend · capital allocation · cash returns</div>
+      <div class="cmp-cell end">Unit economics · TAM credibility · competitive structure</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Primary Method</div>
+      <div class="cmp-cell mid">FCF DCF + P/E / EV/EBITDA sanity check</div>
+      <div class="cmp-cell end">Phased DCF + EV/Sales + scenario analysis</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Biggest Failure Mode</div>
+      <div class="cmp-cell mid">Value trap (decay underestimated)</div>
+      <div class="cmp-cell end">Bubble (growth overestimated or never arrives)</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Typical Experience</div>
+      <div class="cmp-cell mid">Slow returns · steady compounding · few surprises</div>
+      <div class="cmp-cell end">Big swings · a few winners · many failures</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>Buffett's Coca-Cola 1988–present</strong>: archetypal mature value stock. When Buffett bought in 1988 P/E was ~15, ROIC sustained at 25%+, with a moat built of global distribution + brand + float-like distributor terms. <strong>Key</strong>: he wasn't buying "growth"; he was buying <strong>sustainable existing cash flows + slow global penetration</strong>. 1988–2023 cumulative return ~30× (with dividends), most of it earned in the first 15 years — afterward returns were "preserved by compounding," not "contributed by growth." This is the typical shape of mature value. <strong>Contrast: Snowflake 2020 IPO</strong> — archetypal growth stock. At IPO, P/E was inapplicable (loss), EV/Sales ~200×. Narrative: cloud data warehousing is the core of enterprise IT for the next decade. But the narrative's "growth" must be tested against ROIC — Snowflake's 2020–2024 revenue grew 70%+ annually, but customer acquisition cost stayed high, operating margin negative, net cash flow zero. Even if the story is exactly right (market expands to $500B), the stock still fell 70% — <strong>because the initial price had already discounted 10 years of growth, and growth itself was destroying value (high CAC + low ROIC)</strong>. <strong>Third case: Apple's 2014–2024 transition</strong> — Buffett began heavily buying Apple in 2016, but he bought "Apple as a consumer product company," not "Apple as a growth stock." P/E was ~12, ROIC 35%, vast free cash flow buying back stock. Apple had been a "tech stock" Munger and Buffett avoided for years, but during 2014–2018 it transitioned from growth narrative to mature value narrative — Buffett was waiting for exactly that turn. <strong>This shows: growth vs. value is not a property of the company, but a phase in the company's lifecycle</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Counter-examples & Limits</div>
+    <p>Common misuse: (1) <strong>"low P/E = value, high P/E = growth"</strong> — wrong. That's just the surface. Low P/E may be cheap or a value trap; high P/E may be reasonable or a bubble. The distinction lies in ROIC and growth sources; (2) <strong>using "style" as an excuse to avoid thinking</strong> — "I'm a value investor so I don't look at tech" is laziness. Buffett's late-life Apple position proves real value investors follow ROIC, not labels; (3) <strong>treating "growth" as "revenue growth"</strong> — revenue growth + negative ROIC equals value destruction. What matters is "growth that creates value" (ROIC > WACC); (4) <strong>using factor models to replace thinking</strong> — MSCI Value Index and Growth Index are mechanical classifications. One reason "value factor" underperformed during 2010–2020 is that it mechanically classified low-P/B accounting stocks as value, ignoring intangibles like software and brand; (5) <strong>ignoring lifecycle</strong> — Microsoft in 2000 was a growth stock, in 2010 a stalled stock, post-2017 a growth stock again (cloud transition). The same company at different stages needs different valuation frameworks. <strong>Damodaran's prescription: forget style labels; always ask "where does value come from, and does growth create value?"</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>What's roughly the split between "assets in place" and "growth opportunities" in this company's value? (30/70? 80/20?) Does my research effort match the split?</li>
+      <li>Is its ROIC rising, stable, or falling over the past 5 years? Is it above WACC? Growth below WACC is negative value.</li>
+      <li>If it's a growth stock: are the unit economics clear? Can I compute CAC, retention, LTV?</li>
+      <li>If it's a value stock: is the business in steady state or slow decline? Does the discount rate cover the decay speed?</li>
+      <li>Where is this company in its lifecycle? Does my valuation framework fit this stage?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">One-Line Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>There is no 'growth stock vs value stock' — only different sources of value + the same DCF discipline.</strong>"&nbsp;&nbsp;Reflection: plot the companies in your portfolio on a spectrum from "value from existing assets" to "value from future growth." Which end are you spending most of your research time on? Does that match your actual circle of competence?</div>
+  </div>
+</div>
+
+<!-- Deep Resources -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">FURTHER READING</div>
+    <h2>Further Reading<span class="en">Primary Sources & Courses</span></h2>
+    <span class="tag">Originals</span>
+  </div>
+  <ul class="resources">
+    <li><strong>Aswath Damodaran, <em>Investment Valuation: Tools and Techniques for Determining the Value of Any Asset</em></strong> (Wiley, 3rd ed. 2012) — the encyclopedia of valuation; reference, not cover-to-cover. Chapters 2–4, 12, 17–20, 22–24 are core.</li>
+    <li><strong>Aswath Damodaran, <em>Narrative and Numbers: The Value of Stories in Business</em></strong> (Columbia Business Press, 2017) — the full methodology of the story-numbers bridge; primary source for this week's third principle.</li>
+    <li><strong>Aswath Damodaran, <em>The Little Book of Valuation</em></strong> (Wiley, 2011) — 200-page distillation, ideal as quick reference.</li>
+    <li><strong>Aswath Damodaran, <em>The Dark Side of Valuation: Valuing Young, Distressed, and Complex Businesses</em></strong> (Wiley, 2nd ed. 2009) — dedicated to DCF failure scenarios; methods for new-economy, distressed, cyclical, and financial firms.</li>
+    <li><strong>NYU Stern Damodaran Online</strong> (pages.stern.nyu.edu/~adamodar/) — 30 years of public lecture notes, datasets (industry betas, equity risk premiums, industry multiples updated annually), and spreadsheet templates.</li>
+    <li><strong>Damodaran's blog Musings on Markets</strong> (musingsonmarkets.blogspot.com) — real-time public valuations of Apple, Tesla, Nvidia, Uber, Aramco, and more.</li>
+    <li><strong>NYU Stern Corporate Finance / Valuation course</strong> — full free courses on YouTube, recorded annually. Damodaran is one of the most generous public teachers in finance.</li>
+    <li><strong>McKinsey, <em>Valuation: Measuring and Managing the Value of Companies</em></strong> (Wiley, 7th ed. 2020) — corporate-side valuation classic; pairs well with Damodaran.</li>
+  </ul>
+</div>
+
+<!-- Deep Questions -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">DEEP QUESTIONS</div>
+    <h2>Deep Questions<span class="en">Open Questions for the Long Investor</span></h2>
+    <span class="tag">Reflection</span>
+  </div>
+  <div class="deepq">
+    <details><summary>1. Is DCF still effective in the AI era, or is any 10-year cash flow forecast now fantasy?</summary>
+      <div>DCF's core mechanism — discounting future cash flows to today — is unchanged in the AI era; what changes is that <strong>forecast uncertainty rises sharply</strong>. Damodaran's response is "<strong>use scenarios, not a single valuation</strong>" — give three stories (optimistic / base / pessimistic), compute DCF for each, see where the weighted combination lands. This is not DCF failing; it is honest acknowledgment of structural limits to our knowledge of the future. AI does not obsolete DCF — it makes DCF more necessary, because it is the only framework that forces you to write down assumptions, which matters especially in an era of narrative drift. Damodaran also warns: AI companies have 80–90% of value in terminal value, making valuation highly sensitive to "whether AI can really build businesses with sustainable ROIC > WACC" — a judgment where technically minded investors have a marginal edge.</div>
+    </details>
+    <details><summary>2. If relative valuation is misleading during industry bubbles, why does the market still rely on it?</summary>
+      <div>Three reasons: (1) <strong>cognitive economy</strong> — multiples produce results in 5 minutes; DCF takes 5 hours. In an information-saturated era, saving time beats accuracy; (2) <strong>career incentives</strong> — sell-side analysts using "industry comparable multiples" face less career risk (agreeing with peers = not isolated). "Being wrong with the crowd" is professionally safer than "being right alone"; (3) <strong>client preference</strong> — clients prefer the certainty of "target price $187" to the honesty of "value range $90–$220." Damodaran's prescription: "Multiples can be used, but always paired with DCF as a reverse check, and valuation should always be expressed as a <strong>range</strong>, not a <strong>point</strong>." Individual investors' advantage over institutions is here — you do not need to tell "apparently certain" stories for career survival; you can honestly embrace the range.</div>
+    </details>
+    <details><summary>3. Can a "good story" bend the valuation? How do you avoid being persuaded by your own story?</summary>
+      <div>Yes, frequently. This is the inherent risk of narrative-driven valuation — Damodaran calls it the "<strong>narrative consistency trap</strong>." Three countermeasures: (1) <strong>pre-commit exit conditions</strong> — before buying, write down "what data would make me admit the story is wrong." For example: "if user growth drops below 20% for 2 consecutive quarters, I will revisit and possibly reduce"; (2) <strong>argue against yourself</strong> — deliberately write a "counter-narrative" with the same sincerity, arguing why this company will fail. If the counter-narrative is better supported, the alarm should sound; (3) <strong>publish your valuation</strong> — Damodaran publishes all his valuations because publishing is discipline. If you cannot say it aloud, you may know in your heart it cannot survive scrutiny. <strong>In the end</strong>: a story is not a scam — a story is a tool for exploring assumptions, provided you let it be tested.</div>
+    </details>
+    <details><summary>4. Do individual investors really need to do DCF? Or is ETF + risk understanding enough?</summary>
+      <div>Depends on what kind of investor you want to be. If the goal is "beat inflation long-term" — index ETFs + DCA + asset allocation are enough; DCF is over-learning. But if the goal is "really understand what you own" — DCF is irreplaceable. Its value is not in getting every answer right, but in <strong>training you to recognize market narrative drift</strong>. Even if you ultimately buy indexes, an investor who has done a few DCFs will have a markedly different psychological capacity at bear-market bottoms — because they know roughly where intrinsic value sits, instead of being dragged by price. <strong>Damodaran's own advice</strong>: "Learn DCF once. Then pick 5–10 companies you genuinely care about and value each one annually. Not for trading — for understanding the market." This is why he has kept his teaching public for three decades — he believes the discipline of valuation should be widespread, because it is the mental shield against market panic and mania.</div>
+    </details>
+    <details><summary>5. Do software / AI / platform companies need a new framework?</summary>
+      <div>Damodaran's view: <strong>no new framework, but new application</strong>. The essence of DCF — value = discounted future cash flows — is universal. But software characteristics (near-zero marginal cost, network effects, increasing returns to scale, asset-light) change specific inputs: (1) margin ceiling rises (mature-stage 40–50%); (2) reinvestment rate falls (no factories); (3) terminal value weighting rises (greater persistent growth); (4) but moats are more brittle (technology shifts can destroy whole business models). So software DCF is not "impossible to compute" — it just makes <strong>judgments about high-growth-period length and end-state margin more decisive</strong>. That's why Damodaran insists "story first" — software companies' valuations depend on narrative credibility far more than traditional industries. New frameworks (real options, scenario weighting, staged investment) are extensions of DCF, not replacements.</div>
+    </details>
+  </div>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Weekly</a></nav>
+<footer>BigCat · Investing Weekly · Week 06 · 2026</footer>
+
+</div></body></html>
