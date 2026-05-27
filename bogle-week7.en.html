@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Bogle & Passive Investing — Week 7</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.viz{margin:18px 0;padding:22px 16px 16px;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0}
+.viz .caption{text-align:center;font-size:0.82rem;color:#8b7150;font-style:italic;margin-bottom:12px;letter-spacing:1px}
+.viz svg{width:100%;height:auto;display:block}
+.cmp-table{margin:18px 0;background:#fdf6e3;border-radius:6px;border:1px solid #e8d8b0;overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:130px 1fr 1fr;border-bottom:1px solid #e8d8b0}
+.cmp-row:last-child{border-bottom:none}
+.cmp-row.head{background:#7a5c1f;color:#fcf9f0;font-weight:700;font-size:0.84rem;letter-spacing:1px}
+.cmp-cell{padding:12px 14px;font-size:0.88rem;color:#3a3220}
+.cmp-cell.first{border-right:1px solid #e8d8b0;background:#faf0d8;color:#7a5c1f;font-weight:600;font-size:0.84rem}
+.cmp-cell.mid{border-right:1px solid #e8d8b0;background:#fff;color:#5a4418}
+.cmp-cell.end{background:#fff;color:#5a4418}
+.cmp-row.head .cmp-cell{background:#7a5c1f;color:#fcf9f0;border-right:1px solid #b8893a}
+.resources{background:#fdf6e3;padding:18px 22px 18px 38px;border-radius:6px;border-left:3px solid #b8893a;margin:18px 0}
+.resources li{font-size:0.92rem;color:#3a3220;margin:8px 0;padding-left:4px}
+.deepq details{background:#fff;border:1px solid #e8d8b0;border-radius:6px;margin:10px 0;padding:14px 18px;box-shadow:0 1px 4px rgba(122,92,31,0.05)}
+.deepq summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.98rem;list-style:none;padding-right:24px;position:relative}
+.deepq summary::after{content:"▸";position:absolute;right:0;top:0;color:#b8893a;transition:transform 0.2s}
+.deepq details[open] summary::after{transform:rotate(90deg)}
+.deepq details[open] summary{border-bottom:1px dashed #d4b87a;padding-bottom:10px;margin-bottom:10px}
+.deepq div{font-size:0.92rem;color:#3a3220;line-height:1.7}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+header h1{font-size:1.6rem}
+.card{padding:24px 20px}
+.card h2{font-size:1.2rem}
+.cmp-row{grid-template-columns:1fr}
+.cmp-cell.first,.cmp-cell.mid{border-right:none;border-bottom:1px dashed #d4b87a}
+}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 07</div>
+  <h1>Investing Classics: Bogle & Passive Investing<span class="accent">John C. Bogle — The Tyranny of Costs & the Index Revolution</span></h1>
+  <div class="meta"><span>May 27, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+John C. Bogle (1929—2019) did something simple and almost impermissible: in 1975 he founded Vanguard, in 1976 launched America's first retail index fund, and structured the fund company itself to be <strong>owned by the fundholders</strong>—so managers could no longer extract rent from them. The industry called it "Bogle's Folly." The launch raised only $11.3M against a $150M target. Half a century later, <strong>passive assets surpassed active management in U.S. equities</strong> (around 2019) and Vanguard manages nearly $9 trillion. This isn't a victory of style—it's a victory of <strong>an ethical position about what investors are entitled to</strong>. This week returns to Bogle's four principles. The goal isn't to convince you to buy index funds. The goal is to understand why "passive" is mathematically near-unbeatable for most—and what that implies.
+</div>
+
+<!-- Card 1: Index Fund Revolution -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>The Index Revolution: Buy the Haystack, Not the Needle<span class="en">Don't Look for the Needle, Buy the Haystack</span></h2>
+    <span class="tag">Structural innovation</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">An index fund isn't a "stock-picking strategy"—it's <strong>the acceptance of a mathematical fact</strong>: all market participants as a whole earn the market return on a weighted basis. Before costs, the active vs. passive game is zero-sum (your gain is someone's loss). After costs, it is <strong>negative-sum</strong>. Therefore <strong>owning the entire market at the lowest possible cost is the only arithmetically correct answer</strong>. Bogle wasn't selling a product. He was exposing a simple fact that the industry's incentive structure had deliberately obscured.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Bogle's roots are in his 1951 Princeton thesis <em>The Economic Role of the Investment Company</em>, which argued that mutual funds must ultimately serve fundholders, not managers. In 1975 he founded Vanguard with a "mutual" ownership structure; on August 31, 1976 First Index Investment Trust closed its subscription (later renamed Vanguard 500 Index Fund). Full treatment in <em>Common Sense on Mutual Funds</em> (Wiley, 1999; 10th anniversary edition 2009) and the condensed <em>The Little Book of Common Sense Investing</em> (Wiley, 2007; revised 2017).</p>
+    <div class="quote">"Don't look for the needle in the haystack. Just buy the haystack."
+    <span class="cite">— John C. Bogle, The Little Book of Common Sense Investing (2007)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Three key insights. ① <strong>"The market" is not an opponent to beat—it is the sum of all participants</strong>. You can't beat "the market average" because you <em>are</em> the market. All active managers in aggregate earn the market before fees and necessarily less than the market after fees (William Sharpe, "The Arithmetic of Active Management," 1991). ② <strong>Maximum diversification ≠ mediocrity</strong>. Holding the S&P 500 is not abandoning choice—it is admitting you cannot reliably predict which few companies will win. Hendrik Bessembinder's 2018 study ("Do Stocks Outperform Treasury Bills?") found that the <em>entire</em> net wealth created by U.S. equities from 1926 to 2016 came from just 4% of companies. <strong>The probability of missing those 4% is far higher than the probability of picking them.</strong> ③ <strong>"Mutual ownership" changes incentives</strong>. Vanguard is not publicly listed; expense ratios trend down (Vanguard 500 Admiral: 0.04%, vs. active median ~0.7%). Bogle's real innovation isn't the index fund product—it's <strong>turning the fund company into a cooperative owned by its fundholders</strong>, making fee reduction an internal pressure rather than a market one.</p>
+  </div>
+
+  <div class="viz">
+    <div class="caption">— Active vs Passive: the arithmetic after costs —</div>
+    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+      <line x1="50" y1="200" x2="560" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <line x1="50" y1="40" x2="50" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="46" y="44" font-size="10" fill="#7a5c1f" text-anchor="end">10%</text>
+      <text x="46" y="120" font-size="10" fill="#7a5c1f" text-anchor="end">5%</text>
+      <text x="46" y="200" font-size="10" fill="#7a5c1f" text-anchor="end">0</text>
+      <text x="28" y="120" font-size="11" fill="#7a5c1f" font-weight="600" transform="rotate(-90 28 120)">Annual return</text>
+      <rect x="120" y="60" width="90" height="140" fill="#b8893a" opacity="0.55" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="165" y="80" font-size="11" fill="#fcf9f0" text-anchor="middle" font-weight="700">Market return</text>
+      <text x="165" y="96" font-size="10" fill="#fcf9f0" text-anchor="middle">~7%</text>
+      <text x="165" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Before fees · zero-sum</text>
+      <rect x="260" y="68" width="90" height="132" fill="#f4e9cd" stroke="#b8893a" stroke-width="1.5"/>
+      <rect x="260" y="68" width="90" height="6" fill="#7a5c1f" opacity="0.3"/>
+      <text x="305" y="125" font-size="10" fill="#5a4418" text-anchor="middle" font-weight="600">Index fund</text>
+      <text x="305" y="142" font-size="10" fill="#5a4418" text-anchor="middle">~6.95%</text>
+      <text x="305" y="62" font-size="9" fill="#7a5c1f" text-anchor="middle" font-style="italic">0.05% fee</text>
+      <text x="305" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Almost no loss</text>
+      <rect x="400" y="100" width="90" height="100" fill="#f4e9cd" stroke="#b8893a" stroke-width="1.5"/>
+      <rect x="400" y="68" width="90" height="32" fill="#7a5c1f" opacity="0.4"/>
+      <text x="445" y="155" font-size="10" fill="#5a4418" text-anchor="middle" font-weight="600">Active fund</text>
+      <text x="445" y="172" font-size="10" fill="#5a4418" text-anchor="middle">~5%</text>
+      <text x="445" y="62" font-size="9" fill="#7a5c1f" text-anchor="middle" font-style="italic">1.5—2% fee</text>
+      <text x="445" y="92" font-size="9" fill="#5a4418" text-anchor="middle" font-style="italic">+ turnover + tax</text>
+      <text x="445" y="218" font-size="10" fill="#7a5c1f" text-anchor="middle">Must trail</text>
+      <text x="525" y="60" font-size="10" fill="#7a5c1f" font-style="italic" text-anchor="end">⬛ Eaten by</text>
+      <text x="525" y="76" font-size="10" fill="#7a5c1f" font-style="italic" text-anchor="end">    costs</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>1976 First Index Investment Trust launch</strong>: underwritten by Wells Fargo, AG Becker, Dillon Read, and Bache Halsey; target $150M, raised $11.3M. Forbes called it "a sorry concept." Edward Johnson III, Fidelity's chairman, publicly mocked it: "I can't believe investors will settle for just 'average' returns." It was one of the most expensive moments of hubris in finance history. <strong>2024</strong>: Vanguard global AUM ~$9 trillion, second only to BlackRock (much of which is also passive via iShares). <strong>2019</strong>: passive assets in U.S. equities exceeded active for the first time (Morningstar). <strong>Counter-evidence: the Buffett–Protégé Partners 10-year bet (2008—2017)</strong>—Buffett bet $1M that the S&P 500 index fund net of fees would beat a basket of carefully selected hedge funds over a decade. Result: S&P 500 returned 7.1%/year, the hedge funds 2.2%/year. <strong>The gap wasn't from Buffett's stock picking—it was from hedge funds having nothing left after fees</strong>. Exactly the arithmetic Bogle had laid out half a century earlier.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Counter-Examples</div>
+    <p>Indexing has real blind spots. ① <strong>Not all markets are equally efficient</strong>—U.S. large-cap is the most efficient (active managers fail most often). Emerging markets, small-caps, and credit may have somewhat more room for active alpha (though net alpha is still mostly negative). Bogle acknowledged this. ② <strong>Market-cap weighting ≠ neutral</strong>—a cap-weighted index automatically over-weights stocks that have already risen. In 1999—2000, tech exceeded 35% of the S&P 500; the bubble's collapse hurt indexers severely. The index doesn't protect you from bubbles—it just removes idiosyncratic stock-selection risk. ③ <strong>"Passive" also has structural concentration</strong>—in 2024 the "Magnificent Seven" make up ~30% of the S&P 500. Buying the index = a sizable bet on mega-cap tech. ④ <strong>At an extreme, full indexation could impair price discovery</strong>. Bogle's reply: "We're far from that point, and even if we got there, price discovery would become profitable again, drawing money back into active. The market self-corrects." ⑤ <strong>It doesn't solve your behavior problem</strong>—index funds fell 50% in 2008 and 30% in 2020. Plenty of people sold at the bottom. As Bogle said, "The investor's worst enemy is himself." No product saves you from panic.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Have my active funds / hand-picked portfolio truly beaten the relevant index <em>after all costs</em>? Look over 10 years, not 1.</li>
+      <li>Do I really believe I can pick the 4% of winners? Or am I just sure I'm "smarter than average"? Data suggests the latter.</li>
+      <li>If I insist on active selection, can I cap it as an "experiment sleeve" (10—20%)? Is my core still a low-cost indexed base?</li>
+      <li>Are my "index funds" genuinely low-cost (&lt;0.1%), or pseudo-index products carrying hidden 12b-1 / sales loads?</li>
+      <li>Can I actually hold the index fund through the next bear market without selling? If "uncertain," the problem isn't the product—it's that I miscalculated my risk tolerance.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>Don't look for the needle in the haystack—buy the whole haystack. This isn't surrender. It's arithmetic.</strong>"&nbsp;&nbsp;Reflect: Split your portfolio into "low-cost index core vs. active selection." What's the ratio? Over the last 5 years, did the active sleeve actually beat the core after costs and the time you spent on it? Be honest.</div>
+  </div>
+</div>
+
+<!-- Card 2: Costs Matter Hypothesis -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>The Tyranny of Costs: Time Magnifies Every Basis Point<span class="en">Compounding's Dark Twin</span></h2>
+    <span class="tag">Compounding's reverse</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">Returns are uncertain. <strong>Costs are certain.</strong> You can't predict the market's future, but the fees, taxes, and trading frictions extracted from your account are written into contracts. Compounding cuts both ways: it amplifies returns, and it amplifies costs. <strong>A 1% annual fee will eat roughly 26% of your final wealth over 30 years.</strong> That's not intuition—it's math. Bogle called this the <em>Cost Matters Hypothesis</em>—more robust, more testable, and more practical than the Efficient Market Hypothesis.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Bogle's 2005 paper <em>The Relentless Rules of Humble Arithmetic</em> (Financial Analysts Journal, Nov/Dec 2005) systematically introduces CMH; <em>The Little Book of Common Sense Investing</em> (2007/2017), Chapters 4—5, lays out the cost compounding effect in plain arithmetic.</p>
+    <div class="quote">"In investing, you get what you don't pay for. The miracle of compounding returns is overwhelmed by the tyranny of compounding costs."
+    <span class="cite">— John C. Bogle, The Little Book of Common Sense Investing (2007)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Bogle's arithmetic, simplified but accurate. Assume 7% nominal market return over 30 years. ① Index fund at 0.05%: net 6.95%, $10,000 → $74,500. ② Active fund at 1% (excluding trading costs): net 6%, $10,000 → $57,400. ③ Including turnover + tax drag of ~2% total: net 5%, $10,000 → $43,200. <strong>"1% sounds tiny"—until you compound it for 30 years: 23% less wealth vs. 0.05%.</strong> Bogle called this "<strong>the relentless rules of humble arithmetic</strong>." Costs are certain because they're in the contract; they're decisive because they are <strong>the only variable repeatedly shown to predict future performance beyond efficient-market assumptions</strong>. Morningstar studies (notably Russel Kinnel 2010, "How Expense Ratios and Star Ratings Predict Success") show <strong>expense ratios predict future fund performance better than Morningstar's star ratings</strong>. Low cost doesn't guarantee outperformance, but high cost nearly guarantees underperformance.</p>
+  </div>
+
+  <div class="viz">
+    <div class="caption">— The tyranny of compounding · $10,000 over 30 years · 7% nominal —</div>
+    <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+      <line x1="60" y1="240" x2="570" y2="240" stroke="#7a5c1f" stroke-width="1.5"/>
+      <line x1="60" y1="40" x2="60" y2="240" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="56" y="44" font-size="10" fill="#7a5c1f" text-anchor="end">$80K</text>
+      <text x="56" y="100" font-size="10" fill="#7a5c1f" text-anchor="end">$60K</text>
+      <text x="56" y="156" font-size="10" fill="#7a5c1f" text-anchor="end">$40K</text>
+      <text x="56" y="212" font-size="10" fill="#7a5c1f" text-anchor="end">$20K</text>
+      <text x="56" y="244" font-size="10" fill="#7a5c1f" text-anchor="end">$10K</text>
+      <path d="M 80 220 Q 200 200 320 140 T 540 50" stroke="#7a5c1f" stroke-width="2.5" fill="none"/>
+      <text x="540" y="42" font-size="10" fill="#7a5c1f" font-weight="700" text-anchor="end">$74.5K · 0.05% fee</text>
+      <path d="M 80 220 Q 200 205 320 158 T 540 85" stroke="#b8893a" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+      <text x="540" y="78" font-size="10" fill="#b8893a" font-weight="700" text-anchor="end">$57.4K · 1% fee</text>
+      <path d="M 80 220 Q 200 210 320 175 T 540 125" stroke="#8b7150" stroke-width="2.5" fill="none" stroke-dasharray="2,3"/>
+      <text x="540" y="118" font-size="10" fill="#8b7150" font-weight="700" text-anchor="end">$43.2K · 2% all-in</text>
+      <rect x="475" y="138" width="80" height="35" fill="#faf0d8" stroke="#b8893a" stroke-width="1" opacity="0.85"/>
+      <text x="515" y="153" font-size="9" fill="#7a5c1f" text-anchor="middle" font-weight="600">Gap = $31K</text>
+      <text x="515" y="166" font-size="9" fill="#5a4418" text-anchor="middle">≈ 42% of</text>
+      <text x="515" y="178" font-size="9" fill="#5a4418" text-anchor="middle">final wealth</text>
+      <text x="80" y="262" font-size="10" fill="#7a5c1f" text-anchor="middle">Year 0</text>
+      <text x="320" y="262" font-size="10" fill="#7a5c1f" text-anchor="middle">Year 15</text>
+      <text x="540" y="262" font-size="10" fill="#7a5c1f" text-anchor="middle">Year 30</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>Hidden 401(k) costs</strong>: The U.S. Department of Labor began requiring full fee disclosure on 401(k) plans in 2012. Pre-disclosure surveys showed employees estimated their fees at 0.5%; actual median was 1.4% (including record-keeping, 12b-1, advisor fees). For a 40-year-old saver, the gap means <strong>~25% less retirement wealth at age 70</strong>. This is the "silent tyranny of compounding"—you don't see it on your monthly statement, but it's working every day. <strong>Vanguard's own track record</strong>: Vanguard Total Stock Market Index (VTSAX) expense ratio fell from 0.20% in 1992 to 0.03% in 2024—not a marketing tactic but the structural consequence of "mutual ownership." <strong>Counter-example: hedge fund "2 and 20"</strong>—2% management + 20% performance fees. Simon Lack's <em>The Hedge Fund Mirage</em> (Wiley, 2012) estimates the entire hedge fund industry generated ~$9B in alpha from 1998—2010 while collecting ~$440B in fees: <strong>investors got 2%, managers got 98%</strong>. Even in a high-alpha era, fee structure inverted the outcome. <strong>2023 SVB collapse and bond fund costs</strong>: in 2022's rate-hike cycle many bond funds delivered −10% to −15%, but management fees of 0.5—1% kept being charged. "Costs don't take vacations when markets do."</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Counter-Examples</div>
+    <p>Low cost isn't a silver bullet. ① <strong>"Cheap garbage is still garbage"</strong>—a 0.05% expense ratio on a wrong risk (leveraged ETF, single-sector, emerging-market debt) can still wreck you. Low cost is necessary, not sufficient. ② <strong>Costs are more than expense ratios</strong>—trading friction, tax drag (especially in U.S. taxable accounts), tax-loss harvesting opportunity, rebalancing slippage all count. A "low-fee but high-turnover" active fund can be more expensive than a "higher-fee, low-turnover" one. ③ <strong>Some high fees are earned</strong>—a small set of rare capabilities (top-tier PE, deep macro hedge) have historically produced positive net alpha, but (a) entry barriers are high, (b) persistence is weak (see SPIVA Persistence Scorecard), and (c) retail investors typically can't access them. <strong>Bogle didn't oppose all active management; he opposed "the impossibility for most people of identifying which is truly scarce, or of accessing it at reasonable cost."</strong> ④ <strong>Extreme low cost has its own hidden costs</strong>—index methodology, rebalancing dates, tracking error are all "second-order" costs. But compared to 1%+ explicit management fees, they are rounding error.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Can I write out the <strong>full cost</strong> of each holding: management fee + 12b-1 + sales load + turnover-driven trading + tax drag in taxable accounts?</li>
+      <li>Have I run "1% fee × 30 years compounded" against my own savings? If not, do it—best 10 minutes you'll spend.</li>
+      <li>The high fees I pay—are they for "truly scarce capability" or for "distribution channel kickbacks"? The former is rare, the latter dominates.</li>
+      <li>What is the actual all-in expense ratio of my retirement account (401(k)/IRA/pension)? Look at the annual report, not what an advisor tells you.</li>
+      <li>Is "low cost" leading me to take risk I shouldn't (e.g. leveraged ETFs)? Low cost is <strong>necessary, not sufficient</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>You can't control returns. You can control costs. Start with the part you control.</strong>"&nbsp;&nbsp;Reflect: A real exercise—estimate your current portfolio's all-in annual cost. Multiply by 30 years. Does the number feel comfortable or shocking? That number could have been your family's wealth.</div>
+  </div>
+</div>
+
+<!-- Card 3: Arithmetic of Active Management -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>The Arithmetic of Active Management: Why Most Must Lose<span class="en">Sharpe's Identity</span></h2>
+    <span class="tag">Mathematical constraint</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">In 1991, William F. Sharpe proved a mathematical inequality on a single page: <strong>properly measured, the average actively managed dollar must underperform the average passively managed dollar, net of costs</strong>. This is not an empirical observation—it is an identity that follows from how "the market" is defined. It holds <strong>regardless of whether markets are efficient</strong>. Bogle quoted it constantly and called it "irrefutable"—because it isn't an opinion; it is a logical consequence of definition.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>William F. Sharpe, <em>The Arithmetic of Active Management</em>, Financial Analysts Journal, Jan/Feb 1991, pp. 7—9—one of the most-cited single-page papers in finance. Adjacent literature: Charles D. Ellis, <em>The Loser's Game</em>, FAJ, July/Aug 1975, first articulated that in a market crowded with professionals, winning comes from "making fewer errors" rather than "scoring more." The SPIVA Scorecard (S&P Dow Jones Indices, semi-annual since 2002) provides ongoing empirical verification.</p>
+    <div class="quote">"Properly measured, the average actively managed dollar must underperform the average passively managed dollar, net of costs. Empirical analyses that appear to refute this principle are guilty of improper measurement."
+    <span class="cite">— William F. Sharpe, "The Arithmetic of Active Management" (1991)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Sharpe's proof is three lines. ① Total market return = the asset-weighted average of all holders. ② Passive holders own the market, pay near-zero fees, and earn ≈ market − tiny fee. ③ Active holders are the remainder; their aggregate weighted return before fees ≈ market, and after fees must trail passive. <strong>This doesn't say "no active manager beats the market"—50% of active managers will beat the active median, but because the median is negative after fees, the share beating passive must be less than 50%.</strong> SPIVA U.S. year-end 2023: ① 1 year — 60% of large-cap active underperform S&P 500; ② 5 years — 87%; ③ 10 years — 92%; ④ 15 years — 93%. <strong>The longer the horizon, the closer the failure rate approaches 100%.</strong> <strong>A sharper finding</strong>: SPIVA Persistence Scorecard shows that of active funds in the top quartile over the previous 5 years, only ~5—8% remain in the top quartile in the next 5 years—<strong>below the 25% random-chance baseline</strong>. That means many "past winners" were luck, not skill, and the next cycle pulls them back to the mean.</p>
+  </div>
+
+  <div class="cmp-table">
+    <div class="cmp-row head">
+      <div class="cmp-cell">Horizon</div>
+      <div class="cmp-cell">% large-cap active underperforming S&P 500</div>
+      <div class="cmp-cell">Interpretation</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">1 year</div>
+      <div class="cmp-cell mid">~55—65% (varies by year)</div>
+      <div class="cmp-cell end">Luck dominates short horizons</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">3 years</div>
+      <div class="cmp-cell mid">~75—80%</div>
+      <div class="cmp-cell end">Luck fades, costs surface</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">5 years</div>
+      <div class="cmp-cell mid">~85—87%</div>
+      <div class="cmp-cell end">Skill/luck begin to separate</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">10 years</div>
+      <div class="cmp-cell mid">~90—92%</div>
+      <div class="cmp-cell end">Compounded costs dominate</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">15 years</div>
+      <div class="cmp-cell mid">~93%+</div>
+      <div class="cmp-cell end">Near Sharpe's arithmetic limit</div>
+    </div>
+    <div class="cmp-row">
+      <div class="cmp-cell first">Top-quartile persistence</div>
+      <div class="cmp-cell mid">Stay top 25% over next 5y: ~5—8%</div>
+      <div class="cmp-cell end">Below random (25%) — mean reversion</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>Peter Lynch and Fidelity Magellan (1977—1990)</strong>: Lynch annualized 29.2% during his tenure, vs. the S&P 500's 15.8%—the legend of active management. <strong>The less-told fact</strong>: the dollar-weighted return of Magellan's actual investors was far below 29.2%. Most subscribed after the fund had already shone (buying at highs) and redeemed at the 1987 crash, the 1990 recession, and Lynch's retirement (selling at lows). Fidelity's own internal study estimated the median investor's actual return at ~7%—<strong>"fund return" vs. "investor return" diverged by 20+ percentage points in the same fund</strong>. Lynch was an outlier among managers, but his investors as a group still failed to fully capture his alpha. <strong>Bill Miller and Legg Mason Value Trust (1991—2005)</strong>: 15 consecutive years beating the S&P 500—the only such streak in finance history. <strong>Then</strong>: from 2006 to 2011, Value Trust cumulatively underperformed the S&P 500 by ~60%; in 2008 alone, Miller's heavy bets on financials and housing produced a 39% underperformance. A 15-year legend was undone in 6 years. <strong>The central warning of Sharpe's arithmetic is not "active can't produce alpha"—it's ① durable alpha is extremely rare, ② identifying it in advance is near-impossible, and ③ even if you do, investor timing destroys most of it</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Counter-Examples</div>
+    <p>Sharpe's arithmetic isn't "all active managers are doomed." It has boundaries. ① <strong>"The market" must be consistently defined</strong>—if "market" = U.S. large-cap, then U.S. large-cap active managers as a whole must trail. But across asset classes, cross-market, in genuinely inefficient pockets (some EM debt, complex securities), persistent active alpha is more plausible. ② <strong>Small AUM has structural advantage</strong>—Buffett at his $100K portfolio in the 1950s annualized 50%+. He has said many times: "If I were managing $10M I could guarantee 50%/year; $1B drops it to 25%; $100B and I might trail the S&P." Renaissance's Medallion strictly caps AUM near $10B and returns capital to employees—because alpha doesn't scale. ③ <strong>If passive ever reaches an extreme, active becomes profitable again</strong>—a market that's 99% passive loses price discovery, raising the marginal return to active. Self-correcting, but we're nowhere near that point. ④ <strong>The arithmetic applies to the aggregate, not the individual</strong>—you could be that 7%. The problem is you don't know in advance, and the fees you pay to bet "I might be a winner" are certain. <strong>Bogle's prescription was simple</strong>: "If you firmly believe you are the 7%, take a small position. But your core retirement money should be protected by arithmetic."</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>My belief that "I can pick a long-term outperforming active fund"—what evidence is it based on? Hindsight-biased sample, or an ex-ante repeatable method?</li>
+      <li>When I evaluate an active fund, am I looking at "fund return" or "investor dollar-weighted return"? The latter is what I'll actually get.</li>
+      <li>Have my held active funds actually beaten their benchmarks after fees over the past 10 years? Pull real numbers, don't go by impression.</li>
+      <li>"Beat over 5 years" predicts the next 5 years at ~5—8% probability per SPIVA—below random. Am I using an expired signal to decide?</li>
+      <li>If I must hold active, am I confining it to a real circle of competence (e.g. a specific sector I genuinely know), not "finding a star manager"?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>Active managers as a group must trail—this isn't opinion, it's arithmetic. Whether you can be an exception is a separate question.</strong>"&nbsp;&nbsp;Reflect: List every active fund / product you've paid fees on over the last 5 years. After all costs, what's the cumulative gap to the relevant passive benchmark? That number is the tuition you paid for "I might be the exception."</div>
+  </div>
+</div>
+
+<!-- Card 4: Reversion to the Mean -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Reversion to the Mean: The Iron Rule of Markets<span class="en">Long-Term Gravity</span></h2>
+    <span class="tag">Long-term gravity</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">Bogle's "<strong>iron rule of the financial markets</strong>": <strong>extreme performance—of any asset, sector, style, fund, or region—reverts toward its long-term mean</strong> (Reversion to the Mean, RTM). Chasing past winners is statistically negative-expectation, because you're usually buying at the point of maximum distance from the mean—and the next stretch is the return trip. Bogle paired RTM with the "tyranny of costs" as the two most operationally consequential of his principles. It means: <strong>"diversify, hold long, don't chase heat"</strong> isn't mediocrity—it's accepting the market's internal gravity.</div>
+  </div>
+
+  <div class="section"><div class="label">Primary Source</div>
+    <p>Bogle treats RTM systematically in <em>Common Sense on Mutual Funds</em> (1999), Ch. 1 "On Investment Strategy" and in <em>The Little Book of Common Sense Investing</em> (2007), Chs. 10—11. Roots trace to Francis Galton's 1886 study on the heritability of height, through Fama–French's 1992—93 work on value/size factors, and Robert Shiller's <em>Irrational Exuberance</em> (2000) for CAPE (10-year cyclically adjusted P/E) mean reversion.</p>
+    <div class="quote">"Reversion to the mean is the iron rule of the financial markets. Hot funds get cold; cold funds get hot. Value beats growth, then growth beats value, then value beats growth. The pendulum swings, and it always swings back."
+    <span class="cite">— John C. Bogle, various speeches & The Little Book of Common Sense Investing (2007)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>RTM arises from <strong>capital flow + valuation constraint</strong>: ① when an asset / style outperforms for years, money pours in, valuations rise, and the "starting point" for future return is higher → expected return compresses; ② when an asset is shunned, money exits, valuations compress, and the future "starting point" is lower → expected return rises. This is independent of any specific fundamental—it is <strong>an endogenous feedback in the price mechanism itself</strong>. Bogle warned of two specific traps. ① <strong>"Chasing the past 3—5 years' winners"</strong>—funds, styles, regions, sectors. Morningstar flow data repeatedly shows: money piles into 5-star funds, but median 5-star future-5y performance is not meaningfully better than 3-star. ② <strong>"Style drift"</strong>—an active manager secretly tilts toward the hot style when their own style is cold, then gets hit twice on the reversal. RTM doesn't predict the timing (could be 3, 10, or 20 years), but it <strong>predicts the direction: extremes don't persist</strong>. This is the same phenomenon as Howard Marks's "pendulum" (Week 3) under a different lens—Marks emphasizes psychology, Bogle emphasizes capital-flow and valuation arithmetic.</p>
+  </div>
+
+  <div class="viz">
+    <div class="caption">— Reversion to the mean · short-term deviation, long-term gravity —</div>
+    <svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+      <line x1="50" y1="200" x2="570" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <line x1="50" y1="40" x2="50" y2="200" stroke="#7a5c1f" stroke-width="1.5"/>
+      <text x="46" y="44" font-size="10" fill="#7a5c1f" text-anchor="end">+50%</text>
+      <text x="46" y="124" font-size="10" fill="#7a5c1f" text-anchor="end">0</text>
+      <text x="46" y="200" font-size="10" fill="#7a5c1f" text-anchor="end">−50%</text>
+      <line x1="50" y1="124" x2="570" y2="124" stroke="#b8893a" stroke-width="1" stroke-dasharray="4,3"/>
+      <text x="575" y="128" font-size="9" fill="#b8893a" font-style="italic">Long-term mean</text>
+      <path d="M 60 124 L 100 80 L 140 60 L 180 90 L 220 160 L 260 180 L 300 130 L 340 70 L 380 50 L 420 100 L 460 170 L 500 180 L 540 130" stroke="#7a5c1f" stroke-width="2.5" fill="none"/>
+      <circle cx="140" cy="60" r="4" fill="#b8893a"/>
+      <text x="140" y="48" font-size="9" fill="#7a5c1f" text-anchor="middle" font-weight="600">"Hot"</text>
+      <text x="140" y="38" font-size="8" fill="#8b7150" text-anchor="middle" font-style="italic">money in</text>
+      <circle cx="260" cy="180" r="4" fill="#b8893a"/>
+      <text x="260" y="220" font-size="9" fill="#7a5c1f" text-anchor="middle" font-weight="600">"Cold"</text>
+      <text x="260" y="232" font-size="8" fill="#8b7150" text-anchor="middle" font-style="italic">cheap valuations</text>
+      <circle cx="380" cy="50" r="4" fill="#b8893a"/>
+      <text x="380" y="38" font-size="9" fill="#7a5c1f" text-anchor="middle" font-weight="600">Next "hot"</text>
+      <circle cx="500" cy="180" r="4" fill="#b8893a"/>
+      <text x="500" y="220" font-size="9" fill="#7a5c1f" text-anchor="middle" font-weight="600">Next "cold"</text>
+      <path d="M 140 75 Q 200 120 260 165" stroke="#8b7150" stroke-width="1.2" fill="none" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+      <path d="M 380 65 Q 440 120 500 165" stroke="#8b7150" stroke-width="1.2" fill="none" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b7150"/>
+        </marker>
+      </defs>
+      <text x="60" y="252" font-size="10" fill="#7a5c1f">Chasing "hot" = buying high</text>
+      <text x="320" y="252" font-size="10" fill="#7a5c1f">RTM pulls back to mean</text>
+      <text x="500" y="252" font-size="10" fill="#7a5c1f" text-anchor="middle">Pendulum continues</text>
+    </svg>
+  </div>
+
+  <div class="section"><div class="label">Case Studies</div>
+    <p><strong>Tech / value: repeated reversals</strong>: ① 1995—1999, tech beat value by ~18 pp/year → 2000—2007, value beat tech by ~9 pp/year. ② 2010—2020, tech beat value by ~8 pp/year → 2022, tech dropped 33% (NASDAQ-100) in one year while value fell −8%. ③ 2023—2024, tech rebounded sharply on AI narratives. <strong>RTM doesn't predict timing, but every "this time is different" eventually meets reversion.</strong> <strong>Japan</strong>: in December 1989, the Nikkei 225 topped at 38,957, accounting for 45% of global market cap with a P/E around 70; by 2003 it had fallen to 7,604 (−81%). <strong>In February 2024, the Nikkei first reclaimed its 1989 high—34 years later.</strong> RTM's timescale can be very long, but it does arrive. <strong>Emerging markets</strong>: 2003—2010 outperformed U.S. by ~10 pp/year → 2011—2020 underperformed by ~7 pp/year. <strong>The "BRIC" story</strong>: 2003—2008 BRIC ETFs rose ~400%; 2008—2015 down ~40% cumulatively. Most retail buying happened at the 2007—2008 peak. <strong>The Japan lesson</strong>: RTM doesn't guarantee <em>your</em> home market reverts. It guarantees a <strong>broadly diversified global index</strong> will, with much higher probability. Bogle's later position included this: "Home bias is more dangerous than people think; the global index is closer to the true market portfolio."</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Counter-Examples</div>
+    <p>RTM is not a forecasting tool. It has real limits. ① <strong>It doesn't predict timing</strong>—Japan took 34 years to return to 1989's high. "The long run" is not necessarily <em>your</em> long run. Keynes: <strong>"In the long run we are all dead."</strong> Direction is predictable, timing is not. ② <strong>Individual stocks need not revert</strong>—RTM is most reliable for diversified portfolios / styles / sectors. A specific company can decline permanently (Kodak, Yahoo, Sears). That's why Bogle insisted on indices: RTM works at the index level, not the single-stock level. ③ <strong>The "mean" itself may drift</strong>—U.S. equities real return averaged ~6.5% over a century, but that's history. The next 30 years' mean could shift due to demographics, productivity, or geopolitics. Bogle's later forecast for 2020s nominal U.S. equity returns was 4—5%, notably below history. ④ <strong>RTM offers no guidance once valuations have already met the mean</strong>—it tells you "extremes revert," not "in normal times the market goes here." ⑤ <strong>Contrarian trap</strong>—"cheap can stay cheap, even get cheaper." The cold can take many years to revert. Without a risk budget and patience, you'll be shaken out at the worst moment.</p>
+  </div>
+
+  <div class="section"><div class="label">Decision Checklist</div>
+    <ul class="checklist">
+      <li>Am I adding to the assets / funds / sectors that "performed best the past 3—5 years"? SPIVA and Morningstar data suggest this is negative expectation.</li>
+      <li>Where is my portfolio most concentrated? How far is that class from its long-term mean?</li>
+      <li>Do I have a rebalancing rule (e.g. annual, or ±5% drift triggers rebalance)? Rules curb the chase instinct.</li>
+      <li>When something "looks cheap," how long can I wait? Japan's case is 30+ years—does my patience / capital horizon match?</li>
+      <li>Is my "mean" assumption based on 100 years or 10 years? The former is more robust; the latter treats peak conditions as normal.</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Weekly Reflection</div>
+    <div class="reflect">Essence: "<strong>The pendulum never stays at its peak. Extremes are the market's breath; reversion is its gravity.</strong>"&nbsp;&nbsp;Reflect: Look at the best-performing category (sector / region / style) in your portfolio over the past 5 years. Ask: did I buy it for fundamental reasons, or because "it has been winning"? If the latter, you may be sitting on the part of the curve RTM is about to pull back.</div>
+  </div>
+</div>
+
+<!-- Deep Resources -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">FURTHER READING</div>
+    <h2>Further Reading<span class="en">Primary Sources & Studies</span></h2>
+    <span class="tag">Primary sources</span>
+  </div>
+  <ul class="resources">
+    <li><strong>John C. Bogle, <em>The Little Book of Common Sense Investing</em></strong> (Wiley, 2007; 10th anniversary edition 2017)—200 pages distilling Bogle's life's work; the best companion read to this week's four principles.</li>
+    <li><strong>John C. Bogle, <em>Common Sense on Mutual Funds</em></strong> (Wiley, 1999; 10th anniversary edition 2009)—the full treatment, with complete cost and performance data.</li>
+    <li><strong>John C. Bogle, <em>Enough: True Measures of Money, Business, and Life</em></strong> (Wiley, 2008)—investing ethics and "what is enough," moving beyond products to the relationship between money and meaning.</li>
+    <li><strong>John C. Bogle, <em>Stay the Course: The Story of Vanguard and the Index Revolution</em></strong> (Wiley, 2018)—Bogle's own account of Vanguard's history, published shortly before his death.</li>
+    <li><strong>William F. Sharpe, <em>The Arithmetic of Active Management</em></strong> (FAJ, Jan/Feb 1991, pp. 7—9)—one of finance's most important "one-page papers," freely available on Sharpe's Stanford page.</li>
+    <li><strong>Charles D. Ellis, <em>The Loser's Game</em></strong> (FAJ, July/Aug 1975), and the expanded book <em>Winning the Loser's Game</em> (McGraw-Hill, 8th ed. 2021)—the foundational argument for why active management is a "loser's game."</li>
+    <li><strong>SPIVA Scorecard</strong> (spglobal.com/spdji/en/research-insights/spiva)—S&P Dow Jones' semi-annual global empirical report on active vs. passive since 2002, the most authoritative long-term data source.</li>
+    <li><strong>Hendrik Bessembinder, <em>Do Stocks Outperform Treasury Bills?</em></strong> (Journal of Financial Economics, 2018)—the empirical proof that all net U.S. equity wealth creation from 1926—2016 came from just 4% of companies, the key foundation for "why hold the entire market."</li>
+  </ul>
+</div>
+
+<!-- Deep Questions -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">DEEP QUESTIONS</div>
+    <h2>Open Questions<span class="en">For the Long Investor</span></h2>
+    <span class="tag">Reflection</span>
+  </div>
+  <div class="deepq">
+    <details><summary>1. If "everyone buys the index," what happens? Does passive have a self-destruction limit?</summary>
+      <div>Bogle was asked this constantly. The answer has two layers. ① <strong>The theoretical limit</strong>: if 100% passive, the market loses price discovery, prices detach from fundamentals, arbitrage profits expand → active alpha rises → capital flows back to active → equilibrium restores. The market is a <strong>self-regulating system</strong>; it doesn't collapse unidirectionally. ② <strong>How far are we from the limit?</strong> In 2024 passive AUM in U.S. equity is ~55% (incl. ETF + index mutual funds), but <strong>active still drives 80%+ of trading volume</strong>—because passive holders rarely trade. Price discovery is set by marginal traders, not by holders. <strong>Cliff Asness (AQR), 2023</strong>: "Price discovery is still done by ~20% active traders, and that share won't vanish in any foreseeable future." The real risk of indexing isn't "the death of price discovery"—it's <strong>concentration risk</strong>: the top-10 weights in cap-weighted indices have hit historic highs, meaning the index itself is a concentrated bet. Bogle's later answer was to <strong>broaden the index (Total Stock Market vs. S&P 500) and diversify internationally</strong>.</div>
+    </details>
+    <details><summary>2. In the AI era, should passive still be the default? Is AI creating new alpha opportunities?</summary>
+      <div>Two layers. ① <strong>Does AI let "ordinary people" pick stocks better?</strong> Probably not. AI democratizes information processing, but alpha comes from <strong>scarce cognitive differences</strong>. If everyone uses the same AI to analyze the same data, analytical edge collapses and alpha compresses. Similar story to the 1990s when Bloomberg terminals democratized information and accelerated active's decline. ② <strong>Does AI let professional players generate persistent alpha?</strong> Possibly, but for a tiny minority (Renaissance, Two Sigma class). That alpha is largely closed to retail and AUM-capped (alpha doesn't scale). <strong>Conclusion for individuals</strong>: AI doesn't change Bogle's arithmetic—active in aggregate must still trail. AI changes <strong>how cheaply and efficiently you can implement passive</strong>—auto-rebalance, tax optimization, risk monitoring. In the AI era, passive remains the default, but <strong>implementation can be smarter</strong>. Meanwhile, AI investments themselves (NVDA, AI software) have priced in many years of growth—exactly where Principle 4 (RTM) goes to work.</div>
+    </details>
+    <details><summary>3. If Bogle's arithmetic is true, why does active management still exist—and grow?</summary>
+      <div>Three structural reasons. ① <strong>Incentive structure</strong>—active is <em>sold</em>, not <em>bought</em>. Distribution channels (brokers, insurance agents, bank wealth advisors) earn trailing commissions on active funds, and little to none on index funds. So channels push active. ② <strong>Cognitive bias</strong>—investors overestimate their judgment (overconfidence) and like the feeling of "we are doing something." Buying an index feels "passive"; buying active feels "in control." ③ <strong>Path dependence and 401(k) defaults</strong>—many active fund choices were made decades ago. Retirement account inertia is strong. <strong>Bogle's persistent answer</strong>: "The active management industry exists not because it serves investors, but because it serves itself." That doesn't mean active managers are charlatans—many genuinely believe they will outperform—but <strong>individual sincerity doesn't change collective arithmetic</strong>. Industry growth ≠ product efficacy. This is the deep <strong>institutional incentive problem</strong> Bogle solved by structuring Vanguard as fundholder-owned.</div>
+    </details>
+    <details><summary>4. As someone with AI / technical background, do I have a "unique circle of competence" that can beat passive?</summary>
+      <div>Honest answer: maybe—but test yourself rigorously. <strong>A real circle-of-competence edge</strong> needs three things: ① <em>Information edge</em>—you see facts before others (rare; most industry news is priced in within 24 hours). ② <em>Interpretation edge</em>—you read known information more accurately than analysts (in tech/AI you plausibly outperform traditional sell-side here). ③ <em>Behavioral edge</em>—you hold when others panic and don't chase when others rally. ① and ② may hold; ③ is usually the real bottleneck. <strong>Practical advice</strong>: ① cap your "competence sleeve" to 10—20% of total assets; keep the 80%+ core indexed. ② Choose companies you understand deeply (not "the AI sector"), and write down your buy thesis and failure conditions. ③ Track for 5 years—if after 5 years your competence sleeve has beaten the core after costs and the time you spent, you have a real edge. If not, honestly reallocate to index. <strong>Bogle was never an extremist</strong>—he admitted ~7% of investors can outperform persistently—but insisted: "Your core should be protected by arithmetic, not optimism."</div>
+    </details>
+    <details><summary>5. How should RTM concretely inform long-term allocation? Mechanical or contrarian rebalancing?</summary>
+      <div>This is the subtle disagreement between Bogle and David Swensen (Yale Endowment). Bogle advocates <strong>mechanical rebalancing</strong>: annually (or on ±5% drift threshold) pull weights back to target. This implicitly uses <strong>a weak form of RTM</strong>—sell what's up, buy what's down, without judging "which deserves more." Swensen and some institutions go further with <strong>tactical contrarian tilts</strong>: when an asset is at an extreme deviation from its long-term mean (e.g. CAPE at the 5th percentile of history), under- or over-weight accordingly. <strong>Trade-offs</strong>: mechanical is easy to execute, low psychological cost, requires no forecasting—but forgoes the "extra alpha" RTM offers. Contrarian tilts are theoretically better, but require ① true long-run data to define "extreme," ② the psychology to bear "I cut and it kept rising for 3 more years"—most can't. <strong>Practical recommendation for individuals</strong>: default to mechanical rebalancing (annual or threshold). Only when <strong>you have strong historical evidence of "extreme"</strong> and <strong>real patience for another 5—10 years of dislocation</strong>, consider modest contrarian tilts (e.g. add an extra 1—2% toward the cold asset during rebalance). RTM is a long-term direction, not a short-term signal.</div>
+    </details>
+  </div>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Weekly</a></nav>
+<footer>BigCat · Investing Weekly · Week 07 · 2026</footer>
+
+</div></body></html>
