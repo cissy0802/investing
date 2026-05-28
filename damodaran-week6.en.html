@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Damodaran on Valuation — Week 6</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a;margin-top:10px}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.essence{background:#fdf6e3;padding:12px 16px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:700;border-left:3px solid #7a5c1f;margin-bottom:10px}
+.essence::before{content:"❝ ";color:#b8893a}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.viz{margin:14px 0;background:#fdf9ef;border:1px solid #e8d8b0;border-radius:6px;padding:16px 14px}
+.viz .vt{font-size:0.74rem;color:#8b7150;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;text-align:center;font-weight:600}
+.viz table{width:100%;border-collapse:collapse;font-size:0.9rem}
+.viz th,.viz td{padding:8px 4px;text-align:center;border:1px solid #ecdfbe}
+.viz th{color:#7a5c1f;font-weight:700;background:#f4e9cd}
+.viz .axis{font-size:0.74rem;color:#8b7150}
+.viz td{font-weight:600;color:#2a2418}
+.viz td.base{outline:2px solid #7a5c1f;font-weight:800;color:#5a4418}
+.viz .cap{font-size:0.82rem;color:#8b7150;margin-top:10px;font-style:italic;line-height:1.6}
+.deepq details{background:#fff;border:1px solid #e8d8b0;border-radius:6px;margin:10px 0;padding:14px 18px;box-shadow:0 1px 4px rgba(122,92,31,0.05)}
+.deepq summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.98rem;list-style:none;padding-right:24px;position:relative}
+.deepq summary::after{content:"▸";position:absolute;right:0;top:0;color:#b8893a;transition:transform 0.2s}
+.deepq details[open] summary::after{transform:rotate(90deg)}
+.deepq details[open] summary{border-bottom:1px dashed #d4b87a;padding-bottom:10px;margin-bottom:10px}
+.deepq div{font-size:0.92rem;color:#3a3220;line-height:1.7}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 06</div>
+  <h1>Investing Classics: Damodaran on Valuation<span class="accent">Valuation as a Discipline, Not a Prophecy</span></h1>
+  <div class="meta"><span>May 28, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Aswath Damodaran, the NYU Stern professor known as the "Dean of Valuation," contributed not a magic formula but a craft that can be tested. Value comes only from three things — cash flows, growth, and risk — and every number in a valuation should carry a story you can defend. This week: his four pillars — the power and pitfalls of DCF, the illusion of relative valuation, the bridge between stories and numbers, and what growth is actually worth.
+</div>
+
+<!-- Card 1: DCF -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>DCF — Power and Pitfalls<span class="en">Discounted Cash Flow</span></h2>
+    <span class="tag">Intrinsic Value</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">The value of an asset is the present value of the cash flows it generates over its remaining life, discounted at a rate that reflects its risk. There is no second definition.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Key Quote</div>
+    <div class="quote">"The value of an asset is the present value of the expected cash flows on that asset, discounted back at a rate that reflects the riskiness of these cash flows."
+    <span class="cite">— Aswath Damodaran, <em>Investment Valuation</em> (Wiley)</span>
+    <span class="cn">Value is the present value of expected cash flows, discounted at a rate that reflects their risk — the bedrock of all intrinsic valuation.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deep Reading</div>
+    <p>A DCF has only three real inputs — cash flows, growth, and risk (the discount rate). Its power is that it forces consistency: <strong>growth is not free</strong>; higher growth requires more reinvestment, and the two must be linked. Its limits lie not in the math but in the inputs. Damodaran stresses two iron rules: ① <strong>the perpetual growth rate cannot stay above the risk-free rate</strong> (≈ nominal GDP growth), or the firm eventually outgrows the whole economy; ② <strong>terminal value often makes up 60–80% of total value</strong>, meaning your assumptions about "ten years out" dominate today's conclusion. Faced with uncertainty, his stance is to confront it, not deny or freeze — "Don't hide from it. Don't go into denial."</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>A DCF is hypersensitive to its assumptions. Suppose a company is worth 100 per share at an 8% WACC and 2.5% perpetual growth. The table below shows how value swings when the discount rate and growth each move by just ±1% — exactly the trick in sell-side reports during the 2000 dot-com bubble: perpetual growth far above the economy plus minimal reinvestment, used to "compute" any price you like.</p>
+    <div class="viz">
+      <div class="vt">DCF Sensitivity · Intrinsic Value per Share (base = 100)</div>
+      <table>
+        <tr><th rowspan="2" class="axis">WACC ↓</th><th colspan="3" class="axis">Perpetual growth g →</th></tr>
+        <tr><th>2.0%</th><th>2.5%</th><th>3.0%</th></tr>
+        <tr><th>7%</th><td style="background:#d8b057">110</td><td style="background:#ca9c3f">122</td><td style="background:#bc8728">138</td></tr>
+        <tr><th>8%</th><td style="background:#ecdaa9">92</td><td class="base" style="background:#e4c77c">100</td><td style="background:#d8b057">110</td></tr>
+        <tr><th>9%</th><td style="background:#f7efda">79</td><td style="background:#f2e6c6">85</td><td style="background:#ecdaa9">92</td></tr>
+      </table>
+      <div class="cap">Same company, WACC and perpetual growth each moved by just ±1%, and value swings from 79 to 138 (a range of nearly 75%). Terminal-value assumptions dominate everything — that is what makes DCF both powerful and dangerous.</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Where it breaks: ① cyclical resource/shipping firms at the top, extrapolating today's high cash flows → severe overvaluation; ② early-stage loss-makers with no cash-flow baseline to extrapolate; ③ stuffing inconsistent assumptions (high growth + low reinvestment + high margins all at once) into the model → "precisely wrong."</p>
+    <ul class="checklist">
+      <li>Is my perpetual growth rate ≤ the risk-free rate?</li>
+      <li>Does my growth assumption come with matching reinvestment (growth isn't free)?</li>
+      <li>What share is terminal value? If over 75%, am I paying for "a fantasy ten years out"?</li>
+      <li>Move WACC ±1% and growth ±1% — how much does value swing? Can I live with that range?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">A DCF never fails because of the math — only because of the assumptions you feed it. Garbage in, garbage out.</div>
+    <div class="reflect">Pick a holding and estimate what fraction of its intrinsic value is terminal value. If it's over 70%, which year's world are you really betting on?</div>
+  </div>
+</div>
+
+<!-- Card 2: Relative Valuation -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>The Trap of Relative Valuation<span class="en">Multiples Are Prices, Not Value</span></h2>
+    <span class="tag">Pricing vs Value</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">P/E, P/S and other "multiples" are not value — they are standardized prices. Pricing off peer multiples implicitly assumes the market has priced the whole sector correctly.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Key Quote</div>
+    <div class="quote">"In relative valuation, you value an asset based on how similar assets are priced. Implicitly, you assume the market is right on average, but makes mistakes on individual stocks that get corrected over time."
+    <span class="cite">— Aswath Damodaran, "first principles" of relative valuation</span>
+    <span class="cn">Relative valuation prices an asset by how comparable assets trade — assuming the market is right on average and only errs on individual names, errors that eventually correct.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deep Reading</div>
+    <p>Damodaran splits valuation in two: intrinsic valuation (DCF) answers "what is this company worth?"; relative valuation answers "is it priced reasonably versus peers?" The latter is what 90% of Wall Street "valuation" really is. The trap: <strong>multiples import the market's collective error wholesale</strong>. When the whole sector is in a bubble, "cheaper than peers" offers no safety — you are merely the relatively cheap one inside the bubble. He distinguishes the investor (who cares about value) from the trader (who cares about price): relative valuation is fundamentally a pricing game, earning money from "price reverting to the multiple," not from value creation.</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>Cisco, March 2000: around $80 a share, a market cap of about <strong>$555 billion</strong> — briefly the world's most valuable company — at a P/E above 130. Analysts argued "relative to other networking-equipment stocks, Cisco is fairly valued" — but the whole sector was in a bubble. After the Nasdaq peaked, Cisco fell to roughly $8–13 by 2002 (<strong>down over 85%</strong>) and did not retouch its 2000 high until around 2024. Fundamentals didn't save it — Cisco remains a fine company to this day, yet it died of "cheap relative to peers."</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Relative valuation is not worthless — for early-stage or cyclical industries lacking reliable cash-flow forecasts, it is fast, comparable, and close to market reality. Where it breaks: ① the entire comp set is in a bubble or a panic together; ② the "comparables" actually differ wildly in growth, risk, and ROIC, making multiples incomparable; ③ a single multiple (e.g., P/E) ignores differences in capital structure and accounting.</p>
+    <ul class="checklist">
+      <li>Are my "comparables" truly comparable on growth, risk, and ROIC?</li>
+      <li>If the whole industry is overvalued, does "relatively cheap" still mean anything?</li>
+      <li>What growth and risk assumptions are baked into this multiple?</li>
+      <li>Am I paying for value (investor) or betting on reversion (trader)?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">A multiple is a standardized price, not value; "cheaper than peers" may just mean the cheapest one inside the bubble.</div>
+    <div class="reflect">The last time you bought because "the P/E is lower than peers" — was the whole industry's valuation level high, low, or did you simply not check?</div>
+  </div>
+</div>
+
+<!-- Card 3: Narrative and Numbers -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>Narrative and Numbers<span class="en">Stories and Numbers</span></h2>
+    <span class="tag">Narrative Discipline</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">A good valuation is a bridge between stories and numbers: every story must resolve into a number, and every number must carry a story you can articulate.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Key Quote</div>
+    <div class="quote">"A good valuation is a bridge between stories and numbers — every number needs a narrative and every narrative needs a number."
+    <span class="cite">— Aswath Damodaran, <em>Narrative and Numbers</em> (Columbia Business School Press, 2017)</span>
+    <span class="cn">Valuation is a bridge between stories and numbers — each number needs a narrative, and each narrative needs a number.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deep Reading</div>
+    <p>Pure number-crunchers (eyes only on the model) are captured by the illusion of precision; pure storytellers (vision only) fall in love with the narrative and invent reasons for impossible growth. Damodaran's discipline binds the two: the story sets TAM, market share, margins, and reinvestment, which become cash flows; in return, the common-sense bounds of the numbers (e.g., perpetual growth ≤ risk-free rate) pull the story back to earth. The greatest danger is not the absence of a story, but <strong>falling in love with your own story</strong> — explaining away every contradicting fact as "the market just doesn't get it yet."</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>Uber, June 2014. Damodaran published a DCF valuing it at about <strong>$5.9 billion</strong>, on the story that "the urban car-service market is ~$100B and Uber takes a 10% share." Private markets already valued it at $17B. Investor Bill Gurley countered: Uber isn't grabbing share of existing taxis — it is <strong>expanding the whole market</strong> (displacing car ownership, creating new trips), so the TAM is far larger. The outcome: Uber went public in May 2019 at roughly <strong>$82 billion</strong> ($45 IPO price). Damodaran later admitted publicly — the error was not his math but that he had <strong>told the story too small</strong>, and he revised the narrative upward repeatedly. It is the most honest lesson in "the story drives the number" — even the Dean of Valuation is no exception.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Where it breaks: ① when the story can't be falsified ("will change the world in ten years"), the numbers are mere decoration; ② using the story to defend assumptions reality has repeatedly disproven (the flip side of a value trap — the "growth trap"); ③ treating each upward revision as "I see further" rather than admitting the original assumption was wrong.</p>
+    <ul class="checklist">
+      <li>Can my valuation story be falsified? What real-world signal would overturn it?</li>
+      <li>Do TAM, market share, and margin each map to one line of the story?</li>
+      <li>Am I updating the story, or making excuses for a wrong one?</li>
+      <li>If the story shrinks by half, how much value is left?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">Numbers keep stories honest; stories keep numbers grounded. The costliest mistake is falling in love with your own narrative.</div>
+    <div class="reflect">Write the one-line "investment story" for a top holding, then mark the three key numbers it implies. Which number is least able to withstand scrutiny?</div>
+  </div>
+</div>
+
+<!-- Card 4: Valuing Growth -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>What Growth Is Actually Worth<span class="en">Valuing Growth vs Value</span></h2>
+    <span class="tag">Growth vs Value</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Growth is neither free nor inherently value-creating. Growth adds value only when the return on reinvested capital (ROIC) exceeds the cost of capital; otherwise, the faster it grows, the faster it destroys.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Key Quote</div>
+    <div class="quote">"Growth is always a component in the calculation of value, constituting a variable whose importance can range from negligible to enormous and whose impact can be negative as well as positive."
+    <span class="cite">— Warren Buffett, Berkshire Hathaway 1992 Letter</span>
+    <span class="cn">Growth is always a variable in the value calculation — its importance ranging from negligible to enormous, its impact positive or negative. Damodaran's formula: expected growth = reinvestment rate × ROIC — growth must be earned through reinvestment.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deep Reading</div>
+    <p>"Value vs growth stock" is a false dichotomy to both Damodaran and Buffett — growth is simply a variable inside the value formula. The question is not "how fast is growth?" but "at what cost is it bought?" The formula is simple: to get growth of g, you must invest <strong>g/ROIC</strong> of capital. When ROIC &gt; cost of capital, growth is positive; when ROIC &lt; cost of capital, growth is <strong>burning money and destroying value</strong> — the faster it grows, the more it destroys. That is why some companies become worth less the more they "grow." As Buffett said in 1992, value and growth are "joined at the hip."</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>WeWork. In January 2019, after a SoftBank injection, it was valued at about <strong>$47 billion</strong>, with a dazzling growth story (members, cities, signed square footage all expanding fast). But unit economics were negative — it swapped long-term leases for short-term memberships, ROIC deeply negative, growth merely accelerating the cash burn. After the September 2019 prospectus exposed the real losses, the IPO collapsed; it went public via SPAC in 2021 at about <strong>$9 billion</strong>; in November 2023 it filed for bankruptcy protection. The growth was real, the value was negative — <strong>when growth has no returns behind it, expansion itself is destruction.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Boundary: an early-stage company with temporarily negative ROIC isn't necessarily bad (Amazon suppressed early profits to reinvest, but unit economics and eventual ROIC were positive). The difference: will reinvestment eventually convert into returns above the cost of capital, or is it a hole that never fills? Misuse: ① using "growth" to excuse any high valuation; ② watching only revenue growth, not return on capital; ③ mistaking cash-burning growth for a moat.</p>
+    <ul class="checklist">
+      <li>How much capital does each extra dollar of revenue require?</li>
+      <li>Is its ROIC above the cost of capital? Is the trend improving or worsening?</li>
+      <li>Is this "value-creating growth" or "value-destroying growth"?</li>
+      <li>Am I paying for growth, or for growth that earns a return?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">Growth is neither value nor curse in itself — what decides the sign is whether ROIC or the cost of capital is higher.</div>
+    <div class="reflect">Your fastest-growing holding — is its ROIC above its cost of capital? If not, are you buying a compounding machine or a cash-burning one?</div>
+  </div>
+</div>
+
+<!-- Deep Questions -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">DEEP QUESTIONS</div>
+    <h2>Open Questions<span class="en">For the Long Investor</span></h2>
+    <span class="tag">Reflection</span>
+  </div>
+  <div class="deepq">
+    <details><summary>1. Can AI do the DCF for us?</summary>
+      <div>AI can run models in seconds, do sensitivity analysis, and flag inconsistent assumptions, all but automating the "numbers" side. But the bottleneck of a DCF was never computation — it is the <strong>story</strong>: how big the TAM is, how long the moat lasts, whether technology gets disrupted. That is judgment and game theory, not a data problem. Scarcity therefore shifts from "computing fast" to "<strong>telling a story that is accurate and falsifiable</strong>"; those with a technical background have an edge in judging which "disruptions" are real and which are just slideware.</div>
+    </details>
+    <details><summary>2. Does "perpetual growth ≤ risk-free rate" still hold in a zero/negative-rate world?</summary>
+      <div>The essence of the rule isn't "tied to the rate number" but "<strong>a company cannot outgrow the economy forever</strong>." At zero rates, nominal GDP growth is the better proxy for the ceiling. Negative rates really distort the discount-rate denominator, making it even more important to guard against terminal value being inflated to absurdity. So: the form of the rule can flex (use nominal GDP growth instead of the risk-free rate), the underlying logic does not.</div>
+    </details>
+    <details><summary>3. Isn't story-driven valuation just a sophisticated excuse for bubbles?</summary>
+      <div>The danger is real — "narrative" is often abused as an unfalsifiable defense. Damodaran's line of defense is the <strong>common-sense bounds of the numbers</strong>: however grand the story, it must resolve into cash flows, constrained by perpetual growth, reinvestment intensity, and margin ceilings. The difference is: can the story be falsified? Is it being constrained by the numbers in return? <strong>A story that can't be falsified is the language of a bubble.</strong></div>
+    </details>
+    <details><summary>4. Should an individual investor use intrinsic or relative valuation?</summary>
+      <div>They are complementary. Relative valuation is fast and close to the market — good for <strong>screening</strong> and a first-glance read; intrinsic valuation is slow and forces consistency — good for <strong>due diligence before a heavy position</strong>. Best practice: use relative valuation to find candidates, use DCF for the final call and margin of safety. The gap between the two conclusions is itself information — when it's large, ask: "Is the market seeing something I don't, or am I seeing something the market doesn't?"</div>
+    </details>
+    <details><summary>5. Damodaran is often "wrong" too (Uber too low, Tesla calls reversed). Why still learn from him?</summary>
+      <div>Because he <strong>publishes every assumption, can be checked, and updates when wrong</strong> — that is the spirit of valuation as a craft, not a prophecy. The goal of investing is not to be right every time, but to build a framework that self-corrects and can be reviewed. A framework that errs but is transparent beats, over the long run, an intuition that is always "right" but can never be examined.</div>
+    </details>
+  </div>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Weekly</a></nav>
+<footer>BigCat · Investing Weekly · Week 06 · 2026</footer>
+
+</div></body></html>
