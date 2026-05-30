@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Dalio's Principles & Cycles — Week 8</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.essence{background:#fdf6e3;padding:13px 18px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:600;border-left:3px solid #b8893a}
+.viz{background:#fdf6e3;border:1px solid #e8d8b0;border-radius:6px;padding:18px 20px;margin:14px 0}
+.viz-title{font-size:0.86rem;font-weight:700;color:#7a5c1f;margin-bottom:14px;text-align:center}
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.quad-cell{background:#fff;border:1px solid #d4b87a;border-radius:4px;padding:10px 12px;font-size:0.82rem;color:#3a3220}
+.quad-cell .qhead{display:block;color:#7a5c1f;font-weight:700;font-size:0.78rem;margin-bottom:4px;letter-spacing:0.5px}
+.quad-cell .qbody{display:block;color:#5a4418;font-size:0.82rem;line-height:1.5}
+.viz-note{font-size:0.82rem;color:#5a4418;margin-top:12px;padding-top:10px;border-top:1px dashed #d4b87a;font-style:italic}
+details{margin:12px 0;background:#fff;border-radius:5px;border-left:3px solid #b8893a;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+summary{padding:14px 18px;font-weight:600;color:#7a5c1f;cursor:pointer;font-size:0.96rem}
+details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
+.qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.quad{grid-template-columns:1fr}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Weekly · Week 08</div>
+  <h1>Investing Classics: Dalio's Principles & Cycles<span class="accent">Balance, Cycles, and the Machine</span></h1>
+  <div class="meta"><span>May 30, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Ray Dalio treats investing as a machine you can take apart: the economy is driven by debt cycles, a portfolio must survive every environment, decisions should be written down as reusable principles, and truth is found by being radically transparent about it. This week we return to <em>Principles</em> and <em>Big Debt Crises</em> to reread the four cornerstones.
+</div>
+
+<!-- Card 1: All Weather -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>The All Weather Portfolio<span class="en">全天候策略</span></h2>
+    <span class="tag">Risk parity</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">The future is unknowable, so the portfolio should not be wrecked by any single environment — balance by risk contribution, not by dollars.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"If I could find 15 to 20 good, uncorrelated return streams, I could dramatically reduce my risks without reducing my expected returns. … I called this the Holy Grail of investing."
+    <span class="cite">— Ray Dalio, <em>Principles: Life and Work</em> (2017)</span>
+    <span class="cn">Find 15–20 good, uncorrelated return streams and you slash risk without giving up expected return — Dalio's "Holy Grail."</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>All Weather is not about prediction but its refusal. Dalio splits the macro world along two independent axes — <strong>growth</strong> (above/below expectations) and <strong>inflation</strong> (above/below expectations) — producing four quadrants. Each asset class naturally wins in one quadrant, so spreading <strong>risk exposure</strong> (not dollar amount) evenly across the four ensures no single environment can blow up the portfolio. This is the source of Risk Parity: upgrading "60/40 of dollars" to "25/25/25/25 of risk."</p>
+    <div class="viz">
+      <div class="viz-title">The Four Quadrants: a winner pre-arranged in every environment</div>
+      <div class="quad">
+        <div class="quad-cell"><span class="qhead">Growth ↑　Inflation ↑</span><span class="qbody">Commodities, EM equity, gold</span></div>
+        <div class="quad-cell"><span class="qhead">Growth ↑　Inflation ↓</span><span class="qbody">Developed equities, corporate credit</span></div>
+        <div class="quad-cell"><span class="qhead">Growth ↓　Inflation ↑</span><span class="qbody">Inflation-linked bonds, commodities</span></div>
+        <div class="quad-cell"><span class="qhead">Growth ↓　Inflation ↓</span><span class="qbody">Nominal Treasuries, defensive equity</span></div>
+      </div>
+      <div class="viz-note">The point isn't which quadrant matters most — it's that <strong>risk contribution is equal</strong>, so no quadrant can wreck you.</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>2008 Global Financial Crisis: the S&amp;P 500 fell about <strong>37%</strong>, the classic 60/40 portfolio fell about 22%. Bridgewater's All Weather Fund was down only about <strong>-3.9%</strong> for the year, then rebounded about <strong>+18%</strong> in 2009. Not market timing — in the "growth crash + deflation" quadrant, the surge in long-duration Treasuries offset the collapse in stocks and commodities.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>All Weather is not invincible. ① In the <strong>growth ↓ + inflation ↑</strong> quadrant (typical of 2022 stagflation), stocks and bonds fall together and commodities cannot carry the load — risk-parity portfolios suffer; All Weather was down about <strong>9%</strong> that year. ② It <strong>implicitly uses leverage</strong> to scale low-risk assets, so rapid rate hikes squeeze multiple legs at once. ③ It optimizes for <strong>balanced risk</strong>, not <strong>maximum return</strong>, so it lags pure equities in long bull markets.</p>
+    <ul class="checklist">
+      <li>Is my portfolio allocated by "share of capital" or by "share of risk"?</li>
+      <li>In the worst of the four quadrants, how big a drawdown can my portfolio take?</li>
+      <li>Are my holdings truly uncorrelated, or only correlated-low in bull markets?</li>
+      <li>If I use risk parity, do I understand the leverage and rate sensitivity baked into it?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">True diversification means no single economic environment can hurt you too badly — not just holding more things that look different.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Write down what happens to your portfolio in the "growth crash + inflation spike" quadrant. If the answer is "I never thought about that," that is the gap.</div>
+  </div>
+</div>
+
+<!-- Card 2: Debt Cycles -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>The Debt Cycle Machine<span class="en">债务周期</span></h2>
+    <span class="tag">Mechanics, not magic</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">The economy is not random — it is a machine driven by credit expansion and deleveraging; short and long debt cycles stack to define where we truly stand.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"Credit is the most important part of the economy, and probably the least understood. … Without credit you can only spend what you earn."
+    <span class="cite">— Ray Dalio, <em>How the Economic Machine Works</em> (2013)</span>
+    <span class="cn">Credit is the economy's most important — and least understood — part. Without it, you can only spend what you earn.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Dalio layers cycles into three: ① a long upward <strong>productivity</strong> trend (1–2% per year); ② a <strong>short-term debt cycle</strong> (5–10 years, driven by central-bank rates, corresponding to ordinary recessions and recoveries); ③ a <strong>long-term debt cycle</strong> (about 50–75 years, where debt-to-income climbs to a limit that must eventually be deleveraged). Most investors only know the short cycle and ignore the long one — because it happens only once or twice in a lifetime. Seeing both is what separates "configuring in normal times" from "configuring at a turning point."</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>2008 and 1929 are the same machine running twice: private-sector debt-to-GDP hit its ceiling, credit broke, asset prices collapsed. The difference was the policy response. In <em>Big Debt Crises</em> (2018) Dalio identifies the "<strong>Beautiful Deleveraging</strong>" recipe — a balanced mix of austerity, debt restructuring, money printing, and wealth transfer. Bridgewater's Pure Alpha returned about <strong>+9.4%</strong> in 2008, precisely because the model spotted the systemic risk early.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Cycles are templates, not timetables. ① They describe <strong>shape</strong>, not <strong>timing</strong> — "near the top" can persist for years. ② The same template plays out differently across regimes (gold standard vs fiat, closed vs open economies); mechanical application misleads. ③ Dalio has been wrong: his 2010 call that "the new mediocre" could deepen into a worse deleveraging missed a decade-long bull market; his 2019 "Cash is trash" line was punished badly in 2020–2022.</p>
+    <ul class="checklist">
+      <li>Can I roughly state where we stand in both the <strong>short-term</strong> and <strong>long-term</strong> debt cycles?</li>
+      <li>For major economies, is debt-to-GDP, the rate path, and credit growth accelerating, stable, or reversing?</li>
+      <li>Am I using "cycle reading" as an allocation framework, or as short-term timing?</li>
+      <li>If my cycle call is wrong, can the portfolio still survive in other quadrants?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">Reading debt cycles is not for nailing tops and bottoms — it's to avoid stumbling at the same point in history twice.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Can you explain to a child, in three sentences, why financial crises happen? If you can't, the machine is still a black box to you.</div>
+  </div>
+</div>
+
+<!-- Card 3: Principles -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>Principles as Decision Systems<span class="en">原则作为决策系统</span></h2>
+    <span class="tag">Externalize the gut</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Write down the reasoning behind every decision, distill it into reusable principles, then harden it into algorithms — let today's you build a system the future you won't repeat the same mistakes in.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"Principles are fundamental truths that serve as the foundations for behavior that gets you what you want out of life. They can be applied again and again in similar situations to help you achieve your goals."
+    <span class="cite">— Ray Dalio, <em>Principles</em> (2017), Introduction</span>
+    <span class="cn">Principles are foundational truths about how reality works; they can be reused across similar situations to get you what you want.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>The essence of "principle-izing" is converting <strong>implicit judgment</strong> into <strong>explicit rules</strong>. Dalio's loop: ① at decision time, write down the logic you rely on; ② review the outcome, keep what worked, retire what didn't; ③ once a decision type recurs five or more times, <strong>encode it as an algorithm</strong>. Bridgewater's Pure Alpha and All Weather both grew this way, one written principle at a time. The same loop is fully transferable for an individual: decision journal → checklist → personal investing SOP. Its real value: it lets you hold a serious conversation, <strong>across time and emotion</strong>, with the you of a year ago.</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>In 1982 Dalio publicly predicted that Mexico's debt default would trigger a U.S. banking crisis and recession, and went short equities. The Fed cut rates, a major bull market began, and Bridgewater nearly went bust. That disaster became his <strong>origin of principle-izing</strong>: separate "I was right" from "I thought I was right," and start systematically recording the basis of every decision. Bridgewater's later "<strong>Issue Log</strong>," "<strong>Dot Collector</strong>," and "<strong>Coach</strong>" tools all descend from this lesson.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Principles are not dogma. ① Over-systematizing leads to giving up judgment and ossifying around outdated rules — at regime shifts (e.g. post-2008 zero rates), old principles can become the trap itself. ② A principle never <strong>challenged with counter-evidence</strong> turns into a tool of self-justification. ③ Bridgewater's principle culture has been nearly impossible to replicate outside, suggesting it depends on a particular cultural soil — not a universal solution.</p>
+    <ul class="checklist">
+      <li>Of major decisions in the past 12 months, are the reasons written down anywhere?</li>
+      <li>For each of my investing principles, have I noted "the conditions under which it fails"?</li>
+      <li>How often do I revisit the decision journal and actually <strong>revise</strong> principles?</li>
+      <li>When making a new decision, do I consult the principles first — or only use them afterward to explain?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">A principle that hasn't been written down, stress-tested against counter-examples, and periodically revised is just a bias you haven't noticed.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Write down your three most important investing principles. For each, also write "the environment in which it fails." A principle where you can't write both lists is probably not a principle — just a habit.</div>
+  </div>
+</div>
+
+<!-- Card 4: Radical Truth -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Radical Truth & Believability-Weighting<span class="en">彻底求真</span></h2>
+    <span class="tag">Face reality</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Decision quality scales with how accurately you reproduce reality. Face painful truths directly, and weigh disagreement by <em>believability</em>, not by loudness.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"Truth — more precisely, an accurate understanding of reality — is the essential foundation for producing good outcomes. … Pain + Reflection = Progress."
+    <span class="cite">— Ray Dalio, <em>Principles</em> (2017)</span>
+    <span class="cn">Truth — accurate understanding of reality — is the foundation of good outcomes. Pain plus reflection equals progress.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Dalio rejects two common modes: <strong>autocracy</strong> (the most powerful decides) and <strong>democracy</strong> (one person, one vote). He argues for <strong>believability-weighted</strong> decisions — weighing each voice by its <strong>track record and reasoning quality</strong> on the question at hand. The same applies to individual investors: which "expert" you listen to should not depend on how famous they are, but on their hit rate and transparency of reasoning on <strong>this category</strong> of question. And to oneself: which gut feelings deserve trust, and which come from emotion?</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>All Bridgewater meetings are <strong>recorded in full</strong> and open to every employee; staff use the Dot Collector to score each other's contributions in real time (logical rigor, openness, depth). The mechanism puts <strong>truth above face</strong>. But the counter-evidence is real: WSJ and NYT investigations (2017–2020) documented that the culture imposed <strong>psychological strain</strong> on some employees; turnover is notably higher than peers'. Radical transparency has hard execution boundaries.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>① "Radical transparency" in the wrong cultural soil degenerates into <strong>mutual attack</strong> — it requires an unusually high baseline of emotional safety. ② "Believability-weighting" depends on <strong>measurable records</strong>; without data it slides back into "seniority" and "title," reinstating implicit autocracy. ③ For the individual, over-pursuing "truth" can stall decisions into analysis paralysis — in some contexts timing matters more than completeness.</p>
+    <ul class="checklist">
+      <li>When taking advice, do I clearly separate "I trust him on this one" from "I generally admire him"?</li>
+      <li>Can I restate the strongest opposing argument to my position in a way the other side would endorse?</li>
+      <li>Do I periodically log others' <strong>after-the-fact hit rates</strong>, instead of relying on their confidence?</li>
+      <li>When my portfolio loses money, do I first re-examine my own judgment, or first blame the market?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">The cost of avoiding truth is always collected — later, with interest, by the market.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Pick your most recent failed investment. Before writing the post-mortem, ask yourself: how long am I willing to feel uncomfortable? That length is your distance from the truth.</div>
+  </div>
+</div>
+
+<div class="qa-head">Going Deeper</div>
+
+<details><summary>Can an individual investor really replicate All Weather, or is it an institutional luxury?</summary>
+<div>The idea is borrowable; the exact implementation is not. Institutional All Weather implicitly uses derivatives and leverage to bring low-risk assets (Treasuries, TIPS) up to equity-like risk contribution — hard for individuals to match, and forcing it with ETFs usually drifts from the original intent. A workable "household version" is to step back: deliberately balance risk across equities, long-duration Treasuries, inflation-protection (gold/commodities/TIPS), and cash — and accept that it will lag in long bull markets. <strong>Structure</strong> matters, not the brand name.</div></details>
+
+<details><summary>Does the debt-cycle model still hold under an AI-driven productivity jump?</summary>
+<div>A productivity jump can extend the top of the cycle and soften the pain of deleveraging, but it cannot abolish the cycle itself — as long as <strong>credit and human nature</strong> exist, the pendulum of debt accumulation and unwind continues. What AI more likely changes is <strong>speed</strong>: information diffuses faster, feedback loops shorten, and cycles may compress from "a decade" into "a few years." The shape of Dalio's model still applies, but the tempo needs recalibration — and stay doubly wary of "this time is different," because every major tech leap in history has been accompanied by one serious financial excess.</div></details>
+
+<details><summary>Does "principle-izing" decisions conflict with value investing's emphasis on qualitative judgment?</summary>
+<div>It doesn't, but the layers differ. Buffett's and Munger's principles are also highly systematized (circle of competence, moat, margin of safety are essentially checklists), just not written as algorithms the way Dalio does. Principle-izing solves "not forgetting under pressure what you've learned"; qualitative judgment solves "still being able to act on the un-quantifiable." Combine them: let principles constrain <strong>what not to do</strong>, let judgment decide <strong>what to do</strong>. Algorithmizing everything and feeling-out everything are equal forms of laziness.</div></details>
+
+<details><summary>Does "radical transparency" travel poorly across cultures? How much can the investor borrow?</summary>
+<div>Strong organizational replication almost always fails — it depends on a culture's individual-level consensus around "attacking the issue, not the person." But <strong>being radically transparent with yourself</strong> has no cultural barrier: decision journals, recorded post-mortems, exposing your view to its harshest opponent (even if that opponent is just another AI) — these are personal versions of radical truth. The deepest meaning is not "make others speak truthfully," but stop <strong>lying to yourself</strong> — most permanent losses in investing come from refusing to admit you were wrong.</div></details>
+
+<footer>BigCat · Investing Weekly · Week 08 · 2026</footer>
+
+</div></body></html>
