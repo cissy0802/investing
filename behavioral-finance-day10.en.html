@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Behavioral Finance — Day 10</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.essence{background:#fdf6e3;padding:13px 18px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:600;border-left:3px solid #b8893a}
+.viz{background:#fdf6e3;border:1px solid #e8d8b0;border-radius:6px;padding:18px 20px;margin:14px 0}
+.viz-title{font-size:0.86rem;font-weight:700;color:#7a5c1f;margin-bottom:14px;text-align:center}
+.viz-table{width:100%;border-collapse:collapse;font-size:0.84rem}
+.viz-table th,.viz-table td{border:1px solid #d4b87a;padding:8px 10px;text-align:left;color:#3a3220;vertical-align:top}
+.viz-table th{background:#f4e9cd;color:#7a5c1f;font-weight:700;font-size:0.8rem;text-align:center}
+.viz-table td.bias{font-weight:700;color:#7a5c1f;white-space:nowrap}
+.viz-note{font-size:0.82rem;color:#5a4418;margin-top:12px;padding-top:10px;border-top:1px dashed #d4b87a;font-style:italic}
+details{margin:12px 0;background:#fff;border-radius:5px;border-left:3px solid #b8893a;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+summary{padding:14px 18px;font-weight:600;color:#7a5c1f;cursor:pointer;font-size:0.96rem}
+details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
+.qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Daily · Day 10</div>
+  <h1>Investing Classics: Behavioral Finance<span class="accent">When the Investor's Worst Enemy Is Himself</span></h1>
+  <div class="meta"><span>June 1, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+The efficient-market view assumes rational investors, but it is humans who set prices. Kahneman and Tversky proved experimentally that human irrationality is <strong>systematic, predictable, and reproducible</strong>—not random noise. This week we return to the original research and distill four repeatedly verified biases—the trap of intuition, loss aversion, overconfidence, and herding—into a checklist for fighting yourself. As Graham said long ago: the investor's chief problem, and even his worst enemy, is likely to be himself.
+</div>
+
+<div class="viz">
+  <div class="viz-title">A map of four biases: mechanism → consequence → antidote</div>
+  <table class="viz-table">
+    <tr><th>Bias</th><th>Mental mechanism</th><th>Market consequence</th><th>Antidote in one line</th></tr>
+    <tr><td class="bias">Intuition trap</td><td>System 1 answers fast, System 2 lazily rubber-stamps</td><td>Mistaking a fluent story for a true one</td><td>Slow down—ask "how do I know?"</td></tr>
+    <tr><td class="bias">Loss aversion</td><td>Losses hurt ~2× as much as equal gains feel good</td><td>Clinging to losers, selling winners early</td><td>Watch business value, not cost basis</td></tr>
+    <tr><td class="bias">Overconfidence</td><td>Most rate themselves above average</td><td>Overtrading eroded by friction</td><td>Replace confidence with calibration</td></tr>
+    <tr><td class="bias">Herding</td><td>When unsure, substitute others' actions for judgment</td><td>Buying high, selling low, dancing in bubbles</td><td>Be independent—but survive to be proven right</td></tr>
+  </table>
+  <div class="viz-note">The four are not isolated—they tend to fire together at market tops and reinforce one another.</div>
+</div>
+
+<!-- Card 1: Two Systems -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01 · Kahneman</div>
+    <h2>The Intuition Trap: System 1 vs System 2<span class="en">Two Systems & the Illusion of Skill</span></h2>
+    <span class="tag">Dual-process mind</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">The brain makes most judgments with a fast, automatic, emotional "System 1"; the slow, effortful, rational "System 2" often just lazily endorses them. In a low-predictability market, System 1's <em>fluency</em> gets mistaken for being <em>right</em>.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"We can be blind to the obvious, and we are also blind to our blindness."
+    <span class="cite">— Daniel Kahneman, <em>Thinking, Fast and Slow</em> (2011)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>System 1 excels in high-frequency, regular, fast-feedback environments—recognizing faces, dodging cars. Markets are the opposite: <strong>low-validity, slow-feedback, noise-saturated</strong>, where intuition is most dangerous. A coherent narrative lets System 2 stop questioning—Kahneman calls this the "cognitive fluency" trap: credibility comes from the story's coherence, not the evidence's strength. He even asserts that for most fund managers, stock selection is <strong>"more like rolling dice than playing poker."</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Kahneman was invited to analyze a wealth-management firm: he computed the year-to-year correlation of 25 advisors' performance rankings over eight years. The average correlation was about <strong>0.01</strong>—essentially zero, the equivalent of dice. Yet the firm paid large performance bonuses on it. He told the executives to their faces: you are <strong>rewarding luck</strong>. No one wanted to believe it, because the entire structure of incentives, identity, and self-image rested on the illusion that skill existed—"the illusion of skill."</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>But not all intuition should be dismissed. Kahneman and Gary Klein's "adversarial collaboration" concluded that in <strong>high-validity environments</strong> (chess players, firefighters, anesthesiologists), expert intuition trained by reliable feedback is genuinely sound. The error is transplanting it into low-validity markets. The opposite failure: distrusting intuition so much you fall into analysis paralysis, never "certain enough" to act.</p>
+    <ul class="checklist">
+      <li>Is this judgment System 1's "feels right" or System 2's "reasoned through"?</li>
+      <li>Do I believe it because the story is coherent, or because the evidence is solid?</li>
+      <li>Am I in a high-validity (repeatable, fast-feedback) or low-validity environment?</li>
+      <li>If asked, can I write down three reasons against it?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">A story that makes sense will stop you from asking whether it is true.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Recall a recent investment decision you "liked at first sight"—were you persuaded by analysis or moved by a story? Can you tell the two apart?</div>
+  </div>
+</div>
+
+<!-- Card 2: Loss Aversion -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02 · Kahneman & Tversky</div>
+    <h2>Loss Aversion & the Disposition Effect<span class="en">Losses Loom Larger Than Gains</span></h2>
+    <span class="tag">Prospect Theory</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">For the same amount, the pain of a loss is roughly twice the pleasure of a gain. So people cling to bad stocks to avoid the pain of "realizing a loss," and sell good stocks too early to lock in the pleasure of a "realized gain."</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"In human decision making, losses loom larger than gains."
+    <span class="cite">— Kahneman & Tversky, <em>Prospect Theory</em>, Econometrica (1979)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Prospect Theory replaced expected utility: people are sensitive to <em>changes relative to a reference point</em> (usually the purchase price), not absolute wealth. The value function is concave in gains (risk-averse, eager to cash in) and convex in losses (risk-seeking, hoping to break even), and steeper on the loss side—the measured loss-aversion coefficient is about <strong>1.5–2.5</strong>. The direct result is the "disposition effect": anchoring on cost basis and letting paper P&L, not business value, drive buy/sell decisions.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Terrance Odean (1998, <em>Journal of Finance</em>) analyzed about 10,000 retail accounts: investors were roughly <strong>50%</strong> more likely to sell a <strong>winner</strong> than a loser—even though taxes argue for the reverse. More painful is what followed: the winners they sold went on to outperform the losers they kept by about <strong>3.4 percentage points</strong> over the next year. In short, people systematically "pull the flowers and water the weeds."</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Loss aversion is not all bug. Avoiding <strong>permanent</strong> loss is rational—this is the core of Buffett's "Rule No. 1: never lose money," and the survival-first logic of Kelly and Taleb. The failure mode is mistaking "avoiding a paper loss" for "avoiding risk," and so refusing necessary bets or clinging to a company whose fundamentals have truly deteriorated (a value trap). The key is distinguishing <strong>price fluctuation</strong> from <strong>value destruction</strong>.</p>
+    <ul class="checklist">
+      <li>If I didn't own this stock today, would I buy it at the current price? (If not, sell.)</li>
+      <li>Am I holding it on business value, or just to avoid "admitting a loss"?</li>
+      <li>Am I selling a winner on valuation, or just to lock in the "feeling of having won"?</li>
+      <li>Is my reference point the cost basis, or current intrinsic value?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">You are not right or wrong because a position turns red or green—only because the business value is still there, or not.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Look at your largest paper loss—are you holding it because you believe in its future, or because selling would make the loss real?</div>
+  </div>
+</div>
+
+<!-- Card 3: Overconfidence -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03 · Barber & Odean</div>
+    <h2>Overconfidence<span class="en">Overconfidence & Overtrading</span></h2>
+    <span class="tag">Calibration</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Most people rate their driving and stock-picking as above average—which is statistically impossible. Overconfidence drives overtrading, while commissions, spreads, taxes, and timing errors steadily erode returns.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"Overconfidence can explain the high trading levels and the resulting poor performance of individual investors."
+    <span class="cite">— Barber & Odean, "Trading Is Hazardous to Your Wealth", Journal of Finance (2000)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Overconfidence has two faces: overconfidence in <strong>predictive precision</strong> (setting confidence intervals too narrow) and the <strong>better-than-average illusion</strong> about one's own ability. Together they breed frequent trading—where every transaction is discounted by friction and timing error. It feeds on the illusion of control and hindsight: markets are always easy to explain after the fact, so people wrongly conclude they can predict them.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Barber & Odean studied <strong>66,465</strong> household accounts at a discount broker (1991–1996): the most active 20% earned about <strong>11.4%</strong> annually net of costs, versus a market return of about <strong>17.9%</strong>—lagging by roughly 6.5 points; the higher the turnover, the worse the return. The follow-up, "Boys Will Be Boys" (2001), found men trade about <strong>45%</strong> more than women, are more overconfident, and earn lower net returns as a result. What gets eroded is not stock-picking skill, but the inability to keep one's hands still.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Yet with no confidence you cannot concentrate at all—Buffett and Munger's excess returns come precisely from <strong>high-conviction concentration</strong>, not diversification and inertia. The difference is not how much confidence, but whether the <strong>calibration</strong> is honest. Munger's standard: I'm not entitled to an opinion unless I can argue the other side better than its proponents. The failure mode: dogmatizing "low trading" into "never correcting an error," sitting still even when you know you're wrong.</p>
+    <ul class="checklist">
+      <li>Is my valuation a range, or a falsely precise point?</li>
+      <li>Can I state the opposing case better than the opposition?</li>
+      <li>Is this trade based on new information, or on itchy hands?</li>
+      <li>In hindsight, did my trades over the past year create value or just friction?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">Frequent trading is repeatedly paying to test the unproven assumption that "I'm smarter than the market."</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Tally your trade count and total fees/taxes over the past 12 months. If you had done nothing, would your net worth today be higher or lower?</div>
+  </div>
+</div>
+
+<!-- Card 4: Herding -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04 · Keynes</div>
+    <h2>Herding & Independent Thinking<span class="en">Herding & Career Risk</span></h2>
+    <span class="tag">Social proof</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Failing with the crowd is "safer" than succeeding against it—rational for a professional manager, disastrous for the capital owner. The herd is always wrong at the extremes, but "too early and right" is hard to distinguish from "flatly wrong."</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <div class="quote">"Worldly wisdom teaches that it is better for reputation to fail conventionally than to succeed unconventionally."
+    <span class="cite">— John Maynard Keynes, <em>The General Theory</em> (1936), Ch. 12</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Herding is rooted in social proof (Cialdini) and "information cascades": when uncertain, individuals substitute others' behavior for their own judgment, and that judgment cascades and amplifies through the group. Professional capital faces an extra push: deviating from the benchmark → short-term underperformance → client redemptions → career risk. So even when you <strong>know it's a bubble, you have to keep dancing</strong>—rational individual choices summing to collective irrationality.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>At the 2000 dot-com top, both directions paid a price. <strong>Too early and right</strong>: Julian Robertson's Tiger fund fell from a 1998 peak of about <strong>$22 billion</strong>—after refusing to chase tech and suffering losses and redemptions—to about $6 billion, and shut down in <strong>March 2000</strong>, the very month the Nasdaq peaked. <strong>Surrendering to the herd</strong>: Stanley Druckenmiller at Soros's Quantum Fund piled into tech even while knowing it was a bubble, lost about <strong>$3 billion</strong> within weeks, and resigned in April 2000. One was right too early to survive; the other followed the herd and got mauled.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>But contrarianism for its own sake is also a bias. Most of the time trends persist; the herd is only wrong <strong>at the extremes</strong>, and mechanically opposing the crowd is as foolish as blindly following it. Howard Marks puts it sharply: <strong>"Being too far ahead of your time is indistinguishable from being wrong."</strong> Contrarian investing needs two things at once: being right, and surviving long enough to be vindicated (Robertson lacked the latter).</p>
+    <ul class="checklist">
+      <li>Do I hold it because analysis supports it, or because "everyone's buying"?</li>
+      <li>If no one talked about it tomorrow, would I still want to own it?</li>
+      <li>Is my contrarian view based on value, or just on being different?</li>
+      <li>If I'm right but the market takes longer to agree, can my position and nerves hold?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">The Essence</div>
+    <div class="essence">Independent thinking isn't about being different—it's about not being wrong alongside everyone else when the crowd is wrong.</div>
+  </div>
+  <div class="section"><div class="label">This Week's Reflection</div>
+    <div class="reflect">Among your recent buys, how many entered your radar because friends, media, or communities were discussing them? Strip away that social signal—do they still stand?</div>
+  </div>
+</div>
+
+<div class="qa-head">Going Deeper</div>
+
+<details><summary>Can knowing a bias eliminate it? Why does Kahneman, after a lifetime of study, say he still falls for them?</summary>
+<div>Knowing is not immunity. These biases are System 1's <strong>defaults</strong>—shaped by evolution, running below awareness, not switched off by reading a book. Kahneman admits his own intuitive errors did not decline with study—what improved was not "erring less" but "recognizing the signals that, on a big decision, it's time to slow down." That is the whole point of checklists, decision journals, and the outside view: rather than expecting willpower to correct System 1, design a <strong>process</strong> that forces System 2 online at critical moments. Environment design beats self-persuasion.</div></details>
+
+<details><summary>Will AI and algorithmic trading remove human bias, or institutionalize and amplify it?</summary>
+<div>Both are possible. Algorithms do strip out emotional, in-the-moment trades, but bias seeps in upstream through <strong>design and data</strong>: a model trained on historical data hard-codes past human bias into its parameters; when many strategies learn from similar data and chase the same factors, an "algorithmic herd" forms that sells off in unison under stress—the 2010 Flash Crash and crowded quant unwinds are examples. AI is not automatically rational; it merely moves the locus of bias from "the hand on the trigger" to "the person writing the rules" and "the history feeding the data." The new risk: bias that is more hidden, more synchronized, and spreads faster.</div></details>
+
+<details><summary>In long-term investing, is loss aversion friend or foe?</summary>
+<div>It depends on which loss you fear. The core of compounding is "sitting still," and people's aversion to "realizing a loss" sometimes prevents panic selling—here loss aversion helps you ride out the drawdown. But the same psychology can make you cling to a company whose value is being destroyed, or refuse a necessary bet for fear of a paper loss. The dividing line is clear: fearing <strong>permanent capital loss</strong> is wisdom; fearing <strong>temporary price fluctuation</strong> is a trap. Inertia applied to quality assets is compounding's friend; applied to junk, it is slow poison.</div></details>
+
+<details><summary>Is indexing the most honest response to behavioral bias?</summary>
+<div>Largely, yes. Buying and holding a low-cost index means actively renouncing the overconfidence of "I can pick stocks and time markets," and it sidesteps the disposition effect and trading friction—it replaces fragile self-discipline with <strong>structure</strong>, which is Bogle's deep insight. But it is no panacea: index investors still face herd-like, whole-market drawdowns, and often redeem at panic bottoms and add at euphoric tops, struck by the very same biases. Indexing solves "what to pick" but not "whether you can hold on"—the latter remains purely behavioral. Admitting you will err and handing the job to structure may be the most honest wisdom of all.</div></details>
+
+<footer>BigCat · Investing Daily · Day 10 · 2026</footer>
+
+</div></body></html>
