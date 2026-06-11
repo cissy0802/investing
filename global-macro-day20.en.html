@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Global Macro — Day 20</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.essence{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f;margin-bottom:10px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.viz{background:#fbf6ea;border:1px solid #e8d8b0;border-radius:6px;padding:18px 20px;margin-top:8px}
+.viz .vtitle{font-size:0.82rem;color:#8b7150;text-align:center;margin-bottom:14px;font-style:italic}
+.bar-row{display:flex;align-items:center;gap:10px;margin:9px 0}
+.bar-row .blab{flex-shrink:0;width:96px;font-size:0.82rem;color:#7a5c1f;font-weight:600;text-align:right}
+.bar-row .btrack{flex:1;background:#f0e4c4;border-radius:4px;height:24px;position:relative}
+.bar-row .bfill{height:100%;background:linear-gradient(90deg,#b8893a,#d4b87a);border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.78rem;font-weight:700}
+.viz .vnote{font-size:0.78rem;color:#8b7150;text-align:center;margin-top:12px}
+.faq{margin-top:40px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.bar-row .blab{width:72px}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Daily · Day 20</div>
+  <h1>Investing Classics: Global Macro<span class="accent">Reading the Macro Field, Not the Forecast</span></h1>
+  <div class="meta"><span>June 11, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+No one reliably predicts the next rate hike, currency turn, or geopolitical shock. But macro is useful not for forecasting — it is for understanding: understanding the gravitational field behind asset prices, and telling apart which risks can be diversified and which cause permanent loss. This issue distills "global macro" into four frameworks that genuinely help a long-term investor: the gravity of interest rates, currency as a separate bet, the two faces of geopolitical risk, and why growth and returns so often diverge.
+</div>
+
+<!-- Card 1: Monetary Policy -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Interest Rates as Gravity<span class="en">货币政策</span></h2>
+    <span class="tag">Monetary Policy</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Interest rates are to asset prices what gravity is to all matter. The lower the rate, the higher values float; as rates rise, every asset is pulled back down.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Warren Buffett, the core metaphor he stressed repeatedly at the 2013 Berkshire Annual Meeting.</p>
+    <div class="quote">"Interest rates are to asset prices like gravity is to the apple. When there are very low interest rates, there's a very small gravitational pull on asset values."
+    <span class="cite">— Warren Buffett, 2013 Berkshire Hathaway Annual Meeting</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Any asset's value is the discounted value of its future cash flows, and <strong>the base of the discount rate is the risk-free interest rate</strong>. Move the rate from 2% to 4% and the denominator grows, compressing the fair valuation. This explains why the near-zero rates of 2009–2021 lifted growth stocks, long-duration bonds, and real estate together — cheap money lowered gravity across the entire universe.</p>
+    <div class="viz">
+      <div class="vtitle">The same perpetual cash flow, valued at different rates (illustrative)</div>
+      <div class="bar-row"><span class="blab">Rate 2%</span><div class="btrack"><div class="bfill" style="width:100%">100</div></div></div>
+      <div class="bar-row"><span class="blab">Rate 4%</span><div class="btrack"><div class="bfill" style="width:50%">50</div></div></div>
+      <div class="bar-row"><span class="blab">Rate 6%</span><div class="btrack"><div class="bfill" style="width:33%">33</div></div></div>
+      <div class="vnote">Double the rate, and fair value nearly halves — that is the force of "gravity."</div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>In 2022 the Fed lifted its benchmark rate from 0–0.25% to 4.25–4.5% within a single year (425 basis points, the fastest since the 1980s). Gravity returned abruptly: the S&P 500 fell about 19%, long Treasuries (20yr+) dropped about 31%, the "60/40" portfolio had one of its worst years in decades, and the longest-duration assets most dependent on low rates fell more than 60%. An earlier extreme was Volcker: in 1981 he pushed the fed funds rate to about 20% to tame double-digit inflation, at the cost of the 1981–82 recession and near-11% unemployment — yet that opened the four-decade bull market in falling rates.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Low rates are no cure-all: the Bank of Japan held near-zero rates for over two decades after 1999, yet the Nikkei, which peaked at 38,915 in 1989, did not reclaim that level until 2024 — cheap money could not rescue an overvalued, stagnant market. Monetary easing is <strong>necessary but not sufficient</strong>. Common misuses: ① mistaking leverage and duration for "skill" at zero rates; ② using valuation anchors from the old low-rate era to judge a new environment; ③ trying to predict the precise rate path instead of preparing for a rate range.</p>
+    <ul class="checklist">
+      <li>How much of my holdings' valuation depends on rates staying low forever?</li>
+      <li>If the discount rate rises 2 points, does the fair value still hold?</li>
+      <li>Am I preparing for a rate "range," or betting on its exact "level"?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">Rates are the gravity of valuation — don't mistake leverage for skill at zero, and don't cling to old anchors when rates are high.</div>
+    <div class="reflect">Pick your most expensive holding and write down its implied valuation assumptions. Recompute with the discount rate raised 2 points — would you still hold it at today's price?</div>
+  </div>
+</div>
+
+<!-- Card 2: Currency -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Currency: A Bet Layered on the Asset<span class="en">汇率与跨境</span></h2>
+    <span class="tag">FX & Cross-border</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Cross-border investing stacks two bets: the return of the business itself, plus the move in its currency. Your total return = local return ± FX change.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Warren Buffett, 2004 Letter, explaining why Berkshire held large foreign-currency positions.</p>
+    <div class="quote">"Our country's trade practices are weighing down the dollar. The decline in its value has already been substantial, but is nevertheless likely to continue. Without policy changes, currency markets could even become disorderly."
+    <span class="cite">— Berkshire Hathaway 2004 Letter to Shareholders</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>When you buy a foreign asset, you simultaneously hold its <strong>denomination currency</strong>. Buy a foreign stock that rises 20%, and if that currency falls 25% against yours, you actually lose money once converted back. Exchange rates are driven over the long run by purchasing-power parity and rate differentials, but in the short run they are pushed to extremes by capital flows and policy expectations — and the dislocation can last for years. For a long-term investor, the key is not to forecast FX but to <strong>be aware that this bet exists</strong>, and to judge whether you truly want to bear it.</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>From 2002, Buffett turned bearish on the dollar because of America's vast trade deficit, building billions in forward FX positions (notional ~$21.4 billion across 12 currencies at end-2004), earning roughly $2 billion pretax as the dollar weakened. He later admitted that shorting currencies directly is inferior to buying quality businesses that earn foreign-currency profits — so he shifted to gaining currency exposure through multinationals. A mirror image: a Japanese investor holding US stocks over the past decade enjoyed both the rally and a currency gain as the yen fell from ~75 to ~150 per dollar; a US investor holding Japanese stocks saw much of the return eaten by yen depreciation.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Hedging is not free: its cost roughly equals the two countries' rate differential, so hedging a high-rate currency long-term steadily erodes returns. Common misuses: ① mistaking an FX tailwind for stock-picking skill; ② holding foreign assets "naked" without realizing the currency exposure; ③ trying to time FX turns. For a long-term, diversified global portfolio, currency is often noise; but for a concentrated bet on a single currency, it can be half of success or failure.</p>
+    <ul class="checklist">
+      <li>Do I know how large the denomination-currency exposure of this investment is?</li>
+      <li>How much of past returns actually came from FX rather than the business?</li>
+      <li>Are this company's costs and revenues in the same currency, or mismatched?</li>
+      <li>If the currency falls 20% against mine, does my return still hold? Should I hedge?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">Cross-border investing is two bets: business + currency. First ask how much of your gain was really FX luck.</div>
+    <div class="reflect">List all your assets denominated in foreign currency and estimate their share of total assets. Is this currency exposure something you took on deliberately, or something that accumulated unnoticed?</div>
+  </div>
+</div>
+
+<!-- Card 3: Geopolitical Risk -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>The Two Faces of Geopolitical Risk<span class="en">地缘政治</span></h2>
+    <span class="tag">Geopolitics</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Markets can absorb the panic of war, scandal, and crisis — but not the freezing or seizure of capital. Distinguish "volatility that recovers" from "an irreversible zero."</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Warren Buffett, 1994 Letter, on why he ignores political and macro forecasts.</p>
+    <div class="quote">"We will continue to ignore political and economic forecasts, which are an expensive distraction for many investors and businessmen. Thirty years ago, no one could have foreseen the huge expansion of the Vietnam War, wage and price controls, two oil shocks, the resignation of a president, the dissolution of the Soviet Union…"
+    <span class="cite">— Berkshire Hathaway 1994 Letter to Shareholders</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Diversified, tradable markets show remarkable resilience to geopolitical shocks. After 9/11 the NYSE closed for four days; on reopening the S&P fell about 12% that week, yet recovered within roughly a month. Buffett's insight: letting headlines drive your decisions is more dangerous than the headlines themselves. But <strong>resilience has one precondition — your capital must still be in your hands</strong>. When geopolitical risk escalates into capital controls, asset seizure, or wholesale removal from an index, loss turns from "volatility" into "permanent," and no amount of diversification can save you.</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>After the 2022 Russia–Ukraine conflict, MSCI removed Russia from its emerging-market index at end-March at near-zero value; foreign investors' Russian securities were frozen and untradable, on the order of hundreds of billions of dollars — not a 50% drawdown but an overnight, permanent loss. Contrast the resilient side: investors who kept holding diversified US assets through Pearl Harbor, the Cuban Missile Crisis, and 9/11 saw recovery almost every time. The same label "geopolitical risk" led to opposite outcomes — the difference is whether the capital was reversible.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>"Markets are resilient" cannot be extrapolated infinitely: it applies to diversified markets with rule of law and protected property rights; for a concentrated exposure with fragile property rights, it fails entirely. Common misuses: ① liquidating diversified assets out of headline panic (most geopolitical scares turn out to be opportunities); ② conversely, underestimating real tail risk (controls, seizure, decoupling) and numbing yourself with "it always goes up long-term"; ③ reading "low probability" as "impossible." The right approach is to separate the two kinds of risk beforehand and cap exposure to "irreversible zero."</p>
+    <ul class="checklist">
+      <li>If this risk hits, is it a drawdown that recovers, or an irreversible loss of capital?</li>
+      <li>Where my assets sit, are property rights and free capital outflow institutionally protected?</li>
+      <li>Am I selling diversified assets I should hold long-term out of headline panic?</li>
+      <li>For tail exposures (controls/seizure/decoupling), have I set a hard position cap?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">Markets absorb war and scandal but not the seizure of capital. Tell apart "panic that recovers" from "an irreversible zero."</div>
+    <div class="reflect">Recall an impulse last year triggered by a geopolitical headline. In hindsight, was it volatility that recovered, or genuine permanent risk? Could you tell the difference at the time?</div>
+  </div>
+</div>
+
+<!-- Card 4: Emerging Markets -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>The Growth Trap: GDP ≠ Returns<span class="en">新兴市场</span></h2>
+    <span class="tag">Emerging Markets</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">High GDP growth does not automatically flow into shareholders' accounts. Per-share returns are decided by governance, dilution, and entry price — not the macro growth story.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Jay R. Ritter, "Is Economic Growth Good for Investors?" (2012), based on a century of cross-country data, 1900–2011.</p>
+    <div class="quote">"The cross-country correlation of real stock returns and per capita GDP growth over the 1900–2011 period is negative."
+    <span class="cite">— Jay R. Ritter, Journal of Applied Corporate Finance, 2012</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>This is one of the most counterintuitive facts in macro investing. Why doesn't growth translate into returns? Three leaks: ① <strong>Dilution</strong> — high-growth economies often fund themselves through endless IPOs and secondary issuance, diluting old shareholders' per-share value; ② <strong>Governance</strong> — profits may flow to management, controlling shareholders, or the state rather than minority holders; ③ <strong>Price</strong> — the growth story is widely known, and the market has already paid a high premium. GDP is the whole "pie"; what you get is only a "per-share" sliver — a bigger pie does not mean a bigger slice for you.</p>
+  </div>
+
+  <div class="section"><div class="label">Classic Case</div>
+    <p>China is the textbook sample: nominal GDP grew several-fold over 2007–2023, yet the Shanghai Composite, which touched 6,124 in October 2007, still hovered near 3,000 more than a decade later — investors bore world-class growth but received no matching return, precisely because of persistent equity dilution and governance/capital-allocation problems at some state firms. Neighboring India, whose long-term growth was no higher, compounded far better in equities — the difference being governance and the steady accumulation of per-share value.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>This does not mean "avoid emerging markets." Ritter's conclusion is a statistical average; individual firms with sound governance and reasonable pricing can still outperform, and EM offers real diversification value. What fails is the "buy the country, bet on GDP" mindset. Common misuses: ① equating "bullish on a country's economy" directly with "buy its index"; ② paying any price for a growth story; ③ watching revenue but not per-share value. The real question is always: can growth, and at what price, translate into compounding per-share free cash flow?</p>
+    <ul class="checklist">
+      <li>Am I bullish on "country growth" or on "per-share value growth"? Do they agree?</li>
+      <li>Over the last decade, was this company's share count diluted or bought back?</li>
+      <li>Do profits ultimately reach minority holders, or get captured by controllers/state?</li>
+      <li>Has the current price already fully priced in the optimistic growth story?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">GDP growth does not automatically reach your account; dilution and governance decide whether per-share value compounds.</div>
+    <div class="reflect">Think of an investment you made because you were "bullish on a country's or sector's growth." Did you check its share dilution and governance — or were you simply moved by the macro story?</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h3>Going Deeper</h3>
+  <details><summary>Did near-zero rates systematically inflate "fair" valuations? After gravity returns, how do you tell which moats come from the business and which only from cheap money?</summary>
+  <div>A practical test: swap the discount rate in your valuation assumptions for a "normalized" level (e.g., long Treasuries + a fair risk premium) and recompute intrinsic value. If the valuation collapses, a large part of what you bought was a "low-rate premium," not a "business premium." Moats rooted in the business — pricing power, durability of ROIC, room to reinvest — still hold at higher rates; "growth" propped up only by duration and leverage gets pulled back to earth by gravity.</div></details>
+  <details><summary>In the AI era, when macro data is processed near zero cost, does "predicting macro" still confer an edge? Is your advantage more likely to come from prediction or from discipline?</summary>
+  <div>Macro information is highly public and instantly priced; the edge in prediction is being erased by algorithms and speed, and almost no one can persistently outperform at "predicting the Fed." A more replicable edge is behavioral: keeping valuation discipline amid the noise, not being driven by headlines, separating volatility from permanent loss. In other words, AI devalues "information advantage" but makes "temperament advantage" scarcer — Buffett's tradition of ignoring forecasts is, in the AI era, more valuable, not less.</div></details>
+  <details><summary>Capital into a "weak-governance, high-growth" country versus a "mediocre-growth, strong-governance" one — which compounds better long-term, and why does the market give the former a higher story premium?</summary>
+  <div>Ritter's century of data favors the latter: governance decides whether growth converts into per-share value, while growth stories are easily overestimated and priced in early. The market grants a story premium because narratives travel faster than dull governance data, and people tend to substitute GDP for the careful judgment of "per-share cash flow" (availability bias). The decisive factor in long-term compounding is rarely how big the pie is, but whether the rules for cutting it protect minority holders.</div></details>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Daily</a></nav>
+<footer>BigCat · Investing Daily · Day 20 · 2026</footer>
+
+</div></body></html>
