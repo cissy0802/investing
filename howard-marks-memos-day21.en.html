@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Reading Howard Marks's Memos — Day 21</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.essence{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f;margin-bottom:10px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.viz{background:#fbf6ea;border:1px solid #e8d8b0;border-radius:6px;padding:18px 20px;margin-top:8px}
+.viz .vtitle{font-size:0.82rem;color:#8b7150;text-align:center;margin-bottom:14px;font-style:italic}
+.bar-row{display:flex;align-items:center;gap:10px;margin:9px 0}
+.bar-row .blab{flex-shrink:0;width:132px;font-size:0.82rem;color:#7a5c1f;font-weight:600;text-align:right}
+.bar-row .btrack{flex:1;background:#f0e4c4;border-radius:4px;height:24px;position:relative}
+.bar-row .bfill{height:100%;background:linear-gradient(90deg,#b8893a,#d4b87a);border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.78rem;font-weight:700}
+.viz .vnote{font-size:0.78rem;color:#8b7150;text-align:center;margin-top:12px}
+.faq{margin-top:40px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.bar-row .blab{width:104px}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Daily · Day 21</div>
+  <h1>Investing Classics: Reading Howard Marks's Memos<span class="accent">Four Memos That Shaped a Generation of Investors</span></h1>
+  <div class="meta"><span>June 12, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Howard Marks has written his memos for over three decades. They never predict the market; instead they keep sharpening a few foundations of judgment: how to think one level deeper than the crowd, how to see through collective mania, how to stay clear-eyed between luck and skill, and the most counterintuitive question of all — when is it ever right to sell? This issue reads four of his most representative memos closely.
+</div>
+
+<!-- Card 1: Second-Level Thinking -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Second-Level Thinking<span class="en">The Most Important Thing (2003)</span></h2>
+    <span class="tag">Differential Insight</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">To beat the market consistently, your judgment must be not only correct but also different. Think the same as everyone else, and you can only earn the average result.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Howard Marks, <em>The Most Important Thing</em> (2003 memo; expanded into a book in 2011).</p>
+    <div class="quote">"First-level thinking says, 'It's a good company; let's buy the stock.' Second-level thinking says, 'It's a good company, but everyone thinks it's a great company, and it's not. So the stock's overrated and overpriced; let's sell.'"
+    <span class="cite">— Howard Marks, The Most Important Thing (2003 memo / 2011 book)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>First-level thinking is linear and effortless: good news → buy. Second-level thinking asks, "Is this information <strong>already reflected in the price</strong>? Where might the consensus be wrong?" Excess returns can only come from a view that is <strong>non-consensus and correct</strong> — both conditions are required. Merely being right isn't enough (agreeing with consensus earns no premium); merely being contrarian isn't enough (a wrong non-consensus view loses money). To win the game you must first think differently from others, and be right — which is, by nature, lonely.</p>
+  </div>
+
+  <div class="section"><div class="label">Case</div>
+    <p>The Nifty Fifty. In 1972, U.S. institutions piled into a set of "one-decision, buy-and-never-sell" blue chips: Coca-Cola, Polaroid, Xerox, McDonald's. First-level thinking said, "Great companies — buy at any price." That year Polaroid traded at a P/E around 91, McDonald's around 86, Xerox around 49, versus roughly 19 for the broad S&P. Second-level thinking would ask: however good the business, is there still a margin of safety at this price? In the 1973–74 bear market the S&P fell about 48% from its high, and Polaroid dropped from roughly $140 to about $14 in 1974 (-90%). <strong>Great companies, catastrophic prices.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Second-level thinking is not contrarianism for its own sake. A contrarian view without deeper research is just another form of gambling; most of the time the market is right, and reflexively betting against it loses over time. It is also mentally exhausting and "looks wrong" for long stretches — being early feels exactly like being wrong.</p>
+    <ul class="checklist">
+      <li>How does my view differ from consensus, and what is that difference based on?</li>
+      <li>Can I articulate where the market is wrong, and why?</li>
+      <li>Is this good or bad news already fully reflected in the current price?</li>
+      <li>If I'm right but the market disagrees for two years, can I hold on?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">You can't do the same things others do and expect to do better than they do.</div>
+    <div class="reflect">Your most recent purchase — was it based on "this is a good company," or on "this company is better (or worse) than the market believes"? Those are two completely different judgments.</div>
+  </div>
+</div>
+
+<!-- Card 2: bubble.com -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Bubbles as a State of Mind<span class="en">bubble.com (2000)</span></h2>
+    <span class="tag">Cycle Tops</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">A bubble is not a valuation number but a collective state of mind: the belief that "this time is different," and that there is no price too high for something good.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Howard Marks, "bubble.com" (January 2, 2000) — the first memo to draw a flood of reader responses, written about ten weeks before the Nasdaq peaked.</p>
+    <div class="quote">"But for me, a bubble or crash is more a state of mind than a quantitative calculation."
+    <span class="cite">— Howard Marks, On Bubble Watch (2025), recalling bubble.com (2000)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>In bubble.com, Marks made the point: it was true that the internet would change the world, but "the company is remarkable" does not mean "the stock is worth buying." The hallmark of a bubble is that <strong>valuation discipline is abandoned entirely</strong> — people justify any price with "new economy" and "winner takes all," convinced that "this time is different" (what Templeton called the four most dangerous words in investing). A bubble therefore can't be identified by a precise metric, only by signals of mindset: when "valuation doesn't matter, missing out is the real risk" becomes consensus, the top is usually near.</p>
+  </div>
+
+  <div class="section"><div class="label">Case</div>
+    <p>The Nasdaq peaked at 5,048 on March 10, 2000, then fell to about 1,114 by October 2002 (-78%), with thousands of companies wiped out; Pets.com IPO'd in February 2000 and was liquidated nine months later. The crucial counterpoint: <strong>the internet revolution was real, yet the stocks were still a disaster</strong> — Amazon fell from about $107 in late 1999 to roughly $6 in 2001 (-94%), even though it later became a giant. The right story paired with the wrong price still produces a loss.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>Spotting a bubble is easy; <strong>timing it is brutally hard</strong> — Marks stresses he doesn't know when a bubble will burst, and one can be trapped a long time while "early but right" (plenty of 1999 short-sellers went broke before the crash). And "this time is different" occasionally really is different, so you can't reflexively short growth just because it's expensive.</p>
+    <ul class="checklist">
+      <li>Are people justifying the price with fundamentals, or with a "new paradigm"?</li>
+      <li>Has "valuation doesn't matter" become the consensus?</li>
+      <li>Am I buying for value, or out of fear of missing out (FOMO)?</li>
+      <li>If the story comes fully true but I overpaid, can I still make money?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">That a company will change the world doesn't mean its stock is worth buying — the truth of the story and the level of the price are two separate questions.</div>
+    <div class="reflect">Recall the last time a grand narrative (AI, some new technology) tempted you to buy. Did you work out how much margin of safety the current price still leaves <em>even if</em> the narrative fully comes true?</div>
+  </div>
+</div>
+
+<!-- Card 3: You Bet! -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>Decision Quality ≠ Outcome<span class="en">You Bet! (2020)</span></h2>
+    <span class="tag">Decision Science</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">You can't judge the quality of a decision by its outcome. A good decision can fail through bad luck; a bad decision can succeed through good luck.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Howard Marks, "You Bet!" (January 2020), echoing Annie Duke's <em>Thinking in Bets</em> and Nassim Taleb's <em>Fooled by Randomness</em>.</p>
+    <div class="quote">"In the long run, superior skill will overcome the impact of bad luck. But in the short run, luck can overwhelm skill, and the two can be indistinguishable."
+    <span class="cite">— Howard Marks, You Bet! (January 2020)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>At seventeen, Marks read the line that you can't tell the quality of a decision from its outcome, and it stayed with him for life. Investing is at once a game of skill and a game of chance: you make the best decision you can from what you know, but the result also depends on (a) information you lack and (b) luck. So the best decision-makers aren't those with the most wins, but those with the <strong>best process and judgment</strong>. Annie Duke calls judging a decision by its outcome "resulting": make money and assume you were right, lose money and reject your whole method — the most common cognitive error investors make.</p>
+  </div>
+
+  <div class="section"><div class="label">Case</div>
+    <p>LTCM (Long-Term Capital Management), 1998. Led by two Nobel laureates (Merton, Scholes), with elaborate models and a seemingly flawless process — yet leverage near 25:1. Russia's August 1998 default, a "tail" event, broke the models; the fund lost over 90% within two months, and in September the Fed organized a roughly $3.6 billion rescue. The reverse is just as instructive: in 1999, many momentum traders got rich on luck, mistook the bull market's gift for skill, and gave it all back after 2000. <strong>In the short run, luck can masquerade as skill.</strong></p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>"Focus on process, not outcome" must not become an excuse for bad results — a long, persistent string of bad outcomes usually means the process really is flawed, and can't forever be blamed on luck. Telling the two apart needs a large enough sample and honest review.</p>
+    <ul class="checklist">
+      <li>For this gain or loss, how much came from judgment and how much from luck?</li>
+      <li>If I had it to do over with the same information, would I decide the same way?</li>
+      <li>Do I record my reasons at the time (a decision journal), or only the outcomes?</li>
+      <li>Over a long enough span, does my method still hold up?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">Judge yourself by the quality of your decisions, not by any single outcome — in the short run, luck lies.</div>
+    <div class="reflect">Take the gain you're proudest of and dissect it honestly: how much was judgment getting it right, and how much was simply good luck? Can you reproduce the "judgment" part?</div>
+  </div>
+</div>
+
+<!-- Card 4: Selling Out -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>When to Sell<span class="en">Selling Out (2022)</span></h2>
+    <span class="tag">Holding Discipline</span>
+  </div>
+
+  <div class="section"><div class="label">Principle</div>
+    <div class="principle">Don't sell because it's up, and don't sell because it's down. The only reason to sell should come back to the asset's value and opportunity cost — not the direction of the price.</div>
+  </div>
+
+  <div class="section"><div class="label">Source + Quote</div>
+    <p>Howard Marks, "Selling Out" (January 2022), prompted by a conversation with his son Andrew.</p>
+    <div class="quote">"If you shouldn't sell things because they're up, and you shouldn't sell because they're down, is it ever right to sell?"
+    <span class="cite">— Howard Marks, Selling Out (January 2022)</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>Marks notes that investors tend to sell too much, too early. "Sell because it's up" locks in small wins but forgoes the greatest compounding — <strong>selling a ten-bagger is a portfolio's largest hidden loss</strong>; "sell because it's down" often turns temporary volatility into permanent loss amid panic. The right selling question isn't about the price direction but: at today's price, is this still worth holding relative to other opportunities? Oaktree's principle: as long as attractively priced assets can be bought, stay fully invested, and never move to cash to "avoid risk" — because they don't believe they possess the forecasting ability that market timing requires.</p>
+  </div>
+
+  <div class="section"><div class="label">Case</div>
+    <p>The cost of "missing the best days." Per a J.P. Morgan study, from 2003 to 2022 a $10,000 stake left fully invested in the S&P 500 grew to about $65,000; miss just the 10 best days and you were left with about $30,000 — more than half gone. And those best days tend to sit right next to the worst ones, often just after a panic sell-off. The investor who "sells because it's down" is precisely the one most likely to miss the rebound.</p>
+    <div class="viz">
+      <div class="vtitle">Ending value of $10,000 in the S&P 500 (2003–2022), to scale</div>
+      <div class="bar-row"><span class="blab">Fully invested</span><div class="btrack"><div class="bfill" style="width:100%">$65k</div></div></div>
+      <div class="bar-row"><span class="blab">Miss best 10 days</span><div class="btrack"><div class="bfill" style="width:46%">$30k</div></div></div>
+      <div class="bar-row"><span class="blab">Miss best 20 days</span><div class="btrack"><div class="bfill" style="width:28%">$18k</div></div></div>
+      <div class="bar-row"><span class="blab">Miss best 30 days</span><div class="btrack"><div class="bfill" style="width:19%">$12k</div></div></div>
+      <div class="vnote">Most of the compounding sits in a handful of days, often right after a crash — timing out is an easy way to miss them.</div>
+    </div>
+    <p>Behavioral finance calls the tendency to "sell winners, hold losers" the <strong>disposition effect</strong> (Shefrin &amp; Statman, 1985) — it runs exactly counter to compounding.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits + Decision Checklist</div>
+    <p>"Hold for the long term" is not "never sell." The real reasons to sell: ① the original investment thesis is disproven (fundamentals deteriorate, not the share price); ② a clearly better opportunity appears (opportunity cost); ③ a position grows so concentrated it threatens the portfolio's survival. Marks also concedes: trimming an asset that is clearly overvalued at a cycle top is reasonable — not selling ≠ being blind to bubbles.</p>
+    <ul class="checklist">
+      <li>Do I want to sell because the price changed, or because the value/thesis changed?</li>
+      <li>After selling, do I have a better place for the money (or am I just moving to cash to bet on timing)?</li>
+      <li>Is this temporary volatility, or permanent fundamental damage?</li>
+      <li>Am I using "taking profit" to cover the cost of forgoing compounding?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence + Reflection</div>
+    <div class="essence">The most expensive sale is often selling a compounding machine that was still accelerating; before asking "should I sell," ask "has the value changed."</div>
+    <div class="reflect">Dig up a position you sold that then kept soaring. When you sold, was it because its <em>value</em> had peaked, or only because the <em>price</em> had risen enough to make you uneasy?</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h3>Going Deeper</h3>
+  <details><summary>Second-level thinking demands views that are non-consensus and correct — but as AI makes information and analysis ubiquitous, will the edge of "thinking one level deeper" be erased?</summary>
+  <div>The edge from analyzing public information is indeed being compressed by algorithms. But the core of second-level thinking isn't information; it's judgment about crowd psychology and consensus pricing, plus the temperament to endure being "early but right" — these are far harder for a model to replicate. Ubiquitous AI may even create new herds: everyone using similar models reaches similar conclusions, which actually leaves room for genuinely independent judgment. The edge is shifting from "computing fast" to "thinking differently, and holding on."</div></details>
+  <details><summary>bubble.com warns that the story can be true while the price is wrong. Is today's AI wave the same script? How do you tell a real paradigm from a bubble?</summary>
+  <div>The lesson of the internet bubble isn't "new technology is a scam" but "real revolution + unanchored valuation = loss." The key isn't judging whether the technology is real (AI most likely is), but asking: does the current price already discount "the most optimistic case fully realized"? Who pays for the profits, and can the moat persist? The bubble signal is mindset, not technology — once "valuation doesn't matter, missing out is the risk" becomes consensus, price risk is accumulating no matter how real the tech.</div></details>
+  <details><summary>You Bet! says don't judge a decision by its outcome, yet in reality the outcome is all we see. How do you reliably separate luck from skill over the long run?</summary>
+  <div>A single outcome carries almost no information; what's needed is a large enough sample, a reviewable record of decisions, and an up-front definition of "process." Keeping a decision journal — writing down your reasons and falsifiable conditions at the moment you buy — is the only practical tool for separating luck from skill. Mean reversion is also a test: returns built on luck revert, while an edge built on skill persists. But be honest — a long, persistent run of bad outcomes usually isn't a luck problem.</div></details>
+  <details><summary>Selling Out argues for staying fully invested and selling rarely. Doesn't that assume a market that rises over time? Does it hold in a long-stagnant market like Japan after 1990?</summary>
+  <div>This is the principle's most important boundary. Marks's fully-invested logic rests on "quality assets compound over time + timing is unreliable." If the whole market is overvalued and growth stalls (the Nikkei peaked in 1989 and took over three decades to recover), indiscriminate long holding really does suffer. The remedy isn't timing in and out but returning to value: when there's systemic overvaluation, reduce reliance on market beta, raise selectivity, and rotate into specific undervalued assets. "Don't hold cash to dodge risk" is not "buy the index regardless of valuation" — telling "a good business worth holding" apart from "an expensive market to avoid" still takes second-level thinking.</div></details>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Daily</a></nav>
+<footer>BigCat · Investing Daily · Day 21 · 2026</footer>
+
+</div></body></html>
