@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Dissecting Business Quality — Day 23</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.essence{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:0.98rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f;margin-bottom:10px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.forces{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.fbox{background:#faf0d8;border:1px solid #d4b87a;border-radius:4px;padding:12px 8px;font-size:0.82rem;color:#5a4418;text-align:center;line-height:1.4;display:flex;align-items:center;justify-content:center}
+.fbox.center{background:#7a5c1f;color:#fff;font-weight:700}
+.revwrap{display:flex;gap:24px;margin:14px 0;flex-wrap:wrap}
+.revcol{flex:1;min-width:200px}
+.revcol h4{font-size:0.84rem;color:#7a5c1f;margin-bottom:8px;text-align:center;font-weight:700}
+.barset{display:flex;gap:6px;align-items:flex-end;height:120px}
+.bcol{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
+.seg{width:100%;border-radius:2px 2px 0 0}
+.seg.base{background:#7a5c1f}
+.seg.new{background:#d9b878}
+.bcol span{font-size:0.66rem;color:#8b7150;margin-top:3px}
+.vcap{font-size:0.78rem;color:#8b7150;text-align:center;margin-top:4px;font-style:italic}
+.faq{margin-top:40px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing Daily · Day 23</div>
+  <h1>Investing Classics: Dissecting Business Quality<span class="accent">What Makes a Business Worth Owning</span></h1>
+  <div class="meta"><span>June 30, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Price is what you pay; business quality is what you actually buy. Whether a business can turn capital into excess returns over the long run depends not on this year's cycle or management's eloquence, but on four structural things: the competitive structure of its industry, whether revenue comes back on its own, whether it can raise prices without losing customers, and whether — once you drill down to a single customer — it makes money or loses it. This issue dissects business quality with four scalpels.
+</div>
+
+<!-- Card 1: Porter Five Forces -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Porter's Five Forces<span class="en">Industry Structure · Michael Porter</span></h2>
+    <span class="tag">Industry Structure</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Whether an industry can earn returns above its cost of capital over the long run is decided by the combined strength of five structural forces: existing rivalry, new entrants, substitutes, buyer power, and supplier power. The weaker the forces, the more durable the excess profit.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <div class="quote">"The collective strength of these five competitive forces determines the ability of firms in an industry to earn, on average, rates of return on investment in excess of the cost of capital."
+    <span class="cite">— Michael Porter, "How Competitive Forces Shape Strategy," Harvard Business Review, 1979</span>
+    <span class="cn">The combined strength of these five forces determines whether, on average, the firms in an industry can earn returns above their cost of capital.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Industry Checkup Map</div>
+    <div class="forces">
+      <div class="fbox" style="visibility:hidden"></div>
+      <div class="fbox">Threat of<br>new entrants</div>
+      <div class="fbox" style="visibility:hidden"></div>
+      <div class="fbox">Supplier<br>power</div>
+      <div class="fbox center">Existing<br>rivalry</div>
+      <div class="fbox">Buyer<br>power</div>
+      <div class="fbox" style="visibility:hidden"></div>
+      <div class="fbox">Threat of<br>substitutes</div>
+      <div class="fbox" style="visibility:hidden"></div>
+    </div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Five Forces is a <strong>checkup on the industry, not the company</strong>. It answers: in the waters this business swims in, can excess profit exist, and for how long? The most common investor error is <strong>mistaking temporarily high profit for a structural moat</strong> — if the forces themselves are deteriorating (entrants pouring in, substitutes maturing), today's high profit is just a transient state about to be competed away. Boundary: the framework is a static snapshot; it must be layered with dynamics — technology and regulation rewrite the strength of each force, and the internet once dropped the entry barriers of many industries straight to zero.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>The airline industry is the textbook counter-example, with all five forces strong: powerful suppliers (aircraft, fuel, unions), powerful buyers (highly transparent prices), low entry barriers, and brutal price wars — cumulative industry net profit over a century is roughly zero. Buffett took his lumps after buying USAir preferred in 1989, and joked in his 2007 letter that a capitalist at Kitty Hawk who shot down the Wright brothers would have done investors a great favor. Contrast Moody's ratings: an oligopoly, regulatory licensing, high customer switching costs — its forces are very weak, so it sustains very high returns on capital.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Decision Checklist</div>
+    <p>Five Forces fails under technological disruption — streaming rewrote all five forces of cable TV within a few years; it can also mislead you into <strong>statically viewing an industry that is improving</strong>. It judges the average fate of an industry; an individual company can still outrun a bad industry on a unique edge.</p>
+    <ul class="checklist">
+      <li>For this business's industry, which forces are strengthening and which weakening?</li>
+      <li>Does its high profit come from structure (a moat), or from a temporary supply-demand mismatch?</li>
+      <li>Is any technology or regulatory change rewriting the strength of a force?</li>
+      <li>Is it a good company in a bad industry, or a mediocre one in a good industry?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence & Reflection</div>
+    <div class="essence">Pick the waters before the swimmer — in an industry with strong forces, even the best management is just flying close to the surface.</div>
+    <div class="reflect">For the holding you value most, does its return come from a superior industry structure, or from management rowing against the current? Which is more sustainable?</div>
+  </div>
+</div>
+
+<!-- Card 2: Recurring vs Transactional -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Recurring vs Transactional<span class="en">The Quality of Revenue</span></h2>
+    <span class="tag">Revenue Quality</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">A dollar of revenue that "comes back on its own" is worth far more than a dollar you "have to win again every time" — because the former turns a customer into an annuity and sharply reduces the uncertainty of future cash flows.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <div class="quote">"An economic franchise arises from a product or service that: (1) is needed or desired; (2) is thought by its customers to have no close substitute; and (3) is not subject to price regulation."
+    <span class="cite">— Warren Buffett, Berkshire Hathaway 1991 Letter</span>
+    <span class="cn">An economic franchise comes from a product or service that is needed or desired, is seen by customers as having no close substitute, and is not price-regulated. With all three, a business can win its customers back again and again.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Transactional revenue resets to zero each period and re-pays its selling cost; subscription revenue builds on an installed base, so <strong>retention decides how high a starting line you begin each year from</strong>. The core variables are net revenue retention (NRR) and switching cost. But subscription is not a magic label — renaming a one-time purchase "subscription" while the customer can leave anytime at zero switching cost adds no quality. The real moat comes from <strong>the pain of switching</strong> (data migration, habit, ecosystem lock-in), not the billing method.</p>
+  </div>
+
+  <div class="section"><div class="label">Revenue Accumulation</div>
+    <div class="revwrap">
+      <div class="revcol"><h4>Transactional: re-won from zero</h4>
+        <div class="barset">
+          <div class="bcol"><div class="seg new" style="height:42px"></div><span>Y1</span></div>
+          <div class="bcol"><div class="seg new" style="height:42px"></div><span>Y2</span></div>
+          <div class="bcol"><div class="seg new" style="height:42px"></div><span>Y3</span></div>
+          <div class="bcol"><div class="seg new" style="height:42px"></div><span>Y4</span></div>
+        </div>
+      </div>
+      <div class="revcol"><h4>Subscription: retained base + new</h4>
+        <div class="barset">
+          <div class="bcol"><div class="seg new" style="height:42px"></div><span>Y1</span></div>
+          <div class="bcol"><div class="seg new" style="height:28px"></div><div class="seg base" style="height:38px"></div><span>Y2</span></div>
+          <div class="bcol"><div class="seg new" style="height:26px"></div><div class="seg base" style="height:62px"></div><span>Y3</span></div>
+          <div class="bcol"><div class="seg new" style="height:24px"></div><div class="seg base" style="height:84px"></div><span>Y4</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="vcap">Dark = retained base from prior periods, light = newly added this period. Subscription starts each year from a higher line.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>In May 2013 Adobe stopped selling perpetual licenses for Creative Suite and shifted entirely to the Creative Cloud subscription. Revenue dipped and profit was pressured in the transition year, drawing skepticism; but by FY2022 revenue had grown to roughly $17.5 billion, the vast majority recurring, with gross margins around 88% — and the stock rose more than tenfold over the decade. Microsoft walked the same road with Office 365 (from 2011): turning purchases into annual fees, and a lumpy upgrade cycle into smooth cash flow.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Decision Checklist</div>
+    <p>Failure mode: <strong>with high churn, recurring revenue is an illusion</strong> — some consumer apps churn more than 10% a month, so "subscription" on paper is a leaky bucket; retention bought with ongoing subsidies collapses the moment the subsidy stops. The label adds nothing; retention and switching cost are everything.</p>
+    <ul class="checklist">
+      <li>What is its net revenue retention (NRR)? Above or below 100%?</li>
+      <li>What is the real cost of a customer leaving — data, habit, ecosystem, or close to zero?</li>
+      <li>Is that retention driven by product stickiness, or propped up by subsidies and promotions?</li>
+      <li>Is "subscription" the business reality, or just a renamed one-time sale?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence & Reflection</div>
+    <div class="essence">To judge revenue quality, don't look at the amount — look at whether it comes back next year, and how much it hurts the customer to leave.</div>
+    <div class="reflect">Of the businesses you own, how much revenue is "the customer actively renews" versus "begged for again each period"? Have you ever worked out that ratio?</div>
+  </div>
+</div>
+
+<!-- Card 3: Pricing Power -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>Assessing Pricing Power<span class="en">Pricing Power · The Single Best Test</span></h2>
+    <span class="tag">Moat, Developed</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">The fastest test of a business: can it raise prices without losing customers? A business that needs a "prayer session" before raising prices 10% is terrible; one that raises prices without losing volume is good.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <div class="quote">"The single most important decision in evaluating a business is pricing power. If you've got the power to raise prices without losing business to a competitor, you've got a very good business. And if you have to have a prayer session before raising the price by 10 percent, then you've got a terrible business."
+    <span class="cite">— Warren Buffett, testimony to the Financial Crisis Inquiry Commission (FCIC), 2010</span>
+    <span class="cn">In evaluating a business, the single most important judgment is pricing power. If you can raise prices without losing business to a competitor, you have a very good business; if you need a prayer session before a 10% increase, you have a terrible one.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Pricing power is the <strong>financial developing-print of a moat</strong>: brand, switching costs, network effects or scarcity all ultimately develop into "raising price without losing volume." You test it not by asking management but by checking history — how many times it raised prices over the past decade, and what happened to volume and share each time. Distinguish real from fake: everyone raising prices during inflation is not pricing power; what matters is <strong>the ability to raise prices in excess of competitors</strong>. The boundary is hard too: milk-it-dry pricing burns goodwill and erodes the brand.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>See's Candies was Buffett's tutorial in pricing power. Berkshire bought it in 1972 for about $25 million, when pretax profit was roughly $4 million on net tangible assets of only about $8 million. It then raised prices nearly every year with essentially stable volume and little need for added capital, and by 2007 had delivered roughly $1.35 billion in cumulative pretax profit. The counter-example: in 2015 Turing Pharmaceuticals raised the old drug Daraprim overnight from $13.50 to $750 — inviting regulatory scrutiny and national outcry. <strong>Pricing power is not the power to raise prices without limit</strong>; cross the line and it backfires.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Decision Checklist</div>
+    <p>Pricing power fails when a substitute suddenly gets cheap (technological substitution), or when over-pricing wakes up customers to comparison-shop. It is also often misread — the short-term profit of a one-off hike gets taken for long-term pricing ability.</p>
+    <ul class="checklist">
+      <li>How many times did it raise prices over the past 5–10 years? Did volume and share fall?</li>
+      <li>Is this an increase in excess of competitors, or just floating up with inflation?</li>
+      <li>Does the nerve to raise prices come from brand/switching cost/scarcity, or a temporary supply shortage?</li>
+      <li>Is it milking customers dry, overdrawing the brand's goodwill?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence & Reflection</div>
+    <div class="essence">Pricing power is the one moat metric that never lies — a business that can quietly raise prices has a real moat.</div>
+    <div class="reflect">If a company you own announced a 10% price increase tomorrow, would customers quietly accept it, hesitate, or walk away? How sure are you?</div>
+  </div>
+</div>
+
+<!-- Card 4: Unit Economics -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Unit Economics<span class="en">Unit Economics · LTV / CAC</span></h2>
+    <span class="tag">The Truth of Growth</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Before looking at total revenue growth, drill down to "one customer, one order" and ask: does serving one more unit make money or lose it? With negative unit economics, the bigger the scale, the bigger the hole.</div>
+  </div>
+
+  <div class="section"><div class="label">Source</div>
+    <div class="quote">"Growth benefits investors only when the business in point can invest at incremental returns that are enticing — in other words, only when each dollar used to finance the growth creates over a dollar of long-term market value. In the case of a low-return business requiring incremental funds, growth hurts the investor."
+    <span class="cite">— Warren Buffett, Berkshire Hathaway 1992 Letter</span>
+    <span class="cn">Growth helps investors only when the business can reinvest at enticing incremental returns — that is, only when each dollar spent on growth creates more than a dollar of long-term value. For a low-return business that keeps needing capital, growth hurts the investor.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Deeper Reading</div>
+    <p>Unit economics reduces a grand "growth story" to "contribution profit per unit." The three core figures: lifetime value (LTV), customer acquisition cost (CAC), and unit contribution margin. Rough health lines: <strong>LTV/CAC above 3, CAC payback under 12–18 months, and unit contribution margin positive and improving with scale</strong>. Growth itself never creates value — only when each incremental dollar produces more than a dollar of long-term value does it matter. Much "high growth" is in essence using capital to buy revenue that doesn't make money.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Webvan (online groceries) raised $375 million in its 1999 IPO with a peak market cap above $8 billion, but the warehousing and delivery cost per order exceeded the gross margin — the bigger it grew, the more it lost — and it went bankrupt in July 2001. Pets.com listed in February 2000 and sold pet supplies below cost to buy growth, liquidating about nine months later. Both died of <strong>negative unit economics masked as "growth" by financing</strong>. Contrast Amazon over the same period: long unprofitable, but contribution per order improved with scale and the cash-flow logic held — so it survived. The difference isn't the pace of growth; it's whether the unit makes money.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits & Decision Checklist</div>
+    <p>Limit: early unit economics can be temporarily negative, provided it <strong>clearly improves with scale</strong> on a verifiable path (as Amazon's did). The misuse is the reverse: treating "losing now, sure to profit later" as a free pass while offering no evidence of unit-level convergence. Growth bought with subsidies is especially dangerous.</p>
+    <ul class="checklist">
+      <li>Drilled down to a single customer/order, does it make money or lose it now?</li>
+      <li>What is LTV/CAC? How long until CAC is recovered?</li>
+      <li>Is unit contribution margin improving with scale, or deteriorating with it?</li>
+      <li>Is its growth driven by product value, or by continuous cash-burning subsidies?</li>
+      <li>If financing stopped tomorrow, could the business survive on its own?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence & Reflection</div>
+    <div class="essence">Scale magnifies the sign of unit economics — the bigger the plus, the better; the bigger the minus, the faster it dies.</div>
+    <div class="reflect">When a "high growth" story pulls you in, do you actually drill down to the single customer to confirm whether each added customer makes money or loses it?</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h3>Going Deeper</h3>
+  <details><summary>Five Forces was born in the industrial era of 1979 — is it obsolete in today's world of platforms and network effects?</summary>
+  <div>The framework isn't obsolete, but it needs extending. Porter underweighted network effects — platform moats often come from two-sided networks (users attract merchants, merchants attract users), more like a sixth force. But the core of Five Forces — "excess profit is decided by structure, not effort" — is sharper in the platform era: when network effects are strong, the winner takes all and the forces are very weak for the incumbent; yet once "multi-homing" appears (users on several platforms at once), buyer power rebounds and the moat starts to leak. Use it dynamically, not as a 1979 specimen.</div></details>
+  <details><summary>"Subscription" is now widely used as a valuation talking point — how do you tell real recurring revenue from fake?</summary>
+  <div>Look at three things. First, net revenue retention (NRR): healthy subscriptions stay above 100%, with existing customers growing spend on their own; leaky buckets sit below 90%. Second, whether switching costs are real: does leaving cost data migration and process rebuilding, or just one click on "cancel"? Third, whether acquisition leans on subsidies: retention built on ongoing discounts collapses when they stop. The billing method can be renamed "subscription" overnight, but retention and the pain of switching can't be renamed.</div></details>
+  <details><summary>Must you avoid a company with temporarily negative unit economics? Wasn't Amazon unprofitable for years?</summary>
+  <div>Not necessarily — but distinguish two kinds of "loss." Amazon's loss was at the company level: unit contribution per order was already positive, the loss sat in expansionary reinvestment, and each new category re-ran the "lose first, earn later" curve and clearly converged — using today's profit to buy a bigger money machine tomorrow. Webvan's loss was the unit itself losing money, with the loss widening as scale grew and no sign of convergence. The difference isn't loss vs no loss, but <strong>whether unit economics improve with scale on a verifiable path</strong>. Treating "losing now, sure to profit later" as a free pass is the bubble era's most expensive mistake.</div></details>
+  <details><summary>In the AI era, will these four quality factors be strengthened or eroded?</summary>
+  <div>Both, often at once. Erosion: AI pushes the marginal cost of much software and content toward zero and collapses copying barriers, weakening moats built on "hard to make" and commoditizing once-exclusive capabilities, which erodes pricing power. Reinforcement: the data flywheel (more usage → better model → stronger product) is a new network effect that can deepen the leader's moat; switching costs rise once AI is embedded in workflows. So these four scalpels need recalibrating — above all ask: is the moat built on "hard to make," or on data and ecosystem lock-in, which AI tends to strengthen?</div></details>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Daily</a></nav>
+<footer>BigCat · Investing Daily · Day 23 · 2026</footer>
+
+</div></body></html>
