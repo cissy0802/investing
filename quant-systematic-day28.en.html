@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing Classics: Quant & Systematic Investing — Day 28</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.essence{background:#7a5c1f;color:#fdf6e3;padding:14px 20px;border-radius:4px;font-size:1rem;font-weight:600;margin-bottom:10px}
+.essence::before{content:"◆ ";color:#e0c078}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.matrix{width:100%;border-collapse:collapse;margin:10px 0 4px;font-size:0.86rem}
+.matrix td,.matrix th{border:1px solid #d4b87a;padding:10px 12px;text-align:left;vertical-align:top}
+.matrix th{background:#f4e9cd;color:#7a5c1f;font-weight:700;text-align:center}
+.matrix .rh{background:#faf5e8;color:#7a5c1f;font-weight:700;width:92px}
+.matrix small{display:block;color:#8b7150;font-weight:400;font-style:italic;margin-top:2px}
+.faq{margin-top:44px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing · Day 28</div>
+  <h1>Investing Classics: Quant &amp; Systematic Investing<span class="accent">Rules, Factors, and the Limits of the Machine</span></h1>
+  <div class="meta"><span>July 6, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+Quant investing is usually caricatured at two extremes: a money-printing machine, or a black-box scam. The truth is more modest—it is the discipline of "replacing emotion with rules" pushed to its limit. This week runs four layers: factors are explainable, systematic sources of return; index, factor, and stock-picking are three bets with very different costs; Renaissance's Medallion fund proves markets aren't perfectly efficient—and how nearly impossible that edge is to copy; and finally, the honest question: can one person, with one computer, actually do quant?
+</div>
+
+<!-- Card 1: Factor Investing -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 01</div>
+    <h2>Factor Investing<span class="en">Systematic Sources of Return</span></h2>
+    <span class="tag">Return Sources</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Excess return is not random luck; it can be decomposed into a few persistent, explainable "factors" that hold across hundreds of stocks—value, momentum, quality, size, low volatility. What you earn is not a single stock, but the premium of a systematic characteristic.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Quote</div>
+    <div class="quote">"The premier anomaly is momentum. Stocks with high returns over the past year tend to have high returns over the next few months."
+    <span class="cite">— Eugene Fama &amp; Kenneth French, <em>Dissecting Anomalies</em>, Journal of Finance (2008)</span>
+    <span class="cn">The most striking anomaly is momentum: stocks with high returns over the past year tend to keep delivering high returns for the next few months.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>Factors are the bedrock of quant. In 1992/1993 Fama and French used <strong>value</strong> (low price-to-book) and <strong>size</strong> (small caps) to explain most of the cross-section of stock returns, later adding <strong>profitability</strong> and other quality factors; momentum was documented by Jegadeesh and Titman in 1993. Tellingly, this quote comes from Fama—father of the efficient-market hypothesis—admitting momentum is the "premier anomaly" his own model cannot explain. Why do factors persist? Usually two explanations: <strong>risk compensation</strong> (cheap value stocks are more fragile, so the premium is pay for bearing risk) or <strong>behavioral bias</strong> (investors systematically chase winners and shun boring bargains). The key: a factor is not a free lunch—it demands that you not flee during long stretches when it fails.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Value's "lost decade" is the best teacher. From 2010 to 2020, the classic long-short value portfolio (buy cheap, sell dear) suffered one of the worst drawdowns in history, trailing growth for years; even AQR, famed for quant, saw its flagship strategies struggle through 2018–2020, and founder Cliff Asness took to writing essays defending the faith. Just as many declared "value is dead," it roared back from late 2020 into 2021. <strong>A factor validated over decades can still make you question your sanity for ten straight years</strong>—which is exactly the hardest part of factor investing: sound in math, brutal on the nerves.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Limits: factors decay once published (anomaly returns fall by roughly <strong>58%</strong> after publication, McLean &amp; Pontiff 2016); crowding erodes the premium; many "factors" are just data-mined noise. Misuse: treating short-term performance as proof of validity, or stacking so many factors you overfit.</p>
+    <ul class="checklist">
+      <li>Does this factor have an <strong>economic or behavioral rationale</strong> independent of the data?</li>
+      <li>Does it hold across different markets, eras, and asset classes—not just one slice of US equities?</li>
+      <li>Can I endure it lagging for 5–10 years? When it lags, will I double down or capitulate?</li>
+      <li>After trading costs and turnover taxes, how much of the paper premium survives?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">A factor gives you a prescription for discipline, not a get-out-of-jail card—its price is surviving the years when it doesn't work.</div>
+    <div class="reflect">Look at your holdings: which factor exposures have you taken on unwittingly—are you betting more on value, momentum, or quality? If that factor started a three-year losing streak tomorrow, would your portfolio and your nerves hold?</div>
+  </div>
+</div>
+
+<!-- Card 2: Index vs Factor vs Stock -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 02</div>
+    <h2>Index · Factor · Stock-Picking<span class="en">Three Ways to Bet</span></h2>
+    <span class="tag">Three Bets</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Passive index, factor tilt, and concentrated stock-picking are not a ladder of "who's smarter," but three bets demanding different edges at different costs. What gets mismatched is not the strategy, but the strategy against the edge you actually have and the pain you can actually bear.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Quote</div>
+    <div class="quote">"Properly measured, the average actively managed dollar must underperform the average passively managed dollar, net of costs. Empirical analyses that appear to refute this principle are guilty of improper measurement."
+    <span class="cite">— William F. Sharpe, <em>The Arithmetic of Active Management</em> (1991)</span>
+    <span class="cn">Properly measured, the average actively managed dollar must underperform the average passive dollar after costs. Any analysis that seems to disprove this has simply measured wrong.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>Sharpe's "arithmetic of active management" is an identity, not an opinion: the sum of all investors' holdings <em>is</em> the whole market, so before fees active and passive earn the same, and after fees active <strong>as a group must lag</strong>. This dictates the logic of the three layers—<strong>Index</strong>: give up seeking an edge, accept the market return, drive costs to the floor; <strong>Factor</strong>: use rules and diversification like an index, but tilt systematically toward a characteristic—the middle road between active and passive; <strong>Stock-picking</strong>: concentrate, which demands a genuine informational or analytical edge—concentration without edge merely amplifies randomness. The essential difference among the three is: where does your edge come from?</p>
+    <table class="matrix">
+      <tr><th></th><th>Index</th><th>Factor / Smart Beta</th><th>Stock-Picking</th></tr>
+      <tr><td class="rh">Edge needed</td><td>None<small>accept average</small></td><td>Discipline &amp; patience<small>survive dry spells</small></td><td>Real insight<small>very rare</small></td></tr>
+      <tr><td class="rh">Cost</td><td>Very low</td><td>Moderate</td><td>High<small>errors are costly</small></td></tr>
+      <tr><td class="rh">Main risk</td><td>Cap concentration<small>tracks the index</small></td><td>Long factor droughts</td><td>Bad judgment<small>permanent loss</small></td></tr>
+    </table>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>The SPIVA scorecard confirms Sharpe year after year: over the past 20 years roughly <strong>90%</strong> of US large-cap active funds trailed the S&amp;P 500. The most dramatic proof was Buffett's 2007 million-dollar bet—that an S&amp;P 500 index fund would beat a basket of hedge funds over a decade. The 2008–2017 tally: the index fund returned <strong>+125.8%</strong> cumulatively; his opponent's fund-of-funds about <strong>+36%</strong> (only ~2.2% annualized). Fees and the arithmetic of active management quietly crushed some of Wall Street's smartest.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Limits: an index is not risk-free—cap weighting makes you buy ever more of a few giants (the US "Magnificent Seven" once made up a large share of the S&amp;P), especially dangerous at a bubble top. Factors can lag for years; stock-picking remains optimal for <strong>those who truly have an edge</strong> (Buffett himself is the counterexample). Misuse: forcing stock-picking without the ability, or using "I understand it" to mask having no edge.</p>
+    <ul class="checklist">
+      <li>Do I go active/stock-picking on an <strong>edge I can articulate</strong>, or just because I can't stomach the average?</li>
+      <li>Are my turnover and fees quietly eating all of my excess return?</li>
+      <li>Is my index holding already highly concentrated in a handful of mega-caps?</li>
+      <li>Of the three layers, which actually fits my time, temperament, and edge?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">Before choosing a strategy, answer one thing honestly: what exactly is my edge? Without one, the smartest form of active is passive.</div>
+    <div class="reflect">Can you say, in one sentence, "here's why I can beat the index"? If you can't, is every dollar you spend on being active buying an edge—or buying comfort?</div>
+  </div>
+</div>
+
+<!-- Card 3: Renaissance / Medallion -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>The Medallion Lesson<span class="en">The Ceiling of Edge</span></h2>
+    <span class="tag">The Ceiling of Edge</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">Renaissance's Medallion fund both proves markets aren't perfectly efficient—statistical edge is real—and proves how rare, fragile, and non-replicable that edge is. It is the exception, and the exception is precisely what marks the boundary an ordinary person cannot cross.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Quote</div>
+    <div class="quote">"We're right 50.75 percent of the time... but we're 100 percent right 50.75 percent of the time. You can make billions that way."
+    <span class="cite">— Robert Mercer, Renaissance Technologies (quoted in Sebastian Mallaby, <em>More Money Than God</em>, 2010)</span>
+    <span class="cn">We're only right 50.75% of the time... but we're 100% right 50.75% of the time. You can make billions that way.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>This line captures the essence of quant: <strong>an edge can be razor-thin, as long as you bet often enough, independently enough, and with enough discipline</strong>. Medallion does not predict that a given stock will rise; it places repeated bets on vast numbers of tiny, very-short-horizon signals, letting the law of large numbers turn a sliver of win-rate into staggering compounding. Renaissance hires mathematicians, physicists, and codebreakers—<strong>almost no one with a Wall Street background</strong>—because it wants scientific method, not market intuition. And the price of this edge: signals decay fast and must be constantly renewed; capacity is severely limited, and every extra dollar dilutes returns.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>Per Gregory Zuckerman's <em>The Man Who Solved the Market</em>, Medallion returned <strong>~66% annualized gross and ~39% net</strong> from 1988–2018 (charging a 5% management fee plus 44% performance fee—the industry's most expensive). But two details matter most: first, it <strong>closed to outside money in 1993</strong> and capped its size at roughly $10 billion—the edge does not scale. Second, Renaissance's public funds (e.g. RIEF) have been mediocre, even losing heavily in 2020. <strong>The same firm, the same geniuses, and the public products still cannot reproduce the flagship's magic</strong>—which is the loudest warning of all: you cannot buy that edge.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Limits: Medallion is a survivor; for every one of it, thousands of quant funds died. In the "<strong>quant quake</strong>" of August 2007, many equity market-neutral quant funds (including Goldman's Global Alpha) were trampled within days as crowded positions unwound, taking huge losses. Misuse: mistaking "quant can make money" for "I can make money with quant," treating a singular case as a replicable path.</p>
+    <ul class="checklist">
+      <li>Is the track record I envy a replicable method, or a non-replicable <strong>exception</strong>?</li>
+      <li>If the edge were really that good, why did it <strong>close and cap</strong> its capacity?</li>
+      <li>Am I looking at survivors, or have I also counted the dead peers?</li>
+      <li>Could crowding—many people using the same signal—make it backfire on everyone one day?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">Medallion proves not that "quant makes you rich," but that a true edge is scarce, capacity-capped, and not for sale to you.</div>
+    <div class="reflect">Have you ever been drawn in by "such-and-such quant strategy has a high annual return"? Is that return open to you, or long since capped and reserved for a tiny few? Are you seeing a method, or survivorship bias?</div>
+  </div>
+</div>
+
+<!-- Card 4: Retail Quant Feasibility -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 04</div>
+    <h2>Can One Person Do Quant?<span class="en">Edge and Traps</span></h2>
+    <span class="tag">Edge &amp; Traps</span>
+  </div>
+
+  <div class="section"><div class="label">The Principle</div>
+    <div class="principle">One person with one computer cannot compete on speed, data, or talent with institutions, but can use rules to strip out emotion. The real edge of individual quant is structural (patience, low turnover, no career risk), not informational. The biggest enemy is not lack of compute—it's backtest overfitting.</div>
+  </div>
+
+  <div class="section"><div class="label">Source · Quote</div>
+    <div class="quote">"We argue that most claimed research findings in financial economics are likely false."
+    <span class="cite">— Campbell Harvey, Yan Liu &amp; Heqing Zhu, <em>…and the Cross-Section of Expected Returns</em>, Review of Financial Studies (2016)</span>
+    <span class="cn">We argue that most of the research findings claimed in financial economics are probably false.</span></div>
+  </div>
+
+  <div class="section"><div class="label">Interpretation</div>
+    <p>Harvey's warning strikes quant's fatal flaw—<strong>multiple testing</strong>: try a few hundred variants and pure luck will hand you one with a beautiful backtest, but it has only fit noise; he therefore argues a factor's t-stat threshold should rise from 2.0 to above 3.0. For an individual, the honest division of labor is: <strong>what you can do</strong> is systematize discipline—rule-based rebalancing, using factor ETFs for diversified exposure, mechanical position sizing, stripping emotion out of order entry; <strong>what you cannot do</strong> is mine genuine alpha out of price data. Engineers should be especially wary: the better you are at machine learning, the easier it is to train noise into a "signal" in a domain this <strong>low signal-to-noise and prone to leakage</strong>.</p>
+  </div>
+
+  <div class="section"><div class="label">Case Study</div>
+    <p>The "replication crisis" in factor research gives cold, hard numbers. Hou, Xue, and Zhang's 2020 <em>Replicating Anomalies</em> systematically tested <strong>452</strong> published anomalies; about <strong>65%</strong> failed to replicate (with microcaps excluded, the failure rate is even higher). Combined with the ~58% post-publication decay noted above, the conclusion is clear: <strong>a strategy with a paper Sharpe of 2 often approaches 0 live</strong>. It's not that the market changed—the "edge" in the backtest was, more often than not, an overfitting illusion from the start.</p>
+  </div>
+
+  <div class="section"><div class="label">Limits · Decision Checklist</div>
+    <p>Limits: individual quant has real value—it fights behavioral bias rather than trying to beat institutions. Misuse: treating a backtest as an "experiment" (a backtest can only falsify, never prove), or tuning parameters until the curve looks pretty and then going live. And don't forget transaction costs, taxes, and slippage will eat most of the paper return.</p>
+    <ul class="checklist">
+      <li>Does the strategy still hold on <strong>out-of-sample data it has never touched</strong>?</li>
+      <li>How many variants did I try in total? Have I discounted my Sharpe for multiple testing?</li>
+      <li>Does it have an <strong>economic rationale</strong> independent of the backtest, or is it pure curve-fitting?</li>
+      <li>After real costs, taxes, and slippage, does any excess return remain?</li>
+      <li>Do I do quant for <strong>discipline</strong>, or a fantasy of copying RenTec?</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">Essence · Reflection</div>
+    <div class="essence">The most realistic alpha in individual quant is not a smarter model but less emotion—it swaps the edge of "computing more accurately" for that of "sitting more patiently."</div>
+    <div class="reflect">If you redefined quant's purpose from "beating the market" to "no longer being beaten by your own emotions," how would you design your own rules? How much of it is a real edge, and how much is just an infatuation with the backtest curve?</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h3>Going Deeper</h3>
+  <details><summary>Factors decay once published, ETF-ified, and flooded with money—so are "public factors" still worth holding?</summary>
+  <div>It depends on the cause. If the premium comes from <strong>risk compensation that can't be arbitraged away</strong> (e.g. value stocks really are more fragile), inflows will compress but not kill it—you're paid for bearing risk. If it comes from pure <strong>mispricing</strong>, then once widely known and crowded, it gets arbitraged away or even backfires. So the question isn't "is it public," but "why does it exist, and will that reason vanish just because everyone knows it." Risk-based factors are more durable; behavioral ones decay faster.</div></details>
+  <details><summary>Will AI / large models end the "individuals can't do quant" verdict, letting super-individuals mine alpha too?</summary>
+  <div>It changes the tools but barely changes the structure. AI massively lowers the barrier to writing strategies, cleaning data, and doing research—a real boost. But finance's core difficulty isn't compute; it's that <strong>the signal-to-noise ratio is extremely low, and any edge, once found, is crowded away</strong>. When everyone runs the same models on the same public data, alpha only gets arbitraged out faster; the more ubiquitous AI is, the thinner purely informational edges become. More dangerously, powerful models make overfitting easier and more insidious. For a super-individual, AI's most reliable use may not be mining alpha but <strong>bringing discipline, review, and risk control to institutional grade</strong>—using it to fight your own emotions and biases, not fantasizing about out-computing the market.</div></details>
+</div>
+
+<nav><a href="index.en.html">← Back to Investing Classics</a></nav>
+<footer>BigCat · Investing · Day 28 · 2026</footer>
+
+</div>
+</body></html>
