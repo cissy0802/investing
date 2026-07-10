@@ -1,9 +1,10 @@
 # Topics Roadmap
 
+> **⚠️ routine 须知**：本表即全部计划。只写下面**已列出**的条目；**全部写完就停**——别自己发明新主题、别往本文件加行。写完只发一条 PushNotification 请 BigCat 补充。（新条目由 BigCat / deep-research 反哺加进本表，届时你自然继续写。）
+
 源是仓库中的文件本身（`ls *-{day,week,book,issue}*.html`）。本文件是主题查找表：N → 主题。
 
 **本路线图已收口：Day 1–57 封顶，不再自动续写。**（2026-07-02 解封一次：全站缺口审查发现可转债/混合品种为真缺口，补 Day 57 后重新封顶。）Day 1–21 已发布、保持不动；原 Day 22–65 中 9 条「深化/换皮」与已发布的 Day 1–21 重复（估值 / ROIC / 凯利 / 周期 / 复利 / Enough 等），已删除，其余精选保留并 renumber 至 Day 22–56。删除清单见文末。
-（注：仅改本文件不阻止 routine 在 day56 之后再 append；停止续写需在 routine prompt / cron 侧设上限。）
 
 - Day 1: Buffett 核心原则 — 能力圈, 护城河, Mr. Market 寓言, 内在价值 vs 价格
 - Day 2: Munger 思维 — 多元思维模型, 逆向思考, 心理误判 25 则, 二步法思维
