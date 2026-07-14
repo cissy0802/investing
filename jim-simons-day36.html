@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投资经典：量化传奇 Jim Simons — Day 36</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.essence{background:#7a5c1f;color:#fdf6e3;padding:14px 20px;border-radius:4px;font-size:1rem;font-weight:600;margin-bottom:10px}
+.essence::before{content:"◆ ";color:#e0c078}
+.faq{margin-top:44px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+</style></head><body><div class="container">
+
+<header>
+  <div class="kicker">Investing · Day 36</div>
+  <h1>投资经典：量化传奇 Jim Simons<span class="accent">Jim Simons — The Man Who Solved the Market</span></h1>
+  <div class="meta"><span>2026年7月14日</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+
+<div class="intro">
+在价值投资的殿堂之外，站着一个几乎不懂华尔街的数学家。Jim Simons（1938–2024）——几何学家、冷战密码破译者——用大奖章基金创造了有记录以来最好的长期业绩：1988–2018 年化毛收益约 66%、扣费后约 39%。他不读财报、不做预测、不讲故事，只在数据的噪声里找可重复的微小规律。本周我们拆解这台"赚钱机器"，但目的不是模仿它——恰恰相反，是理解它<strong>为什么无法被复制</strong>，以及一个长期投资者能从中真正带走什么。
+</div>
+
+<!-- Card 1: The Medallion Enigma -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">CASE 01</div>
+    <h2>大奖章之谜<span class="en">The Medallion Enigma</span></h2>
+    <span class="tag">史上最强记录</span>
+  </div>
+
+  <div class="section"><div class="label">框架表述</div>
+    <div class="principle">市场里存在可被统计发现、且会重复出现的微小规律。不必判断公司好坏，只需判断"这个模式过去是否反复出现、现在是否仍在"。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处 · 金句</div>
+    <div class="quote">"Past performance is the best predictor of success."
+    <span class="cite">— Jim Simons，2005</span>
+    <span class="cn">过去的表现，是成功最好的预测器。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>Simons 押注的信念与主流价投相反：他不问"这门生意能不能理解"，而问"这段价格序列里有没有统计上可重复的偏差"。他把市场当成一个充满噪声的信号系统，用科学而非叙事去解码。大奖章 30 年年化扣费后约 39% 的记录，是在收取 <strong>5% 管理费 + 44% 业绩提成</strong>（业内最高）之后取得的——毛收益的惊人可见一斑。更关键的是它<strong>主动收缩</strong>：1993 年起限制外部资金，2005 年前后清退所有外部资本，把规模封在约 100 亿美元，如今只对员工开放。</p>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>把 1988 年投入大奖章的 1 美元按扣费后 39% 复利，到 2018 年会变成数万美元；同期标普 500 连本带息不到 20 倍。这是巴菲特也未曾达到的年化速度。但请注意：巴菲特管理的是几千亿美元，Simons 的机器只能吞下约 100 亿——<strong>容量</strong>是这枚硬币无法翻开的另一面。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
+    <p>大奖章的辉煌<strong>几乎不可外推</strong>。它依赖极短持有期、极高换手、巨大杠杆和封闭的小容量；任何试图"照抄"的人都会撞上容量墙与信息墙。把"它存在过"误当成"我能复制它"，是最常见的误读。</p>
+    <ul class="checklist">
+      <li>我是否把"这条策略存在过"误当成"我能拿到它的收益"？</li>
+      <li>我看中的方法，容量上限是多少？我的资金会不会大到把 edge 稀释掉？</li>
+      <li>它依赖的杠杆与换手，我在最坏情形下能承受吗？</li>
+      <li>这个优势会不会随着更多人发现而消失？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">一句话精华 · 本周反思</div>
+    <div class="essence">世界上最强的记录，来自"承认自己不懂公司、只懂数据里的规律"——极致的专注，而非无边的博学。</div>
+    <div class="reflect">你的历史收益，到底来自你<strong>真正拥有</strong>的优势，还是你<strong>以为</strong>自己拥有的优势？两者你能分清吗？</div>
+  </div>
+</div>
+
+<!-- Card 2: Scientists, Not Economists -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">FRAMEWORK 02</div>
+    <h2>数学家做投资<span class="en">Scientists, Not Economists</span></h2>
+    <span class="tag">让数据说话</span>
+  </div>
+
+  <div class="section"><div class="label">框架表述</div>
+    <div class="principle">不雇华尔街的人，只雇做过真科学的人；不让故事驱动决策，让数据驱动决策；模型上线后，人不干预。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处 · 金句</div>
+    <div class="quote">"We never hired anyone from the financial world at Renaissance. We never did. Because they didn't have anything to add."
+    <span class="cite">— Jim Simons</span>
+    <span class="cn">在文艺复兴，我们从不雇华尔街的人，从来没有。因为他们没有任何东西可以贡献。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>Simons 本人是 Chern–Simons 几何理论的作者、冷战时期为国防机构破译密码的高手。他把破译密码的思路搬进市场：在海量噪声里寻找可重复的信号。他的团队是数学家、物理学家、统计学家、天文学家，几乎没有金融科班出身。核心纪律叫"<strong>不干预</strong>"——Simons 说 <em>"We never override the computer"</em>（我们从不推翻计算机）：模型一旦上线，无论人觉得它此刻多聪明或多愚蠢，都照做。因为人类的直觉、面子和"讲得通的故事"，正是系统性偏差的来源，必须被挡在执行之外。</p>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>传统基金招募 MBA 与交易员；Simons 反其道而行，只问应聘者"是否做过好的科学"。语音识别专家 Robert Mercer、Peter Brown 从 IBM 转来，把处理语言噪声的算法用于价格序列——与懂不懂股票毫无关系。恰是这种"外行"视角，让他们看见了华尔街内行看不见的东西。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
+    <p>"不推翻模型"只在模型本身<strong>有真实、持续被检验的统计优势</strong>时才成立；否则就是"盲从一个坏模型"。对没有模型的个人投资者，可迁移的不是"别推翻模型"，而是"<strong>别让故事和情绪推翻你事先定好的纪律</strong>"。</p>
+    <ul class="checklist">
+      <li>我的买卖，是事先定好的规则，还是临场的情绪反应？</li>
+      <li>我有没有把"一个讲得通的故事"误当成"一个可验证的优势"？</li>
+      <li>我用什么客观标准检验我的方法真有效，而不是恰好走运？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">一句话精华 · 本周反思</div>
+    <div class="essence">把分析交给数据与规则，把纪律留给自己——最大的敌人是那个想要"临场聪明一下"的你。</div>
+    <div class="reflect">你上一次真正的亏损，是你的规则错了，还是你在关键时刻<strong>推翻了自己事先定好的规则</strong>？</div>
+  </div>
+</div>
+
+<!-- Card 3: A Tiny Edge, Repeated -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">PRINCIPLE 03</div>
+    <h2>微小胜率 × 大数定律<span class="en">A Tiny Edge, Repeated</span></h2>
+    <span class="tag">统计的力量</span>
+  </div>
+
+  <div class="section"><div class="label">原则表述</div>
+    <div class="principle">不需要每笔都对，只需一个略高于一半的真实胜率，配上足够多的独立下注和严格的仓位控制，大数定律就会把微小优势复利成惊人财富。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处 · 金句</div>
+    <div class="quote">"We're right 50.75 percent of the time... but we're 100 percent right 50.75 percent of the time. You can make billions that way."
+    <span class="cite">— Robert Mercer（文艺复兴联席 CEO），引自 G. Zuckerman《The Man Who Solved the Market》</span>
+    <span class="cn">我们只有 50.75% 的时候是对的……但我们 100% 确信自己有这 50.75% 的胜率。靠这个就能赚几十亿。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>这是赌场逻辑，也是凯利公式的现实版（呼应 Day 17）。单笔 0.75% 的优势毫无意义；但把它重复几十万次、每次尽量独立、单笔仓位小到即使连输也不致命，随机性就会被大数定律磨平，优势变成近乎确定的结果。重点从来不是"单笔赢多少"，而是三件事同时成立：<strong>优势是否真实、下注是否足够多且独立、单笔是否小到不会被随机波动打死</strong>。大奖章持有期极短、每天成千上万笔交易，正是把这 50.75% 放大成年化数十%的机器。</p>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>反面教材是 1998 年的 LTCM（见 Day 9）：两位诺奖得主的模型统计优势或许真实，却用了约 25 倍杠杆，且大量头寸其实是<strong>同一个"流动性收敛"赌注的不同影子</strong>。当俄罗斯违约、相关性瞬间跳到 1，几百笔"独立"下注一起爆炸，两个月归零。同样的统计思想，风控天差地别。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
+    <p>微小优势失效的三种方式：① 优势是<strong>假的</strong>（过拟合历史噪声，样本外即失灵）；② 下注<strong>不独立</strong>（看似分散，实为同一宏观赌注的多个副本，一起爆）；③ 仓位<strong>过大</strong>（连输几次就归零，等不到大数定律生效）。</p>
+    <ul class="checklist">
+      <li>我的"优势"在样本外、在我没调过参的数据上还成立吗？</li>
+      <li>我这些下注是真独立，还是同一个赌注穿了几件不同的衣服？</li>
+      <li>最坏的一串连败下，我会不会被强平或归零，从而"活不到"优势兑现？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">一句话精华 · 本周反思</div>
+    <div class="essence">财富 = 真实的小优势 × 足够多的独立重复 × 活得够久。三者缺一，机器就熄火。</div>
+    <div class="reflect">你的组合里，那些看似分散的仓位，有多少其实是<strong>同一个赌注</strong>？一次市场剧震会不会让它们一起下跌？</div>
+  </div>
+</div>
+
+<!-- Card 4: Why You Can't Buy This -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-num">SYNTHESIS 04</div>
+    <h2>不可复制性<span class="en">Why You Can't Buy This</span></h2>
+    <span class="tag">护城河与谦卑</span>
+  </div>
+
+  <div class="section"><div class="label">框架表述</div>
+    <div class="principle">大奖章建立在四道普通人跨不过的墙上——封闭的小容量、极高的杠杆、彻底的保密、员工独享的利益结构。理解它，是为了不被它误导。</div>
+  </div>
+
+  <div class="section"><div class="label">原始出处 · 金句</div>
+    <div class="quote">"In this business it's easy to confuse luck with brains."
+    <span class="cite">— Jim Simons，1999</span>
+    <span class="cn">在这一行，很容易把运气误当成脑子。</span></div>
+  </div>
+
+  <div class="section"><div class="label">深入解读</div>
+    <p>最有力的证据来自文艺复兴<strong>自己</strong>的公开产品：2020 年，只对员工开放的大奖章大涨约 <strong>76%</strong>，而同一家公司、面向外部投资者的 RIEF 却<strong>亏损约 19–20%</strong>，RIDA、RIDGE 更亏约 31%。同一批天才、同一栋楼，为外人管的钱平庸甚至糟糕。原因正是那四道墙：外部基金持有期长、容量大、杠杆低，拿不到大奖章的短周期高杠杆信号。而大奖章的杠杆有多极致？2005–2015 年它通过与德意志银行、巴克莱的"篮子期权"结构实现约 <strong>9:1</strong> 的杠杆，2021 年内部人为此与美国国税局达成约 <strong>70 亿美元</strong>的和解——史上最大税案之一。这不是散户能触碰的世界。</p>
+  </div>
+
+  <div class="section"><div class="label">经典案例</div>
+    <p>Simons 本人反复强调运气与谦卑：他说自己"每天早上走进办公室，想的不是'我今天聪不聪明'，而是'我今天走不走运'"。一个创造了史上最强记录的人，尚且如此警惕把结果归功于自己——这份清醒，比任何公式都更值得学习者带走。</p>
+  </div>
+
+  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
+    <p>真正的误用，是把 Simons 的传奇当成"我也该在家搞量化"的号召。绝大多数散户量化者付了交易成本、拿了过拟合的模型、没有机构的数据与杠杆，长期跑输一只指数基金（呼应 Day 7、Day 28）。可迁移的从来不是他的策略，而是他的<strong>态度</strong>：尊重数据、承认无知、用纪律压住情绪。</p>
+    <ul class="checklist">
+      <li>我想学的是 Simons 的"策略"（学不来），还是他的"态度"（学得来）？</li>
+      <li>面对一个耀眼的业绩，我先问"它可复制吗、容量多大、靠什么杠杆"了吗？</li>
+      <li>如果连他都天天问"我今天走运吗"，我是不是把自己的成绩太当"本事"了？</li>
+    </ul>
+  </div>
+
+  <div class="section"><div class="label">一句话精华 · 本周反思</div>
+    <div class="essence">最强的机器无法搬回家；能搬回家的，是"尊重数据、承认无知、纪律压情绪"这三件工具。</div>
+    <div class="reflect">回看你最得意的一笔盈利：如果诚实地区分运气与技能，其中有多少是真本事，多少只是那次刚好走运？</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h3>深入思考</h3>
+  <details><summary>大奖章证伪了"有效市场假说"吗？</summary>
+  <div>既是也不是。它证明市场里确实存在可被系统性利用的微小无效——EMH 的强式版本站不住。但 Simons 自己说过 <em>"有效市场理论在'不存在明显的低效'这点上是对的"</em>：那些无效极其微小、极难发现、且容量有限，需要顶级科学家、海量数据与巨大杠杆才能榨取，一旦规模扩大就消失。所以对绝大多数人而言，市场"实用上"仍是有效的——你抓不到那些无效，抓到的也会被成本吃掉。大奖章不是"人人可赢"的反例，而是"无效存在但极度稀缺、门槛极高"的证明。</div></details>
+  <details><summary>Simons 的方法和 Buffett 的方法，谁"更对"？</summary>
+  <div>这是个错误的问题。两者是两种完全不同的游戏：Buffett 押注"少数可深度理解的伟大生意 + 极长持有"，靠的是商业洞察与耐心；Simons 押注"海量不可理解但统计可重复的微小规律 + 极短持有"，靠的是数学与算力。它们的共同点反而更重要：都极度尊重自己的<strong>能力圈</strong>（一个懂生意、一个懂数据），都用<strong>纪律</strong>压制情绪，都对自己不懂的领域保持谦卑。对个人而言，选哪条路取决于你真正的优势在哪；最危险的是两边都学个皮毛、两边的纪律都不守。</div></details>
+  <details><summary>AI 时代，"超级个体"能靠算法复制大奖章吗？</summary>
+  <div>AI 极大降低了建模、回测、执行的门槛，这是真的。但大奖章的护城河从来不主要是"算法聪明"，而是<strong>数据、容量、杠杆与保密</strong>的组合：独家的高频数据、约 9:1 的机构杠杆、封闭的小容量、几十年不外泄的秘密。这些恰恰是个人和公开工具最缺的。更现实的风险是：当人人都用相似的 AI 挖掘相似的公开数据，微小优势会被迅速套利殆尽、甚至变成拥挤交易在同一时刻反噬。AI 时代真正稀缺的，可能不再是"算得快"，而是<strong>独特的数据、独立的判断，以及在众人拥挤时不入场的纪律</strong>——这正是 Simons 那句"别把运气误当脑子"的当代回声。</div></details>
+</div>
+
+<nav><a href="index.html">← 返回 投资经典</a></nav>
+<footer>BigCat · Investing · Day 36 · 2026</footer>
+
+</div></body></html>
