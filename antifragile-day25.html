@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：反脆弱与黑天鹅 — Day 25</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -44,216 +45,182 @@ nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 25</div>
-  <h1>投资经典：反脆弱与黑天鹅<span class="accent">Antifragility & the Black Swan — Taleb</span></h1>
-  <div class="meta"><span>2026年7月3日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 25</div>
+<h1 data-tts="28d15e4ee44b29ae">投资经典：反脆弱与黑天鹅<span class="accent">Antifragility &amp; the Black Swan — Taleb</span></h1>
+<div class="meta"><span>2026年7月3日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 Nassim Taleb 的核心不是"预测危机"，而是承认危机不可预测——然后把组合安排成：无论明天发生什么，你都不会被一次事件抹掉，还可能因动荡受益。四个概念层层递进：先看清成功里有多少是运气（随机性的愚弄），再看清极端事件如何主宰长期结果（黑天鹅与厚尾），然后用非对称结构把尾部从威胁变成期权（凸性与杠铃），最后让承担后果的人做决策（利益共担）。本周不学预测，学如何在测不准的世界里活得久。
 </div>
-
 <!-- Card 1: Fooled by Randomness -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01</div>
-    <h2>随机性的愚弄<span class="en">Fooled by Randomness</span></h2>
-    <span class="tag">运气 vs 技能</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">评价一个决策，不能只看它这一次的结果；要看在所有"本可能发生"的平行世界里，它平均如何。赚到钱不等于决策正确，可能只是这一条路径运气好。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处</div>
-    <div class="quote">"Mild success can be explainable by skills and labor. Wild success is attributable to variance."
+<div class="card" data-tts="1714f5313b06a4c9">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>随机性的愚弄<span class="en">Fooled by Randomness</span></h2>
+<span class="tag">运气 vs 技能</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">评价一个决策，不能只看它这一次的结果；要看在所有"本可能发生"的平行世界里，它平均如何。赚到钱不等于决策正确，可能只是这一条路径运气好。</div>
+</div>
+<div class="section"><div class="label">原始出处</div>
+<div class="quote">"Mild success can be explainable by skills and labor. Wild success is attributable to variance."
     <span class="cite">— Nassim Taleb, <em>Fooled by Randomness</em> (2001)</span>
-    <span class="cn">温和的成功可以用能力与努力解释；狂野的成功，多半要归因于方差（运气）。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>结果是随机与技能的混合，人类却天生把好结果全记在技能账上。两个工具帮你看穿。<strong>遍历性（ergodicity）</strong>：一群人各玩一次的平均，和一个人连玩很多次的结果可能天差地别——只要路径中有"归零"这种吸收壁，时间平均就远低于群体平均。<strong>幸存者偏差</strong>：你看到的成功记录早已剔除了爆掉、退场、不再说话的人。看不见的坟场，才是真实概率。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>Taleb 用蒙特卡洛说明：10000 位只靠抛硬币决策的基金经理，每年"赢"概率各半。五年后，纯靠运气仍连续五年跑赢的约有 10000×(1/2)⁵ ≈ <strong>312 人</strong>。他们会登上封面、被写进"成功学"，而没人能从记录本身分辨他们是天才还是幸运儿。2008 年后大量"连续十年正收益"的量化与信贷基金一次归零，正是这批"硬币赢家"的现实版。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：别走向"一切皆运气"的虚无——在<strong>可重复、样本大、反馈快</strong>的领域（做市、高频、精算），技能确实能从噪声里被统计出来。随机性论只在样本小、尾部厚、反馈慢处最锋利。误用：用"运气"否定他人成绩，却对自己的好运照单全收。</p>
-    <ul class="checklist">
-      <li>这个业绩记录里，爆掉退场的同类被算进分母了吗？</li>
-      <li>样本够大、够久，还是只有三五年的顺风期？</li>
-      <li>如果重来一百次，这个决策平均是赚还是赔？</li>
-      <li>这条策略里有没有"一次就归零"的吸收壁？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">别把牛市当天赋，别把好运当护城河。</div>
-    <div class="reflect">回看你最得意的一笔投资：如果时间倒流、外部环境重掷一次骰子，它还会赢吗？哪部分是判断，哪部分只是恰好赶上了？</div>
-  </div>
+<span class="cn">温和的成功可以用能力与努力解释；狂野的成功，多半要归因于方差（运气）。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>结果是随机与技能的混合，人类却天生把好结果全记在技能账上。两个工具帮你看穿。<strong>遍历性（ergodicity）</strong>：一群人各玩一次的平均，和一个人连玩很多次的结果可能天差地别——只要路径中有"归零"这种吸收壁，时间平均就远低于群体平均。<strong>幸存者偏差</strong>：你看到的成功记录早已剔除了爆掉、退场、不再说话的人。看不见的坟场，才是真实概率。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>Taleb 用蒙特卡洛说明：10000 位只靠抛硬币决策的基金经理，每年"赢"概率各半。五年后，纯靠运气仍连续五年跑赢的约有 10000×(1/2)⁵ ≈ <strong>312 人</strong>。他们会登上封面、被写进"成功学"，而没人能从记录本身分辨他们是天才还是幸运儿。2008 年后大量"连续十年正收益"的量化与信贷基金一次归零，正是这批"硬币赢家"的现实版。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：别走向"一切皆运气"的虚无——在<strong>可重复、样本大、反馈快</strong>的领域（做市、高频、精算），技能确实能从噪声里被统计出来。随机性论只在样本小、尾部厚、反馈慢处最锋利。误用：用"运气"否定他人成绩，却对自己的好运照单全收。</p>
+<ul class="checklist">
+<li>这个业绩记录里，爆掉退场的同类被算进分母了吗？</li>
+<li>样本够大、够久，还是只有三五年的顺风期？</li>
+<li>如果重来一百次，这个决策平均是赚还是赔？</li>
+<li>这条策略里有没有"一次就归零"的吸收壁？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">别把牛市当天赋，别把好运当护城河。</div>
+<div class="reflect">回看你最得意的一笔投资：如果时间倒流、外部环境重掷一次骰子，它还会赢吗？哪部分是判断，哪部分只是恰好赶上了？</div>
+</div>
+</div>
 <!-- Card 2: Black Swan & Fat Tails -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02</div>
-    <h2>黑天鹅与厚尾<span class="en">The Black Swan & Fat Tails</span></h2>
-    <span class="tag">极端斯坦</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">长期结果不是由无数"正常日子"决定的，而是由极少数罕见、剧烈、事后才被解释的事件决定的。正态分布严重低估这些尾部，用它管风险等于给自己下毒。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处</div>
-    <div class="quote">"First, it is an outlier… Second, it carries an extreme impact… Third, in spite of its outlier status, human nature makes us concoct explanations for its occurrence after the fact, making it explainable and predictable."
+<div class="card" data-tts="c2e9f78c6a7209dc">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>黑天鹅与厚尾<span class="en">The Black Swan &amp; Fat Tails</span></h2>
+<span class="tag">极端斯坦</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">长期结果不是由无数"正常日子"决定的，而是由极少数罕见、剧烈、事后才被解释的事件决定的。正态分布严重低估这些尾部，用它管风险等于给自己下毒。</div>
+</div>
+<div class="section"><div class="label">原始出处</div>
+<div class="quote">"First, it is an outlier… Second, it carries an extreme impact… Third, in spite of its outlier status, human nature makes us concoct explanations for its occurrence after the fact, making it explainable and predictable."
     <span class="cite">— Nassim Taleb, <em>The Black Swan</em> (2007)</span>
-    <span class="cn">黑天鹅有三个属性：其一，它是离群值，落在常规预期之外；其二，它带来极端冲击；其三，尽管出人意料，人性却驱使我们事后编造解释，把它说成本可解释、本可预测。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Taleb 把世界分成两片。<strong>平均斯坦（Mediocristan）</strong>：单个样本无法撼动总量，如身高——再高的人也不会让全人类均值翻倍，正态分布在此有效。<strong>极端斯坦（Extremistan）</strong>：单个样本可以主宰全局，如财富、市场收益——一天暴跌能抹掉十年涨幅。金融属于极端斯坦，从业者却拿平均斯坦的工具（正态、VaR、夏普比率）去度量它。他用"<strong>火鸡问题</strong>"点破：一只被喂养一千天的火鸡，天天积累"人类爱我"的证据，信心在感恩节前一天达到顶峰——那正是它被宰的前夜。用平静期外推安全，是最危险的自信。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>LTCM（长期资本管理）1998：诺奖得主 Scholes 与 Merton 坐镇，模型精妙。基金以约 47 亿美元自有资本撬动约 <strong>1250 亿美元</strong>头寸、逾 1 万亿美元名义衍生品（杠杆约 25:1），模型假设收益近似正态，认定这种规模的亏损"几百万年一遇"。1998 年 8 月俄罗斯违约，相关性瞬间全趋向 1，不足四个月亏掉约 <strong>46 亿美元</strong>、几近清零，最终由美联储牵头 14 家机构注资约 36 亿美元接管。所谓"10 个标准差"的事件，在厚尾世界里几年就来一次。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：不是所有事都在极端斯坦——寿命、体检指标多属平均斯坦，硬套黑天鹅思维只会陷入瘫痪式恐惧。且黑天鹅<strong>无法被预测</strong>，声称"预测到下一只黑天鹅"的人都在自相矛盾；能做的只是不被它摧毁。误用：把每次普通回调都渲染成"黑天鹅"，为恐慌卖出找借口。</p>
-    <ul class="checklist">
-      <li>这项资产/策略属于平均斯坦还是极端斯坦？我用对度量工具了吗？</li>
-      <li>我的风险模型假设了正态分布吗？尾部被低估了多少？</li>
-      <li>连续 N 天/N 年的平静，是安全的证据，还是火鸡式的错觉？</li>
-      <li>一次极端事件（-50% 或相关性全为 1）会让我永久出局吗？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">重要的不是概率有多小，而是一旦发生你输不输得起。</div>
-    <div class="reflect">列出你组合里所有隐含"这不会发生"的假设（不会违约、不会脱钩、相关性不会同时冲高）。若它们在同一天全部失效，你还站得住吗？</div>
-  </div>
+<span class="cn">黑天鹅有三个属性：其一，它是离群值，落在常规预期之外；其二，它带来极端冲击；其三，尽管出人意料，人性却驱使我们事后编造解释，把它说成本可解释、本可预测。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>Taleb 把世界分成两片。<strong>平均斯坦（Mediocristan）</strong>：单个样本无法撼动总量，如身高——再高的人也不会让全人类均值翻倍，正态分布在此有效。<strong>极端斯坦（Extremistan）</strong>：单个样本可以主宰全局，如财富、市场收益——一天暴跌能抹掉十年涨幅。金融属于极端斯坦，从业者却拿平均斯坦的工具（正态、VaR、夏普比率）去度量它。他用"<strong>火鸡问题</strong>"点破：一只被喂养一千天的火鸡，天天积累"人类爱我"的证据，信心在感恩节前一天达到顶峰——那正是它被宰的前夜。用平静期外推安全，是最危险的自信。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>LTCM（长期资本管理）1998：诺奖得主 Scholes 与 Merton 坐镇，模型精妙。基金以约 47 亿美元自有资本撬动约 <strong>1250 亿美元</strong>头寸、逾 1 万亿美元名义衍生品（杠杆约 25:1），模型假设收益近似正态，认定这种规模的亏损"几百万年一遇"。1998 年 8 月俄罗斯违约，相关性瞬间全趋向 1，不足四个月亏掉约 <strong>46 亿美元</strong>、几近清零，最终由美联储牵头 14 家机构注资约 36 亿美元接管。所谓"10 个标准差"的事件，在厚尾世界里几年就来一次。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：不是所有事都在极端斯坦——寿命、体检指标多属平均斯坦，硬套黑天鹅思维只会陷入瘫痪式恐惧。且黑天鹅<strong>无法被预测</strong>，声称"预测到下一只黑天鹅"的人都在自相矛盾；能做的只是不被它摧毁。误用：把每次普通回调都渲染成"黑天鹅"，为恐慌卖出找借口。</p>
+<ul class="checklist">
+<li>这项资产/策略属于平均斯坦还是极端斯坦？我用对度量工具了吗？</li>
+<li>我的风险模型假设了正态分布吗？尾部被低估了多少？</li>
+<li>连续 N 天/N 年的平静，是安全的证据，还是火鸡式的错觉？</li>
+<li>一次极端事件（-50% 或相关性全为 1）会让我永久出局吗？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">重要的不是概率有多小，而是一旦发生你输不输得起。</div>
+<div class="reflect">列出你组合里所有隐含"这不会发生"的假设（不会违约、不会脱钩、相关性不会同时冲高）。若它们在同一天全部失效，你还站得住吗？</div>
+</div>
+</div>
 <!-- Card 3: Convexity & Barbell -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03</div>
-    <h2>凸性与杠铃策略<span class="en">Convexity & the Barbell</span></h2>
-    <span class="tag">非对称</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">反脆弱不是"抗住"冲击，而是从冲击中获益。做法是把收益结构做成凸的：下行被封死在可承受的小损失，上行则对波动敞开、越乱越赚。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处</div>
-    <div class="quote">"Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, and stressors… Let us call it antifragile. Antifragility is beyond resilience or robustness. The resilient resists shocks and stays the same; the antifragile gets better."
+<div class="card" data-tts="d03aac0a99da8d69">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>凸性与杠铃策略<span class="en">Convexity &amp; the Barbell</span></h2>
+<span class="tag">非对称</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">反脆弱不是"抗住"冲击，而是从冲击中获益。做法是把收益结构做成凸的：下行被封死在可承受的小损失，上行则对波动敞开、越乱越赚。</div>
+</div>
+<div class="section"><div class="label">原始出处</div>
+<div class="quote">"Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, and stressors… Let us call it antifragile. Antifragility is beyond resilience or robustness. The resilient resists shocks and stays the same; the antifragile gets better."
     <span class="cite">— Nassim Taleb, <em>Antifragile</em> (2012)</span>
-    <span class="cn">有些事物从冲击中受益，在波动、随机、混乱与压力下反而繁荣生长……称之为"反脆弱"。反脆弱超越了韧性与稳健：韧性只是抵抗冲击、维持原状，反脆弱则是变得更好。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>脆弱的怕波动（玻璃杯），稳健的不怕（石头），反脆弱的<strong>喜欢波动</strong>（越练越强的肌肉）。工具是<strong>杠铃策略（barbell）</strong>：85–90% 放进极端安全资产（短债、现金），10–15% 放进有巨大凸性上行的高风险敞口（深度虚值期权、早期风投），中间"看似稳健实则暗藏尾部"的部分（高杠杆信用、押注平静延续）反而清空。最坏只损失那 10%，一次黑天鹅却可能让它翻很多倍。这与<strong>分布式系统</strong>同构：Netflix 用 Chaos Monkey 主动注入故障，靠持续小压力让系统在真实故障时更稳——反脆弱来自与波动共处。</p>
-  </div>
-
-  <div class="section"><div class="label">凸性：非对称的收益结构</div>
-    <div class="chart">
-      <svg viewBox="0 0 320 190" width="100%" style="max-width:420px;display:block;margin:0 auto">
-        <line x1="30" y1="150" x2="300" y2="150" stroke="#b8893a" stroke-width="1.2"/>
-        <line x1="30" y1="20" x2="30" y2="150" stroke="#b8893a" stroke-width="1.2"/>
-        <text x="305" y="154" font-size="9" fill="#8b7150" text-anchor="end" font-style="italic">冲击 →</text>
-        <text x="34" y="18" font-size="9" fill="#8b7150" font-style="italic">收益</text>
-        <line x1="30" y1="135" x2="300" y2="135" stroke="#d9c088" stroke-width="0.8" stroke-dasharray="3,3"/>
-        <text x="292" y="132" font-size="8" fill="#c0392b" text-anchor="end">下行封顶</text>
-        <path d="M30 135 Q150 138 200 110 T300 25" fill="none" stroke="#7a5c1f" stroke-width="2.4"/>
-        <text x="240" y="55" font-size="9" fill="#7a5c1f" font-weight="700">上行敞开</text>
-      </svg>
-      <div class="cap">凸曲线：损失被地板封住，收益随冲击加速——越乱越有利。</div>
-    </div>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>Taleb 任顾问的 Universa Investments（Mark Spitznagel 掌舵）常年买入深度虚值看跌期权，平日持续付小额"保费"、缓慢失血。回报来自罕见崩盘：据其披露，2020 年一季度 COVID 暴跌中该尾部对冲策略录得约 <strong>+4144%</strong> 的季度回报；2008 年也曾录得翻倍级收益。一次凸性兑现，覆盖此前多年负 carry。这就是杠铃的极端形态：99% 的日子小亏，1% 的日子把全场赚回来。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：凸性有<strong>持续成本（负 carry）</strong>。尾部对冲平日不断失血，若熬不过连续几年小亏，往往在崩盘前一刻割肉——payoff 恰恰给能坚持到底的人。长达十年不出黑天鹅，天真的"永久买保险"会被成本拖垮。另一误用：把高风险端做太大、或用带追加保证金的杠杆，把"最多亏 10%"偷偷变成"可能亏光"。反脆弱要的是<strong>有限且已知的下行</strong>，不是赌得更狠。</p>
-    <ul class="checklist">
-      <li>我的下行是否被硬性封顶、且是我能长期承受的额度？</li>
-      <li>上行是否真凸（越乱越赚），还是只是普通的多头？</li>
-      <li>高风险端用了会触发追加保证金的杠杆吗？（会 → 不是杠铃）</li>
-      <li>我能否忍受为凸性连续数年付"保费"而不中途放弃？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">封住你能想象的最坏，把最好留给想象不到的意外。</div>
-    <div class="reflect">你的组合面对一次大动荡，是凹的（越跌亏得越快、可能爆仓）还是凸的（下行有底、上行有弹）？把它画成一条收益曲线，你会更愿意持有哪一条？</div>
-  </div>
+<span class="cn">有些事物从冲击中受益，在波动、随机、混乱与压力下反而繁荣生长……称之为"反脆弱"。反脆弱超越了韧性与稳健：韧性只是抵抗冲击、维持原状，反脆弱则是变得更好。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>脆弱的怕波动（玻璃杯），稳健的不怕（石头），反脆弱的<strong>喜欢波动</strong>（越练越强的肌肉）。工具是<strong>杠铃策略（barbell）</strong>：85–90% 放进极端安全资产（短债、现金），10–15% 放进有巨大凸性上行的高风险敞口（深度虚值期权、早期风投），中间"看似稳健实则暗藏尾部"的部分（高杠杆信用、押注平静延续）反而清空。最坏只损失那 10%，一次黑天鹅却可能让它翻很多倍。这与<strong>分布式系统</strong>同构：Netflix 用 Chaos Monkey 主动注入故障，靠持续小压力让系统在真实故障时更稳——反脆弱来自与波动共处。</p>
+</div>
+<div class="section"><div class="label">凸性：非对称的收益结构</div>
+<div class="chart">
+<svg style="max-width:420px;display:block;margin:0 auto" viewbox="0 0 320 190" width="100%">
+<line stroke="#b8893a" stroke-width="1.2" x1="30" x2="300" y1="150" y2="150"></line>
+<line stroke="#b8893a" stroke-width="1.2" x1="30" x2="30" y1="20" y2="150"></line>
+<text fill="#8b7150" font-size="9" font-style="italic" text-anchor="end" x="305" y="154">冲击 →</text>
+<text fill="#8b7150" font-size="9" font-style="italic" x="34" y="18">收益</text>
+<line stroke="#d9c088" stroke-dasharray="3,3" stroke-width="0.8" x1="30" x2="300" y1="135" y2="135"></line>
+<text fill="#c0392b" font-size="8" text-anchor="end" x="292" y="132">下行封顶</text>
+<path d="M30 135 Q150 138 200 110 T300 25" fill="none" stroke="#7a5c1f" stroke-width="2.4"></path>
+<text fill="#7a5c1f" font-size="9" font-weight="700" x="240" y="55">上行敞开</text>
+</svg>
+<div class="cap">凸曲线：损失被地板封住，收益随冲击加速——越乱越有利。</div>
+</div>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>Taleb 任顾问的 Universa Investments（Mark Spitznagel 掌舵）常年买入深度虚值看跌期权，平日持续付小额"保费"、缓慢失血。回报来自罕见崩盘：据其披露，2020 年一季度 COVID 暴跌中该尾部对冲策略录得约 <strong>+4144%</strong> 的季度回报；2008 年也曾录得翻倍级收益。一次凸性兑现，覆盖此前多年负 carry。这就是杠铃的极端形态：99% 的日子小亏，1% 的日子把全场赚回来。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：凸性有<strong>持续成本（负 carry）</strong>。尾部对冲平日不断失血，若熬不过连续几年小亏，往往在崩盘前一刻割肉——payoff 恰恰给能坚持到底的人。长达十年不出黑天鹅，天真的"永久买保险"会被成本拖垮。另一误用：把高风险端做太大、或用带追加保证金的杠杆，把"最多亏 10%"偷偷变成"可能亏光"。反脆弱要的是<strong>有限且已知的下行</strong>，不是赌得更狠。</p>
+<ul class="checklist">
+<li>我的下行是否被硬性封顶、且是我能长期承受的额度？</li>
+<li>上行是否真凸（越乱越赚），还是只是普通的多头？</li>
+<li>高风险端用了会触发追加保证金的杠杆吗？（会 → 不是杠铃）</li>
+<li>我能否忍受为凸性连续数年付"保费"而不中途放弃？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">封住你能想象的最坏，把最好留给想象不到的意外。</div>
+<div class="reflect">你的组合面对一次大动荡，是凹的（越跌亏得越快、可能爆仓）还是凸的（下行有底、上行有弹）？把它画成一条收益曲线，你会更愿意持有哪一条？</div>
+</div>
+</div>
 <!-- Card 4: Skin in the Game & Via Negativa -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04</div>
-    <h2>利益共担与减法智慧<span class="en">Skin in the Game & Via Negativa</span></h2>
-    <span class="tag">复杂系统</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">在复杂系统里，稳健更多来自"删除脆弱"而非"增加聪明"；而只有让承担后果的人来做决策，风险才不会被悄悄转嫁给别人。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处</div>
-    <div class="quote">"Don't tell me what you think, tell me what you have in your portfolio."
+<div class="card" data-tts="fe55e2ecc4fafb55">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>利益共担与减法智慧<span class="en">Skin in the Game &amp; Via Negativa</span></h2>
+<span class="tag">复杂系统</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">在复杂系统里，稳健更多来自"删除脆弱"而非"增加聪明"；而只有让承担后果的人来做决策，风险才不会被悄悄转嫁给别人。</div>
+</div>
+<div class="section"><div class="label">原始出处</div>
+<div class="quote">"Don't tell me what you think, tell me what you have in your portfolio."
     <span class="cite">— Nassim Taleb, <em>Skin in the Game</em> (2018)</span>
-    <span class="cn">别告诉我你怎么想，告诉我你的组合里持有什么。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>两条互补原则。<strong>减法智慧（via negativa）</strong>：复杂系统充满非线性连锁反应，主动"添加"（更多杠杆、干预、预测）常带来隐性代价（iatrogenics，好心办坏事）；更可靠的进步来自<strong>移除已知脆弱</strong>——去杠杆、去掉会归零的敞口、去掉自己都讲不清的持仓。删掉一个坏决策比增加一个好主意更稳健，因为你更确定"什么会害死你"。<strong>利益共担（skin in the game）</strong>：预测若不承担后果，就会系统性低估尾部风险。判断一个人是否真信，看他下了多少注，而非说了多少。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2008–2009：制造并出售次贷衍生品的银行高管，在泡沫期按账面利润领取巨额奖金；危机爆发后损失由纳税人以数千亿美元救助买单，多数决策者的既得奖金无需吐回。<strong>收益私有化、损失社会化</strong>——做决策的人不承担尾部，尾部风险便被系统性累积。反观 Buffett 把净资产几乎全留在 Berkshire 股票、Taleb 本人重仓自家尾部策略：他们的话可信，是因为自己就站在爆炸半径内。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：利益共担能对齐激励，却不保证判断正确——赌上全部身家的人也可能真诚地错，甚至因过度自信错得更惨。减法也非万能：一味"什么都删"会错过一切非对称上行，把稳健做成停滞。两条原则是<strong>过滤器</strong>而非策略本身：先滤掉会害死你的、滤掉说一套做一套的，再在剩下的里积极进取。</p>
-    <ul class="checklist">
-      <li>给我建议/预测的人，自己在这上面下注了吗？</li>
-      <li>如果我错了，是我承担后果，还是后果被转嫁给别人？</li>
-      <li>本周我能"删除"哪一个脆弱点（杠杆、看不懂的持仓、会归零的敞口）？</li>
-      <li>我是在增加复杂度求聪明，还是在减少脆弱求稳健？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">先删掉会杀死你的，剩下的自然会照顾自己。</div>
-    <div class="reflect">看看你信息来源里最响亮的声音——他真金白银押注自己的观点了吗？再看你自己：这周若只能做一个"减法"让组合更稳健，你会删掉什么？</div>
-  </div>
+<span class="cn">别告诉我你怎么想，告诉我你的组合里持有什么。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>两条互补原则。<strong>减法智慧（via negativa）</strong>：复杂系统充满非线性连锁反应，主动"添加"（更多杠杆、干预、预测）常带来隐性代价（iatrogenics，好心办坏事）；更可靠的进步来自<strong>移除已知脆弱</strong>——去杠杆、去掉会归零的敞口、去掉自己都讲不清的持仓。删掉一个坏决策比增加一个好主意更稳健，因为你更确定"什么会害死你"。<strong>利益共担（skin in the game）</strong>：预测若不承担后果，就会系统性低估尾部风险。判断一个人是否真信，看他下了多少注，而非说了多少。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2008–2009：制造并出售次贷衍生品的银行高管，在泡沫期按账面利润领取巨额奖金；危机爆发后损失由纳税人以数千亿美元救助买单，多数决策者的既得奖金无需吐回。<strong>收益私有化、损失社会化</strong>——做决策的人不承担尾部，尾部风险便被系统性累积。反观 Buffett 把净资产几乎全留在 Berkshire 股票、Taleb 本人重仓自家尾部策略：他们的话可信，是因为自己就站在爆炸半径内。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：利益共担能对齐激励，却不保证判断正确——赌上全部身家的人也可能真诚地错，甚至因过度自信错得更惨。减法也非万能：一味"什么都删"会错过一切非对称上行，把稳健做成停滞。两条原则是<strong>过滤器</strong>而非策略本身：先滤掉会害死你的、滤掉说一套做一套的，再在剩下的里积极进取。</p>
+<ul class="checklist">
+<li>给我建议/预测的人，自己在这上面下注了吗？</li>
+<li>如果我错了，是我承担后果，还是后果被转嫁给别人？</li>
+<li>本周我能"删除"哪一个脆弱点（杠杆、看不懂的持仓、会归零的敞口）？</li>
+<li>我是在增加复杂度求聪明，还是在减少脆弱求稳健？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">先删掉会杀死你的，剩下的自然会照顾自己。</div>
+<div class="reflect">看看你信息来源里最响亮的声音——他真金白银押注自己的观点了吗？再看你自己：这周若只能做一个"减法"让组合更稳健，你会删掉什么？</div>
+</div>
+</div>
 <div class="faq">
-  <h3>深入思考</h3>
-  <details><summary>黑天鹅既然无法预测，Taleb 的体系是不是自相矛盾？</summary>
-  <div>不矛盾，他从不主张预测。核心是从"预测事件"转向"改造暴露结构"：你不知道哪只黑天鹅会来，但完全可以控制自己对它的敞口是凹是凸。这类似工程的容错——不预测哪块硬盘会坏，而是做冗余，让任何单点故障都不致命。他反对"精确预测 + 高杠杆"，推崇"承认无知 + 非对称结构"。落点不是预言，而是无论预言对错都活得下来。</div></details>
-  <details><summary>反脆弱是否被滥用成"拥抱一切波动"？该拥抱的乱和该躲的乱如何区分？</summary>
-  <div>分野在于<strong>下行是否有界、上行是否为凸</strong>。该拥抱的：下行封在可承受的小损失，混乱能带来不成比例的大收益（试错创业、深度虚值期权、可选性）。该躲开的：下行无界或会归零（高杠杆、裸卖期权、押注"平静延续"），是伪装成收益的脆弱。Taleb 强调：不要为波动而波动，反脆弱要的是"有封顶的乱"，不是押上命赌运气。</div></details>
-  <details><summary>AI 时代，反脆弱框架会被增强还是被侵蚀？</summary>
-  <div>两面都被放大。侵蚀面：AI 让策略高度同质、反馈回路更紧，当大量模型学到相似模式、同向行动时，系统相关性上升、尾部更厚——"闪崩"式连锁踩踏可能更频繁。增强面：AI 大幅降低"试错"成本，让个体更易低成本铺开大量凸性小赌注（可选性），这正是反脆弱想要的结构；AI 训练里的对抗与随机注入（类似 Chaos Monkey）本身就是反脆弱工程。关键仍是老问题：你用 AI 追求精确预测并加杠杆（放大脆弱），还是廉价铺开非对称敞口（放大凸性）。</div></details>
+<h3 data-tts="cc614addc06a0b76">深入思考</h3>
+<details><summary>黑天鹅既然无法预测，Taleb 的体系是不是自相矛盾？</summary>
+<div>不矛盾，他从不主张预测。核心是从"预测事件"转向"改造暴露结构"：你不知道哪只黑天鹅会来，但完全可以控制自己对它的敞口是凹是凸。这类似工程的容错——不预测哪块硬盘会坏，而是做冗余，让任何单点故障都不致命。他反对"精确预测 + 高杠杆"，推崇"承认无知 + 非对称结构"。落点不是预言，而是无论预言对错都活得下来。</div></details>
+<details><summary>反脆弱是否被滥用成"拥抱一切波动"？该拥抱的乱和该躲的乱如何区分？</summary>
+<div>分野在于<strong>下行是否有界、上行是否为凸</strong>。该拥抱的：下行封在可承受的小损失，混乱能带来不成比例的大收益（试错创业、深度虚值期权、可选性）。该躲开的：下行无界或会归零（高杠杆、裸卖期权、押注"平静延续"），是伪装成收益的脆弱。Taleb 强调：不要为波动而波动，反脆弱要的是"有封顶的乱"，不是押上命赌运气。</div></details>
+<details><summary>AI 时代，反脆弱框架会被增强还是被侵蚀？</summary>
+<div>两面都被放大。侵蚀面：AI 让策略高度同质、反馈回路更紧，当大量模型学到相似模式、同向行动时，系统相关性上升、尾部更厚——"闪崩"式连锁踩踏可能更频繁。增强面：AI 大幅降低"试错"成本，让个体更易低成本铺开大量凸性小赌注（可选性），这正是反脆弱想要的结构；AI 训练里的对抗与随机注入（类似 Chaos Monkey）本身就是反脆弱工程。关键仍是老问题：你用 AI 追求精确预测并加杠杆（放大脆弱），还是廉价铺开非对称敞口（放大凸性）。</div></details>
 </div>
-
 <nav><a href="index.html">← 返回 投资经典</a></nav>
 <footer>BigCat · Investing · Day 25 · 2026</footer>
-
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </div></body></html>
