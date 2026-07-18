@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：量化与系统投资 — Day 28</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -47,206 +48,173 @@ nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 28</div>
-  <h1>投资经典：量化与系统投资<span class="accent">Rules, Factors, and the Limits of the Machine</span></h1>
-  <div class="meta"><span>2026年7月6日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 28</div>
+<h1 data-tts="5cc0fdc3a5a55848">投资经典：量化与系统投资<span class="accent">Rules, Factors, and the Limits of the Machine</span></h1>
+<div class="meta"><span>2026年7月6日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 量化投资常被误解为两个极端：印钞机器，或黑箱骗局。真相更朴素——它是把"用规则代替情绪"推到极致。本周分四层看：因子是可解释的系统性收益来源；指数、因子、个股是三种代价不同的下注方式；Renaissance 的大奖章既证明市场并非完全有效，也证明那种优势多难复制；最后诚实地问：一个人凭一台电脑，能做量化吗？
 </div>
-
 <!-- Card 1: Factor Investing -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01</div>
-    <h2>因子投资<span class="en">Factor Investing</span></h2>
-    <span class="tag">系统性收益来源</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">超额收益不是随机运气，而可以被拆解成几个持久、可解释、跨越成百上千只股票都成立的"因子"——价值、动量、质量、规模、低波动。你赚的不是某只股票，而是某种系统性特征的溢价。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"The premier anomaly is momentum. Stocks with high returns over the past year tend to have high returns over the next few months."
-    <span class="cite">— Eugene Fama & Kenneth French, <em>Dissecting Anomalies</em>, Journal of Finance (2008)</span>
-    <span class="cn">最首要的异象是动量：过去一年回报高的股票，往往在接下来几个月仍有高回报。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>因子是量化的基石。Fama 与 French 1992/1993 年用<strong>价值</strong>（低市净率）和<strong>规模</strong>（小市值）解释了大部分股票收益差异，后又加入<strong>盈利能力</strong>等质量因子；动量则由 Jegadeesh 与 Titman 1993 年记录。有意思的是这句金句出自 Fama——有效市场假说之父，却承认动量是他模型解释不了的"首要异象"。因子为何能持续？通常两类解释：<strong>风险补偿</strong>（便宜的价值股更脆弱，溢价是承担风险的报酬）或<strong>行为偏差</strong>（投资者系统性追高杀跌、厌恶枯燥的便宜货）。关键在于：因子不是免费午餐，它要求你在漫长的失效期里不逃跑。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>价值因子的"失落十年"是最好的教材。2010 至 2020 年间，经典的价值多空组合（买便宜、卖昂贵）经历了历史上最惨烈的回撤之一，长期跑输成长股；以量化著称的 AQR 旗舰策略在 2018–2020 年连年受挫，创始人 Cliff Asness 一度撰文为坚持辩护。就在许多人宣告"价值已死"时，2020 年底至 2021 年它又强势反弹。<strong>一个被验证了几十年的因子，也能连续十年让你怀疑人生</strong>——这正是因子投资最难之处：数学上成立，情绪上难熬。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：因子会在被公开后衰减（异象回报在发表后平均衰减约 <strong>58%</strong>，McLean & Pontiff 2016）；资金拥挤会侵蚀溢价；很多"因子"只是数据挖掘出的噪声。误用：把短期表现当有效性的证据，或叠加太多因子直到过拟合。</p>
-    <ul class="checklist">
-      <li>这个因子有没有独立于数据之外的<strong>经济学或行为学解释</strong>？</li>
-      <li>它在不同市场、不同年代、不同资产上都成立吗（而非只在美股某段）？</li>
-      <li>我能承受它连续 5–10 年跑输吗？跑输时我会加倍坚持还是割肉？</li>
-      <li>扣除交易成本、换手税负后，纸面溢价还剩多少？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">因子给你的是一张纪律的处方，而不是一张免死金牌——它的代价，是熬过它失效的那些年。</div>
-    <div class="reflect">回看你的持仓，你在无意中承担了哪些因子暴露——更像在赌价值、动量还是质量？如果那个因子明天开始连跌三年，你的组合和心态撑得住吗？</div>
-  </div>
+<div class="card" data-tts="601332886847f2bc">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>因子投资<span class="en">Factor Investing</span></h2>
+<span class="tag">系统性收益来源</span>
 </div>
-
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">超额收益不是随机运气，而可以被拆解成几个持久、可解释、跨越成百上千只股票都成立的"因子"——价值、动量、质量、规模、低波动。你赚的不是某只股票，而是某种系统性特征的溢价。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"The premier anomaly is momentum. Stocks with high returns over the past year tend to have high returns over the next few months."
+    <span class="cite">— Eugene Fama &amp; Kenneth French, <em>Dissecting Anomalies</em>, Journal of Finance (2008)</span>
+<span class="cn">最首要的异象是动量：过去一年回报高的股票，往往在接下来几个月仍有高回报。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>因子是量化的基石。Fama 与 French 1992/1993 年用<strong>价值</strong>（低市净率）和<strong>规模</strong>（小市值）解释了大部分股票收益差异，后又加入<strong>盈利能力</strong>等质量因子；动量则由 Jegadeesh 与 Titman 1993 年记录。有意思的是这句金句出自 Fama——有效市场假说之父，却承认动量是他模型解释不了的"首要异象"。因子为何能持续？通常两类解释：<strong>风险补偿</strong>（便宜的价值股更脆弱，溢价是承担风险的报酬）或<strong>行为偏差</strong>（投资者系统性追高杀跌、厌恶枯燥的便宜货）。关键在于：因子不是免费午餐，它要求你在漫长的失效期里不逃跑。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>价值因子的"失落十年"是最好的教材。2010 至 2020 年间，经典的价值多空组合（买便宜、卖昂贵）经历了历史上最惨烈的回撤之一，长期跑输成长股；以量化著称的 AQR 旗舰策略在 2018–2020 年连年受挫，创始人 Cliff Asness 一度撰文为坚持辩护。就在许多人宣告"价值已死"时，2020 年底至 2021 年它又强势反弹。<strong>一个被验证了几十年的因子，也能连续十年让你怀疑人生</strong>——这正是因子投资最难之处：数学上成立，情绪上难熬。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：因子会在被公开后衰减（异象回报在发表后平均衰减约 <strong>58%</strong>，McLean &amp; Pontiff 2016）；资金拥挤会侵蚀溢价；很多"因子"只是数据挖掘出的噪声。误用：把短期表现当有效性的证据，或叠加太多因子直到过拟合。</p>
+<ul class="checklist">
+<li>这个因子有没有独立于数据之外的<strong>经济学或行为学解释</strong>？</li>
+<li>它在不同市场、不同年代、不同资产上都成立吗（而非只在美股某段）？</li>
+<li>我能承受它连续 5–10 年跑输吗？跑输时我会加倍坚持还是割肉？</li>
+<li>扣除交易成本、换手税负后，纸面溢价还剩多少？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">因子给你的是一张纪律的处方，而不是一张免死金牌——它的代价，是熬过它失效的那些年。</div>
+<div class="reflect">回看你的持仓，你在无意中承担了哪些因子暴露——更像在赌价值、动量还是质量？如果那个因子明天开始连跌三年，你的组合和心态撑得住吗？</div>
+</div>
+</div>
 <!-- Card 2: Index vs Factor vs Stock -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02</div>
-    <h2>指数 · 因子 · 个股<span class="en">Index vs Factor vs Stock-Picking</span></h2>
-    <span class="tag">三种下注方式</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">被动指数、因子倾斜、精选个股不是"谁更高级"，而是三种要求不同、代价不同的下注方式。选错的不是策略，而是把策略和你真正拥有的优势、以及你能承受的痛苦错配了。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"Properly measured, the average actively managed dollar must underperform the average passively managed dollar, net of costs. Empirical analyses that appear to refute this principle are guilty of improper measurement."
+<div class="card" data-tts="498974232ba5f7f4">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>指数 · 因子 · 个股<span class="en">Index vs Factor vs Stock-Picking</span></h2>
+<span class="tag">三种下注方式</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">被动指数、因子倾斜、精选个股不是"谁更高级"，而是三种要求不同、代价不同的下注方式。选错的不是策略，而是把策略和你真正拥有的优势、以及你能承受的痛苦错配了。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"Properly measured, the average actively managed dollar must underperform the average passively managed dollar, net of costs. Empirical analyses that appear to refute this principle are guilty of improper measurement."
     <span class="cite">— William F. Sharpe, <em>The Arithmetic of Active Management</em> (1991)</span>
-    <span class="cn">只要度量得当，主动管理的平均每一元，在扣除成本后必然跑输被动管理的平均每一元。任何看似推翻这条原理的实证分析，都是度量方式出了错。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Sharpe 的"主动管理算术"是恒等式而非观点：所有投资者的持仓加总就是整个市场，故扣费前主动与被动收益相同，扣费后主动<strong>作为整体必然落后</strong>。这决定了三层的逻辑——<strong>指数</strong>：放弃寻找优势、接受市场回报、把成本压到最低；<strong>因子</strong>：像指数一样用规则分散持有，但系统性向某类特征倾斜，是主动与被动的中间道路；<strong>个股</strong>：集中下注，要求你有真实的信息或分析优势——没有优势的集中只是放大随机性。三者的本质差别，是"你的优势从哪来"。</p>
-    <table class="matrix">
-      <tr><th></th><th>指数</th><th>因子/Smart Beta</th><th>精选个股</th></tr>
-      <tr><td class="rh">所需优势</td><td>无<small>接受平均</small></td><td>纪律与耐心<small>熬过失效期</small></td><td>真实认知优势<small>极稀缺</small></td></tr>
-      <tr><td class="rh">成本</td><td>极低</td><td>中等</td><td>高<small>犯错代价大</small></td></tr>
-      <tr><td class="rh">主要风险</td><td>市值集中<small>随大盘</small></td><td>因子长期失效</td><td>判断错误<small>永久损失</small></td></tr>
-    </table>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>标普道琼斯的 SPIVA 记分卡年复一年印证 Sharpe：过去 20 年约 <strong>90%</strong> 的美国大盘主动基金跑输标普 500。最戏剧性的实证是 Buffett 2007 年的百万美元赌局——他押注标普 500 指数基金能在十年内跑赢一篮子对冲基金。2008–2017 年结算：指数基金累计 <strong>+125.8%</strong>，对手的组合基金约 <strong>+36%</strong>（年化仅约 2.2%）。费用与主动管理的算术，安静地碾压了华尔街最聪明的一群人。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：指数并非无风险——市值加权会让你在少数巨头上越买越重（如美股"七巨头"曾占标普相当大比重），泡沫顶部尤其危险。因子会长期失效；个股对<strong>确有优势者</strong>仍是最优路径（Buffett 本人就是反例）。误用：能力不配却硬做个股，或用"我懂"掩盖没有优势。</p>
-    <ul class="checklist">
-      <li>我做主动/个股，凭的是<strong>可说清的优势</strong>，还是只是不甘心拿平均？</li>
-      <li>我的换手率和费用，有没有悄悄吃掉全部超额收益？</li>
-      <li>我的指数持仓是否已高度集中在少数几只权重股上？</li>
-      <li>三层里，我实际的时间、性格、优势更适合哪一层？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">选策略之前先诚实回答：我的优势到底是什么？没有优势时，最聪明的主动就是被动。</div>
-    <div class="reflect">用一句话说清"我凭什么能跑赢指数"，你说得出来吗？若说不出，你为主动付出的每一分成本，是在买优势还是买安慰？</div>
-  </div>
+<span class="cn">只要度量得当，主动管理的平均每一元，在扣除成本后必然跑输被动管理的平均每一元。任何看似推翻这条原理的实证分析，都是度量方式出了错。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>Sharpe 的"主动管理算术"是恒等式而非观点：所有投资者的持仓加总就是整个市场，故扣费前主动与被动收益相同，扣费后主动<strong>作为整体必然落后</strong>。这决定了三层的逻辑——<strong>指数</strong>：放弃寻找优势、接受市场回报、把成本压到最低；<strong>因子</strong>：像指数一样用规则分散持有，但系统性向某类特征倾斜，是主动与被动的中间道路；<strong>个股</strong>：集中下注，要求你有真实的信息或分析优势——没有优势的集中只是放大随机性。三者的本质差别，是"你的优势从哪来"。</p>
+<table class="matrix">
+<tr><th></th><th>指数</th><th>因子/Smart Beta</th><th>精选个股</th></tr>
+<tr><td class="rh">所需优势</td><td>无<small>接受平均</small></td><td>纪律与耐心<small>熬过失效期</small></td><td>真实认知优势<small>极稀缺</small></td></tr>
+<tr><td class="rh">成本</td><td>极低</td><td>中等</td><td>高<small>犯错代价大</small></td></tr>
+<tr><td class="rh">主要风险</td><td>市值集中<small>随大盘</small></td><td>因子长期失效</td><td>判断错误<small>永久损失</small></td></tr>
+</table>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>标普道琼斯的 SPIVA 记分卡年复一年印证 Sharpe：过去 20 年约 <strong>90%</strong> 的美国大盘主动基金跑输标普 500。最戏剧性的实证是 Buffett 2007 年的百万美元赌局——他押注标普 500 指数基金能在十年内跑赢一篮子对冲基金。2008–2017 年结算：指数基金累计 <strong>+125.8%</strong>，对手的组合基金约 <strong>+36%</strong>（年化仅约 2.2%）。费用与主动管理的算术，安静地碾压了华尔街最聪明的一群人。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：指数并非无风险——市值加权会让你在少数巨头上越买越重（如美股"七巨头"曾占标普相当大比重），泡沫顶部尤其危险。因子会长期失效；个股对<strong>确有优势者</strong>仍是最优路径（Buffett 本人就是反例）。误用：能力不配却硬做个股，或用"我懂"掩盖没有优势。</p>
+<ul class="checklist">
+<li>我做主动/个股，凭的是<strong>可说清的优势</strong>，还是只是不甘心拿平均？</li>
+<li>我的换手率和费用，有没有悄悄吃掉全部超额收益？</li>
+<li>我的指数持仓是否已高度集中在少数几只权重股上？</li>
+<li>三层里，我实际的时间、性格、优势更适合哪一层？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">选策略之前先诚实回答：我的优势到底是什么？没有优势时，最聪明的主动就是被动。</div>
+<div class="reflect">用一句话说清"我凭什么能跑赢指数"，你说得出来吗？若说不出，你为主动付出的每一分成本，是在买优势还是买安慰？</div>
+</div>
+</div>
 <!-- Card 3: Renaissance / Medallion -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03</div>
-    <h2>大奖章基金的启示<span class="en">The Medallion Lesson</span></h2>
-    <span class="tag">优势的天花板</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">Renaissance 的大奖章基金既证明了市场并非完全有效——统计优势真实存在，又证明了那种优势有多难得、多脆弱、多不可复制。它是"例外"，而例外恰恰划定了普通人不能跨越的边界。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"We're right 50.75 percent of the time... but we're 100 percent right 50.75 percent of the time. You can make billions that way."
+<div class="card" data-tts="b284ba4883692d36">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>大奖章基金的启示<span class="en">The Medallion Lesson</span></h2>
+<span class="tag">优势的天花板</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">Renaissance 的大奖章基金既证明了市场并非完全有效——统计优势真实存在，又证明了那种优势有多难得、多脆弱、多不可复制。它是"例外"，而例外恰恰划定了普通人不能跨越的边界。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"We're right 50.75 percent of the time... but we're 100 percent right 50.75 percent of the time. You can make billions that way."
     <span class="cite">— Robert Mercer, Renaissance Technologies（引自 Sebastian Mallaby,<em>More Money Than God</em>, 2010）</span>
-    <span class="cn">我们只有 50.75% 的时候是对的……但我们在这 50.75% 上是百分之百地对。靠这个就能赚几十亿。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>这句话道破了量化的真谛：<strong>优势可以薄如刀锋，只要下注够多、够独立、够自律</strong>。大奖章不预测某只股票会涨，而是在海量、持有极短的微小信号上重复下注，用大数定律把一点点胜率变成复利。Renaissance 招的是数学家、物理学家、密码破译者——<strong>几乎不招华尔街背景的人</strong>，因为要的是科学方法而非市场直觉。而代价是：信号衰减极快、必须持续研发；容量极其有限、多下一分钱都稀释收益。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>据 Gregory Zuckerman《The Man Who Solved the Market》，大奖章 1988–2018 年<strong>费前年化约 66%、费后约 39%</strong>（收 5% 管理费 + 44% 业绩提成，业内最贵）。但两个细节最关键：其一，它 1993 年就<strong>对外部资金关闭</strong>，规模长期封顶在约 100 亿美元——优势无法规模化。其二，Renaissance 面向公众的基金（如 RIEF）表现平庸，2020 年甚至大幅亏损。<strong>同一家公司、同一批天才，公开产品却复制不出旗舰的魔法</strong>——这就是最响亮的警告：你买不到那种优势。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：大奖章是幸存者，为每一个它，都有成千上万死去的量化基金。2007 年 8 月的"<strong>量化地震</strong>"里，众多股票中性量化基金（包括高盛的 Global Alpha）在几天内因拥挤头寸集体踩踏、巨亏。误用：把"量化能赚钱"错当成"我能靠量化赚钱"，把个例当成可复制的路径。</p>
-    <ul class="checklist">
-      <li>我羡慕的这个业绩，是可复制的方法，还是不可复制的<strong>特例</strong>？</li>
-      <li>如果优势真那么好，为什么它对外<strong>关闭、封顶</strong>了容量？</li>
-      <li>我看到的是幸存者，还是也数过那些死掉的同类？</li>
-      <li>拥挤——很多人用同一信号——会不会让它在某一天集体反噬？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">大奖章证明的不是"量化能致富"，而是真正的优势稀缺、有容量上限、且卖不给你。</div>
-    <div class="reflect">你是否曾因"某某量化策略年化很高"而心动？那份收益是开放给你的，还是早已封顶、只属于极少数人？你看到的是方法，还是幸存者偏差？</div>
-  </div>
+<span class="cn">我们只有 50.75% 的时候是对的……但我们在这 50.75% 上是百分之百地对。靠这个就能赚几十亿。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>这句话道破了量化的真谛：<strong>优势可以薄如刀锋，只要下注够多、够独立、够自律</strong>。大奖章不预测某只股票会涨，而是在海量、持有极短的微小信号上重复下注，用大数定律把一点点胜率变成复利。Renaissance 招的是数学家、物理学家、密码破译者——<strong>几乎不招华尔街背景的人</strong>，因为要的是科学方法而非市场直觉。而代价是：信号衰减极快、必须持续研发；容量极其有限、多下一分钱都稀释收益。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>据 Gregory Zuckerman《The Man Who Solved the Market》，大奖章 1988–2018 年<strong>费前年化约 66%、费后约 39%</strong>（收 5% 管理费 + 44% 业绩提成，业内最贵）。但两个细节最关键：其一，它 1993 年就<strong>对外部资金关闭</strong>，规模长期封顶在约 100 亿美元——优势无法规模化。其二，Renaissance 面向公众的基金（如 RIEF）表现平庸，2020 年甚至大幅亏损。<strong>同一家公司、同一批天才，公开产品却复制不出旗舰的魔法</strong>——这就是最响亮的警告：你买不到那种优势。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：大奖章是幸存者，为每一个它，都有成千上万死去的量化基金。2007 年 8 月的"<strong>量化地震</strong>"里，众多股票中性量化基金（包括高盛的 Global Alpha）在几天内因拥挤头寸集体踩踏、巨亏。误用：把"量化能赚钱"错当成"我能靠量化赚钱"，把个例当成可复制的路径。</p>
+<ul class="checklist">
+<li>我羡慕的这个业绩，是可复制的方法，还是不可复制的<strong>特例</strong>？</li>
+<li>如果优势真那么好，为什么它对外<strong>关闭、封顶</strong>了容量？</li>
+<li>我看到的是幸存者，还是也数过那些死掉的同类？</li>
+<li>拥挤——很多人用同一信号——会不会让它在某一天集体反噬？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">大奖章证明的不是"量化能致富"，而是真正的优势稀缺、有容量上限、且卖不给你。</div>
+<div class="reflect">你是否曾因"某某量化策略年化很高"而心动？那份收益是开放给你的，还是早已封顶、只属于极少数人？你看到的是方法，还是幸存者偏差？</div>
+</div>
+</div>
 <!-- Card 4: Retail Quant Feasibility -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04</div>
-    <h2>个人量化可行吗<span class="en">Can One Person Do Quant?</span></h2>
-    <span class="tag">优势与陷阱</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">一个人凭一台电脑，无法在速度、数据、人才上与机构竞争，但可以用规则替自己剔除情绪。个人量化真正的优势是结构性的（耐心、低换手、无职业风险），而非信息性的。最大的敌人不是缺算力，而是回测过拟合。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"We argue that most claimed research findings in financial economics are likely false."
-    <span class="cite">— Campbell Harvey, Yan Liu & Heqing Zhu, <em>…and the Cross-Section of Expected Returns</em>, Review of Financial Studies (2016)</span>
-    <span class="cn">我们认为，金融经济学中大多数被宣称的研究发现，很可能都是假的。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Harvey 的警告直指量化的死穴——<strong>多重检验</strong>：试过几百个变体，纯靠运气也一定能挑出一个回测漂亮的，但它只拟合了噪声；他因此主张因子的 t 值门槛应从 2.0 提到 3.0 以上。对个人而言诚实的分工是：<strong>你能做的</strong>是系统化纪律——规则化再平衡、用因子 ETF 拿分散暴露、机械化仓位管理、把情绪从下单里剥离；<strong>你做不到的</strong>是靠价格数据挖出真正的 alpha。工程师尤其要警惕：越会写机器学习，越容易在金融数据这种<strong>低信噪比、易泄漏</strong>的场景里把噪声训练成"信号"。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>因子研究的"可复现危机"给了冷冰冰的数字。Hou、Xue 与 Zhang 2020 年的《Replicating Anomalies》系统检验了 <strong>452 个</strong>已发表异象，约 <strong>65%</strong> 无法复现（剔除微市值股后失败比例更高）。配合前述发表后衰减约 58%，结论很清楚：<strong>纸面 Sharpe 为 2 的策略，实盘常趋近于 0</strong>。不是市场变了，而是回测里那份"优势"，多半本就是过拟合的幻觉。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>限制：个人量化确有真实价值——它对抗的是行为偏差，而非打败机构。误用：把回测当"实验"（回测只能证伪，不能证明），或不断调参直到曲线漂亮再上线。别忘了交易成本、税负、滑点会吃掉大部分纸面收益。</p>
-    <ul class="checklist">
-      <li>这个策略在<strong>完全没碰过的样本外数据</strong>上还成立吗？</li>
-      <li>我一共试了多少个变体？有没有为"多重检验"打折我的 Sharpe？</li>
-      <li>它有没有独立于回测的<strong>经济学理由</strong>，还是纯曲线拟合？</li>
-      <li>算上真实的成本、税、滑点后，超额收益还剩下吗？</li>
-      <li>我做量化是为了<strong>纪律</strong>，还是幻想复制 RenTec？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">个人量化最现实的 alpha 不是更聪明的模型，而是更少的情绪——把优势从"算得比别人准"换成"熬得比别人住"。</div>
-    <div class="reflect">如果把量化的意义从"跑赢市场"改成"不再被情绪打败"，你会怎么设计属于自己的规则？其中多少是真优势，多少只是对回测曲线的迷恋？</div>
-  </div>
+<div class="card" data-tts="82a4f236dec0383a">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>个人量化可行吗<span class="en">Can One Person Do Quant?</span></h2>
+<span class="tag">优势与陷阱</span>
 </div>
-
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">一个人凭一台电脑，无法在速度、数据、人才上与机构竞争，但可以用规则替自己剔除情绪。个人量化真正的优势是结构性的（耐心、低换手、无职业风险），而非信息性的。最大的敌人不是缺算力，而是回测过拟合。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"We argue that most claimed research findings in financial economics are likely false."
+    <span class="cite">— Campbell Harvey, Yan Liu &amp; Heqing Zhu, <em>…and the Cross-Section of Expected Returns</em>, Review of Financial Studies (2016)</span>
+<span class="cn">我们认为，金融经济学中大多数被宣称的研究发现，很可能都是假的。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>Harvey 的警告直指量化的死穴——<strong>多重检验</strong>：试过几百个变体，纯靠运气也一定能挑出一个回测漂亮的，但它只拟合了噪声；他因此主张因子的 t 值门槛应从 2.0 提到 3.0 以上。对个人而言诚实的分工是：<strong>你能做的</strong>是系统化纪律——规则化再平衡、用因子 ETF 拿分散暴露、机械化仓位管理、把情绪从下单里剥离；<strong>你做不到的</strong>是靠价格数据挖出真正的 alpha。工程师尤其要警惕：越会写机器学习，越容易在金融数据这种<strong>低信噪比、易泄漏</strong>的场景里把噪声训练成"信号"。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>因子研究的"可复现危机"给了冷冰冰的数字。Hou、Xue 与 Zhang 2020 年的《Replicating Anomalies》系统检验了 <strong>452 个</strong>已发表异象，约 <strong>65%</strong> 无法复现（剔除微市值股后失败比例更高）。配合前述发表后衰减约 58%，结论很清楚：<strong>纸面 Sharpe 为 2 的策略，实盘常趋近于 0</strong>。不是市场变了，而是回测里那份"优势"，多半本就是过拟合的幻觉。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>限制：个人量化确有真实价值——它对抗的是行为偏差，而非打败机构。误用：把回测当"实验"（回测只能证伪，不能证明），或不断调参直到曲线漂亮再上线。别忘了交易成本、税负、滑点会吃掉大部分纸面收益。</p>
+<ul class="checklist">
+<li>这个策略在<strong>完全没碰过的样本外数据</strong>上还成立吗？</li>
+<li>我一共试了多少个变体？有没有为"多重检验"打折我的 Sharpe？</li>
+<li>它有没有独立于回测的<strong>经济学理由</strong>，还是纯曲线拟合？</li>
+<li>算上真实的成本、税、滑点后，超额收益还剩下吗？</li>
+<li>我做量化是为了<strong>纪律</strong>，还是幻想复制 RenTec？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">个人量化最现实的 alpha 不是更聪明的模型，而是更少的情绪——把优势从"算得比别人准"换成"熬得比别人住"。</div>
+<div class="reflect">如果把量化的意义从"跑赢市场"改成"不再被情绪打败"，你会怎么设计属于自己的规则？其中多少是真优势，多少只是对回测曲线的迷恋？</div>
+</div>
+</div>
 <div class="faq">
-  <h3>深入思考</h3>
-  <details><summary>因子被发表、被做成 ETF、被大量资金涌入之后会衰减——那"公开的因子"还值得投吗？</summary>
-  <div>取决于成因。若溢价来自<strong>无法套利掉的风险补偿</strong>（如价值股确实更脆弱），资金涌入会压低但不会消灭它——你拿的是承担风险的报酬。若溢价来自纯粹的<strong>定价错误</strong>，一旦被广泛认知、资金拥挤，就会被套利掉甚至反噬。所以该问的不是"它公开了吗"，而是"它为什么存在、这个原因会不会因为大家都知道而消失"。风险类因子更耐用，行为类因子更易衰减。</div></details>
-  <details><summary>AI/大模型会不会终结"个人做不了量化"，让超级个体也能挖到 alpha？</summary>
-  <div>会改变工具，却很难改变结构。AI 大幅降低了写策略、清洗数据、做研究的门槛——这是真实的赋能。但金融的核心困难不在算力，而在<strong>信噪比极低、且优势一旦被发现就会被拥挤抹平</strong>。当人人都用同样的模型跑同样的公开数据，alpha 只会更快被套利掉；AI 越普及，纯信息类优势越稀薄。更危险的是，强大的模型让过拟合更容易、更隐蔽。对超级个体，AI 最靠谱的用途或许不是挖 alpha，而是<strong>把纪律、复盘、风控做到机构级</strong>——用它对抗自己的情绪与偏差，而非幻想算赢市场。</div></details>
+<h3 data-tts="6814cb15f2677e03">深入思考</h3>
+<details><summary>因子被发表、被做成 ETF、被大量资金涌入之后会衰减——那"公开的因子"还值得投吗？</summary>
+<div>取决于成因。若溢价来自<strong>无法套利掉的风险补偿</strong>（如价值股确实更脆弱），资金涌入会压低但不会消灭它——你拿的是承担风险的报酬。若溢价来自纯粹的<strong>定价错误</strong>，一旦被广泛认知、资金拥挤，就会被套利掉甚至反噬。所以该问的不是"它公开了吗"，而是"它为什么存在、这个原因会不会因为大家都知道而消失"。风险类因子更耐用，行为类因子更易衰减。</div></details>
+<details><summary>AI/大模型会不会终结"个人做不了量化"，让超级个体也能挖到 alpha？</summary>
+<div>会改变工具，却很难改变结构。AI 大幅降低了写策略、清洗数据、做研究的门槛——这是真实的赋能。但金融的核心困难不在算力，而在<strong>信噪比极低、且优势一旦被发现就会被拥挤抹平</strong>。当人人都用同样的模型跑同样的公开数据，alpha 只会更快被套利掉；AI 越普及，纯信息类优势越稀薄。更危险的是，强大的模型让过拟合更容易、更隐蔽。对超级个体，AI 最靠谱的用途或许不是挖 alpha，而是<strong>把纪律、复盘、风控做到机构级</strong>——用它对抗自己的情绪与偏差，而非幻想算赢市场。</div></details>
 </div>
-
 <nav><a href="index.html">← 返回 投资经典</a></nav>
 <footer>BigCat · Investing · Day 28 · 2026</footer>
-
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body></html>
