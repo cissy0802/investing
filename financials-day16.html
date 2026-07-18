@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：金融股深度 — Day 16</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -44,231 +45,194 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 16</div>
-  <h1>投资经典：金融股深度<span class="accent">Banks, Float, and the Discipline of Underwriting</span></h1>
-  <div class="meta"><span>2026年6月7日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 16</div>
+<h1 data-tts="6d33f0544be3f0c1">投资经典：金融股深度<span class="accent">Banks, Float, and the Discipline of Underwriting</span></h1>
+<div class="meta"><span>2026年6月7日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 金融是经济的血管，也是投资中最危险的领域之一：<strong>高杠杆、不透明、由信心维系</strong>。好的金融公司是复利机器，坏的会在数小时内蒸发。本期拆四块——银行生意的本质、保险<strong>浮存金</strong>这台"别人付钱让你投资"的机器、GEICO 半世纪的两次教训，以及为什么<strong>承保纪律</strong>才是保险业唯一真正的护城河。
 </div>
-
 <!-- Card 1: Banking -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01 · 银行生意</div>
-    <h2>银行生意的本质<span class="en">Banking as a Leveraged Business</span></h2>
-    <span class="tag">杠杆与信心</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">银行的本质是用极高杠杆经营信用与期限错配。高杠杆放大微小错误，整座大厦靠信心支撑——信心一崩，挤兑以小时计。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"The banking business is no favorite of ours. When assets are twenty times equity — a common ratio in this industry — mistakes that involve only a small portion of assets can destroy a major portion of equity."
+<div class="card" data-tts="a964a3559423e7e1">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 银行生意</div>
+<h2>银行生意的本质<span class="en">Banking as a Leveraged Business</span></h2>
+<span class="tag">杠杆与信心</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">银行的本质是用极高杠杆经营信用与期限错配。高杠杆放大微小错误，整座大厦靠信心支撑——信心一崩，挤兑以小时计。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"The banking business is no favorite of ours. When assets are twenty times equity — a common ratio in this industry — mistakes that involve only a small portion of assets can destroy a major portion of equity."
     <span class="cite">— Warren Buffett, Berkshire Hathaway 1990 致股东信</span>
-    <span class="cn">银行业不是我们偏爱的生意。当资产是股本的二十倍——这在该行业很常见——只涉及一小部分资产的错误，就足以摧毁大部分股本。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>银行借短贷长：负债端是<strong>随时可提取</strong>的存款，资产端是不能马上变现的贷款与债券，股本只是薄薄一层（常仅占资产 8–10%，即约 10 倍杠杆）。最危险的是<strong>期限错配</strong>遇上信心：存款可瞬间撤离，资产却无法瞬间卖出。所以真正决定银行命运的，不是你看得见的资产负债表，而是你<strong>看不见的风控文化</strong>——这正是 Buffett 只在最优秀的银行、且以合理价格买入的原因。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <div class="viz">
-      <div class="viz-title">10 倍杠杆下，资产端小错如何吞噬股本</div>
-      <table class="viz-table">
-        <tr><th>资产端亏损</th><th>对股本的影响（股本=资产10%）</th></tr>
-        <tr><td>2%</td><td>股本 -20%</td></tr>
-        <tr><td>5%</td><td>股本 -50%</td></tr>
-        <tr><td>10%</td><td>股本归零</td></tr>
-      </table>
-      <div class="viz-note">杠杆把"小错"翻译成"灭顶"——这正是银行需要远超其他行业的风控纪律的数学根源。</div>
-    </div>
-    <p>2023 年 3 月，硅谷银行（资产约 2090 亿美元）在约 48 小时内倒闭。病根：它把暴增的存款大量投入<strong>长久期</strong>美债与抵押债券，2022–23 年利率飙升使其巨额浮亏；当它宣布募资补窟窿，超九成的<strong>未保险</strong>储户瞬间警觉——3 月 9 日单日挤兑约 420 亿美元。期限错配 + 信心蒸发，成就当时美国史上第二大银行倒闭案。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>这不意味着银行不能投：管理优异的银行能长期复利，Wells Fargo 曾是 Buffett 数十年重仓。但反转也在这里——该行 2016 年爆出"虚开账户"丑闻，暴露<strong>文化腐烂</strong>这一最难从外部察觉的风险，Buffett 此后清仓。误用：只用市净率判断银行，不看贷款质量与存款结构。</p>
-    <ul class="checklist">
-      <li>这家银行的存款是否分散、黏性高，还是高度集中于易撤离的大客户？</li>
-      <li>资产端是否存在被利率或信用周期放大的久期/集中风险？</li>
-      <li>管理层文化是稳健保守，还是在用激进增长追逐回报？</li>
-      <li>我支付的价格，是否已为"信心可能瞬间蒸发"留出安全边际？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">银行的护城河不在资产负债表上，而在你看不见的风控文化里；信心一蒸发，杠杆就以小时结算。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">你关注的某家金融机构，若明天市场对它的"信心"打个七折，它的资金来源还稳得住吗？</div>
-  </div>
+<span class="cn">银行业不是我们偏爱的生意。当资产是股本的二十倍——这在该行业很常见——只涉及一小部分资产的错误，就足以摧毁大部分股本。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>银行借短贷长：负债端是<strong>随时可提取</strong>的存款，资产端是不能马上变现的贷款与债券，股本只是薄薄一层（常仅占资产 8–10%，即约 10 倍杠杆）。最危险的是<strong>期限错配</strong>遇上信心：存款可瞬间撤离，资产却无法瞬间卖出。所以真正决定银行命运的，不是你看得见的资产负债表，而是你<strong>看不见的风控文化</strong>——这正是 Buffett 只在最优秀的银行、且以合理价格买入的原因。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<div class="viz">
+<div class="viz-title">10 倍杠杆下，资产端小错如何吞噬股本</div>
+<table class="viz-table">
+<tr><th>资产端亏损</th><th>对股本的影响（股本=资产10%）</th></tr>
+<tr><td>2%</td><td>股本 -20%</td></tr>
+<tr><td>5%</td><td>股本 -50%</td></tr>
+<tr><td>10%</td><td>股本归零</td></tr>
+</table>
+<div class="viz-note">杠杆把"小错"翻译成"灭顶"——这正是银行需要远超其他行业的风控纪律的数学根源。</div>
+</div>
+<p>2023 年 3 月，硅谷银行（资产约 2090 亿美元）在约 48 小时内倒闭。病根：它把暴增的存款大量投入<strong>长久期</strong>美债与抵押债券，2022–23 年利率飙升使其巨额浮亏；当它宣布募资补窟窿，超九成的<strong>未保险</strong>储户瞬间警觉——3 月 9 日单日挤兑约 420 亿美元。期限错配 + 信心蒸发，成就当时美国史上第二大银行倒闭案。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>这不意味着银行不能投：管理优异的银行能长期复利，Wells Fargo 曾是 Buffett 数十年重仓。但反转也在这里——该行 2016 年爆出"虚开账户"丑闻，暴露<strong>文化腐烂</strong>这一最难从外部察觉的风险，Buffett 此后清仓。误用：只用市净率判断银行，不看贷款质量与存款结构。</p>
+<ul class="checklist">
+<li>这家银行的存款是否分散、黏性高，还是高度集中于易撤离的大客户？</li>
+<li>资产端是否存在被利率或信用周期放大的久期/集中风险？</li>
+<li>管理层文化是稳健保守，还是在用激进增长追逐回报？</li>
+<li>我支付的价格，是否已为"信心可能瞬间蒸发"留出安全边际？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">银行的护城河不在资产负债表上，而在你看不见的风控文化里；信心一蒸发，杠杆就以小时结算。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">你关注的某家金融机构，若明天市场对它的"信心"打个七折，它的资金来源还稳得住吗？</div>
+</div>
+</div>
 <!-- Card 2: Float -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02 · 浮存金</div>
-    <h2>保险浮存金<span class="en">Insurance Float</span></h2>
-    <span class="tag">复利引擎</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">保险先收保费、后赔付，中间持有的巨额资金即"浮存金"——这是别人的钱，却可以为你自己投资，是 Berkshire 复利奇迹的隐形引擎。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"This collect-now, pay-later model leaves us holding large sums — money we call 'float' — that will eventually go to others. Meanwhile, we get to invest this float for Berkshire's benefit."
+<div class="card" data-tts="083d2649beb4b534">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 浮存金</div>
+<h2>保险浮存金<span class="en">Insurance Float</span></h2>
+<span class="tag">复利引擎</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">保险先收保费、后赔付，中间持有的巨额资金即"浮存金"——这是别人的钱，却可以为你自己投资，是 Berkshire 复利奇迹的隐形引擎。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"This collect-now, pay-later model leaves us holding large sums — money we call 'float' — that will eventually go to others. Meanwhile, we get to invest this float for Berkshire's benefit."
     <span class="cite">— Warren Buffett, Berkshire Hathaway 2009 致股东信</span>
-    <span class="cn">这种"先收钱、后赔付"的模式让我们持有大笔资金——我们称之为"浮存金"——它最终会付给别人。但在此期间，我们可以拿这笔浮存金为 Berkshire 自己投资。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>浮存金的价值取决于它的<strong>成本</strong> = 承保盈亏 ÷ 浮存金。若承保盈利（综合成本率低于 100%），浮存金成本就是<strong>负的</strong>——别人付钱让你保管，你还能拿它赚投资收益。但前提是承保纪律：一旦为冲规模而压价、导致承保亏损，浮存金就变成<strong>有息借款</strong>，利率藏在未来的赔付里，并不会自动等于"免费杠杆"。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>1967 年 Buffett 以约 860 万美元收购 National Indemnity，点燃了这台引擎。Berkshire 的浮存金从 1970 年约 <strong>3900 万美元</strong>增长到 2023 年<strong>逾 1600 亿美元</strong>，且过去约二十年多数年份承保盈利——即<strong>负成本</strong>的永久资本，为可口可乐、Apple 等重仓提供了弹药。奇迹不在浮存金本身，而在"近乎免费的永久资本 + 卓越的资本配置"这一组合。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>浮存金也可能是陷阱。<strong>长尾业务</strong>（石棉、污染、责任险）的赔付可能数十年后才浮现；若准备金严重低估，当年"廉价"的浮存金日后会变成毁灭性负债。典型误用是把账面浮存金当免费的钱：<strong>因承保不足而膨胀的浮存金，本质是按隐藏高利率在借钱。</strong></p>
-    <ul class="checklist">
-      <li>这家保险公司的承保是盈利的吗（综合成本率长期低于 100%）？</li>
-      <li>浮存金成本是负的、接近零，还是高于其投资收益率？</li>
-      <li>它的业务是短尾（赔付快）还是长尾（准备金估计风险大）？</li>
-      <li>浮存金增长来自定价合理的承保，还是来自压价抢量？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">浮存金不是天生的免费杠杆——承保盈利时它才是负成本资本；承保亏损时，它是把利率藏进未来的高息借款。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">若有人说某家保险公司"浮存金快速膨胀"，你的第一反应是兴奋，还是先去查它的综合成本率？</div>
-  </div>
+<span class="cn">这种"先收钱、后赔付"的模式让我们持有大笔资金——我们称之为"浮存金"——它最终会付给别人。但在此期间，我们可以拿这笔浮存金为 Berkshire 自己投资。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>浮存金的价值取决于它的<strong>成本</strong> = 承保盈亏 ÷ 浮存金。若承保盈利（综合成本率低于 100%），浮存金成本就是<strong>负的</strong>——别人付钱让你保管，你还能拿它赚投资收益。但前提是承保纪律：一旦为冲规模而压价、导致承保亏损，浮存金就变成<strong>有息借款</strong>，利率藏在未来的赔付里，并不会自动等于"免费杠杆"。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>1967 年 Buffett 以约 860 万美元收购 National Indemnity，点燃了这台引擎。Berkshire 的浮存金从 1970 年约 <strong>3900 万美元</strong>增长到 2023 年<strong>逾 1600 亿美元</strong>，且过去约二十年多数年份承保盈利——即<strong>负成本</strong>的永久资本，为可口可乐、Apple 等重仓提供了弹药。奇迹不在浮存金本身，而在"近乎免费的永久资本 + 卓越的资本配置"这一组合。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>浮存金也可能是陷阱。<strong>长尾业务</strong>（石棉、污染、责任险）的赔付可能数十年后才浮现；若准备金严重低估，当年"廉价"的浮存金日后会变成毁灭性负债。典型误用是把账面浮存金当免费的钱：<strong>因承保不足而膨胀的浮存金，本质是按隐藏高利率在借钱。</strong></p>
+<ul class="checklist">
+<li>这家保险公司的承保是盈利的吗（综合成本率长期低于 100%）？</li>
+<li>浮存金成本是负的、接近零，还是高于其投资收益率？</li>
+<li>它的业务是短尾（赔付快）还是长尾（准备金估计风险大）？</li>
+<li>浮存金增长来自定价合理的承保，还是来自压价抢量？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">浮存金不是天生的免费杠杆——承保盈利时它才是负成本资本；承保亏损时，它是把利率藏进未来的高息借款。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">若有人说某家保险公司"浮存金快速膨胀"，你的第一反应是兴奋，还是先去查它的综合成本率？</div>
+</div>
+</div>
 <!-- Card 3: GEICO -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03 · GEICO</div>
-    <h2>GEICO 的半世纪沉浮<span class="en">The GEICO Saga</span></h2>
-    <span class="tag">护城河与纪律</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">低成本直销是真护城河，但同一家公司能因承保失控濒死、又因纪律重生——护城河保你不被对手杀死，却保不了你不被自己杀死。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"The key to GEICO's success is the rock-bottom operating costs that set it apart from almost all other auto insurers. Low costs permit low prices, and low prices attract and retain good policyholders."
+<div class="card" data-tts="f01b82f4e2d4d835">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · GEICO</div>
+<h2>GEICO 的半世纪沉浮<span class="en">The GEICO Saga</span></h2>
+<span class="tag">护城河与纪律</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">低成本直销是真护城河，但同一家公司能因承保失控濒死、又因纪律重生——护城河保你不被对手杀死，却保不了你不被自己杀死。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"The key to GEICO's success is the rock-bottom operating costs that set it apart from almost all other auto insurers. Low costs permit low prices, and low prices attract and retain good policyholders."
     <span class="cite">— Warren Buffett，Berkshire 致股东信（多次阐述 GEICO 低成本模式）</span>
-    <span class="cn">GEICO 成功的关键，是把它与几乎所有其他车险公司区别开来的"地板级"运营成本。低成本带来低价格，低价格则吸引并留住优质投保人。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>GEICO（1936 年创立）采用<strong>直销</strong>模式——绕过代理人，直接把保单卖给低风险司机。结构性低成本让它给出更低价格，低价吸引低风险的优质客户，优质客户带来更好的赔付率，再强化成本优势——一个自我强化的<strong>成本飞轮</strong>。对手不是不想模仿，而是其代理人渠道的成本结构学不来。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>这家公司贯穿了 Buffett 一生。<strong>1951 年</strong>，20 岁的他把超过一半身家、约 1.03 万美元投入 GEICO，一年后以约 1.53 万卖出——若持有到 1995 年本可值逾百万美元，是他自陈"卖得太早"的教训。<strong>1976 年</strong>，GEICO 因盲目扩张与准备金不足濒临破产，股价从 1972 年约 61 美元跌到约 2 美元（-97%）；新 CEO Jack Byrne 力挽狂澜，Buffett 投入约 4570 万美元。<strong>1996 年</strong>，Berkshire 以 23 亿美元买下其余约一半股权，实现 100% 控股。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>护城河 ≠ 不死之身。GEICO 的濒死来自<strong>内部</strong>承保失控，而非对手。低成本护城河保住了这块特许经营权、让它有时间重生，但 1972–76 年持有的股东仍亏掉约 97%。护城河买的是"时间"，不是"豁免权"。</p>
-    <ul class="checklist">
-      <li>这家公司的成本优势是结构性的，还是只是暂时的规模红利？</li>
-      <li>它的护城河能否抵御来自内部（管理、承保、文化）的风险？</li>
-      <li>我是否把"有护城河"误当成"无需担心经营失误"？</li>
-      <li>若它经历一次自残式危机，护城河能否撑到它重生？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">护城河决定你能否长期存在，纪律决定你这一年是否活着——GEICO 差点死于自己，而非对手。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">回想你最有信心的一笔"护城河"持仓：你为它的竞争优势打了高分，但给它的"内部自残风险"打过分吗？</div>
-  </div>
+<span class="cn">GEICO 成功的关键，是把它与几乎所有其他车险公司区别开来的"地板级"运营成本。低成本带来低价格，低价格则吸引并留住优质投保人。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>GEICO（1936 年创立）采用<strong>直销</strong>模式——绕过代理人，直接把保单卖给低风险司机。结构性低成本让它给出更低价格，低价吸引低风险的优质客户，优质客户带来更好的赔付率，再强化成本优势——一个自我强化的<strong>成本飞轮</strong>。对手不是不想模仿，而是其代理人渠道的成本结构学不来。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>这家公司贯穿了 Buffett 一生。<strong>1951 年</strong>，20 岁的他把超过一半身家、约 1.03 万美元投入 GEICO，一年后以约 1.53 万卖出——若持有到 1995 年本可值逾百万美元，是他自陈"卖得太早"的教训。<strong>1976 年</strong>，GEICO 因盲目扩张与准备金不足濒临破产，股价从 1972 年约 61 美元跌到约 2 美元（-97%）；新 CEO Jack Byrne 力挽狂澜，Buffett 投入约 4570 万美元。<strong>1996 年</strong>，Berkshire 以 23 亿美元买下其余约一半股权，实现 100% 控股。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>护城河 ≠ 不死之身。GEICO 的濒死来自<strong>内部</strong>承保失控，而非对手。低成本护城河保住了这块特许经营权、让它有时间重生，但 1972–76 年持有的股东仍亏掉约 97%。护城河买的是"时间"，不是"豁免权"。</p>
+<ul class="checklist">
+<li>这家公司的成本优势是结构性的，还是只是暂时的规模红利？</li>
+<li>它的护城河能否抵御来自内部（管理、承保、文化）的风险？</li>
+<li>我是否把"有护城河"误当成"无需担心经营失误"？</li>
+<li>若它经历一次自残式危机，护城河能否撑到它重生？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">护城河决定你能否长期存在，纪律决定你这一年是否活着——GEICO 差点死于自己，而非对手。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">回想你最有信心的一笔"护城河"持仓：你为它的竞争优势打了高分，但给它的"内部自残风险"打过分吗？</div>
+</div>
+</div>
 <!-- Card 4: Underwriting Discipline -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04 · 承保纪律</div>
-    <h2>承保纪律<span class="en">Underwriting Discipline</span></h2>
-    <span class="tag">唯一的护城河</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">保险产品同质、无专利、可被瞬间复制。唯一可持续的优势是承保纪律——宁可保费大幅萎缩，也绝不写亏本保单。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"We will write business only at prices we think are appropriate. If competitors are foolish, we will wait. We are perfectly willing to see our volume shrink dramatically rather than write underpriced policies."
-    <span class="cite">— Warren Buffett，Berkshire 致股东信（论 National Indemnity 的承保纪律）</span>
-    <span class="cn">我们只在自认为合理的价格上承保。如果对手犯傻压价，我们就等。我们完全愿意看到自己的保费规模急剧萎缩，也绝不去写定价不足的保单。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>衡量承保的核心指标是<strong>综合成本率</strong>（赔付 + 费用 ÷ 保费）：低于 100% 即承保盈利。诱惑在于：保险是商品，压价就能轻松做大保费，而<strong>亏损要很久才浮现</strong>——激进扩张"看起来很美"好几年，再突然爆雷。纪律，就是在软市场里敢于让保费规模坍塌。</p>
-    <div class="viz">
-      <div class="viz-title">综合成本率：100% 是生死线</div>
-      <table class="viz-table">
-        <tr><th>综合成本率</th><th>承保结果</th><th>浮存金成本</th></tr>
-        <tr><td>95%</td><td>承保盈利</td><td>负成本（被付钱持有）</td></tr>
-        <tr><td>100%</td><td>盈亏平衡</td><td>零（免费资金）</td></tr>
-        <tr><td>108%</td><td>承保亏损</td><td>正成本（隐藏的借款利率）</td></tr>
-      </table>
-      <div class="viz-note">同一笔浮存金是负利率资本还是高息借款，全看综合成本率这条线。</div>
-    </div>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p><strong>正例</strong>：National Indemnity 的保费从 1986 年约 3.66 亿美元，在软市场中一路萎缩到 1999 年约 5500 万美元（约 -85%）——Buffett 坚持不写亏本保单、也不裁团队，硬扛到硬市场再回升。<strong>反例</strong>：伦敦劳合社在 1988–92 年因数十年前写下的<strong>长尾</strong>石棉与污染责任险集中爆发，累计亏损约 80 亿英镑，数以千计承担无限责任的"Names"个人出资者被拖垮、不少人破产。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>纪律也有代价：长期萎缩会流失渠道与人才，过度保守也会错过定价合理的成长。最大的误用是把<strong>保费高增长当成功标志</strong>——在保险业，过快的保费增长往往不是护城河，而是定时炸弹的引信。</p>
-    <ul class="checklist">
-      <li>这家公司的综合成本率长期低于 100% 吗，还是靠投资收益掩盖承保亏损？</li>
-      <li>它在软市场里敢不敢让保费规模萎缩？历史上做过吗？</li>
-      <li>它的高保费增长，来自合理定价，还是来自压价抢量？</li>
-      <li>它对巨灾/相关性风险（单一事件击穿多张保单）是否设了上限？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">在谁都能复制产品的行业里，唯一无法复制的是说"不"的纪律；保费高增长往往不是护城河，而是引信。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">如果一家保险公司年报里最醒目的成绩是"保费增长 40%"，你会读成好消息还是危险信号？</div>
-  </div>
+<div class="card" data-tts="c45d0a5d574cd616">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 承保纪律</div>
+<h2>承保纪律<span class="en">Underwriting Discipline</span></h2>
+<span class="tag">唯一的护城河</span>
 </div>
-
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">保险产品同质、无专利、可被瞬间复制。唯一可持续的优势是承保纪律——宁可保费大幅萎缩，也绝不写亏本保单。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"We will write business only at prices we think are appropriate. If competitors are foolish, we will wait. We are perfectly willing to see our volume shrink dramatically rather than write underpriced policies."
+    <span class="cite">— Warren Buffett，Berkshire 致股东信（论 National Indemnity 的承保纪律）</span>
+<span class="cn">我们只在自认为合理的价格上承保。如果对手犯傻压价，我们就等。我们完全愿意看到自己的保费规模急剧萎缩，也绝不去写定价不足的保单。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>衡量承保的核心指标是<strong>综合成本率</strong>（赔付 + 费用 ÷ 保费）：低于 100% 即承保盈利。诱惑在于：保险是商品，压价就能轻松做大保费，而<strong>亏损要很久才浮现</strong>——激进扩张"看起来很美"好几年，再突然爆雷。纪律，就是在软市场里敢于让保费规模坍塌。</p>
+<div class="viz">
+<div class="viz-title">综合成本率：100% 是生死线</div>
+<table class="viz-table">
+<tr><th>综合成本率</th><th>承保结果</th><th>浮存金成本</th></tr>
+<tr><td>95%</td><td>承保盈利</td><td>负成本（被付钱持有）</td></tr>
+<tr><td>100%</td><td>盈亏平衡</td><td>零（免费资金）</td></tr>
+<tr><td>108%</td><td>承保亏损</td><td>正成本（隐藏的借款利率）</td></tr>
+</table>
+<div class="viz-note">同一笔浮存金是负利率资本还是高息借款，全看综合成本率这条线。</div>
+</div>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p><strong>正例</strong>：National Indemnity 的保费从 1986 年约 3.66 亿美元，在软市场中一路萎缩到 1999 年约 5500 万美元（约 -85%）——Buffett 坚持不写亏本保单、也不裁团队，硬扛到硬市场再回升。<strong>反例</strong>：伦敦劳合社在 1988–92 年因数十年前写下的<strong>长尾</strong>石棉与污染责任险集中爆发，累计亏损约 80 亿英镑，数以千计承担无限责任的"Names"个人出资者被拖垮、不少人破产。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>纪律也有代价：长期萎缩会流失渠道与人才，过度保守也会错过定价合理的成长。最大的误用是把<strong>保费高增长当成功标志</strong>——在保险业，过快的保费增长往往不是护城河，而是定时炸弹的引信。</p>
+<ul class="checklist">
+<li>这家公司的综合成本率长期低于 100% 吗，还是靠投资收益掩盖承保亏损？</li>
+<li>它在软市场里敢不敢让保费规模萎缩？历史上做过吗？</li>
+<li>它的高保费增长，来自合理定价，还是来自压价抢量？</li>
+<li>它对巨灾/相关性风险（单一事件击穿多张保单）是否设了上限？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">在谁都能复制产品的行业里，唯一无法复制的是说"不"的纪律；保费高增长往往不是护城河，而是引信。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">如果一家保险公司年报里最醒目的成绩是"保费增长 40%"，你会读成好消息还是危险信号？</div>
+</div>
+</div>
 <div class="qa-head">深入思考</div>
-
 <details><summary>银行与保险都靠杠杆与信心运转，为什么 Buffett 长期重仓保险，却对银行越来越谨慎？</summary>
 <div>核心差异在<strong>负债的可控性</strong>。保险浮存金的"价格"（保费）与久期由公司自己承保决定，纪律好时甚至是负成本的长期资本；银行存款却随时可被提走、还要为吸储竞争，资产端账本又不透明、与周期强相关。一句话：保险的杠杆是"自己写条款的杠杆"，银行的杠杆是"别人随时能抽走的杠杆"。</div></details>
-
 <details><summary>浮存金被称为"负成本的永久资本"——若把同样的逻辑套到一家高增长的新兴保险公司上，风险藏在哪里？</summary>
 <div>藏在<strong>时间差</strong>里。浮存金的真实成本由未来赔付决定，而赔付（尤其长尾业务）可能数年后才浮现；靠压价快速做大浮存金的公司，"负成本"的假象能维持很久，直到准备金不足集中爆发。况且"负成本永久资本"是 Berkshire 用数十年纪律换来的结果，带有强烈幸存者色彩，不是保险业的默认属性。</div></details>
-
 <details><summary>GEICO 的低成本护城河是结构性的，但它仍差点破产——结构性优势和运营能力，投资中哪个更值得信任？</summary>
 <div>两者层次不同。结构性优势（成本结构、网络效应）更<strong>持久、可验证</strong>，能从商业模式里推断；运营能力则随管理层与文化而腐烂或重生，更难从外部看清。GEICO 说明：结构性护城河能"买到重生的时间"，却买不到"不犯错的豁免"。务实姿态是：用结构性优势筛选标的，再用对管理层纪律的判断决定仓位与价格——缺了后者，再宽的护城河也可能被自己人淹没。</div></details>
-
 <details><summary>AI 时代，精算定价正被数据与模型重塑——这会加宽承保纪律的护城河，还是把它抹平？</summary>
 <div>很可能是双刃剑。更好的模型让有纪律的公司定价更精准；但当人人都用上相似的数据与模型，定价能力本身就会<strong>商品化</strong>，护城河被抹平。真正稀缺的从来不是"算得准"，而是软市场里<strong>敢于走开</strong>的纪律——这是行为与文化层面的，模型给不了。更隐蔽的是<strong>模型趋同</strong>：全行业依赖相似模型，一旦假设系统性出错（如低估相关性或尾部事件），错误会被同步放大成新的系统性风险。</div></details>
-
 <footer>BigCat · Investing · Day 16 · 2026</footer>
-
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </div></body></html>

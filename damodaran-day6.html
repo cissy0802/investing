@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：Damodaran 估值 — Day 6</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -52,227 +53,194 @@ nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 06</div>
-  <h1>投资经典：Damodaran 估值<span class="accent">Valuation as a Discipline, Not a Prophecy</span></h1>
-  <div class="meta"><span>2026年5月28日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 06</div>
+<h1 data-tts="0b1b8baec630d844">投资经典：Damodaran 估值<span class="accent">Valuation as a Discipline, Not a Prophecy</span></h1>
+<div class="meta"><span>2026年5月28日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 Aswath Damodaran 被称为「估值教主」(Dean of Valuation)，纽约大学 Stern 教授。他的贡献不是某个神奇公式，而是把估值还原成一门可被检验的手艺：价值只来自现金流、增长、风险三者，且每一个数字背后都该有一个能自圆其说的故事。本周读他的四块基石——DCF 的力量与陷阱、相对估值的幻觉、故事与数字的桥、增长到底值多少钱。
 </div>
-
 <!-- Card 1: DCF -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01</div>
-    <h2>贴现现金流：原理与限制<span class="en">DCF — Power and Pitfalls</span></h2>
-    <span class="tag">内在价值</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">一项资产的价值，等于它在余生中产生的预期现金流，按反映其风险的折现率折算到今天的现值。没有第二个定义。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"The value of an asset is the present value of the expected cash flows on that asset, discounted back at a rate that reflects the riskiness of these cash flows."
+<div class="card" data-tts="686aa6ac4c1f5d88">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>贴现现金流：原理与限制<span class="en">DCF — Power and Pitfalls</span></h2>
+<span class="tag">内在价值</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">一项资产的价值，等于它在余生中产生的预期现金流，按反映其风险的折现率折算到今天的现值。没有第二个定义。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"The value of an asset is the present value of the expected cash flows on that asset, discounted back at a rate that reflects the riskiness of these cash flows."
     <span class="cite">— Aswath Damodaran,《Investment Valuation》(Wiley)</span>
-    <span class="cn">一项资产的价值，是其预期现金流按反映风险的折现率折算后的现值。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>DCF 只有三个真正的输入——现金流、增长、风险（折现率）。它的力量在于强制一致性：<strong>增长不是免费的</strong>，要更高的增长就必须投入更多再投资资本，二者必须挂钩。它的限制不在数学，而在输入。Damodaran 反复强调两条铁律：① <strong>永续增长率不能长期高于无风险利率</strong>（≈名义 GDP 增速），否则公司终将大过整个经济；② <strong>终值（terminal value）常占总价值的 60–80%</strong>，意味着你对「十年后」的假设主导了今天的结论。面对不确定性，他的态度是直面而非否认或瘫痪——"Don't hide from it. Don't go into denial."</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>DCF 对假设极度敏感。设一家公司在 WACC 8%、永续增长 2.5% 时每股内在价值为 100。下表显示折现率与增长率各只微调 ±1%，价值如何剧烈摆动——这正是 2000 年互联网泡沫中卖方报告的把戏：用远超经济增速的永续增长 + 极低再投资，把任意价格「算」出来。</p>
-    <div class="viz">
-      <div class="vt">DCF 敏感性 · 每股内在价值（基准 = 100）</div>
-      <table>
-        <tr><th rowspan="2" class="axis">WACC ↓</th><th colspan="3" class="axis">永续增长率 g →</th></tr>
-        <tr><th>2.0%</th><th>2.5%</th><th>3.0%</th></tr>
-        <tr><th>7%</th><td style="background:#d8b057">110</td><td style="background:#ca9c3f">122</td><td style="background:#bc8728">138</td></tr>
-        <tr><th>8%</th><td style="background:#ecdaa9">92</td><td class="base" style="background:#e4c77c">100</td><td style="background:#d8b057">110</td></tr>
-        <tr><th>9%</th><td style="background:#f7efda">79</td><td style="background:#f2e6c6">85</td><td style="background:#ecdaa9">92</td></tr>
-      </table>
-      <div class="cap">同一家公司，WACC 与永续增长率各只动 ±1%，每股价值从 79 摆到 138（极差近 75%）。终值假设主导一切——这就是 DCF 既强大又危险的地方。</div>
-    </div>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>失效场景：① 周期顶部的资源/航运公司，用当下的高现金流外推 → 严重高估；② 早期亏损公司没有可外推的现金流基线；③ 把不一致的假设（高增长 + 低再投资 + 高利润率同时成立）塞进模型 → 得到「精确的错误」。</p>
-    <ul class="checklist">
-      <li>我的永续增长率是否 ≤ 无风险利率？</li>
-      <li>增长假设是否配了对应的再投资（增长不是免费的）？</li>
-      <li>终值占比多少？若超过 75%，我是否在为「十年后的幻想」付钱？</li>
-      <li>把 WACC ±1%、永续增长 ±1%，价值波动多大？我能承受这个区间吗？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">DCF 不会因为数学出错，只会因为你喂给它的假设出错——垃圾进，垃圾出。</div>
-    <div class="reflect">挑一家你的持仓，估算它的终值占内在价值的比例。如果超过 70%，你真正押注的是哪一年的世界？</div>
-  </div>
+<span class="cn">一项资产的价值，是其预期现金流按反映风险的折现率折算后的现值。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>DCF 只有三个真正的输入——现金流、增长、风险（折现率）。它的力量在于强制一致性：<strong>增长不是免费的</strong>，要更高的增长就必须投入更多再投资资本，二者必须挂钩。它的限制不在数学，而在输入。Damodaran 反复强调两条铁律：① <strong>永续增长率不能长期高于无风险利率</strong>（≈名义 GDP 增速），否则公司终将大过整个经济；② <strong>终值（terminal value）常占总价值的 60–80%</strong>，意味着你对「十年后」的假设主导了今天的结论。面对不确定性，他的态度是直面而非否认或瘫痪——"Don't hide from it. Don't go into denial."</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>DCF 对假设极度敏感。设一家公司在 WACC 8%、永续增长 2.5% 时每股内在价值为 100。下表显示折现率与增长率各只微调 ±1%，价值如何剧烈摆动——这正是 2000 年互联网泡沫中卖方报告的把戏：用远超经济增速的永续增长 + 极低再投资，把任意价格「算」出来。</p>
+<div class="viz">
+<div class="vt">DCF 敏感性 · 每股内在价值（基准 = 100）</div>
+<table>
+<tr><th class="axis" rowspan="2">WACC ↓</th><th class="axis" colspan="3">永续增长率 g →</th></tr>
+<tr><th>2.0%</th><th>2.5%</th><th>3.0%</th></tr>
+<tr><th>7%</th><td style="background:#d8b057">110</td><td style="background:#ca9c3f">122</td><td style="background:#bc8728">138</td></tr>
+<tr><th>8%</th><td style="background:#ecdaa9">92</td><td class="base" style="background:#e4c77c">100</td><td style="background:#d8b057">110</td></tr>
+<tr><th>9%</th><td style="background:#f7efda">79</td><td style="background:#f2e6c6">85</td><td style="background:#ecdaa9">92</td></tr>
+</table>
+<div class="cap">同一家公司，WACC 与永续增长率各只动 ±1%，每股价值从 79 摆到 138（极差近 75%）。终值假设主导一切——这就是 DCF 既强大又危险的地方。</div>
+</div>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>失效场景：① 周期顶部的资源/航运公司，用当下的高现金流外推 → 严重高估；② 早期亏损公司没有可外推的现金流基线；③ 把不一致的假设（高增长 + 低再投资 + 高利润率同时成立）塞进模型 → 得到「精确的错误」。</p>
+<ul class="checklist">
+<li>我的永续增长率是否 ≤ 无风险利率？</li>
+<li>增长假设是否配了对应的再投资（增长不是免费的）？</li>
+<li>终值占比多少？若超过 75%，我是否在为「十年后的幻想」付钱？</li>
+<li>把 WACC ±1%、永续增长 ±1%，价值波动多大？我能承受这个区间吗？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">DCF 不会因为数学出错，只会因为你喂给它的假设出错——垃圾进，垃圾出。</div>
+<div class="reflect">挑一家你的持仓，估算它的终值占内在价值的比例。如果超过 70%，你真正押注的是哪一年的世界？</div>
+</div>
+</div>
 <!-- Card 2: Relative Valuation -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02</div>
-    <h2>相对估值的陷阱<span class="en">The Trap of Relative Valuation</span></h2>
-    <span class="tag">定价 vs 价值</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">市盈率、市销率这类「倍数」不是价值，而是被标准化的价格。用同行倍数定价，等于默认市场对整个行业的定价是对的。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"In relative valuation, you value an asset based on how similar assets are priced. Implicitly, you assume the market is right on average, but makes mistakes on individual stocks that get corrected over time."
+<div class="card" data-tts="d4bd42b42f76a060">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>相对估值的陷阱<span class="en">The Trap of Relative Valuation</span></h2>
+<span class="tag">定价 vs 价值</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">市盈率、市销率这类「倍数」不是价值，而是被标准化的价格。用同行倍数定价，等于默认市场对整个行业的定价是对的。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"In relative valuation, you value an asset based on how similar assets are priced. Implicitly, you assume the market is right on average, but makes mistakes on individual stocks that get corrected over time."
     <span class="cite">— Aswath Damodaran，相对估值「第一性原理」讲义</span>
-    <span class="cn">相对估值是根据「同类资产如何被定价」来给一项资产估值——你隐含假设市场平均是对的，只在个股上犯错，且错误终会被修正。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Damodaran 把估值分成两类：内在估值（DCF）回答「这家公司值多少」；相对估值回答「相对同行它定价合理吗」。后者是华尔街九成「估值」的真面目。陷阱在于：<strong>倍数把市场的集体错误一并打包进来</strong>。当整个板块处于泡沫，「比同行便宜」毫无安全可言——你只是泡沫里相对便宜的那一个。他区分 investor（关心价值）与 trader（关心价格）：相对估值本质是定价游戏，赚的是「价格向倍数回归」的钱，不是价值创造的钱。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>Cisco（思科），2000 年 3 月：股价约 80 美元，市值约 <strong>5550 亿美元</strong>，一度成为全球市值最高的公司，市盈率超过 130 倍。当时分析师辩称「相对其它网络设备股，Cisco 估值合理」——但整个板块都在泡沫里。纳斯达克见顶后，Cisco 到 2002 年跌至约 8–13 美元（<strong>跌幅逾 85%</strong>），直到约 2024 年才重新触及 2000 年高点。基本面没救它——Cisco 至今仍是好公司，却死于「相对同行的便宜」。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>相对估值并非一无是处——在缺乏可靠现金流预测的早期或周期行业，它快速、可比、贴近市场现实。失效场景：① 整个可比组同处泡沫或同处恐慌；② 「可比公司」其实在增长、风险、ROIC 上差异巨大，倍数根本不可比；③ 用单一倍数（如 P/E）忽略资本结构与会计口径差异。</p>
-    <ul class="checklist">
-      <li>我选的「可比公司」在增长、风险、ROIC 上真的可比吗？</li>
-      <li>如果整个行业被高估，「相对便宜」还有意义吗？</li>
-      <li>这个倍数背后隐含的增长与风险假设是什么？</li>
-      <li>我是在为价值买单（investor），还是在赌价格回归（trader）？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">倍数是被标准化的价格，不是价值；「比同行便宜」可能只是泡沫里更便宜的那一个。</div>
-    <div class="reflect">你最近一次用「市盈率比同行低」做买入理由时——当时整个行业的估值水位，是高、是低，还是你根本没看？</div>
-  </div>
+<span class="cn">相对估值是根据「同类资产如何被定价」来给一项资产估值——你隐含假设市场平均是对的，只在个股上犯错，且错误终会被修正。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>Damodaran 把估值分成两类：内在估值（DCF）回答「这家公司值多少」；相对估值回答「相对同行它定价合理吗」。后者是华尔街九成「估值」的真面目。陷阱在于：<strong>倍数把市场的集体错误一并打包进来</strong>。当整个板块处于泡沫，「比同行便宜」毫无安全可言——你只是泡沫里相对便宜的那一个。他区分 investor（关心价值）与 trader（关心价格）：相对估值本质是定价游戏，赚的是「价格向倍数回归」的钱，不是价值创造的钱。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>Cisco（思科），2000 年 3 月：股价约 80 美元，市值约 <strong>5550 亿美元</strong>，一度成为全球市值最高的公司，市盈率超过 130 倍。当时分析师辩称「相对其它网络设备股，Cisco 估值合理」——但整个板块都在泡沫里。纳斯达克见顶后，Cisco 到 2002 年跌至约 8–13 美元（<strong>跌幅逾 85%</strong>），直到约 2024 年才重新触及 2000 年高点。基本面没救它——Cisco 至今仍是好公司，却死于「相对同行的便宜」。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>相对估值并非一无是处——在缺乏可靠现金流预测的早期或周期行业，它快速、可比、贴近市场现实。失效场景：① 整个可比组同处泡沫或同处恐慌；② 「可比公司」其实在增长、风险、ROIC 上差异巨大，倍数根本不可比；③ 用单一倍数（如 P/E）忽略资本结构与会计口径差异。</p>
+<ul class="checklist">
+<li>我选的「可比公司」在增长、风险、ROIC 上真的可比吗？</li>
+<li>如果整个行业被高估，「相对便宜」还有意义吗？</li>
+<li>这个倍数背后隐含的增长与风险假设是什么？</li>
+<li>我是在为价值买单（investor），还是在赌价格回归（trader）？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">倍数是被标准化的价格，不是价值；「比同行便宜」可能只是泡沫里更便宜的那一个。</div>
+<div class="reflect">你最近一次用「市盈率比同行低」做买入理由时——当时整个行业的估值水位，是高、是低，还是你根本没看？</div>
+</div>
+</div>
 <!-- Card 3: Narrative and Numbers -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03</div>
-    <h2>故事与数字<span class="en">Narrative and Numbers</span></h2>
-    <span class="tag">叙事纪律</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">好的估值是故事与数字之间的一座桥：每个故事最终都要落成一个数字，每个数字背后都要有一个能讲清的故事。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"A good valuation is a bridge between stories and numbers — every number needs a narrative and every narrative needs a number."
+<div class="card" data-tts="43838118dc42b980">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>故事与数字<span class="en">Narrative and Numbers</span></h2>
+<span class="tag">叙事纪律</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">好的估值是故事与数字之间的一座桥：每个故事最终都要落成一个数字，每个数字背后都要有一个能讲清的故事。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"A good valuation is a bridge between stories and numbers — every number needs a narrative and every narrative needs a number."
     <span class="cite">— Aswath Damodaran,《Narrative and Numbers》(Columbia Business School Press, 2017)</span>
-    <span class="cn">好的估值是故事与数字之间的桥——每个数字都需要一个叙事，每个叙事也都需要一个数字。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>纯数字派（只盯模型）容易被精确的假象俘获；纯故事派（只讲愿景）容易爱上叙事、给不可能的增长找理由。Damodaran 的纪律是让二者互相约束：故事决定 TAM、市占率、利润率、再投资，这些再变成现金流；反过来，数字的常识边界（如永续增长 ≤ 无风险利率）又把故事拉回地面。最危险的不是没有故事，而是<strong>爱上自己的故事</strong>——把每一次现实的反驳都解释成「市场还没懂」。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>Uber，2014 年 6 月。Damodaran 公开 DCF 估值约 <strong>59 亿美元</strong>，依据的故事是「城市叫车市场约 1000 亿、Uber 拿 10% 份额」。当时私募市场估值已达 170 亿。投资人 Bill Gurley 反驳：Uber 不是抢出租车的存量份额，而是<strong>扩大整个市场</strong>（替代私家车、创造新出行），TAM 应大得多。结果：2019 年 5 月 Uber 上市，估值约 <strong>820 亿美元</strong>（发行价 45 美元）。Damodaran 后来公开承认——错的不是他的数学，而是他<strong>把故事讲小了</strong>，随后多次上调叙事。这是「故事决定数字」最诚实的一课，连估值教主也不例外。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>失效场景：① 故事无法证伪（「十年后改变世界」）时，数字只是装饰；② 用故事为已被现实反复打脸的假设辩护（价值陷阱的反面——「成长陷阱」）；③ 把一次次上调叙事当成「我看得更远」，而非承认原假设错了。</p>
-    <ul class="checklist">
-      <li>我的估值故事可被证伪吗？哪个现实信号会推翻它？</li>
-      <li>TAM、市占率、利润率，每一个数字都对应得上故事里的一句话吗？</li>
-      <li>我是在更新故事，还是在为错误的故事找借口？</li>
-      <li>如果故事缩小一半，价值还剩多少？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">数字让故事诚实，故事让数字落地；最贵的错误是爱上自己的叙事。</div>
-    <div class="reflect">写下你某个重仓的「投资故事」一句话，再标出它对应的三个关键数字。哪一个最经不起推敲？</div>
-  </div>
+<span class="cn">好的估值是故事与数字之间的桥——每个数字都需要一个叙事，每个叙事也都需要一个数字。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>纯数字派（只盯模型）容易被精确的假象俘获；纯故事派（只讲愿景）容易爱上叙事、给不可能的增长找理由。Damodaran 的纪律是让二者互相约束：故事决定 TAM、市占率、利润率、再投资，这些再变成现金流；反过来，数字的常识边界（如永续增长 ≤ 无风险利率）又把故事拉回地面。最危险的不是没有故事，而是<strong>爱上自己的故事</strong>——把每一次现实的反驳都解释成「市场还没懂」。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>Uber，2014 年 6 月。Damodaran 公开 DCF 估值约 <strong>59 亿美元</strong>，依据的故事是「城市叫车市场约 1000 亿、Uber 拿 10% 份额」。当时私募市场估值已达 170 亿。投资人 Bill Gurley 反驳：Uber 不是抢出租车的存量份额，而是<strong>扩大整个市场</strong>（替代私家车、创造新出行），TAM 应大得多。结果：2019 年 5 月 Uber 上市，估值约 <strong>820 亿美元</strong>（发行价 45 美元）。Damodaran 后来公开承认——错的不是他的数学，而是他<strong>把故事讲小了</strong>，随后多次上调叙事。这是「故事决定数字」最诚实的一课，连估值教主也不例外。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>失效场景：① 故事无法证伪（「十年后改变世界」）时，数字只是装饰；② 用故事为已被现实反复打脸的假设辩护（价值陷阱的反面——「成长陷阱」）；③ 把一次次上调叙事当成「我看得更远」，而非承认原假设错了。</p>
+<ul class="checklist">
+<li>我的估值故事可被证伪吗？哪个现实信号会推翻它？</li>
+<li>TAM、市占率、利润率，每一个数字都对应得上故事里的一句话吗？</li>
+<li>我是在更新故事，还是在为错误的故事找借口？</li>
+<li>如果故事缩小一半，价值还剩多少？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">数字让故事诚实，故事让数字落地；最贵的错误是爱上自己的叙事。</div>
+<div class="reflect">写下你某个重仓的「投资故事」一句话，再标出它对应的三个关键数字。哪一个最经不起推敲？</div>
+</div>
+</div>
 <!-- Card 4: Valuing Growth -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04</div>
-    <h2>增长到底值多少钱<span class="en">Valuing Growth vs Value</span></h2>
-    <span class="tag">增长 vs 价值</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">增长不是免费的，也不天然创造价值。只有当再投资回报率（ROIC）高于资本成本时，增长才增加价值；否则增长越快，毁灭越快。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"Growth is always a component in the calculation of value, constituting a variable whose importance can range from negligible to enormous and whose impact can be negative as well as positive."
+<div class="card" data-tts="9cce743f55d1ed20">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>增长到底值多少钱<span class="en">Valuing Growth vs Value</span></h2>
+<span class="tag">增长 vs 价值</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">增长不是免费的，也不天然创造价值。只有当再投资回报率（ROIC）高于资本成本时，增长才增加价值；否则增长越快，毁灭越快。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"Growth is always a component in the calculation of value, constituting a variable whose importance can range from negligible to enormous and whose impact can be negative as well as positive."
     <span class="cite">— Warren Buffett, Berkshire Hathaway 1992 致股东信</span>
-    <span class="cn">增长永远是价值计算中的一个变量，其重要性可从微不足道到极其巨大，其影响可正可负。Damodaran 给出公式：预期增长 = 再投资率 × ROIC——增长必须靠再投资挣来。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>「价值股 vs 增长股」在 Damodaran 和 Buffett 眼里是个伪命题——增长本就是价值公式里的一个变量。关键不是「增长快不快」，而是「增长是用什么代价换来的」。公式很简单：要 g 的增长，就得投入 <strong>g/ROIC</strong> 的资本。当 ROIC &gt; 资本成本，增长为正；当 ROIC &lt; 资本成本，增长在<strong>烧钱毁价值</strong>，增速越高毁得越快。这解释了为什么有些公司估值越「成长」反而越不值钱。Buffett 1992 年就说：价值与成长是「连体婴」(joined at the hip)。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>WeWork。2019 年 1 月，软银注资后估值约 <strong>470 亿美元</strong>，增长叙事炫目（会员、城市、签约面积高速扩张）。但单位经济为负——它用长期租约换短期会员，ROIC 深度为负，增长其实在加速烧钱。2019 年 9 月招股书暴露真实亏损后 IPO 流产，估值崩塌；2021 年借 SPAC 上市估值约 <strong>90 亿</strong>；2023 年 11 月申请破产保护。增长是真的，价值是负的——<strong>当增长没有回报支撑，扩张本身就是毁灭</strong>。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>边界：早期公司 ROIC 暂时为负不必然是坏事（亚马逊早年靠再投资压低利润，但单位经济与最终 ROIC 为正）。区别在于：再投资终将转化为高于资本成本的回报，还是永远填不满的坑。误用：① 用「成长性」为任何高估值开脱；② 只看营收增长、不看资本回报；③ 把烧钱换增长误当作护城河。</p>
-    <ul class="checklist">
-      <li>这家公司每多增长 1 元收入，要投入多少资本？</li>
-      <li>它的 ROIC 高于资本成本吗？趋势在改善还是恶化？</li>
-      <li>这是「价值创造型增长」还是「价值毁灭型增长」？</li>
-      <li>我是在为增长付钱，还是为「有回报的增长」付钱？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">增长本身既非价值也非诅咒——决定方向的是 ROIC 与资本成本谁更高。</div>
-    <div class="reflect">你持仓里增长最快的那家，它的 ROIC 高于资本成本吗？如果不是，你买的是复利机器，还是烧钱机器？</div>
-  </div>
+<span class="cn">增长永远是价值计算中的一个变量，其重要性可从微不足道到极其巨大，其影响可正可负。Damodaran 给出公式：预期增长 = 再投资率 × ROIC——增长必须靠再投资挣来。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>「价值股 vs 增长股」在 Damodaran 和 Buffett 眼里是个伪命题——增长本就是价值公式里的一个变量。关键不是「增长快不快」，而是「增长是用什么代价换来的」。公式很简单：要 g 的增长，就得投入 <strong>g/ROIC</strong> 的资本。当 ROIC &gt; 资本成本，增长为正；当 ROIC &lt; 资本成本，增长在<strong>烧钱毁价值</strong>，增速越高毁得越快。这解释了为什么有些公司估值越「成长」反而越不值钱。Buffett 1992 年就说：价值与成长是「连体婴」(joined at the hip)。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>WeWork。2019 年 1 月，软银注资后估值约 <strong>470 亿美元</strong>，增长叙事炫目（会员、城市、签约面积高速扩张）。但单位经济为负——它用长期租约换短期会员，ROIC 深度为负，增长其实在加速烧钱。2019 年 9 月招股书暴露真实亏损后 IPO 流产，估值崩塌；2021 年借 SPAC 上市估值约 <strong>90 亿</strong>；2023 年 11 月申请破产保护。增长是真的，价值是负的——<strong>当增长没有回报支撑，扩张本身就是毁灭</strong>。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>边界：早期公司 ROIC 暂时为负不必然是坏事（亚马逊早年靠再投资压低利润，但单位经济与最终 ROIC 为正）。区别在于：再投资终将转化为高于资本成本的回报，还是永远填不满的坑。误用：① 用「成长性」为任何高估值开脱；② 只看营收增长、不看资本回报；③ 把烧钱换增长误当作护城河。</p>
+<ul class="checklist">
+<li>这家公司每多增长 1 元收入，要投入多少资本？</li>
+<li>它的 ROIC 高于资本成本吗？趋势在改善还是恶化？</li>
+<li>这是「价值创造型增长」还是「价值毁灭型增长」？</li>
+<li>我是在为增长付钱，还是为「有回报的增长」付钱？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">增长本身既非价值也非诅咒——决定方向的是 ROIC 与资本成本谁更高。</div>
+<div class="reflect">你持仓里增长最快的那家，它的 ROIC 高于资本成本吗？如果不是，你买的是复利机器，还是烧钱机器？</div>
+</div>
+</div>
 <!-- Deep Questions -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">DEEP QUESTIONS</div>
-    <h2>深入思考<span class="en">Open Questions for the Long Investor</span></h2>
-    <span class="tag">反思</span>
-  </div>
-  <div class="deepq">
-    <details><summary>1. AI 能不能替我们做 DCF？</summary>
-      <div>AI 能秒级跑模型、做敏感性、抓出不一致的假设，把「数字」端几乎自动化。但 DCF 的瓶颈从来不在计算，而在<strong>故事</strong>——TAM 多大、护城河多久、技术会否被颠覆，这是判断与博弈，不是数据问题。稀缺性因此从「算得快」转向「<strong>故事讲得准且可证伪</strong>」；技术背景者的优势，恰在能判断哪些「颠覆」是真的、哪些只是 PPT。</div>
-    </details>
-    <details><summary>2. 永续增长 ≤ 无风险利率，在零/负利率时代还成立吗？</summary>
-      <div>规则的本质不是「绑定利率数字」，而是「<strong>公司不能永远快过经济</strong>」。零利率时，名义 GDP 增速仍是上限的更好近似。负利率真正扭曲的是折现率分母，反而更要警惕终值被人为放大到荒谬。所以：规则形式可调（用名义 GDP 增速替代无风险利率），底层逻辑不变。</div>
-    </details>
-    <details><summary>3. 故事驱动的估值，会不会只是给泡沫找的高级借口？</summary>
-      <div>危险确实存在——「叙事」常被滥用为不可证伪的辩护词。Damodaran 的防线是<strong>数字的常识边界</strong>：再大的故事也要落成现金流，且受永续增长、再投资强度、利润率上限的硬约束。区别在于：故事能否被证伪？有没有被数字反向约束？<strong>不能证伪的故事，就是泡沫的语言。</strong></div>
-    </details>
-    <details><summary>4. 个人投资者该用内在估值还是相对估值？</summary>
-      <div>两者互补。相对估值快、贴近市场，适合<strong>筛选</strong>与第一眼判断；内在估值慢、强制一致性，适合<strong>重仓前的尽调</strong>。最佳实践：用相对估值找候选，用 DCF 做最终判断与安全边际。两者结论的差异本身就是信息——差距大时要问：「是市场看到了我没看到的，还是我看到了市场没看到的？」</div>
-    </details>
-    <details><summary>5. Damodaran 自己也常「错」（如 Uber 估太低、对 Tesla 的判断反复），为什么还值得学？</summary>
-      <div>因为他<strong>公开全部假设、可被检验、错了就更新</strong>——这正是估值作为「手艺」而非「神谕」的精神。投资的目标不是每次估对，而是建立一个能自我修正、可复盘的框架。一个会错但透明的框架，长期胜过永远「正确」却无法复盘的直觉。</div>
-    </details>
-  </div>
+<div class="card" data-tts="32d00253a2b8acaf">
+<div class="card-header">
+<div class="card-num">DEEP QUESTIONS</div>
+<h2>深入思考<span class="en">Open Questions for the Long Investor</span></h2>
+<span class="tag">反思</span>
 </div>
-
+<div class="deepq">
+<details><summary>1. AI 能不能替我们做 DCF？</summary>
+<div>AI 能秒级跑模型、做敏感性、抓出不一致的假设，把「数字」端几乎自动化。但 DCF 的瓶颈从来不在计算，而在<strong>故事</strong>——TAM 多大、护城河多久、技术会否被颠覆，这是判断与博弈，不是数据问题。稀缺性因此从「算得快」转向「<strong>故事讲得准且可证伪</strong>」；技术背景者的优势，恰在能判断哪些「颠覆」是真的、哪些只是 PPT。</div>
+</details>
+<details><summary>2. 永续增长 ≤ 无风险利率，在零/负利率时代还成立吗？</summary>
+<div>规则的本质不是「绑定利率数字」，而是「<strong>公司不能永远快过经济</strong>」。零利率时，名义 GDP 增速仍是上限的更好近似。负利率真正扭曲的是折现率分母，反而更要警惕终值被人为放大到荒谬。所以：规则形式可调（用名义 GDP 增速替代无风险利率），底层逻辑不变。</div>
+</details>
+<details><summary>3. 故事驱动的估值，会不会只是给泡沫找的高级借口？</summary>
+<div>危险确实存在——「叙事」常被滥用为不可证伪的辩护词。Damodaran 的防线是<strong>数字的常识边界</strong>：再大的故事也要落成现金流，且受永续增长、再投资强度、利润率上限的硬约束。区别在于：故事能否被证伪？有没有被数字反向约束？<strong>不能证伪的故事，就是泡沫的语言。</strong></div>
+</details>
+<details><summary>4. 个人投资者该用内在估值还是相对估值？</summary>
+<div>两者互补。相对估值快、贴近市场，适合<strong>筛选</strong>与第一眼判断；内在估值慢、强制一致性，适合<strong>重仓前的尽调</strong>。最佳实践：用相对估值找候选，用 DCF 做最终判断与安全边际。两者结论的差异本身就是信息——差距大时要问：「是市场看到了我没看到的，还是我看到了市场没看到的？」</div>
+</details>
+<details><summary>5. Damodaran 自己也常「错」（如 Uber 估太低、对 Tesla 的判断反复），为什么还值得学？</summary>
+<div>因为他<strong>公开全部假设、可被检验、错了就更新</strong>——这正是估值作为「手艺」而非「神谕」的精神。投资的目标不是每次估对，而是建立一个能自我修正、可复盘的框架。一个会错但透明的框架，长期胜过永远「正确」却无法复盘的直觉。</div>
+</details>
+</div>
+</div>
 <nav><a href="index.html">← 返回 投资经典</a></nav>
 <footer>BigCat · Investing · Day 06 · 2026</footer>
-
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </div></body></html>
