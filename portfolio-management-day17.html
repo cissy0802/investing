@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：组合管理 — Day 17</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -44,231 +45,193 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 17</div>
-  <h1>投资经典：组合管理<span class="accent">Sizing, Odds, Patience, and the Tax Drag</span></h1>
-  <div class="meta"><span>2026年6月8日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 17</div>
+<h1 data-tts="c5eafc935afd3da6">投资经典：组合管理<span class="accent">Sizing, Odds, Patience, and the Tax Drag</span></h1>
+<div class="meta"><span>2026年6月8日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 选对股票只是一半；另一半是<strong>买多少、何时加、税后还剩多少</strong>。组合管理决定一个好想法能否真正变成复利。本期四块——集中还是分散、Kelly 公式如何给"下注大小"一个数学锚、仓位为何应随安全边际而非情绪移动，以及最被低估的复利杀手：<strong>税收摩擦</strong>。
 </div>
-
 <!-- Card 1: Concentration vs Diversification -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01 · 集中与分散</div>
-    <h2>集中 vs 分散之争<span class="en">Concentration vs Diversification</span></h2>
-    <span class="tag">下注结构</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">分散是对无知的保护。当你真正看懂一门生意时，过度分散只会稀释你最好的想法——但"真懂"是极高门槛，多数人高估了自己。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"We believe that a policy of portfolio concentration may well decrease risk if it raises, as it should, both the intensity with which an investor thinks about a business and the comfort-level he must feel with its economic characteristics before buying into it."
+<div class="card" data-tts="b06689f8a1684136">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01 · 集中与分散</div>
+<h2>集中 vs 分散之争<span class="en">Concentration vs Diversification</span></h2>
+<span class="tag">下注结构</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">分散是对无知的保护。当你真正看懂一门生意时，过度分散只会稀释你最好的想法——但"真懂"是极高门槛，多数人高估了自己。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"We believe that a policy of portfolio concentration may well decrease risk if it raises, as it should, both the intensity with which an investor thinks about a business and the comfort-level he must feel with its economic characteristics before buying into it."
     <span class="cite">— Warren Buffett, Berkshire Hathaway 1993 致股东信</span>
-    <span class="cn">我们相信，集中持有的策略很可能降低风险——只要它（理应如此）同时提高了投资者思考一门生意的强度，以及他在买入前对其经济特征所要求的安心程度。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Buffett 的反直觉在于：集中不必然更危险，因为它<strong>逼你提高思考强度</strong>——只敢下五个重注的人，会比撒网买五十只的更认真地审视每一个。但集中也放大<strong>特异性风险</strong>。关键不是集中本身，而是你<strong>是否真有 edge</strong>：有 edge，集中是杠杆；没有 edge，集中只是把运气放大。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>1964 年"色拉油丑闻"：American Express 为一家伪造库存的子公司担保背上巨亏，股价从约 60 美元腰斩至约 35 美元。Buffett 蹲守餐馆和商户做实地调研，发现顾客照常刷卡、品牌信任未损，判断丑闻一次性可吸收，于是把合伙基金<strong>约 40% 的资产（约 1300 万美元）</strong>压在这一只股票上，此后数年股价涨数倍。这是"看懂了就重注"的范本——前提是那个艰难的"看懂"。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>集中对没有 edge 的人是毒药。Bessembinder（2018）统计 1926–2016 年全部美股：<strong>约 58% 的个股终其上市生涯跑不赢国库券</strong>，全市场净财富创造几乎都来自约 4% 的公司。随手集中，大概率押到平庸或毁灭的一边。Bill Miller 曾连续 15 年跑赢标普，却在 2008 年集中押注金融股而几近清盘——集中放大结果，不改变判断的质量。</p>
-    <ul class="checklist">
-      <li>这个集中仓位，依据的是可验证的 edge，还是仅仅"我很有信心"？</li>
-      <li>单一持仓归零，我的组合会受到永久性、不可恢复的打击吗？</li>
-      <li>我的几个重仓是否暗藏同一个风险因子（同行业、同客户、同利率敏感）？</li>
-      <li>如果我对这门生意并无独到认知，我是否该承认自己属于"该分散"的多数？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">集中是 edge 的放大器，不是替代品；没有认知优势的集中，只是把赌注下得更大。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">看你最大的仓位：如果它明天因一个你没预料到的原因归零，你能诚实地说"我为它付出了与仓位相称的研究"吗？</div>
-  </div>
+<span class="cn">我们相信，集中持有的策略很可能降低风险——只要它（理应如此）同时提高了投资者思考一门生意的强度，以及他在买入前对其经济特征所要求的安心程度。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>Buffett 的反直觉在于：集中不必然更危险，因为它<strong>逼你提高思考强度</strong>——只敢下五个重注的人，会比撒网买五十只的更认真地审视每一个。但集中也放大<strong>特异性风险</strong>。关键不是集中本身，而是你<strong>是否真有 edge</strong>：有 edge，集中是杠杆；没有 edge，集中只是把运气放大。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>1964 年"色拉油丑闻"：American Express 为一家伪造库存的子公司担保背上巨亏，股价从约 60 美元腰斩至约 35 美元。Buffett 蹲守餐馆和商户做实地调研，发现顾客照常刷卡、品牌信任未损，判断丑闻一次性可吸收，于是把合伙基金<strong>约 40% 的资产（约 1300 万美元）</strong>压在这一只股票上，此后数年股价涨数倍。这是"看懂了就重注"的范本——前提是那个艰难的"看懂"。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>集中对没有 edge 的人是毒药。Bessembinder（2018）统计 1926–2016 年全部美股：<strong>约 58% 的个股终其上市生涯跑不赢国库券</strong>，全市场净财富创造几乎都来自约 4% 的公司。随手集中，大概率押到平庸或毁灭的一边。Bill Miller 曾连续 15 年跑赢标普，却在 2008 年集中押注金融股而几近清盘——集中放大结果，不改变判断的质量。</p>
+<ul class="checklist">
+<li>这个集中仓位，依据的是可验证的 edge，还是仅仅"我很有信心"？</li>
+<li>单一持仓归零，我的组合会受到永久性、不可恢复的打击吗？</li>
+<li>我的几个重仓是否暗藏同一个风险因子（同行业、同客户、同利率敏感）？</li>
+<li>如果我对这门生意并无独到认知，我是否该承认自己属于"该分散"的多数？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">集中是 edge 的放大器，不是替代品；没有认知优势的集中，只是把赌注下得更大。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">看你最大的仓位：如果它明天因一个你没预料到的原因归零，你能诚实地说"我为它付出了与仓位相称的研究"吗？</div>
+</div>
+</div>
 <!-- Card 2: Kelly Criterion -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02 · 下注大小</div>
-    <h2>Kelly 公式<span class="en">The Kelly Criterion</span></h2>
-    <span class="tag">几何复利</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">按优势比例下注，能最大化长期的几何增长率。下注过大——哪怕每一注都有正期望——也注定走向破产；下注过小则浪费优势。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"The wise ones bet heavily when the world offers them that opportunity. They bet big when they have the odds. And the rest of the time, they don't. It's just that simple."
+<div class="card" data-tts="9d6e8e63836ab3df">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02 · 下注大小</div>
+<h2>Kelly 公式<span class="en">The Kelly Criterion</span></h2>
+<span class="tag">几何复利</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">按优势比例下注，能最大化长期的几何增长率。下注过大——哪怕每一注都有正期望——也注定走向破产；下注过小则浪费优势。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"The wise ones bet heavily when the world offers them that opportunity. They bet big when they have the odds. And the rest of the time, they don't. It's just that simple."
     <span class="cite">— Charlie Munger,《Poor Charlie's Almanack》</span>
-    <span class="cn">聪明人会在世界给出机会时重注。有胜算时下大注，其余时间按兵不动。就这么简单。</span></div>
-    <p>数学形式由 John Kelly（1956）给出：最优下注比例 <strong>f* = p − (1−p)/b</strong>，其中 p 是胜率、b 是赔率（赢时净回报倍数）。</p>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>Kelly 优化的是<strong>几何增长（复利）而非算术期望</strong>。投资是连乘而非连加：一次 −100% 让此前所有收益归零。所以目标不是单注期望最大，而是<strong>不破产前提下的增长最快</strong>。下注超过 Kelly 比例时，破产风险陡升、长期增长反而下降。由于真实胜率永远是估计值，实务中多用<strong>半 Kelly（½f*）</strong>：牺牲一点增长，换取对估计误差的巨大缓冲。</p>
-  </div>
-
-  <div class="viz">
-    <div class="viz-title">同一个正期望赌局，下注比例决定命运（示意）</div>
-    <table class="viz-table">
-      <tr><th>下注比例</th><th>相对最优增长</th><th>波动 / 回撤</th><th>长期结局</th></tr>
-      <tr><td class="bias">远低于 Kelly</td><td>偏低</td><td>很小</td><td>稳但慢，浪费优势</td></tr>
-      <tr><td class="bias">半 Kelly</td><td>约 75%</td><td>明显更小</td><td>实务甜区</td></tr>
-      <tr><td class="bias">满 Kelly</td><td>100%（理论最优）</td><td>剧烈</td><td>理论最快，难以承受</td></tr>
-      <tr><td class="bias">超过 Kelly</td><td>不升反降</td><td>极端</td><td>趋向破产</td></tr>
-    </table>
-    <div class="viz-note">越过临界点，更大的赌注买到的不是更快的钱，而是更近的归零。</div>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>Ed Thorp 把 Kelly 从二十一点牌桌搬进市场：其 Princeton/Newport 基金（约 1969–1988）以 Kelly 思想控制仓位，年化约 19% 且<strong>几乎没有亏损年份</strong>——靠的不是单笔暴利，而是"按优势决定仓位、绝不过注"的纪律。反面是 1998 年的 LTCM：用约 25:1 杠杆把收敛交易押到远超任何审慎 Kelly 的水平，正期望或许真实，但仓位过大；当相关性那年夏天同时飙升，几周内亏掉约 46 亿美元、濒临倒闭，最终需美联储牵头救助。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>市场不是赌场：p 和 b 你都<strong>不知道</strong>，只能估计；收益有肥尾，同一笔"下注"无法重复试验。把 Kelly 当精确公式套用很危险——它的真正价值是<strong>思维框架</strong>：仓位该随优势缩放，而过度下注会害死你。</p>
-    <ul class="checklist">
-      <li>我的"胜率"是有依据的估计，还是信心的伪装？</li>
-      <li>我用的是分数 Kelly，给估计误差留了缓冲吗？</li>
-      <li>如果我对赔率的判断错了一半，这个仓位还能让我活下来吗？</li>
-      <li>我是否在用杠杆把仓位推到任何 Kelly 框架都不允许的水平？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">复利是连乘游戏，一次归零抹平一切；Kelly 的终极戒律不是"下多大"，而是"永远别下到可能破产的注"。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">回看你最重的一笔下注：它的大小，是来自对优势的冷静估计，还是当时的兴奋情绪？两者给出的仓位会一样吗？</div>
-  </div>
+<span class="cn">聪明人会在世界给出机会时重注。有胜算时下大注，其余时间按兵不动。就这么简单。</span></div>
+<p>数学形式由 John Kelly（1956）给出：最优下注比例 <strong>f* = p − (1−p)/b</strong>，其中 p 是胜率、b 是赔率（赢时净回报倍数）。</p>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>Kelly 优化的是<strong>几何增长（复利）而非算术期望</strong>。投资是连乘而非连加：一次 −100% 让此前所有收益归零。所以目标不是单注期望最大，而是<strong>不破产前提下的增长最快</strong>。下注超过 Kelly 比例时，破产风险陡升、长期增长反而下降。由于真实胜率永远是估计值，实务中多用<strong>半 Kelly（½f*）</strong>：牺牲一点增长，换取对估计误差的巨大缓冲。</p>
+</div>
+<div class="viz">
+<div class="viz-title">同一个正期望赌局，下注比例决定命运（示意）</div>
+<table class="viz-table">
+<tr><th>下注比例</th><th>相对最优增长</th><th>波动 / 回撤</th><th>长期结局</th></tr>
+<tr><td class="bias">远低于 Kelly</td><td>偏低</td><td>很小</td><td>稳但慢，浪费优势</td></tr>
+<tr><td class="bias">半 Kelly</td><td>约 75%</td><td>明显更小</td><td>实务甜区</td></tr>
+<tr><td class="bias">满 Kelly</td><td>100%（理论最优）</td><td>剧烈</td><td>理论最快，难以承受</td></tr>
+<tr><td class="bias">超过 Kelly</td><td>不升反降</td><td>极端</td><td>趋向破产</td></tr>
+</table>
+<div class="viz-note">越过临界点，更大的赌注买到的不是更快的钱，而是更近的归零。</div>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>Ed Thorp 把 Kelly 从二十一点牌桌搬进市场：其 Princeton/Newport 基金（约 1969–1988）以 Kelly 思想控制仓位，年化约 19% 且<strong>几乎没有亏损年份</strong>——靠的不是单笔暴利，而是"按优势决定仓位、绝不过注"的纪律。反面是 1998 年的 LTCM：用约 25:1 杠杆把收敛交易押到远超任何审慎 Kelly 的水平，正期望或许真实，但仓位过大；当相关性那年夏天同时飙升，几周内亏掉约 46 亿美元、濒临倒闭，最终需美联储牵头救助。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>市场不是赌场：p 和 b 你都<strong>不知道</strong>，只能估计；收益有肥尾，同一笔"下注"无法重复试验。把 Kelly 当精确公式套用很危险——它的真正价值是<strong>思维框架</strong>：仓位该随优势缩放，而过度下注会害死你。</p>
+<ul class="checklist">
+<li>我的"胜率"是有依据的估计，还是信心的伪装？</li>
+<li>我用的是分数 Kelly，给估计误差留了缓冲吗？</li>
+<li>如果我对赔率的判断错了一半，这个仓位还能让我活下来吗？</li>
+<li>我是否在用杠杆把仓位推到任何 Kelly 框架都不允许的水平？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">复利是连乘游戏，一次归零抹平一切；Kelly 的终极戒律不是"下多大"，而是"永远别下到可能破产的注"。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">回看你最重的一笔下注：它的大小，是来自对优势的冷静估计，还是当时的兴奋情绪？两者给出的仓位会一样吗？</div>
+</div>
+</div>
 <!-- Card 3: Position sizing & price -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03 · 仓位与价格</div>
-    <h2>仓位随安全边际而动<span class="en">Sizing to the Margin of Safety</span></h2>
-    <span class="tag">出手时机</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">仓位大小该由赔率、把握与安全边际决定，而非情绪。价格下跌只在论点未变时才是机会；论点已坏时，下跌是警报而非折扣。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"Opportunities come infrequently. When it's raining gold, reach for a bucket, not a thimble."
+<div class="card" data-tts="0d69d55da0e60487">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03 · 仓位与价格</div>
+<h2>仓位随安全边际而动<span class="en">Sizing to the Margin of Safety</span></h2>
+<span class="tag">出手时机</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">仓位大小该由赔率、把握与安全边际决定，而非情绪。价格下跌只在论点未变时才是机会；论点已坏时，下跌是警报而非折扣。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"Opportunities come infrequently. When it's raining gold, reach for a bucket, not a thimble."
     <span class="cite">— Warren Buffett, Berkshire Hathaway 2009 致股东信</span>
-    <span class="cn">机会很少出现。当天上下金子时，该拿桶去接，而不是拿顶针。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>多数人涨了追、跌了怕。正确的逻辑相反——<strong>价格越低，安全边际越大，仓位理应越重</strong>，前提是论点未变。Druckenmiller 把这点说透："重要的不是你对还是错，而是<strong>对的时候赚多少、错的时候亏多少</strong>。"但这要求你冷静区分<strong>价格下跌（机会扩大）</strong>与<strong>论点破裂（价值陷阱）</strong>——前者该加仓，后者该离场，而它们在盘面上长得一模一样。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2008–2009 年金融危机最深处，多数资金冻结、只想保命。Buffett 反向"用桶接"：2008 年 9–10 月向 Goldman Sachs 注资 50 亿、向 GE 注资 30 亿（均为 10% 股息的优先股加认股权证），2009 年又以约 260 亿美元收购 BNSF 铁路。当别人因恐惧把顶针都收起来时，他在出手最大的几笔——这不是抄底的运气，而是<strong>把仓位押在安全边际最大、而非情绪最舒服的时刻</strong>。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>"越跌越买"最危险的误用，是对基本面正在恶化的公司不断加仓——把价值陷阱当折扣，越陷越深，最后在最低点割肉。安全边际的前提是<strong>价值本身没坏</strong>；当下跌源于护城河受损或论点证伪时，纪律是减仓而非加仓。</p>
-    <ul class="checklist">
-      <li>这次下跌，是市场情绪，还是我买入论点的某个支柱真的塌了？</li>
-      <li>加仓前，我重新独立估过内在价值，还是只盯着更低的价格？</li>
-      <li>加到这个仓位后，若论点最终被证伪，我能承受这个永久损失吗？</li>
-      <li>我是在赢面最大时下重注，还是只是被价格波动牵着走？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">价格下跌和论点破裂在屏幕上一模一样；分清这两者，决定了"越跌越买"是纪律还是自毁。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">回想一次你"越跌越买"的经历：事后看，你加的是安全边际，还是把钱投进了一条正在沉的船？当时你凭什么区分两者？</div>
-  </div>
+<span class="cn">机会很少出现。当天上下金子时，该拿桶去接，而不是拿顶针。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>多数人涨了追、跌了怕。正确的逻辑相反——<strong>价格越低，安全边际越大，仓位理应越重</strong>，前提是论点未变。Druckenmiller 把这点说透："重要的不是你对还是错，而是<strong>对的时候赚多少、错的时候亏多少</strong>。"但这要求你冷静区分<strong>价格下跌（机会扩大）</strong>与<strong>论点破裂（价值陷阱）</strong>——前者该加仓，后者该离场，而它们在盘面上长得一模一样。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2008–2009 年金融危机最深处，多数资金冻结、只想保命。Buffett 反向"用桶接"：2008 年 9–10 月向 Goldman Sachs 注资 50 亿、向 GE 注资 30 亿（均为 10% 股息的优先股加认股权证），2009 年又以约 260 亿美元收购 BNSF 铁路。当别人因恐惧把顶针都收起来时，他在出手最大的几笔——这不是抄底的运气，而是<strong>把仓位押在安全边际最大、而非情绪最舒服的时刻</strong>。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>"越跌越买"最危险的误用，是对基本面正在恶化的公司不断加仓——把价值陷阱当折扣，越陷越深，最后在最低点割肉。安全边际的前提是<strong>价值本身没坏</strong>；当下跌源于护城河受损或论点证伪时，纪律是减仓而非加仓。</p>
+<ul class="checklist">
+<li>这次下跌，是市场情绪，还是我买入论点的某个支柱真的塌了？</li>
+<li>加仓前，我重新独立估过内在价值，还是只盯着更低的价格？</li>
+<li>加到这个仓位后，若论点最终被证伪，我能承受这个永久损失吗？</li>
+<li>我是在赢面最大时下重注，还是只是被价格波动牵着走？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">价格下跌和论点破裂在屏幕上一模一样；分清这两者，决定了"越跌越买"是纪律还是自毁。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">回想一次你"越跌越买"的经历：事后看，你加的是安全边际，还是把钱投进了一条正在沉的船？当时你凭什么区分两者？</div>
+</div>
+</div>
 <!-- Card 4: Taxes & compounding -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04 · 税收与复利</div>
-    <h2>税收摩擦与延税复利<span class="en">Taxes, Turnover, and Deferred Compounding</span></h2>
-    <span class="tag">复利的暗扣</span>
-  </div>
-
-  <div class="section"><div class="label">原则表述</div>
-    <div class="principle">每一次卖出实现的资本利得税，都从复利的本金里永久扣走一块、再也参与不了往后的增长。未实现盈利相当于政府给你的一笔无息贷款——低换手不是懒，是数学。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 + 金句</div>
-    <div class="quote">"The first rule of compounding: Never interrupt it unnecessarily."
-    <span class="cite">— 归于 Charlie Munger（复利第一法则）</span>
-    <span class="cn">复利的第一法则：永远不要不必要地打断它。</span></div>
-    <p>Buffett 在 1989 信里用一个数字把这条讲透（见下表）。</p>
-  </div>
-
-  <div class="viz">
-    <div class="viz-title">1 美元、每年翻倍、共 20 年：换手的税收代价（Buffett 1989 信，34% 税率）</div>
-    <table class="viz-table">
-      <tr><th>策略</th><th>每年是否卖出纳税</th><th>20 年后税后净值</th></tr>
-      <tr><td class="bias">持有不动</td><td>不卖，到第 20 年末一次性纳税</td><td>约 <strong>692,000</strong> 美元</td></tr>
-      <tr><td class="bias">每年兑现</td><td>每年卖出、按 34% 纳税后再投</td><td>约 <strong>25,200</strong> 美元</td></tr>
-    </table>
-    <div class="viz-note">同样的标的与回报率，差别只在"动手的频率"——延税让终值高出约 27 倍。</div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>换手是复利的隐形税：每次实现收益就被征走一块本金，损失被往后所有年份的复利放大。<strong>未实现盈利则相当于一笔无息、无到期日的贷款</strong>，全额留在场内继续滚动——这正是 Berkshire 巨额"递延所得税负债"的意义：数十年未兑现的盈利，像浮存金一样为股东无偿工作。低换手不是懒散，而是把这笔无息贷款用到极致的<strong>理性选择</strong>。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 + 决策检查表</div>
-    <p>别让税的尾巴摇了投资的狗。<strong>为了避税而死守一只已高估或基本面恶化的股票，是比交税更贵的错误</strong>——省下的税远不够弥补价值的崩塌。此外，亏损年份主动兑现亏损（税损收割）能合法抵税；而在免税/递延账户里本条优势大幅减弱，决策应回归纯粹的价值判断。</p>
-    <ul class="checklist">
-      <li>我想卖，是因为基本面变了，还是只是手痒/想"落袋为安"？</li>
-      <li>这笔卖出会实现多少税，被征走的本金本可再复利多少年？</li>
-      <li>我是否在为了避税，而死守一个我其实已不愿持有的标的？</li>
-      <li>这笔交易发生在应税账户还是递延账户？税的权重该一样吗？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华</div>
-    <div class="essence">被征走的税，损失的从来不只是那一笔钱，而是它本可继续复利几十年的全部未来。</div>
-  </div>
-  <div class="section"><div class="label">本周反思</div>
-    <div class="reflect">数一下你过去一年的换手次数：有多少笔是基本面真的变了，又有多少笔只是情绪、无聊或"落袋为安"——它们各付了多少不必要的税？</div>
-  </div>
+<div class="card" data-tts="de9c2e5196147fa1">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04 · 税收与复利</div>
+<h2>税收摩擦与延税复利<span class="en">Taxes, Turnover, and Deferred Compounding</span></h2>
+<span class="tag">复利的暗扣</span>
 </div>
-
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">每一次卖出实现的资本利得税，都从复利的本金里永久扣走一块、再也参与不了往后的增长。未实现盈利相当于政府给你的一笔无息贷款——低换手不是懒，是数学。</div>
+</div>
+<div class="section"><div class="label">原始出处 + 金句</div>
+<div class="quote">"The first rule of compounding: Never interrupt it unnecessarily."
+    <span class="cite">— 归于 Charlie Munger（复利第一法则）</span>
+<span class="cn">复利的第一法则：永远不要不必要地打断它。</span></div>
+<p>Buffett 在 1989 信里用一个数字把这条讲透（见下表）。</p>
+</div>
+<div class="viz">
+<div class="viz-title">1 美元、每年翻倍、共 20 年：换手的税收代价（Buffett 1989 信，34% 税率）</div>
+<table class="viz-table">
+<tr><th>策略</th><th>每年是否卖出纳税</th><th>20 年后税后净值</th></tr>
+<tr><td class="bias">持有不动</td><td>不卖，到第 20 年末一次性纳税</td><td>约 <strong>692,000</strong> 美元</td></tr>
+<tr><td class="bias">每年兑现</td><td>每年卖出、按 34% 纳税后再投</td><td>约 <strong>25,200</strong> 美元</td></tr>
+</table>
+<div class="viz-note">同样的标的与回报率，差别只在"动手的频率"——延税让终值高出约 27 倍。</div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>换手是复利的隐形税：每次实现收益就被征走一块本金，损失被往后所有年份的复利放大。<strong>未实现盈利则相当于一笔无息、无到期日的贷款</strong>，全额留在场内继续滚动——这正是 Berkshire 巨额"递延所得税负债"的意义：数十年未兑现的盈利，像浮存金一样为股东无偿工作。低换手不是懒散，而是把这笔无息贷款用到极致的<strong>理性选择</strong>。</p>
+</div>
+<div class="section"><div class="label">反例与限制 + 决策检查表</div>
+<p>别让税的尾巴摇了投资的狗。<strong>为了避税而死守一只已高估或基本面恶化的股票，是比交税更贵的错误</strong>——省下的税远不够弥补价值的崩塌。此外，亏损年份主动兑现亏损（税损收割）能合法抵税；而在免税/递延账户里本条优势大幅减弱，决策应回归纯粹的价值判断。</p>
+<ul class="checklist">
+<li>我想卖，是因为基本面变了，还是只是手痒/想"落袋为安"？</li>
+<li>这笔卖出会实现多少税，被征走的本金本可再复利多少年？</li>
+<li>我是否在为了避税，而死守一个我其实已不愿持有的标的？</li>
+<li>这笔交易发生在应税账户还是递延账户？税的权重该一样吗？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华</div>
+<div class="essence">被征走的税，损失的从来不只是那一笔钱，而是它本可继续复利几十年的全部未来。</div>
+</div>
+<div class="section"><div class="label">本周反思</div>
+<div class="reflect">数一下你过去一年的换手次数：有多少笔是基本面真的变了，又有多少笔只是情绪、无聊或"落袋为安"——它们各付了多少不必要的税？</div>
+</div>
+</div>
 <div class="qa-head">深入思考</div>
-
 <details><summary>集中与 Kelly 都指向"重注于优势"，但普通投资者最稀缺的恰恰是可靠的概率估计——这是否意味着对多数人，分散才是理性的？</summary>
 <div>大概率是的。集中与 Kelly 的前提都是"你拥有可验证的 edge 和大致可信的胜率估计"，而 Bessembinder 的数据说明随手集中更可能押中那 58% 跑输国库券的一方。对没有独到认知的人，<strong>承认无知、用分散（如低成本指数）保护自己，本身就是最高级的理性</strong>。集中是少数真有 edge 者的特权——误把别人的特权当成通用法则，是最常见的破产路径之一。</div></details>
-
 <details><summary>半 Kelly、分数 Kelly 的本质是承认"我们不知道真实赔率"——把这种谦卑推广到整个组合层面，会得到什么？</summary>
 <div>会得到一种<strong>对自身估计误差留足余量</strong>的组合哲学：单一仓位设上限、相关风险因子设总量、永远保留现金。这与 Klarman 的"现金是一种期权"、Taleb 的"反脆弱"殊途同归——它们都不在预测未来，而是在<strong>为"我的判断会有系统性偏差"这件事本身定价</strong>。组合层面的半 Kelly，就是把"我可能错，而且不知道错在哪"写进仓位结构里。</div></details>
-
 <details><summary>低换手的税收优势是真实的，但它会不会反过来成为"处置效应"的借口——让人不愿卖输家、过早卖赢家？</summary>
 <div>会，这是真实的风险。人很容易把"为了避税而不卖"包装成"长期持有的纪律"，借一个正确的原则掩盖一个错误的不作为。分辨的关键只有一个问题：<strong>抛开税，我今天还愿意按现价买入它吗？</strong>愿意，则持有是纪律；不愿意，则不卖只是用税当遮羞布。</div></details>
-
 <details><summary>AI 让概率估计与组合优化空前精确——这会让集中下注更安全，还是因模型趋同制造新的系统性风险？</summary>
 <div>两者都会发生。更好的模型能让有依据的集中更稳；但当全行业用上相似的数据与优化器，<strong>大家的"最优组合"会趋同</strong>——拥挤交易在平静时无碍，一旦需要同时离场，流动性蒸发、相关性飙到 1，正是 1998 年 LTCM 与 2007 年"量化地震"的剧本重演。AI 给得了更精的点估计，却给不了<strong>独立性</strong>；而组合真正的护城河，恰恰是不和所有人挤在同一个最优解里的那份独立。</div></details>
-
 <footer>BigCat · Investing · Day 17 · 2026</footer>
-
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </div></body></html>
