@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>投资经典：债券与利率 — Day 39</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -42,200 +43,167 @@ nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
 </style></head><body><div class="container">
-
 <header>
-  <div class="kicker">Investing · Day 39</div>
-  <h1>投资经典：债券与利率<span class="accent">Bonds &amp; Rates — The Gravity Behind Every Price</span></h1>
-  <div class="meta"><span>2026年7月17日</span>·<span>BigCat's Capital Allocator</span></div>
+<div class="kicker">Investing · Day 39</div>
+<h1 data-tts="4a049782ab9bfdb3">投资经典：债券与利率<span class="accent">Bonds &amp; Rates — The Gravity Behind Every Price</span></h1>
+<div class="meta"><span>2026年7月17日</span>·<span>BigCat's Capital Allocator</span></div>
 </header>
-
 <div class="intro">
 利率是投资世界里最容易被忽略、却最无处不在的变量——它是一切资产定价的分母。股票投资者常年只盯着公司，却忘了公司再好，也逃不过利率这重引力。本周把债券与利率的四块基本功拆开：久期、收益率曲线、信用利差、利率周期，看它们<strong>如何决定你所有资产的命运，又在哪里被误读</strong>。
 </div>
-
 <!-- Card 1: 久期与凸性 -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 01</div>
-    <h2>久期与凸性<span class="en">Duration &amp; Convexity</span></h2>
-    <span class="tag">利率敏感度</span>
-  </div>
-
-  <div class="section"><div class="label">框架表述</div>
-    <div class="principle">久期衡量债券价格对利率变动的敏感度——利率每变动 1%，价格大约变动几个百分点；凸性是这条关系的曲率。久期越长，利率一动，账面盈亏的摆幅就越大。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"Bonds promoted as offering risk-free returns are now priced to deliver return-free risk."
+<div class="card" data-tts="53f11e83b82267f6">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>久期与凸性<span class="en">Duration &amp; Convexity</span></h2>
+<span class="tag">利率敏感度</span>
+</div>
+<div class="section"><div class="label">框架表述</div>
+<div class="principle">久期衡量债券价格对利率变动的敏感度——利率每变动 1%，价格大约变动几个百分点；凸性是这条关系的曲率。久期越长，利率一动，账面盈亏的摆幅就越大。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"Bonds promoted as offering risk-free returns are now priced to deliver return-free risk."
     <span class="cite">— Warren Buffett 引 Shelby Cullom Davis，Berkshire 2011 致股东信</span>
-    <span class="cn">那些被宣传为"提供无风险回报"的债券，如今的定价只会带来"无回报的风险"。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>久期把抽象的"利率风险"变成一个可算的数字：一只久期为 8 的债券，利率上行 1%，价格大约下跌 8%。期限越长、票息越低，久期越大。凸性则说明这关系不是直线——利率大幅下行时价格涨得更多、上行时跌得稍缓，凸性本身对持有人有利，但超长债把凸性和波动一起放大了。核心洞察：<strong>零利率不消灭风险，只是把它挪进了久期里</strong>。你以为买的是"安全的债券"，其实握着的是一根被利率撬动的长杠杆。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2020 年奥地利发行了一只 100 年期国债，票息不到 1%、久期极长。2022 年欧美央行快速加息，这只"世纪债券"价格两年内腰斩，跌幅堪比一场股灾。同年英国养老金的 LDI 策略用杠杆持有超长久期国债，9 月金边债收益率一周飙升，触发"追加保证金→被迫抛售→收益率再升"的死亡螺旋，逼得英格兰银行紧急入场购债。彭博美国综合债券指数 2022 年下跌约 13%，是有记录以来最差的一年。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>久期本身不是坏事——在降息周期里，长久期是放大收益的利器；问题永远出在方向与杠杆。常见误用：① 把"债券"直接等同于"安全"，从不问久期；② 在低利率时，为超长债那一点点额外票息去承担巨大久期；③ 用杠杆（LDI／回购）放大久期敞口，把可控波动变成强平风险。</p>
-    <ul class="checklist">
-      <li>我知道自己持有的债券或债基久期是多少吗？利率上行 1%，我会亏多少？</li>
-      <li>我为多出来的那点票息，究竟承担了多长的久期？值得吗？</li>
-      <li>我的债券敞口里有没有杠杆？极端行情下会不会被强平？</li>
-      <li>我是把债券当"无风险"，还是清楚它的价格波动来自哪里？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">债券的风险从不只有"会不会违约"一个维度——利率一动，久期就是你账面盈亏的乘数。</div>
-    <div class="reflect">查一下你持有的债券或债基的久期。如果明年利率再上行 2%，这部分仓位会发生什么？你为这个情景做过准备吗？</div>
-  </div>
+<span class="cn">那些被宣传为"提供无风险回报"的债券，如今的定价只会带来"无回报的风险"。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>久期把抽象的"利率风险"变成一个可算的数字：一只久期为 8 的债券，利率上行 1%，价格大约下跌 8%。期限越长、票息越低，久期越大。凸性则说明这关系不是直线——利率大幅下行时价格涨得更多、上行时跌得稍缓，凸性本身对持有人有利，但超长债把凸性和波动一起放大了。核心洞察：<strong>零利率不消灭风险，只是把它挪进了久期里</strong>。你以为买的是"安全的债券"，其实握着的是一根被利率撬动的长杠杆。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2020 年奥地利发行了一只 100 年期国债，票息不到 1%、久期极长。2022 年欧美央行快速加息，这只"世纪债券"价格两年内腰斩，跌幅堪比一场股灾。同年英国养老金的 LDI 策略用杠杆持有超长久期国债，9 月金边债收益率一周飙升，触发"追加保证金→被迫抛售→收益率再升"的死亡螺旋，逼得英格兰银行紧急入场购债。彭博美国综合债券指数 2022 年下跌约 13%，是有记录以来最差的一年。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>久期本身不是坏事——在降息周期里，长久期是放大收益的利器；问题永远出在方向与杠杆。常见误用：① 把"债券"直接等同于"安全"，从不问久期；② 在低利率时，为超长债那一点点额外票息去承担巨大久期；③ 用杠杆（LDI／回购）放大久期敞口，把可控波动变成强平风险。</p>
+<ul class="checklist">
+<li>我知道自己持有的债券或债基久期是多少吗？利率上行 1%，我会亏多少？</li>
+<li>我为多出来的那点票息，究竟承担了多长的久期？值得吗？</li>
+<li>我的债券敞口里有没有杠杆？极端行情下会不会被强平？</li>
+<li>我是把债券当"无风险"，还是清楚它的价格波动来自哪里？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">债券的风险从不只有"会不会违约"一个维度——利率一动，久期就是你账面盈亏的乘数。</div>
+<div class="reflect">查一下你持有的债券或债基的久期。如果明年利率再上行 2%，这部分仓位会发生什么？你为这个情景做过准备吗？</div>
+</div>
+</div>
 <!-- Card 2: 收益率曲线 -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 02</div>
-    <h2>收益率曲线<span class="en">The Yield Curve</span></h2>
-    <span class="tag">周期信号</span>
-  </div>
-
-  <div class="section"><div class="label">框架表述</div>
-    <div class="principle">收益率曲线把不同期限的利率连成一条线；它的形状——尤其是"长端低于短端"的倒挂——是市场对未来增长与货币政策最凝练的一次集体投票。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">自 1955 年以来，美国每一次经济衰退之前，收益率曲线都出现过倒挂——半个多世纪里仅有一次"假信号"。这是宏观预测中最稳健的经验规律之一。
+<div class="card" data-tts="84f32a6e3245038a">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>收益率曲线<span class="en">The Yield Curve</span></h2>
+<span class="tag">周期信号</span>
+</div>
+<div class="section"><div class="label">框架表述</div>
+<div class="principle">收益率曲线把不同期限的利率连成一条线；它的形状——尤其是"长端低于短端"的倒挂——是市场对未来增长与货币政策最凝练的一次集体投票。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">自 1955 年以来，美国每一次经济衰退之前，收益率曲线都出现过倒挂——半个多世纪里仅有一次"假信号"。这是宏观预测中最稳健的经验规律之一。
     <span class="cite">— 收益率曲线预测研究（Campbell Harvey 1986 博士论文；纽约联储 Estrella–Mishkin 模型）</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>正常时长端利率高于短端，因为更长的期限要求更高的不确定性补偿（期限溢价）。当央行加息把短端推高、而市场因预期未来经济转弱、被迫降息而把长端压低，曲线就倒挂了。它之所以是强信号，正因为它综合了无数参与者对"央行会不会因经济走软而不得不掉头"的下注。<strong>倒挂不是衰退的原因，而是市场对"紧缩已经过头"的集体判断</strong>——一张用真金白银画出的未来天气图。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2006—07 年，10 年期与 2 年期利差倒挂，2008 年全球金融危机接踵而至；2019 年 8 月短暂倒挂，2020 年即陷入衰退（虽由 COVID 触发）；2022 年中到 2024 年，出现 1980 年代以来最深、最久的一次倒挂。但要留意两个限制：倒挂到衰退的时滞可长达 6—24 个月，且量化宽松人为压低了长端的期限溢价，让这个古老信号变得更难解读。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>曲线是概率信号，不是择时工具。常见误用：① 一看到倒挂就清仓——历史上倒挂之后，股市往往还能继续上涨一年以上；② 忽视央行 QE／QT 对长端的人为扭曲，把被压低的长端当成纯市场信号；③ 把"曾经八次全中"当成"这次必然兑现"。</p>
-    <ul class="checklist">
-      <li>我是把曲线当"迟早会兑现的概率信号"，还是当"明天就该行动"的择时指令？</li>
-      <li>当前的长端利率里，有多少是被央行购债、期限溢价扭曲出来的？</li>
-      <li>倒挂已经持续多久？历史时滞告诉我该给多大的耐心区间？</li>
-      <li>我的决策是基于曲线本身，还是基于我对它的一厢情愿解读？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">收益率曲线是市场最诚实的一张未来天气图——它很少说错方向，却几乎从不告诉你确切的日期。</div>
-    <div class="reflect">如果收益率曲线此刻正告诉你"紧缩已经过头"，你的组合是照这个信号布置的吗？还是你只会在事后才想起它？</div>
-  </div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>正常时长端利率高于短端，因为更长的期限要求更高的不确定性补偿（期限溢价）。当央行加息把短端推高、而市场因预期未来经济转弱、被迫降息而把长端压低，曲线就倒挂了。它之所以是强信号，正因为它综合了无数参与者对"央行会不会因经济走软而不得不掉头"的下注。<strong>倒挂不是衰退的原因，而是市场对"紧缩已经过头"的集体判断</strong>——一张用真金白银画出的未来天气图。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2006—07 年，10 年期与 2 年期利差倒挂，2008 年全球金融危机接踵而至；2019 年 8 月短暂倒挂，2020 年即陷入衰退（虽由 COVID 触发）；2022 年中到 2024 年，出现 1980 年代以来最深、最久的一次倒挂。但要留意两个限制：倒挂到衰退的时滞可长达 6—24 个月，且量化宽松人为压低了长端的期限溢价，让这个古老信号变得更难解读。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>曲线是概率信号，不是择时工具。常见误用：① 一看到倒挂就清仓——历史上倒挂之后，股市往往还能继续上涨一年以上；② 忽视央行 QE／QT 对长端的人为扭曲，把被压低的长端当成纯市场信号；③ 把"曾经八次全中"当成"这次必然兑现"。</p>
+<ul class="checklist">
+<li>我是把曲线当"迟早会兑现的概率信号"，还是当"明天就该行动"的择时指令？</li>
+<li>当前的长端利率里，有多少是被央行购债、期限溢价扭曲出来的？</li>
+<li>倒挂已经持续多久？历史时滞告诉我该给多大的耐心区间？</li>
+<li>我的决策是基于曲线本身，还是基于我对它的一厢情愿解读？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">收益率曲线是市场最诚实的一张未来天气图——它很少说错方向，却几乎从不告诉你确切的日期。</div>
+<div class="reflect">如果收益率曲线此刻正告诉你"紧缩已经过头"，你的组合是照这个信号布置的吗？还是你只会在事后才想起它？</div>
+</div>
+</div>
 <!-- Card 3: 信用利差 -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 03</div>
-    <h2>信用利差<span class="en">Credit Spreads</span></h2>
-    <span class="tag">风险定价</span>
-  </div>
-
-  <div class="section"><div class="label">框架表述</div>
-    <div class="principle">信用利差是公司债相对同期限国债多出来的那部分收益，是市场为"违约、流动性、风险厌恶"三件事一次性开出的价码。利差越窄，说明市场收取的风险补偿越薄。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"No asset is so good that it can't become overpriced and thus dangerous, and few assets are so bad that they can't get cheap enough to be a bargain."
+<div class="card" data-tts="bfdb71497b2f12cc">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>信用利差<span class="en">Credit Spreads</span></h2>
+<span class="tag">风险定价</span>
+</div>
+<div class="section"><div class="label">框架表述</div>
+<div class="principle">信用利差是公司债相对同期限国债多出来的那部分收益，是市场为"违约、流动性、风险厌恶"三件事一次性开出的价码。利差越窄，说明市场收取的风险补偿越薄。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"No asset is so good that it can't become overpriced and thus dangerous, and few assets are so bad that they can't get cheap enough to be a bargain."
     <span class="cite">— Howard Marks,《The Most Important Thing》</span>
-    <span class="cn">没有哪种资产好到不会因价格过高而变得危险，也几乎没有哪种资产糟到不会因足够便宜而成为便宜货。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>利差是信用市场的"恐惧与贪婪指数"。繁荣期风险厌恶消失、人人抢收益，利差被压到极窄——此时你承担着违约风险，拿到的补偿却少得可怜；恐慌期利差爆炸，恰恰是补偿最丰厚、机会最大的时刻。Marks 反复强调：<strong>决定盈亏的从来不是"买了什么"，而是"付了什么价"</strong>。同一批高收益债，250 个基点的利差是陷阱，2000 个基点则是机会。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2007 年，美国高收益债利差被压到约 250 个基点的历史低位，Marks 在《The Race to the Bottom》备忘录里警告"风险厌恶正在消失"。一年后雷曼倒下，高收益利差在 2008 年 11 月飙至约 2000 个基点。Oaktree 在恐慌中逆势投入约 60 亿美元于困境债，成就了它历史上最好的年份之一。利差从"贪婪"荡到"恐惧"，Marks 接住了钟摆的另一端。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>宽利差不等于免费午餐——衰退中利差走宽，常常伴随真实的违约率上升，"便宜"可能正是价值陷阱。常见误用：① 只看利差绝对水平，不看违约周期走到了哪一段；② 在利差极窄时，为一点点超额收益放弃安全；③ 把"逆向"做成"接飞刀"，在基本面持续恶化时过早抄底。</p>
-    <ul class="checklist">
-      <li>当前的利差，是在为我补偿风险，还是我在为别人的贪婪买单？</li>
-      <li>这个利差隐含的违约率假设合理吗？和历史周期比处在哪一段？</li>
-      <li>我买的是"便宜的好资产"，还是"看起来便宜的坏资产"？</li>
-      <li>利差走宽时，我有没有预留现金去接钟摆的另一端？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">信用利差是市场恐惧的温度计——它最窄的时候最危险，最宽的时候机会最大，而多数人恰恰做反。</div>
-    <div class="reflect">回想上一次信用市场恐慌，你是恐惧的一员，还是手握现金、准备接盘的一方？下一次利差爆炸时，你会准备好吗？</div>
-  </div>
+<span class="cn">没有哪种资产好到不会因价格过高而变得危险，也几乎没有哪种资产糟到不会因足够便宜而成为便宜货。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>利差是信用市场的"恐惧与贪婪指数"。繁荣期风险厌恶消失、人人抢收益，利差被压到极窄——此时你承担着违约风险，拿到的补偿却少得可怜；恐慌期利差爆炸，恰恰是补偿最丰厚、机会最大的时刻。Marks 反复强调：<strong>决定盈亏的从来不是"买了什么"，而是"付了什么价"</strong>。同一批高收益债，250 个基点的利差是陷阱，2000 个基点则是机会。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2007 年，美国高收益债利差被压到约 250 个基点的历史低位，Marks 在《The Race to the Bottom》备忘录里警告"风险厌恶正在消失"。一年后雷曼倒下，高收益利差在 2008 年 11 月飙至约 2000 个基点。Oaktree 在恐慌中逆势投入约 60 亿美元于困境债，成就了它历史上最好的年份之一。利差从"贪婪"荡到"恐惧"，Marks 接住了钟摆的另一端。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>宽利差不等于免费午餐——衰退中利差走宽，常常伴随真实的违约率上升，"便宜"可能正是价值陷阱。常见误用：① 只看利差绝对水平，不看违约周期走到了哪一段；② 在利差极窄时，为一点点超额收益放弃安全；③ 把"逆向"做成"接飞刀"，在基本面持续恶化时过早抄底。</p>
+<ul class="checklist">
+<li>当前的利差，是在为我补偿风险，还是我在为别人的贪婪买单？</li>
+<li>这个利差隐含的违约率假设合理吗？和历史周期比处在哪一段？</li>
+<li>我买的是"便宜的好资产"，还是"看起来便宜的坏资产"？</li>
+<li>利差走宽时，我有没有预留现金去接钟摆的另一端？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">信用利差是市场恐惧的温度计——它最窄的时候最危险，最宽的时候机会最大，而多数人恰恰做反。</div>
+<div class="reflect">回想上一次信用市场恐慌，你是恐惧的一员，还是手握现金、准备接盘的一方？下一次利差爆炸时，你会准备好吗？</div>
+</div>
+</div>
 <!-- Card 4: 利率周期对资产 -->
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">PRINCIPLE 04</div>
-    <h2>利率周期对资产<span class="en">Interest-Rate Cycles &amp; Asset Prices</span></h2>
-    <span class="tag">估值引力</span>
-  </div>
-
-  <div class="section"><div class="label">框架表述</div>
-    <div class="principle">利率是一切资产定价的分母。它像重力：利率越高，对所有资产价格的向下拉力越强；利率越低，估值越容易飘起来。</div>
-  </div>
-
-  <div class="section"><div class="label">原始出处 · 金句</div>
-    <div class="quote">"Interest rates are to asset prices what gravity is to the apple. When there are very low interest rates, there's a very small gravitational pull on asset prices."
+<div class="card" data-tts="a7f930b102edf061">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>利率周期对资产<span class="en">Interest-Rate Cycles &amp; Asset Prices</span></h2>
+<span class="tag">估值引力</span>
+</div>
+<div class="section"><div class="label">框架表述</div>
+<div class="principle">利率是一切资产定价的分母。它像重力：利率越高，对所有资产价格的向下拉力越强；利率越低，估值越容易飘起来。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<div class="quote">"Interest rates are to asset prices what gravity is to the apple. When there are very low interest rates, there's a very small gravitational pull on asset prices."
     <span class="cite">— Warren Buffett, 2017</span>
-    <span class="cn">利率之于资产价格，正如重力之于苹果。当利率极低时，对资产价格的引力也极小。</span></div>
-  </div>
-
-  <div class="section"><div class="label">深入解读</div>
-    <p>任何资产的价值都是未来现金流的折现，而折现率的地基就是无风险利率。利率下行，分母变小，同样一笔现金流就值更多钱，股票、债券、房产、成长股一起被抬升；利率上行则反向抽水。<strong>过去四十年（1981—2021），美国 10 年期国债收益率从约 15.8% 一路降到约 0.5%，是一场几乎抬升所有资产的世纪顺风</strong>——Howard Marks 称之为"Sea Change"（沧海巨变），并提醒这股顺风可能已经结束。</p>
-  </div>
-
-  <div class="section"><div class="label">经典案例</div>
-    <p>2022 年是引力回归的一课。美联储以近 40 年来最快的速度加息，16 个月内把政策利率从 0 推到 5.25% 以上。结果股债同跌：纳斯达克下跌约 33%，长期国债跌约 30%，经典的 60/40 组合创下近百年最差年份之一——因为当引力（利率）骤然增强，此前被零利率托起的一切同时下沉。对照更早的 1970 年代末，Volcker 把利率推到近 20% 以驯服通胀，同样重重压住了资产估值。</p>
-  </div>
-
-  <div class="section"><div class="label">反例与限制 · 决策检查表</div>
-    <p>危险不在利率本身，而在"把过去四十年的顺风当成永恒常态"。常见误用：① 用极低折现率给成长股估值，默认低利率永续；② 把 2009—2021 年的高回报当成可复制的基准；③ 孤立地看"公司很好"，却不问"这个价格假设了怎样的利率"。</p>
-    <ul class="checklist">
-      <li>我的估值模型里，用的折现率反映的是当下利率，还是我习惯的旧假设？</li>
-      <li>我的回报预期，是不是建立在一段特殊的降息顺风期之上？</li>
-      <li>如果利率在更高水平停留更久（higher for longer），我组合里哪部分最脆弱？</li>
-      <li>我是在为好生意付钱，还是在为"利率永远很低"这个隐含假设付钱？</li>
-    </ul>
-  </div>
-
-  <div class="section"><div class="label">一句话精华 · 本周反思</div>
-    <div class="essence">利率是资产价格的重力——过去四十年它一路减弱、托起了一切；别把这场世纪顺风，误当成投资的自然法则。</div>
-    <div class="reflect">你现在的回报预期和估值假设，有多少悄悄依赖着"利率会一直很低"？如果这个前提不成立，你的组合里什么会先垮？</div>
-  </div>
+<span class="cn">利率之于资产价格，正如重力之于苹果。当利率极低时，对资产价格的引力也极小。</span></div>
 </div>
-
+<div class="section"><div class="label">深入解读</div>
+<p>任何资产的价值都是未来现金流的折现，而折现率的地基就是无风险利率。利率下行，分母变小，同样一笔现金流就值更多钱，股票、债券、房产、成长股一起被抬升；利率上行则反向抽水。<strong>过去四十年（1981—2021），美国 10 年期国债收益率从约 15.8% 一路降到约 0.5%，是一场几乎抬升所有资产的世纪顺风</strong>——Howard Marks 称之为"Sea Change"（沧海巨变），并提醒这股顺风可能已经结束。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2022 年是引力回归的一课。美联储以近 40 年来最快的速度加息，16 个月内把政策利率从 0 推到 5.25% 以上。结果股债同跌：纳斯达克下跌约 33%，长期国债跌约 30%，经典的 60/40 组合创下近百年最差年份之一——因为当引力（利率）骤然增强，此前被零利率托起的一切同时下沉。对照更早的 1970 年代末，Volcker 把利率推到近 20% 以驯服通胀，同样重重压住了资产估值。</p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>危险不在利率本身，而在"把过去四十年的顺风当成永恒常态"。常见误用：① 用极低折现率给成长股估值，默认低利率永续；② 把 2009—2021 年的高回报当成可复制的基准；③ 孤立地看"公司很好"，却不问"这个价格假设了怎样的利率"。</p>
+<ul class="checklist">
+<li>我的估值模型里，用的折现率反映的是当下利率，还是我习惯的旧假设？</li>
+<li>我的回报预期，是不是建立在一段特殊的降息顺风期之上？</li>
+<li>如果利率在更高水平停留更久（higher for longer），我组合里哪部分最脆弱？</li>
+<li>我是在为好生意付钱，还是在为"利率永远很低"这个隐含假设付钱？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">利率是资产价格的重力——过去四十年它一路减弱、托起了一切；别把这场世纪顺风，误当成投资的自然法则。</div>
+<div class="reflect">你现在的回报预期和估值假设，有多少悄悄依赖着"利率会一直很低"？如果这个前提不成立，你的组合里什么会先垮？</div>
+</div>
+</div>
 <div class="faq">
-  <h3>深入思考</h3>
-  <details><summary>既然利率如此重要，普通投资者是否应该预测利率来做决策？</summary>
-  <div>几乎所有大师——Buffett、Marks——都坦承自己无法预测利率走向，连美联储自己都常常测错。可行的从来不是<strong>预测</strong>，而是理解利率如何作用、并让组合在不同利率情景下都能存活。关键是区分"预测"（不可控）与"准备"（可控）：不去赌某个方向，而是问"如果利率更高／更低／维持更久，我分别会怎样"。这与 Marks"我们无法预知未来，但可以为它做准备"一脉相承。把精力从猜方向，转向压力测试自己的敞口。</div></details>
-  <details><summary>债券在"股债同跌"的世界里，还是分散器吗？</summary>
-  <div>2022 年股债同跌，打破了"债券对冲股票"的信仰。那种负相关，本质上依赖一个前提：通胀温和、央行有空间在股市下跌时降息救市。当<strong>通胀本身成为主导风险</strong>，股债会一起被利率上行打压，相关性由负转正。债券的分散价值不是永恒定律，而是特定宏观制度的产物。理解它成立的前提条件，远比迷信"60/40 永远有效"重要——分散器失灵，往往正发生在你最需要它的时候。</div></details>
-  <details><summary>AI 时代，利率与估值的关系会改变吗？</summary>
-  <div>数学不会变——折现率永远是估值的地基。但 AI 可能同时改变两端：一是若它大幅提升生产率，可能压低长期通胀与利率、抬升增长预期；二是 AI 热潮下的高估值成长股，现金流集中在遥远的未来，对利率的久期敏感度极高，一旦利率上行，跌得也最狠（2022 年已预演过一次）。技术叙事再动人，也逃不过利率这重引力：越是"长久期"的成长故事，越要追问它的估值，究竟假设了怎样的利率环境。</div></details>
+<h3 data-tts="d17d04018b2a96ae">深入思考</h3>
+<details><summary>既然利率如此重要，普通投资者是否应该预测利率来做决策？</summary>
+<div>几乎所有大师——Buffett、Marks——都坦承自己无法预测利率走向，连美联储自己都常常测错。可行的从来不是<strong>预测</strong>，而是理解利率如何作用、并让组合在不同利率情景下都能存活。关键是区分"预测"（不可控）与"准备"（可控）：不去赌某个方向，而是问"如果利率更高／更低／维持更久，我分别会怎样"。这与 Marks"我们无法预知未来，但可以为它做准备"一脉相承。把精力从猜方向，转向压力测试自己的敞口。</div></details>
+<details><summary>债券在"股债同跌"的世界里，还是分散器吗？</summary>
+<div>2022 年股债同跌，打破了"债券对冲股票"的信仰。那种负相关，本质上依赖一个前提：通胀温和、央行有空间在股市下跌时降息救市。当<strong>通胀本身成为主导风险</strong>，股债会一起被利率上行打压，相关性由负转正。债券的分散价值不是永恒定律，而是特定宏观制度的产物。理解它成立的前提条件，远比迷信"60/40 永远有效"重要——分散器失灵，往往正发生在你最需要它的时候。</div></details>
+<details><summary>AI 时代，利率与估值的关系会改变吗？</summary>
+<div>数学不会变——折现率永远是估值的地基。但 AI 可能同时改变两端：一是若它大幅提升生产率，可能压低长期通胀与利率、抬升增长预期；二是 AI 热潮下的高估值成长股，现金流集中在遥远的未来，对利率的久期敏感度极高，一旦利率上行，跌得也最狠（2022 年已预演过一次）。技术叙事再动人，也逃不过利率这重引力：越是"长久期"的成长故事，越要追问它的估值，究竟假设了怎样的利率环境。</div></details>
 </div>
-
 <nav><a href="index.html">← 返回 投资经典</a></nav>
 <footer>BigCat · Investing · Day 39 · 2026</footer>
-
 </div>
-<script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+<script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body></html>
