@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>投资经典：可转债与混合证券 — Day 57</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.quote .cn{display:block;margin-top:10px;font-style:normal;color:#3a3220;font-size:0.92rem;padding-top:8px;border-top:1px dashed #d4b87a}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.essence{background:#7a5c1f;color:#fdf6e3;padding:14px 20px;border-radius:4px;font-size:1rem;font-weight:600;margin-bottom:10px}
+.essence::before{content:"◆ ";color:#e0c078}
+.chart{margin:14px 0;background:#faf5e8;padding:16px 18px;border-radius:4px;border-left:3px solid #b8893a}
+.chart .bar-row{margin:14px 0;padding-bottom:10px;border-bottom:1px dotted #ded0ac}
+.chart .bar-row:last-of-type{border-bottom:none}
+.chart .bar-label{font-size:0.86rem;color:#5a4418;margin-bottom:5px;font-weight:600}
+.chart .bar{height:26px;margin-top:5px;background:linear-gradient(90deg,#b8893a,#7a5c1f);border-radius:3px;color:#fdf6e3;font-size:0.8rem;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;min-width:80px;white-space:nowrap}
+.chart .bar.small{background:#cdb078;color:#5a4418;justify-content:flex-start;padding-left:10px;padding-right:0}
+.chart .cap{font-size:0.8rem;color:#8b7150;margin-top:10px;font-style:italic}
+.faq{margin-top:44px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+</style></head><body><div class="container">
+<header>
+<div class="kicker">Investing · Day 57</div>
+<h1>投资经典：可转债与混合证券<span class="accent">The Price of Having It Both Ways</span></h1>
+<div class="meta"><span>2026年8月4日</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+<div class="intro">
+可转债的宣传语是「下有保底、上不封顶」。这话不错，却省略了最要紧的部分：<strong>两头的好处都要付费，而费用藏在你不看的地方</strong>——被压低的票息、被支付的溢价，和一份由发行人书写的条款。
+</div>
+<!-- Card 1 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>债底加期权，两样都要打折<span class="en">Bond Floor &amp; Embedded Call</span></h2>
+<span class="tag">定价结构</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">可转债 = 低息债券 + 内嵌看涨期权。下行保护来自<strong>发行人的偿债能力</strong>而非结构；上行来自期权，而期权的钱早已从票息里扣走。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<p>Ben Graham《The Intelligent Investor》第 16 章「可转换证券与认股权证」开篇。</p>
+<div class="quote">"Convertible bonds and preferred stocks have in recent years come to predominate in the field of senior-security financing."
+<span class="cite">— Benjamin Graham, <em>The Intelligent Investor</em>, Ch. 16</span>
+<span class="cn">近年来，可转换债券与可转换优先股已在优先级证券的融资领域占据主导。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>只有两块。<strong>纯债价值（债底）</strong>是票息与本金按同评级信用债收益率折现，随利率与信用浮动；<strong>转股价值</strong> = 面值 ÷ 转股价 × 正股价。市价通常高于两者中的较大者，高出部分即期权价格，用<strong>转股溢价率</strong>衡量。代价明码：转债票息显著低于同一发行人的普通债，差额就是期权的年费。</p>
+<div class="chart">
+<div class="bar-row"><div class="bar-label">情形 A · 正股 −50%（债性主导）</div><div class="bar small" style="width:25%">转股价值 50</div><div class="bar" style="width:48%">转债价格 ≈ 95</div></div>
+<div class="bar-row"><div class="bar-label">情形 B · 正股持平（溢价最厚，凸性最强）</div><div class="bar small" style="width:50%">转股价值 100</div><div class="bar" style="width:58%">转债价格 ≈ 115</div></div>
+<div class="bar-row"><div class="bar-label">情形 C · 正股 +80%（股性主导，溢价压缩）</div><div class="bar small" style="width:90%">转股价值 180</div><div class="bar" style="width:93%">转债价格 ≈ 185</div></div>
+<div class="cap">面值 100 元、债底约 92 元。价格始终高于「转股价值」与「债底」中的较大者，差额即期权价格；中段凸性最强，也最贵。</div>
+</div>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>1987 年 9 月，Berkshire 以 7 亿美元买入 Salomon 的 9% 可转优先股，转股价 38 美元。一个多月后是黑色星期一，Salomon 普通股腰斩——债性生效：股价怎么跌，9% 股息照付。但另一端同样兑现：转股价此后长期未被超越，1997 年 Travelers 收购时，十年持有的回报大体就是那 9% 票息。<strong>债底救了他，期权什么也没给。</strong></p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>债底是会塌的线：支撑它的信用与正股同步恶化。2023 年搜特转债成为境内首只实质性违约的转债，此前「转债不违约」一度被当作制度事实；2008 年美国转债普遍跌破理论债底数十个点——不是模型算错，是<strong>没有买家</strong>。</p>
+<ul class="checklist">
+<li>票息比同一发行人的普通债低多少？那就是期权的年化标价。</li>
+<li>若正股永不上涨，持有到期的纯债收益率是多少？我接受吗？</li>
+<li>当前溢价率在什么水平——我买的是凸性，还是昂贵的股票替代品？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">可转债的下行保护是发行人的信用，不是它的结构；结构从不承诺任何事。</div>
+<div class="reflect">找一只你关注的转债，只看它的纯债到期收益率。若正股十年不涨，这个数字你能接受吗？不能，说明你买的其实是股票。</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>条款由发行人书写<span class="en">Conversion, Call &amp; Put Provisions</span></h2>
+<span class="tag">条款博弈</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">转债的收益上限由三条条款决定：<strong>强赎</strong>切掉右尾、<strong>回售</strong>是你唯一的护栏、<strong>下修</strong>是发行人的自救。三条都写在发行人一方的桌上。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<p>Charlie Munger 反复重申的判断法则，见《Poor Charlie's Almanack》。</p>
+<div class="quote">"Show me the incentive and I will show you the outcome."
+<span class="cite">— Charlie Munger, <em>Poor Charlie's Almanack</em></span>
+<span class="cn">给我看激励，我就能告诉你结果。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>中国的转债条款高度模板化，可直接读成一张<strong>发行人意图表</strong>。<strong>强赎</strong>：正股连续 30 个交易日中至少 15 日收盘价不低于转股价的 130%，发行人有权按面值加息赎回——目的不是还钱，是<strong>逼你转股</strong>，把负债变成股本。<strong>回售</strong>：连续 30 日收盘价低于转股价的 70%，持有人可要求公司买回，这是唯一站在你这边的条款。<strong>下修</strong>：下调转股价，表面利好，实为躲开回售、重开转股通道，代价是老股东被稀释。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>英科转债 2020 年 1 月以 100 元面值发行，正股因疫情期间的手套需求暴涨，2021 年 1 月转债盘中最高约 3618 元，创境内历史最高价。随后公司公告提前赎回：未在赎回登记日前转股或卖出的人，只能按约 100 元的赎回价被兑付。<strong>同一张纸，一边三千多元的市价，一边一百元的合同价，中间只隔一个操作截止日。</strong></p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>但把条款当免费提款机同样危险。下修并非必然——董事会可以不提议，股东大会可能否决，大股东被稀释的动机与你相反；回售权多数只在存续期最后两年生效，每年仅一次。2020 年 10 月正元转债盘中涨幅一度超 170%，此后《可转换公司债券管理办法》出台、2022 年 8 月起实施涨跌幅限制。<strong>把条款博弈玩成投机，代价是规则被改写。</strong></p>
+<ul class="checklist">
+<li>强赎触发线离现价还有多远？触发后我的最大剩余收益是多少？</li>
+<li>回售何时生效？在我打算持有的期限内它真的可用吗？</li>
+<li>赎回登记日的提醒设置了吗？这是纯操作风险，不是判断风险。</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">条款不是背景资料，它就是收益上限本身——而写它的人不是你。</div>
+<div class="reflect">你持有的每只转债，能否写出它的强赎线、回售线和最近一次下修记录？写不出来，就是在裸持一份没读过的合同。</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>结构不救你，生意才救你<span class="en">Convertible Preferred &amp; Structured Products</span></h2>
+<span class="tag">混合证券</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">可转优先股给你股息优先权加转股选择权，看似两头占。但下行保护只在<strong>发行人还付得出钱</strong>时存在——而这恰恰取决于生意本身。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<p>Buffett 1994 年致股东信，检讨 1989 年买入的 USAir 可转优先股。</p>
+<div class="quote">"My analysis of USAir's business was both superficial and wrong. I was so beguiled by the company's long history of profitable operations, and by the protection that ownership of a senior security seemingly offered me, that I overlooked the crucial point."
+<span class="cite">— Berkshire Hathaway 1994 Letter to Shareholders</span>
+<span class="cn">我对 USAir 这门生意的分析既肤浅又错误。我被它长期盈利的历史、以及持有优先级证券看似提供的保护迷惑，忽略了最关键的一点。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>「看似提供的保护」是核心。优先顺位只在<strong>清算时</strong>兑现价值；在此之前公司随时可停付股息，而你没有表决权阻止。更麻烦的是，持有人常因「有保护」而<strong>降低对生意本身的审查标准</strong>。这才是它的真实代价：替换掉的不是风险，是尽职调查。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>1989 年 Berkshire 用 3.58 亿美元买入 USAir 的 9.25% 可转优先股，同年另以 6 亿美元买入 Gillette 的 8.75% 可转优先股。结构几乎相同，结局相反：Gillette 1991 年赎回，Berkshire 选择转股，拿到约 11% 股权，此后增值数十亿美元；USAir 1994 年 9 月暂停股息，账面价值年底被减记至 8950 万美元，减去约四分之三。<strong>差别只在一门生意能不能持续赚钱。</strong>后来 USAir 意外复苏、补付欠息并赎回，Berkshire 盈利退出——Buffett 说过这不来自他的判断。<strong>靠运气收回的本金不验证方法。</strong></p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>反过来，它在特定时刻极好用：2008 年 9 月 Berkshire 向 Goldman Sachs 投入 50 亿美元（10% 永续优先股加认股权证），条件优厚是因为当时肯掏这笔现金的人极少——<strong>条件好坏取决于对方有多急，而非取决于结构</strong>。个人在公开市场买到的混合证券没有这种议价环境。零售端的结构化产品（雪球、可赎回票据）同样宣称「有保护、有增强」，实为<strong>卖出尾部风险换票息</strong>：上行封死，下行在极端行情里完全打开。</p>
+<ul class="checklist">
+<li>若转股权永远不值钱，仅凭股息我还愿意做这笔投资吗？</li>
+<li>股息是累积的还是非累积的？暂停之后是否必须补付？</li>
+<li>这个「结构化」产品，我是在买保护，还是在卖保险？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">混合证券的优惠条件来自对方的困境；市场平静时买到的，只是普通价格加复杂条款。</div>
+<div class="reflect">回看你买过的任何「保本 + 增强」产品：谁在为那份保护付费？如果答案是「不知道」，那多半就是你。</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>两个市场，两种游戏<span class="en">US vs China: Who Sets the Price</span></h2>
+<span class="tag">市场结构</span>
+</div>
+<div class="section"><div class="label">原则表述</div>
+<div class="principle">可转债在美国主要是<strong>对冲基金的套利标的</strong>，在中国主要是<strong>个人与固收+账户的持仓</strong>。同一类资产，定价者不同，规律就不同。</div>
+</div>
+<div class="section"><div class="label">原始出处 · 金句</div>
+<p>Howard Marks 反复强调的定价优先原则。</p>
+<div class="quote">"Investment success doesn't come from buying good things, but from buying things well."
+<span class="cite">— Howard Marks, <em>The Most Important Thing</em> (2011)</span>
+<span class="cn">投资的成功不来自买好东西，而来自买得好。</span></div>
+</div>
+<div class="section"><div class="label">深入解读</div>
+<p>美国的主导买方是可转债套利基金：买入转债、按 delta 做空正股，赚波动率与票息，不赌方向。这让定价贴近期权理论值，也让它对<strong>融资条件</strong>极度敏感——杠杆一断，价格与理论值同时脱钩。中国几乎没有这条腿：融券困难且昂贵，转债主要由固收+基金与个人持有，退出高度依赖强赎转股，因而长期带有系统性<strong>估值溢价</strong>与更浓的条款博弈色彩。</p>
+</div>
+<div class="section"><div class="label">经典案例</div>
+<p>2008 年把这条分界线照得最清楚。可转债套利策略当年下跌约三分之一（HFRI 可转债套利指数约 −34%），原因不是判断错误：一是去杠杆引发强制平仓，二是当年 9 月 SEC 临时禁止近 800 只金融股卖空，掐断了对冲腿。转债跌破理论债底，随后在 2009 年反弹约 60%。<strong>策略没变，变的是可用的融资和可做的对冲。</strong></p>
+</div>
+<div class="section"><div class="label">反例与限制 · 决策检查表</div>
+<p>但别把「中国转债更好赚」当成结论。2022 年 8 月起沪深交易所实施涨跌幅限制（上市首日 +57.3%/−43.3%，此后 20%）与异常交易监控，制度套利空间被压缩；2023 年的实质性违约又打破了刚兑印象。对个人投资者，转债真正的位置是<strong>用低票息买一份不必择时的凸性</strong>：好处是不像期权那样到期归零，代价是上行被强赎封顶。它是组合的边缘，不是核心复利资产的替代品。</p>
+<ul class="checklist">
+<li>我赚的是正股上涨、条款博弈，还是到期收益？说不清就是三者都不是。</li>
+<li>我是否在用「转债有债底」为一笔本质上的股票投机辩护？</li>
+<li>用「买正股 + 留一部分现金」能否更简单地复制同样的风险收益？</li>
+</ul>
+</div>
+<div class="section"><div class="label">一句话精华 · 本周反思</div>
+<div class="essence">可转债不提高你的期望回报，它提供一条更容易坚持住的路径——而这条路径你付了票息。</div>
+<div class="reflect">把一只转债拆成「等额正股 + 一笔现金」，你会选哪个？若仍选转债，是因为它更好，还是因为它让你更容易熬住波动？</div>
+</div>
+</div>
+<div class="faq">
+<h3>深入思考</h3>
+<details><summary>强赎条款是否让可转债长期永远劣于正股？</summary><div>单只标的上是的——右尾被 130% 附近切掉，而长期回报恰恰来自右尾。但组合层面不成立：强赎迫使资金回流，等于系统性地「涨了就走」，在震荡市中反优于买入持有，只在单边牛市里显著落后。这与备兑开仓（Day 52）结构相似，差别是转债的期权是你买的、备兑的是你卖的。问题不是优劣，是与市场形态是否匹配。</div></details>
+<details><summary>中国转债的「不败」印象为何存在过，又为何必然被打破？</summary><div>它建立在两个偶然条件上：发行人以促成转股为目的而竭力护盘，以及退市与违约机制长期不畅。两条都是制度状态，不是资产属性——条件消失，印象随之失效。这是「把制度红利误认为资产规律」的典型样本，同类错误在保本理财与城投债上已重复出现。该问的是：我依赖的这条规律，背后是经济机制还是行政安排？</div></details>
+<details><summary>AI 让混合证券对个人更友好，还是更危险？</summary><div>两个方向同时发生。工具端：拆条款、算纯债收益率与溢价率、盯强赎进度，过去需要专业终端，现在几乎零成本。但发行端进步更快——结构化产品的设计与分销提速更多，而复杂度既是卖方的定价能力，也是它的利润来源。真正的护栏不是算得更快，而是一条老规矩：<strong>看不懂现金流从哪里来的证券，不买。</strong>算力只是让你更快算出一个仍然不该持有的价格。</div></details>
+</div>
+<nav><a href="index.html">← 返回 投资经典</a></nav>
+<footer>BigCat · Investing · Day 57 · 2026</footer>
+</div></body></html>
