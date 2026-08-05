@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Investing Classics: The Capital Cycle — Day 58</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#fcf9f0;color:#2a2418;line-height:1.8}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:2px double #b8893a}
+header .kicker{font-size:0.85rem;color:#b8893a;letter-spacing:6px;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+header h1{font-size:2.1rem;font-weight:800;color:#7a5c1f;letter-spacing:1px;line-height:1.4}
+header h1 .accent{display:block;font-size:1.1rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:8px;letter-spacing:0}
+header .meta{margin-top:18px;font-size:0.88rem;color:#8b7150}
+header .meta span{margin:0 10px}
+.intro{margin:32px 0 28px;padding:22px 26px;background:#fff;border-left:4px solid #b8893a;border-radius:4px;font-size:0.96rem;color:#3a3220;font-style:italic;box-shadow:0 1px 6px rgba(122,92,31,0.06)}
+.card{background:#fff;margin:28px 0;padding:32px 30px;border-radius:6px;box-shadow:0 2px 14px rgba(122,92,31,0.10);border-top:3px solid #b8893a}
+.card-header{border-bottom:1px solid #e8d8b0;padding-bottom:16px;margin-bottom:20px}
+.card-num{display:inline-block;font-size:0.78rem;color:#b8893a;font-weight:700;letter-spacing:2px;margin-bottom:8px}
+.card h2{font-size:1.42rem;color:#7a5c1f;font-weight:700;line-height:1.4}
+.card h2 .en{display:block;font-size:0.92rem;color:#8b7150;font-style:italic;font-weight:400;margin-top:4px}
+.tag{display:inline-block;background:#f4e9cd;color:#7a5c1f;font-size:0.72rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:1px}
+.section{margin:18px 0}
+.section .label{font-size:0.78rem;font-weight:700;color:#b8893a;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.section p{font-size:0.96rem;color:#2a2418;margin-bottom:8px}
+.principle{background:#fdf6e3;padding:14px 18px;border-radius:4px;font-size:1.02rem;color:#5a4418;font-weight:600;border-left:3px solid #7a5c1f}
+.quote{background:#faf0d8;padding:16px 20px;border-radius:4px;font-style:italic;color:#5a4418;font-size:0.94rem;border-left:3px solid #b8893a;margin-top:6px}
+.quote .cite{display:block;margin-top:8px;font-size:0.82rem;color:#8b7150;font-style:normal;text-align:right}
+.checklist{background:#faf5e8;padding:16px 20px 16px 36px;border-radius:4px;border-left:3px solid #b8893a}
+.checklist li{font-size:0.94rem;color:#3a3220;margin:6px 0;padding-left:6px}
+.reflect{background:#f4e9cd;padding:16px 20px;border-radius:4px;font-size:0.96rem;color:#5a4418;font-style:italic;border:1px dashed #b8893a}
+.reflect::before{content:"❀ ";color:#b8893a;font-style:normal}
+.essence{background:#7a5c1f;color:#fdf6e3;padding:14px 20px;border-radius:4px;font-size:1rem;font-weight:600;margin-bottom:10px}
+.essence::before{content:"◆ ";color:#e0c078}
+.chart{margin:14px 0;background:#faf5e8;padding:18px 18px 14px;border-radius:4px;border-left:3px solid #b8893a}
+.cyc{background:#fff;border:1px solid #e0cfa4;border-radius:4px;padding:10px 14px}
+.cyc .n{display:inline-block;background:#7a5c1f;color:#fdf6e3;font-size:0.72rem;width:20px;height:20px;line-height:20px;text-align:center;border-radius:50%;margin-right:8px}
+.cyc .t{font-size:0.94rem;color:#5a4418;font-weight:700}
+.cyc .d{display:block;font-size:0.85rem;color:#7a6a4a;margin-top:4px;padding-left:28px;font-weight:400}
+.arw{font-size:0.82rem;color:#8b7150;text-align:center;padding:6px 0;font-style:italic}
+.arw b{color:#b8893a;font-style:normal}
+.chart .cap{font-size:0.8rem;color:#8b7150;margin-top:10px;font-style:italic;border-top:1px dotted #ded0ac;padding-top:8px}
+.faq{margin-top:44px}
+.faq h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+details{background:#fff;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(122,92,31,0.07)}
+summary{cursor:pointer;font-weight:600;color:#7a5c1f;font-size:0.96rem}
+details div{margin-top:10px;font-size:0.92rem;color:#3a3220;line-height:1.75}
+nav{text-align:center;margin-top:50px;padding-top:30px;border-top:1px solid #d4b87a}
+nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;border:1px solid #b8893a;border-radius:20px;transition:all 0.2s}
+nav a:hover{background:#b8893a;color:#fff}
+footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+</style></head><body><div class="container">
+<header>
+<div class="kicker">Investing · Day 58</div>
+<h1>Investing Classics: The Capital Cycle<span class="accent">Where the Money Went, and What It Does to Returns</span></h1>
+<div class="meta"><span>August 5, 2026</span>·<span>BigCat's Capital Allocator</span></div>
+</header>
+<div class="intro">
+Most analysis forecasts demand: how many will use it, how big the market gets. The capital cycle school asks a colder question—<strong>how much money is rushing in to supply it</strong>. Demand cannot be forecast; supply is written into public capex and financing records.
+</div>
+<!-- Card 1 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 01</div>
+<h2>Returns Summon Capital, Capital Destroys Returns<span class="en">The Capital Cycle</span></h2>
+<span class="tag">SUPPLY-SIDE FRAMEWORK</span>
+</div>
+<div class="section"><div class="label">The Principle</div>
+<div class="principle">Long-run returns are set not by how fast demand grows, but by how much capital gets poured into the industry. High returns attract capital, capital becomes capacity, capacity crushes returns—and the reverse holds too.</div>
+</div>
+<div class="section"><div class="label">Source · Key Passage</div>
+<p>Edward Chancellor, ed., <em>Capital Returns</em> (2015), Introduction. The book collects Marathon Asset Management's investment commentary from 2002–2015.</p>
+<div class="quote">"High returns tend to attract capital, just as low returns repel it."
+<span class="cite">— Edward Chancellor, Capital Returns, Introduction (2015)</span></div>
+</div>
+<div class="section"><div class="label">Interpretation</div>
+<p>The framework's power comes from an asymmetry: <strong>demand is hardest to forecast, supply is comparatively observable</strong>. More importantly, capital formation <strong>lags</strong>—two to five years typically separate "these returns look attractive" from "the capacity is running." New supply therefore tends to arrive exactly as the thesis behind the hottest demand starts to wobble. That lag is the source of the excess return.</p>
+<div class="chart">
+<div class="cyc"><span class="n">1</span><span class="t">High returns appear</span><span class="d">ROIC far above cost of capital; the industry gets labelled a "good business"</span></div>
+<div class="arw">↓ <b>Capital floods in</b>: financing windows open, incumbents expand, new entrants arrive</div>
+<div class="cyc"><span class="n">2</span><span class="t">Capacity in transit</span><span class="d">Money spent, capacity not yet delivered—profits still look excellent, valuations often peak here</span></div>
+<div class="arw">↓ <b>Capacity lands</b>: supply arrives all at once, pricing power shifts to the buyer</div>
+<div class="cyc"><span class="n">3</span><span class="t">Returns destroyed</span><span class="d">ROIC falls below cost of capital, but the depreciation runs for a decade</span></div>
+<div class="arw">↓ <b>Capital withdraws</b>: shutdowns, bankruptcies, consolidation; player count falls</div>
+<div class="cyc"><span class="n">4</span><span class="t">Supply clears</span><span class="d">Survivors face a better structure and regain pricing power—back to step 1, and nobody believes it</span></div>
+<div class="cap">The opportunity is not in the stages themselves but in the lag between them.</div>
+</div>
+</div>
+<div class="section"><div class="label">Case Study</div>
+<p>Dry bulk shipping. The Baltic Dry Index hit its all-time peak of 11,793 on May 20, 2008, and fell to 663 by that December—<strong>-94% in seven months</strong>. The lesson is not the crash but what followed: ships ordered in 2006–2007 only launched through 2010–2012, so supply arrived long after demand had collapsed, holding the industry in low returns for close to a decade. Owners placed those orders while looking at record freight rates.</p>
+</div>
+<div class="section"><div class="label">Limits · Decision Checklist</div>
+<p>Three failure modes. When demand suffers a <strong>structural break</strong>, this is not a cycle but an ending—capacity in film and print media shrank drastically without returns recovering, because the end of clearing was zero. In licence-protected industries capital cannot enter or exit freely, and the cycle is severed by administrative force. And the time scale: the framework works over three to seven years.</p>
+<ul class="checklist">
+<li>Am I forecasting demand, or observing supply? Is there public data for the latter?</li>
+<li>How much capacity has this industry added over three years? How much is still under construction or in transit?</li>
+<li>Holding demand flat, what happens to returns once announced capacity lands?</li>
+<li>At the end of this industry's clearing, is there a better structure—or zero demand?</li>
+</ul>
+</div>
+<div class="section"><div class="label">Essence · Reflection</div>
+<div class="essence">A high return is an announcement. It notifies everyone to come and take that return away.</div>
+<div class="reflect">Take the holding with your highest return on capital. What has its industry's capacity growth been over the past three years? If you cannot answer, you understand only the demand half of the investment.</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 02</div>
+<h2>Watch Capital Supply, Not Sentiment<span class="en">Capital Supply, Not Sentiment</span></h2>
+<span class="tag">VS. THE SENTIMENT CYCLE</span>
+</div>
+<div class="section"><div class="label">The Principle</div>
+<div class="principle">Marks's pendulum measures what participants are thinking now. The capital cycle measures where their money has already gone. The first tells you whether it is expensive today; the second tells you whether the business still earns anything five years out.</div>
+</div>
+<div class="section"><div class="label">Source · Key Passage</div>
+<p>Howard Marks, <em>The Most Important Thing</em> (2011), Chapter 8, "Being Attentive to Cycles."</p>
+<div class="quote">"Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one."
+<span class="cite">— Howard Marks, The Most Important Thing (2011)</span></div>
+</div>
+<div class="section"><div class="label">Interpretation</div>
+<p>Both are theories of cycles; they measure different things. Sentiment is a <strong>fast variable</strong>—it can flip from greed to panic in weeks, which makes it useful for timing but silent on long-run earning power. The capital cycle is a <strong>slow variable</strong>—once capacity is poured it depreciates for a decade, which makes it nearly useless for timing but decisive for where an industry's ROIC settles over five years. The two can diverge: in 2001 telecom equities had already halved while fiber was still being laid. The ideal entry is when both point the same way—<strong>the market is disgusted and the capital has already left</strong>.</p>
+</div>
+<div class="section"><div class="label">Case Study</div>
+<p>DRAM. Elpida went bankrupt in 2012 after an oversupply-driven price collapse; Micron completed its acquisition in 2013, and the industry consolidated from a crowded field to three players. The consensus then was "forever cyclical, never profitable"—sentiment was terrible, but the supply side had already cleared. By fiscal 2018 Micron posted record results, with non-GAAP net income of roughly $14.7 billion. The symmetry then delivered: record returns called capex back, and fiscal 2019 fourth-quarter revenue fell 42% year over year with operating income down roughly 85%.</p>
+</div>
+<div class="section"><div class="label">Limits · Decision Checklist</div>
+<p>In the March 2020 pandemic crash the capital cycle gave no signal at all—supply cannot change in a few weeks—yet the opportunity was a once-in-a-decade one. <strong>When the fast variable dominates, the slow one is mute.</strong> Conversely, through 2021–2022 it genuinely was sounding an alarm, and that alarm rang for eighteen months before anything happened. <strong>It gives direction, not timing</strong>; using it as a timing tool is the most expensive misuse.</p>
+<ul class="checklist">
+<li>Am I drawn by a cheap price (sentiment), or by an improving structure (supply)?</li>
+<li>Do the two signals agree or diverge? If they diverge, which do I back, and why?</li>
+<li>Is my holding period long enough for a supply-side change to play out—at least three years?</li>
+</ul>
+</div>
+<div class="section"><div class="label">Essence · Reflection</div>
+<div class="essence">Sentiment tells you what others are thinking; capital tells you what others have already done—minds can change, poured capacity cannot be withdrawn.</div>
+<div class="reflect">Pick an industry you are watching. Write down its sentiment reading and its supply reading separately. Do they point to the same conclusion? If not, which one do you believe?</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 03</div>
+<h2>Three Observable Signals<span class="en">Capex, Financing Windows, Incentives</span></h2>
+<span class="tag">ACTIONABLE INDICATORS</span>
+</div>
+<div class="section"><div class="label">The Principle</div>
+<div class="principle">The capital cycle asks for no forecast, only that you read three public signals: the ratio of capex to depreciation, how tight the financing window is, and what management is actually measured on.</div>
+</div>
+<div class="section"><div class="label">Source · Key Passage</div>
+<p>Buffett's 1985 letter to shareholders, reviewing the closure of Berkshire's textile operation.</p>
+<div class="quote">"Viewed individually, each company's capital investment decision appeared cost-effective and rational; viewed collectively, the decisions neutralized each other and were irrational (just as happens when each person watching a parade decides he can see a little better if he stands on tiptoes)."
+<span class="cite">— Berkshire Hathaway 1985 Letter to Shareholders</span></div>
+</div>
+<div class="section"><div class="label">Interpretation</div>
+<p>① <strong>Capex / depreciation</strong>. Sustained above 2 for years means capacity is compounding and returns will almost certainly be diluted; persistently below 1 means the industry is shrinking itself and survivors are accumulating pricing power. Note that the depreciation life itself can be adjusted—and the direction of that adjustment is a signal in its own right.</p>
+<p>② <strong>The financing window</strong>. The hallmark of a cycle top is not a high share price but <strong>how easy financing has become</strong>—money chasing projects rather than projects hunting money. This forecasts the ending earlier than any valuation metric.</p>
+<p>③ <strong>Management's incentives</strong>. Once the scorecard shifts from ROIC toward market share, installed base, and size rankings, capital discipline has already broken. The parade metaphor describes the mechanism precisely: every individual expansion clears its own hurdle rate, yet collectively they cancel each other's returns. This is not stupidity—it is <strong>the equilibrium of a prisoner's dilemma</strong>.</p>
+</div>
+<div class="section"><div class="label">Case Study</div>
+<p>Berkshire's textile business. Closing it in 1985, Buffett admitted that each round of equipment spending had passed its own arithmetic—but after every round all players had spent the same money, the lower costs immediately became the industry's new price baseline, returns returned to where they started, and everyone simply had more chips on the table. Not investing meant exiting sooner; investing meant a collective futility.</p>
+</div>
+<div class="section"><div class="label">Limits · Decision Checklist</div>
+<p>Heavy capex is not itself a sin. When expansion happens in an industry with <strong>real entry barriers</strong>, the leader's heavy spending actually widens the moat: leading-edge fabs run capex far above depreciation for years, yet precisely because the threshold is so high, the number of followers keeps falling. The distinction is not how much was spent but <strong>whether that spending makes entry harder or easier for newcomers</strong>. Watch the accounting boundary too: in asset-light models real capacity expansion may not show up in owned capex at all.</p>
+<ul class="checklist">
+<li>What has this industry's capex/depreciation been over three years? Rising or falling?</li>
+<li>Over the past 24 months, has financing in this industry become easier or harder?</li>
+<li>Does my company's expansion raise or lower the barrier for new entrants?</li>
+<li>In management's scorecard, how much weight sits on ROIC versus size metrics?</li>
+</ul>
+</div>
+<div class="section"><div class="label">Essence · Reflection</div>
+<div class="essence">Do not trust a high return when financing is easy—the easy financing is precisely why that return is about to be destroyed.</div>
+<div class="reflect">Find your most capex-heavy holding and compute its three-year capex/depreciation ratio against a few peers. Are you paying for growth, or for everyone standing on tiptoes at once?</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="card">
+<div class="card-header">
+<div class="card-num">PRINCIPLE 04</div>
+<h2>From Dark Fiber to AI Data Centers<span class="en">From Dark Fiber to AI Data Centers</span></h2>
+<span class="tag">HISTORY AND THE PRESENT</span>
+</div>
+<div class="section"><div class="label">The Principle</div>
+<div class="principle">The rule of infrastructure booms: a call on the technology trend can be entirely correct while the return on capital is still catastrophic—precisely because the call was so correct, it drew in too much capital.</div>
+</div>
+<div class="section"><div class="label">Source · Key Passage</div>
+<p>Buffett's 2007 letter to shareholders, on the great, the good, and the gruesome.</p>
+<div class="quote">"The worst sort of business is one that grows rapidly, requires significant capital to engender the growth, and then earns little or no money. Think airlines."
+<span class="cite">— Berkshire Hathaway 2007 Letter to Shareholders</span></div>
+</div>
+<div class="section"><div class="label">Interpretation</div>
+<p>The telecom investors of the late 1990s were <strong>right about demand</strong>—internet traffic did go on to grow by orders of magnitude. They were wrong about supply: everyone believed the same correct thing at the same time, and so laid fiber at the same time. <strong>Being right does not constitute a return; the return comes from being right and others not having done it yet.</strong> Once a correct call becomes consensus, it converts automatically into capital inflows—and therefore automatically into returns being destroyed.</p>
+</div>
+<div class="section"><div class="label">Case Study</div>
+<p>Fiber. Between 1996 and 2001 US telecom companies issued more than $500 billion in new bonds; on OECD figures, telecom infrastructure investment approached $230 billion in 2000, while OECD telecom revenue grew only about 7.2% a year over the period, slowing to 1.6% in 2001. Only a single-digit percentage of the fiber laid was ever lit for years afterward, and roughly 85% was still dark at the end of 2005. Global telecom equities lost more than $2 trillion in market value between 2000 and 2002; Global Crossing filed for bankruptcy on January 28, 2002. And the internet itself succeeded completely—the returns went to those who later picked up that fiber at liquidation prices.</p>
+<p><strong>An observation on the present (not a forecast)</strong>: combined 2025 capex at Microsoft, Alphabet, Amazon, and Meta was roughly $410 billion, with 2026 guidance rising toward the $700 billion range. Alongside it came a reversal in depreciation policy: Amazon extended server useful life from five years to six effective January 2024, then moved it back to five a year later (effective January 2025, citing the faster pace of technology development in AI), disclosing that the change would reduce that year's operating income by about $700 million. <strong>The economic life of the assets is being cut by the owners of the assets themselves.</strong></p>
+</div>
+<div class="section"><div class="label">Limits · Decision Checklist</div>
+<p>The fiber analogy is imprecise in two ways. First, the main builders back then were highly leveraged pure infrastructure players, while today's principal spenders hold enormous operating cash flow; destroyed returns need not mean insolvency, and the pain more likely takes the form of years of low ROIC. Second, fiber was a one-time capital good while compute depreciates fast, so supply will not sit in a glut for a decade—but that also means the spending must be repeated every year. Only the method transfers: <strong>count the supply, compute the depreciation, watch how easy the financing is</strong>.</p>
+<ul class="checklist">
+<li>Is my view of this technology also held by everyone else? Then where does my excess return come from?</li>
+<li>Is this wave of spending funded by operating cash flow, debt, or equity issuance?</li>
+<li>Does the accounting life of these assets match the economic life I believe in? Who is adjusting it?</li>
+<li>If demand arrives but returns do not—the most common outcome historically—what happens to my position?</li>
+</ul>
+</div>
+<div class="section"><div class="label">Essence · Reflection</div>
+<div class="essence">Whether the technology call is right is one question; who captures the return is another—and it usually goes to whoever did not have to pay for the previous round.</div>
+<div class="reflect">Write down the long-term technology call you hold with the most confidence. Then write: assuming it comes true in full, who exactly makes money, and whose money is it?</div>
+</div>
+</div>
+<div class="faq">
+<h3>Going Deeper</h3>
+<details><summary>If the capital cycle is this observable, why has it not been arbitraged away?</summary><div>Because the holding period it demands exceeds what most capital will tolerate. Capacity takes two to five years to land and far longer to clear, while funds are judged quarterly and individuals check accounts monthly; in the stretch between being right and being proven right, your judgment simply looks wrong. This is not an information edge but a <strong>term-structure arbitrage</strong>, and the reward is paid to those who can bear looking foolish for years. The constraint lies not in information but in human nature and incentive structures—neither of which will be eliminated.</div></details>
+<details><summary>AI speeds up capital formation. Will that compress the capital cycle into irrelevance?</summary><div>It compresses it, but not uniformly. Financing and decision-making genuinely have accelerated; the physical capacity stage has not—land, grid interconnection, transformers, cooling, and permitting run on schedules set by physics and regulators. The likely result is a cycle that is <strong>steeper rather than shorter</strong>: more money committed in less time, followed by the same long wait, and then arriving all at once. A second effect: faster technology turnover means shorter economic asset lives, which raises the effective depreciation rate and lowers the real return on the same capex.</div></details>
+<details><summary>What can an individual investor actually do with this framework?</summary><div>It suits subtraction better than addition. Picking the winner of an expansion is hard; recognizing that an entire industry is standing on tiptoes is comparatively easy. Two practical uses: as a <strong>veto</strong>—do not enter an industry where supply is growing explosively, however good the story; and as <strong>a reason for patience</strong>—keep a watchlist of industries where supply has already cleared and nobody is talking, and act when sentiment turns bad too.</div></details>
+</div>
+<nav><a href="index.en.html">← Back to Investing Classics</a></nav>
+<footer>BigCat · Investing · Day 58 · 2026</footer>
+</div></body></html>
