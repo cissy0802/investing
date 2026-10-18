@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 52</div>
@@ -205,6 +214,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">列出组合里「不做任何操作也会自动变化」的敞口（汇率、利率、行业集中度）。哪一项是你有意持有并期待报酬的？哪一项只是默认？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>生物进化 · 两面下注（bet-hedging）</b>：Dan Cohen 1966 年的模型解释了沙漠一年生植物为何让一部分种子当年不发芽：牺牲平均适合度，换坏年份不至于全军覆没。这和保护性认沽同构，都是用期望换形状；不像的是，自然选择没有卖方报价，「权利金」直接是少长出来的后代。</li>
+<li><b>复杂性科学 · 自组织临界（Bak、Tang、Wiesenfeld，1987）</b>：沙堆一粒粒加沙，长期平静，偶尔一次雪崩，规模没有典型尺度；VIX「长期贴地 + 偶发尖刺」是同一种形状。不像在于，沙粒不会看图表，而做空波动率的人越挤，自己就在把沙堆垒高。</li>
+<li><b>分布式系统 · 级联故障与熔断器</b>：服务一变慢，客户端就重试，在系统最弱时加倍施压，直到整片倒下；AIG 的抵押品追缴是同一个回路。工程上的解法是熔断器（Michael Nygard《Release It!》，2007）主动拒绝请求，金融合约里对应的是欧式行权和不追加抵押品的条款。</li>
+<li><b>神经科学 · 预测加工的「精度」</b>：大脑不只预测发生什么，还估计预测有多可靠，即对不确定性本身下判断；隐含波动率就是市场对不确定性的报价。不像的是，大脑可以靠新证据慢慢调低精度，市场的不确定性报价却会在一天里重写一倍。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>期权的价值来自非对称：买方亏损以权利金封顶，卖方收权利金承担近乎无上限的义务。</li>
+<li>期权改变收益的形状，不改变期望值，权利金就是「亏损有界、收益无界」的标价。</li>
+<li>2008 年 Berkshire 投资 Goldman Sachs 时拿到的认股权证，是用极少数人拿得出的现金换来的非对称。</li>
+<li>期权市场本质上是波动率的市场：方向判断对了，也可能因为隐含波动率坍塌而亏钱。</li>
+<li>2018 年 2 月 VIX 单日涨约 116%，做空波动率的票据 XIV 净值跌去约 96% 后清算。</li>
+<li>备兑开仓切掉右尾换权利金，不适合核心复利资产，因为复利的回报恰恰来自那条右尾。</li>
+<li>Buffett 卖出的长期股指看跌期权能扛过 2008 年，靠的是欧式行权和几乎不追加抵押品的条款。</li>
+<li>AIG 被逐日追缴抵押品拖垮，说明决定衍生品生死的是路径和条款，不只是期末判断。</li>
+<li>判别对冲与投机只看一条：交易是减少已有敞口，还是创造了一个新敞口。</li>
+<li>Metallgesellschaft 的原油对冲方向正确，却因期限和现金流时点错配亏损约 13 亿美元。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="04aaca65ab2f5a53">深入思考</h3>
 <details><summary>既然波动率风险溢价长期为正，为什么个人不该去赚？</summary><div>赚它的前提是能在尖刺日活下来，而个人通常三个条件都不满足：资本量不足以承受集中的尾部损失；没有多元的风险来源摊薄单次冲击；面对追缴时缺乏融资渠道。保险公司靠的是分散的保单、监管资本金与再保险，不是判断准。只有正期望而没有「活下来的结构」，等于把统计优势兑换成破产概率。</div></details>

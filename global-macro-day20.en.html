@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.bar-row .blab{width:72px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -233,6 +242,24 @@ No one reliably predicts the next rate hike, currency turn, or geopolitical shoc
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Physics · General relativity</b>: In Einstein's picture, gravity is not a pull but mass bending spacetime, with everything simply following the "straight" path through the curve. Interest rates behave more like that curvature: they do not tug at one stock, they reshape the geometry of the whole valuation space, which is why stocks and long bonds slid together in 2022. The difference: spacetime curvature follows mass passively, while a rate is set by a committee that can redraw the whole landscape within a year.</li>
+<li><b>Evolution · Life-history theory</b>: Where outside mortality is high, selection favors "fast" strategies that mature and breed early; where it is low, slow investment in growth pays off. The discount rate is finance's mortality rate, and low rates reward long-duration assets. Unlike species, which take generations to shift strategy, markets see rates flip in a single year.</li>
+<li><b>Distributed systems · Failure domains</b>: Transient faults heal with retries and time; permanent data loss is prevented only by putting replicas in independent failure domains. Owning a thousand stocks in one country is like keeping every replica in one data center, and Russia's removal from the index was a whole region going dark. The difference: financial failure domains are drawn by politics, invisible until the day they fail.</li>
+<li><b>Logic · Fallacy of division</b>: What holds for the whole need not hold for its parts, and "the country is growing, so my share is growing" is exactly that inference. The parallel is the gap between whole and part; the difference is that here dilution and governance actively move the gains away from minority shareholders.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>An asset is worth its discounted future cash flows, and the risk-free rate anchors the discount rate, so interest rates pull on every asset like gravity.</li>
+<li>In 2022 the Fed raised rates 425 basis points in one year; the S&amp;P 500 fell about 19% and 20+ year Treasuries about 31%.</li>
+<li>Japan held rates near zero for two decades, yet the Nikkei did not regain its 1989 peak until 2024: easy money is necessary, not sufficient.</li>
+<li>A cross-border investment stacks two bets, the business return and the currency move, and a currency tailwind is not stock-picking skill.</li>
+<li>Buffett bet against the dollar from 2002 and made about $2 billion pre-tax, then shifted to owning great businesses that earn foreign profits.</li>
+<li>Currency hedging is not free: it costs roughly the interest-rate gap, so hedging a high-yield currency for years steadily erodes returns.</li>
+<li>Geopolitical risk has two faces: diversified markets recover from war and panic, while frozen or confiscated capital is an irreversible zero.</li>
+<li>In 2022 MSCI removed Russia from its emerging-markets index at a near-zero price, leaving foreign holdings frozen and untradable.</li>
+<li>Ritter's 1900–2011 cross-country data show a negative correlation between per-capita GDP growth and real stock returns.</li>
+<li>GDP growth must pass through three leaks, dilution, governance and the price paid, before it can compound as per-share value.</li>
+</ol></div>
 <div class="faq">
   <h3>Going Deeper</h3>
   <details><summary>Did near-zero rates systematically inflate "fair" valuations? After gravity returns, how do you tell which moats come from the business and which only from cheap money?</summary>

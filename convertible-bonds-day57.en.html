@@ -49,6 +49,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 57</div>
@@ -200,6 +209,24 @@ The pitch for a convertible bond is "a floor below, no ceiling above." That is n
 <div class="reflect">Split a convertible into "an equal position in the stock plus some cash." Which would you choose? If you still choose the convertible, is it because it is better, or because it makes the volatility easier to sit through?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Chinese philosophy · Mencius on fish and bear's paw</b>: Mencius says you cannot have both and must give one up. A convertible claims to give you both, but both come discounted: a coupon below ordinary debt, plus a premium paid for the option. The difference: Mencius is weighing values, with no price attached; the convertible's "both" does carry a price, just printed where you do not look.</li>
+<li><b>Distributed systems · Common-mode failure</b>: two replicas in the same data center on one power feed look redundant, yet a single outage takes both down. A convertible's bond floor and its option rest on the same issuer, whose credit and stock tend to deteriorate together. Unlike a system, you cannot move the two layers of protection into separate availability zones.</li>
+<li><b>Psychology · Risk homeostasis (Gerald Wilde, 1982)</b>: Wilde argued that people hold a target level of risk, so added safety invites riskier behavior that restores it. Holders who relax their scrutiny of the business because a senior security "protects" them show the same compensation. The difference: risk homeostasis remains a contested theory, while the USAir write-down was hard accounting.</li>
+<li><b>Evolutionary biology · Bet-hedging (Dan Cohen, 1966)</b>: Cohen showed with desert annual plants that letting only some seeds germinate each year, the rest staying dormant, lowers average yield but prevents one drought from wiping out the line. A convertible likewise trades coupon for a path you can stick with. Unlike in evolution, where cutting variance raises long-run geometric growth, the convertible does not raise expected return.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>A convertible bond is a low-coupon bond plus an embedded call option, and the option was paid for through the reduced coupon.</li>
+<li>A convertible's downside protection comes from the issuer's ability to pay, not from the structure; the bond floor sinks with credit and stock.</li>
+<li>Berkshire's 1987 Salomon convertible preferred saved its capital through the bond floor, while the option added almost nothing over ten years.</li>
+<li>The forced-call, put and downward-reset clauses in Chinese convertibles are all written by the issuer, and a forced call exists to compel conversion.</li>
+<li>Intco's convertible hit about 3,618 yuan in 2021, yet holders who missed the forced-call deadline were paid only the roughly 100-yuan redemption price.</li>
+<li>A convertible preferred's seniority pays off only in liquidation, and the feeling of protection often loosens scrutiny of the business itself.</li>
+<li>Buffett's nearly identical 1989 convertible preferreds in USAir and Gillette ended in opposite ways, decided only by whether the business kept earning.</li>
+<li>Generous hybrid terms come from the counterparty's urgency; terms like Berkshire's 2008 Goldman Sachs deal are unavailable in calm markets.</li>
+<li>US convertibles are priced mainly by delta-hedging arbitrage funds, and in 2008 broken financing plus a short-sale ban cut the strategy by about a third.</li>
+<li>A convertible does not raise expected return; it buys an easier path to stay on, much like evolutionary bet-hedging trades average yield for lower variance.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>Does the forced-call provision make convertibles permanently inferior to the stock over the long run?</summary><div>On a single name, yes — the right tail is cut off around 130%, and long-run returns come precisely from the right tail. At the portfolio level it does not hold: the forced call pushes capital back out, which amounts to a systematic "sell after it rises." In a range-bound market that beats buy-and-hold; only in a sustained bull market does it fall meaningfully behind. The structure resembles a covered call (Day 52), except the convertible's option is one you bought and the covered call's is one you sold. The question is not superiority, it is fit with the market regime.</div></details>

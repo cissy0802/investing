@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 49</div>
@@ -206,6 +215,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">回想最近一次因"这个国家有前景"而买入。你估算过价格里已包含多少年的增长吗？没有的话，你买的是判断还是叙事？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>生物进化 · 红皇后假说</b>：Leigh Van Valen 1973 年提出，物种不停进化，却只能在竞争中维持原地。道指十七年不动而经济涨了 370%，也是"一直在跑、原地未动"。不像在：红皇后的对手是其他物种，这里吃掉增长的是新股稀释和入场估值。</li>
+<li><b>分布式系统 · 拜占庭容错</b>：Lamport 等人 1982 年的拜占庭将军问题，区分"节点宕机"和"节点撒谎"，后者要专门的协议才能防。DCF 默认现金流按比例诚实分配，治理失效正是那个会撒谎的节点，所以风险是离散的。不像在：拜占庭容错靠多数诚实节点投票兜底，小股东面对控股方没有法定多数可用。</li>
+<li><b>分布式系统 · 相关故障</b>：多副本冗余的前提是故障相互独立，同一机架、同一电源上的副本会一起倒下。贬值、股市下跌、资本外流同时发生，就是"同一电源"——国家名字分散了，风险源没有分散。不像在：机房可以把副本搬到另一地区，新兴市场共享的美元流动性周期很难绕开。</li>
+<li><b>神经科学 · 奖赏预测误差</b>：Schultz、Dayan、Montague 1997 年在 <em>Science</em> 上总结，多巴胺神经元对"意料之中的奖赏"几乎不再反应，只对超出预期的部分放电。回报也只来自价格没算到的那部分增长，"下一个中国"这种人人都信的故事，就是已被预测的奖赏，大脑和市场都不再为它付账。不像在：大脑会自动更新预期，投资者却常把旧故事当成新消息来付钱。</li>
+<li><b>哲学 · 尤利西斯与塞壬</b>：Jon Elster 1979 年用荷马的这个典故讨论"预先承诺"：知道自己届时会动摇，就提前把自己绑上桅杆。权重上限加定期再平衡就是那根绳子。不像在：尤利西斯只需熬过一段航程，再平衡要在每一次故事最响时重新被执行。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>投资者买的不是一国 GDP，而是特定公司的每股价值，中间隔着新股稀释、未上市部分和入场估值三道漏损。</li>
+<li>Buffett 指出，1964 年底到 1981 年底美国 GNP 增长约 370%，道指却十七年几乎原地不动。</li>
+<li>治理不是道德评分而是估值输入，它决定企业现金流有多少真正归外部小股东。</li>
+<li>治理风险是离散的：Satyam 2009 年承认约 10.4 亿美元现金系伪造，当日股价跌约 78%。</li>
+<li>治理差不等于不可投，正确做法是要更便宜才买，并设更低的仓位上限。</li>
+<li>买入外币资产等于附带一个没主动选择的货币头寸，贬值常与股市下跌、资本外流同时发生。</li>
+<li>汇率对冲的远期成本约等于两国利差，长期对冲高息货币可能吃掉全部超额收益。</li>
+<li>Marks 要求把"国家好不好"和"价格好不好"分开问，多数人只问了第一个。</li>
+<li>2003 到 2024 年印度 Nifty 50 本币年化约 16%，美元投资者因卢比贬值只拿到约 12%—13%。</li>
+<li>把配置写成权重上限加定期再平衡的规则，像尤利西斯绑上桅杆，故事最响时自动减仓。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="33b0f6f6bf9f1faf">深入思考</h3>
 <details><summary>如果 GDP 增长与股票回报长期负相关，为什么资金仍持续流向高增长经济体？</summary><div>因为负相关是<em>横截面的长期统计</em>，资金面对的却是<em>时间序列的短期机会</em>。高增长期伴随盈利上修与叙事扩散，中短期确实推高价格——负相关恰恰是这种推高的结果：估值先行透支，回报后置为负。推论不是回避高增长市场，而是把入场价格当作独立于增长判断的第二道决策。</div></details>

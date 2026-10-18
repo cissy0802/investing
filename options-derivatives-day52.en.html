@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 52</div>
@@ -201,6 +210,24 @@ Most long-term investors should stay away from options — but the usual reason 
 <div class="reflect">List every exposure in your portfolio that changes on its own without any action from you — currency, rates, sector concentration. Which one do you hold deliberately and expect to be paid for? Which one is merely a default?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · bet-hedging</b>: Dan Cohen's 1966 model explains why desert annuals keep part of each year's seeds dormant: they give up some average fitness so that a bad year cannot wipe them out. Same structure as a protective put, trading expectation for shape. The difference: natural selection quotes no premium; the cost is simply offspring that never grew.</li>
+<li><b>Complexity science · self-organized criticality (Bak, Tang, Wiesenfeld, 1987)</b>: add sand grain by grain and the pile sits quiet for long stretches, then avalanches with no typical size. The VIX pattern of long flat calm plus sudden spikes has the same shape. Unlike sand, though, the short-volatility crowd builds the pile higher the more of them pile in.</li>
+<li><b>Distributed systems · cascading failure and circuit breakers</b>: when a service slows, clients retry and hit it hardest exactly when it is weakest, until the whole cluster falls over. AIG's collateral calls ran the same loop. Engineers answer with circuit breakers (Michael Nygard, <em>Release It!</em>, 2007); the contractual equivalent is European exercise and no collateral posting.</li>
+<li><b>Neuroscience · precision in predictive processing</b>: the brain predicts not only what will happen but how reliable its prediction is, a judgment about uncertainty itself; implied volatility is the market's price on uncertainty. The contrast: the brain revises precision gradually as evidence comes in, while the market can double its uncertainty quote in a single day.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>An option's value comes from asymmetry: the buyer's loss is capped at the premium, while the seller takes on a nearly unlimited obligation.</li>
+<li>Options change the shape of returns, not the expected value; the premium is the price tag on bounded loss and unbounded gain.</li>
+<li>The warrants Berkshire got with its 2008 Goldman Sachs investment were asymmetry bought with cash almost nobody else could put up.</li>
+<li>The options market is at heart a volatility market: you can be right on direction and still lose when implied volatility collapses.</li>
+<li>In February 2018 the VIX rose about 116% in one day, and the short-volatility note XIV lost about 96% of its value and was liquidated.</li>
+<li>Covered calls trade the right tail for premium, which makes them wrong for core compounders whose returns live in that tail.</li>
+<li>Buffett's long-dated index puts survived 2008 because of their terms: European exercise and almost no collateral requirement.</li>
+<li>AIG, sunk by daily collateral calls, shows that path and contract terms, not just the final call, decide whether a derivative kills you.</li>
+<li>Hedging and speculation differ on one test: does the trade reduce an exposure you already hold, or create a new one?</li>
+<li>Metallgesellschaft's oil hedge pointed the right way but lost about $1.3 billion through a mismatch in maturity and cash-flow timing.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If the volatility risk premium is persistently positive, why shouldn't an individual harvest it?</summary><div>Because harvesting it requires surviving the spike days, and individuals usually fail three conditions at once: not enough capital to absorb a concentrated tail loss; no diversified set of risk sources to dilute a single shock; and no institutional funding channel when the calls arrive. Insurers can sell insurance for decades because of dispersed policies, regulatory capital and reinsurance — not because their judgment is sharp. Positive expectancy without a structure that survives converts a statistical edge into a probability of ruin.</div></details>

@@ -55,6 +55,15 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 .str .h span{font-size:0.78rem;color:#b8893a;font-weight:600;font-style:italic;margin-left:6px}
 .str .r{font-size:0.85rem;color:#7a6a4a;display:block;margin:3px 0;padding-left:2px}
 .str .r b{color:#8b6a28;font-weight:600;font-style:normal}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 59</div>
@@ -219,6 +228,24 @@ In fifteen years private credit grew from under $400 billion into an asset class
 <div class="reflect">Sort the positions you added over the past year into two groups: those you bought after your own research, and those prompted by a recommendation or an advertisement. Did the two groups perform differently?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · The CAP theorem</b>: Conjectured by Brewer in 2000 and proved by Gilbert and Lynch in 2002, it says that during a network partition you can keep consistency or availability, not both. A semi-liquid fund's gate makes the same choice: in a run it gives up availability (withdraw any time) to keep consistency (stayers and leavers split value at one fair NAV). The difference: a database partition is a fault, while the fund's "partition" is everyone heading for the door at once, and the trade-off is written into the contract in advance.</li>
+<li><b>Neuroscience · Gazzaniga's "interpreter"</b>: In split-brain experiments the left hemisphere, cut off from the real cause, still produces a fluent, plausible explanation. A Level 3 valuation likewise supplies a smooth, credible number where nothing has traded. The difference: the manager is not blind, but is the only one who can see the information.</li>
+<li><b>Evolutionary biology · Evolutionary mismatch</b>: A trait honed in one environment can become a liability in another. Private credit's low-default record from 2008 to 2021 grew entirely in an era of zero rates and expansion, and may not hold under different rates. The difference: funds can rewrite terms and switch strategies far faster than a species can adapt.</li>
+<li><b>Psychology · The mere-exposure effect</b>: Zajonc showed in 1968 that the more often we see something, the more we tend to like it. When a product keeps arriving through advisers and ads, familiarity forms before understanding does. The difference: mere exposure needs no one to profit, whereas retail private credit has a chain of distribution incentives behind it.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Private credit is an old business with a new owner: Basel III and other rules pushed middle-market loans off bank balance sheets into funds.</li>
+<li>The extra yield of private credit over public high-yield bonds mostly pays for illiquidity and fund leverage.</li>
+<li>Because borrowers and loan terms are not disclosed, the "thorough analysis" Graham demanded is impossible in private credit.</li>
+<li>Private credit's low-default record from 2008 to 2021 sits entirely in a zero-rate expansion and has never seen a full default cycle.</li>
+<li>A semi-liquid fund's gate fails pro rata when everyone redeems at once, and that is exactly how it protects the investors who stay.</li>
+<li>BREIT's gate ran on and off for fourteen months before it paid in full, the only complete stress test of the semi-liquid structure so far.</li>
+<li>A Level 3 NAV is a manager's model-based estimate, so a calm curve may only mean nobody quotes the asset daily.</li>
+<li>During the rate rise, listed BDCs traded 10% to 25% below NAV while non-traded BDC NAVs barely moved.</li>
+<li>The Woodford fund wrapped daily redemption around hard-to-sell assets, so the mismatch lay in the wrapper, not the assets.</li>
+<li>Distribution incentives set the pace of retail access, suitability rules lag behind, and the buyer bears the gap.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>Is private credit the next 2008?</summary><div>Structurally it is different, so probably not a sudden collapse: most of these funds take no deposits, owe no daily redemption, and run 0.8 to 1.25 times leverage against the roughly 30 times of the 2008 investment banks. But the transmission path is more hidden — banks extend credit lines to these funds, insurers hold large share positions, and the same underlying risk can be counted at several layers. The likelier outcome is <strong>a long stretch of low returns and slowly acknowledged losses</strong>: no Lehman moment, just a dozen consecutive quarters of small NAV adjustments and a queue you cannot leave. The second is harder to notice.</div></details>

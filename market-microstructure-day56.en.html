@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{grid-template-columns:1fr}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 56</div>
@@ -209,6 +218,24 @@ The first 55 issues asked what to buy and at what price. This one asks about som
 <div class="reflect">Look up the date and turnover of your main index fund's last reconstitution. What did you pay to keep tracking error at zero?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · The CAP theorem</b>: Conjectured by Brewer in 2000 and proved by Gilbert and Lynch in 2002, it says that during a network partition a system must choose between consistency and availability. Market makers in a flash crash face the same choice: unable to see the true price, they pull quotes (consistency) rather than keep trading (availability). The difference is that a distributed system's trade-off is fixed in advance by its designers, while market makers retreat individually yet all at once, with no failover.</li>
+<li><b>Evolutionary biology · The Red Queen hypothesis</b>: Van Valen proposed in 1973 that species must keep evolving just to hold their place against competitors who are evolving too. The high-frequency speed race has the same shape: each microsecond gained only keeps you from falling behind. Unlike nature, a market can install a speed bump and call off the race.</li>
+<li><b>Psychology · Campbell's law</b>: In the 1970s the social psychologist Donald Campbell observed that the more a quantitative indicator drives decisions, the more it distorts the behavior it measures. Judged only on tracking error, index funds lose all feel for price. The match is a single metric reshaping behavior; the mismatch is that the fund does not cheat, it obeys, and its holders pay.</li>
+<li><b>Neuroscience · Efference copy</b>: The brain uses predictions of its own movements to cancel sensory signals, which is why you cannot tickle yourself (Blakemore, Wolpert and Frith, 1998). The vanishing index effect works the same way: once inclusions became predictable, arbitrageurs canceled the shock in advance. The brain cancels its own signals; the market cancels other people's forced trades.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>The bid-ask spread is rent paid for immediate execution; liquidity is a state of the market, not a property of the asset.</li>
+<li>Spreads reflect processing costs, inventory risk and adverse selection, so wider spreads in a crisis are correct pricing, not greed.</li>
+<li>No fundamentals changed during the May 6, 2010 flash crash; what vanished was not value but market makers' quotes.</li>
+<li>Nothing legally ties an ETF's share price to its net asset value; only authorized participants' arbitrage pins the two together.</li>
+<li>LQD's roughly 5% discount in March 2020 most likely meant the ETF found the true price before the stale NAV did.</li>
+<li>Intraday-tradable shares wrapped around assets that stop trading under stress are the liquidity mismatch where ETFs are most fragile.</li>
+<li>Market-making high-frequency trading cut retail investors' explicit costs, while predatory strategies shift impact costs onto large institutional orders.</li>
+<li>The lower your turnover, the less market microstructure matters: a long-term investor's edge is time horizon, not speed.</li>
+<li>Shleifer used S&amp;P 500 inclusions to show stock demand curves slope down, because index funds are price-blind buyers on rebalancing day.</li>
+<li>The index inclusion effect has decayed to near zero: like the brain canceling predictable signals, predictable shocks get arbitraged away in advance.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If an ETF is only a wrapper, why do people call it a systemic risk?</summary><div>The worry is not the wrapper but the <strong>combination of scale and mismatch</strong>. When an intraday-tradable product holds a market that genuinely trades in weekly rhythm — high yield, bank loans — it promises something the underlying cannot deliver. The stress-day path is mechanical: shares are dumped, the discount widens, APs redeem, the underlying is force-sold, more selling follows. In March 2020 that chain ran halfway before a central bank balance sheet interrupted it. One discipline is enough: <strong>do not buy a product whose underlying cannot trade on a stress day with money you might need on a stress day.</strong></div></details>

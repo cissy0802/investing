@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 53</div>
@@ -197,6 +206,24 @@ Nearly every issue so far has been about buying excellent businesses and holding
 <div class="reflect">Think back to your last purchase: can you say who the seller was and why they sold? If not, you do not know where your edge came from.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · Retry storms</b>: a service slows, clients time out and retry, load doubles, and the service collapses; a short squeeze is the same positive feedback, as forced buy-backs lift the price and force the next round of buy-backs. The difference: engineers can add circuit breakers and exponential backoff, while a short seller's only circuit breaker is taking the loss, and taking the loss is itself the retry.</li>
+<li><b>Psychology · The description–experience gap (Hertwig et al., 2004)</b>: told the odds, people overweight rare events; learning from experience, they underweight them, because the rare event usually has not happened to them yet. A merger arbitrageur with years of small wins is pricing a one-in-ten failure from experience, while the spread already quotes the described odds.</li>
+<li><b>Evolutionary biology · Genetic drift (Motoo Kimura's neutral theory, 1968)</b>: gene frequencies can shift through sampling alone, unrelated to fitness. Spin-off selling works the same way, driven by distribution ratios and mandates rather than company quality. Unlike drift, though, forced selling has a predictable direction, which is exactly why it can be exploited.</li>
+<li><b>Evolutionary biology · Frequency-dependent selection</b>: a strategy pays less as more individuals adopt it. In 1993 Michio Hori reported in <em>Science</em> that scale-eating cichlids in Lake Tanganyika have mouths bent left or right, and whichever form is rarer attacks prey flanks more successfully, so the ratio oscillates around one half. The fading spin-off anomaly has the same structure: once it is in a bestseller, more money uses it and the excess return thins out. The fish need generations to rebalance; a market needs one announcement.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>A short sale can make at most 100% and lose without limit, and the position shrinks when you win and grows when you lose, the reverse of a long.</li>
+<li>A short seller must be right on both direction and timing; "too expensive" is not a thesis without a catalyst and a timetable.</li>
+<li>The 2008 Volkswagen squeeze showed that short sellers can be right on valuation and still be wiped out by the other side first.</li>
+<li>Of Buffett's four merger-arbitrage questions, the fourth, what happens if the deal fails, decides whether you survive.</li>
+<li>A merger-arbitrage spread is the market's quote on the odds of failure, and its left-skewed payoff resembles selling default insurance.</li>
+<li>Antitrust review is an institutional variable, not a probability constant, so the prior decade's failure rates are no guide.</li>
+<li>Distressed investing buys a position in the capital structure, and recovery depends on priority and where the fulcrum security sits.</li>
+<li>The 2009 General Motors reorganization showed that the absolute priority rule is a legal starting point and negotiation sets the final split.</li>
+<li>Spin-off excess returns come from index funds and institutions forced to sell, not from the new company being better.</li>
+<li>Return anomalies fade once published; McLean and Pontiff found published predictors lose about 58% of their returns on average.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>Are short sellers a pest or an immune system?</summary><div>The evidence favors the latter. Wirecard's problems were flagged by journalists and short sellers before 2019, and Germany's regulator BaFin responded in February 2019 by temporarily banning short sales of the stock and investigating the reporters; in June 2020 the company admitted that some €1.9 billion did not exist. Abuse is equally real — build the position first, then circulate unverified material. The dividing line is not whether shorting is permitted, but whether <strong>truthfulness</strong> is held to the same standard in both directions.</div></details>

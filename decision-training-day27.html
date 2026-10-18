@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 27</div>
@@ -203,6 +212,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">挑一笔赚钱的交易和一笔亏钱的交易，各自诚实地归入上面四格。有没有哪一笔"赚钱"，其实属于"坏决策 + 好结果"的侥幸？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>神经科学 · 记忆再巩固（Nader、Schafe 与 LeDoux，2000）</b>：大鼠的恐惧记忆被唤起后会重新变得不稳定、需要再"存盘"一次，回忆本身就是一次改写的机会。后见之明偏差像信念层面的再巩固，决策日记就是不随回忆改写的外部副本。不像在于，再巩固发生在突触，偏差发生在叙事。</li>
+<li><b>分布式系统 · 预写日志（write-ahead log）</b>：数据库在真正改数据之前，先把意图写进只追加的日志，崩溃后照日志恢复，而不信内存。决策日记是同一个设计：先落盘，再执行。不像的是，预写日志用来重放操作，决策日记用来和结果对质。</li>
+<li><b>心理学 · 斯金纳的"迷信鸽子"（1948）</b>：斯金纳定时给鸽子喂食、与它做什么无关，鸽子却把碰巧在做的转圈、点头强化成了仪式。这正是"坏决策＋好结果"那一格：奖励和行为无关，行为照样被加固。不像在于，人能把当时的理由写下来，事后回头对质。</li>
+<li><b>生物进化 · 自然选择只看结果</b>：选择不问一个突变"想得对不对"，只看它能不能留下后代，是彻底的唯结果论；它之所以不被运气骗，靠的是海量个体、成千上万代把噪声平均掉。个人投资者一生只有几十次重大决策，没有这种样本量，所以只能评过程，不能像演化那样只认结果。</li>
+<li><b>东方哲学 · 《薄伽梵歌》的"行动而不执于果"</b>：黑天对阿周那说，你有权行动，却无权占有行动的果实（2:47）。这和"用过程而非单次盈亏评估自己"方向一致。不像的是，《薄伽梵歌》要人放下对结果的执着，投资者仍要用大样本的结果回头校准过程。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>后见之明偏差让人在知道结局之后误以为"早就料到"，于是无法从经验里真正学习。</li>
+<li>决策日记要在结果揭晓前写下四件事：核心论点、预期情形与概率、可能错在哪、什么信号证明自己错了。</li>
+<li>复盘时对照白纸黑字的当时记录，才能把"决策对不对"和"结果好不好"分开看。</li>
+<li>Gawande 区分无知之错和无能之错，投资亏损多半是知道却在兴奋时跳过的无能之错。</li>
+<li>WHO 手术安全检查表在八家医院试点后，主要并发症下降约 36%、住院死亡率下降约 47%。</li>
+<li>好的投资检查表要从自己和他人的真实失败里提炼，并设一条一旦触发就直接否决的红牌项。</li>
+<li>事前验尸先假设决策已经彻底失败、再倒推原因，用来对抗过度自信和群体一致。</li>
+<li>把决策好坏和结果好坏拆成四格，最危险的是坏决策撞上好结果的侥幸格，它会强化坏习惯。</li>
+<li>Mauboussin 的判据是能否故意输掉；投资短期高度偏运气，自我评估应看过程而非单次盈亏。</li>
+<li>LTCM 在 1998 年约四个月亏掉约 46 亿美元，此前几年的高回报里藏着尚未引爆的尾部风险。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="a3a30a0b501504a8">深入思考</h3>
 <details><summary>决策日记、检查表、事前验尸都要花时间，多数人坚持不下来——如何让它们真正嵌入流程，而非三分钟热度？</summary>

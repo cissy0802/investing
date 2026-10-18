@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 13</div>
@@ -212,6 +221,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">挑一家你觉得"P/E 太贵"而错过的公司。如果用"经济商誉 + 再投资回报"重新看它，你当年算的是价格，还是价值？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>进化生物学 · 累赘原理（Amotz Zahavi，1975）</b>：孔雀的大尾巴之所以可信，正因为它昂贵、弱者装不起；Costco 主动把毛利压到约 11%，也是一个对手模仿不起的昂贵信号，证明它站在会员这边。不像在于：孔雀的累赘只是信号，Costco 的低毛利同时就是会员拿到手的真实好处。</li>
+<li><b>科学哲学 · 库恩的格式塔转换（《科学革命的结构》，1962）</b>：库恩借鸭兔图说明，范式转换时数据没变，看见的东西变了；Buffett 把 Apple 从科技股看成消费品牌，也是一次这样的转换。不像在于：库恩说新旧范式难以通约，Buffett 的转换恰恰是为了让旧工具（品牌、黏性、定价权）重新适用。</li>
+<li><b>分布式系统 · 故障检测器（Chandra 与 Toueg，1996）</b>：异步网络里，一个节点不回应，你分不清它是慢了还是挂了，这也是 FLP 不可能性定理（1985）的根源；工程上的办法是主动发心跳探测。Buffett 走进奥马哈的餐厅看人们还刷不刷运通卡，就是给特许权发心跳：股价下跌不说明节点已死，用户行为还在回应才算活着。不像的是，系统的超时阈值可以设定，市场不会告诉你该等多久。</li>
+<li><b>认知心理学 · 解释深度错觉（Rozenblit 与 Keil，2002）</b>：受试者自觉懂拉链、马桶怎么运作，被要求一步步解释后才发现并不懂；天天用某个牌子带来的，正是这种懂了的感觉。不像在于：拉链的原理摆在眼前，生意为何持续赚钱却藏在供应链、渠道、心智这些看不见的地方。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>Costco 把任何商品的加价上限锁在约 14%，整体毛利率只有约 11%，利润主要来自会员费。</li>
+<li>Costco 的会员飞轮是：越低价、越多会员、越大采购量、越低成本、再更低价，续费率长期约 90%。</li>
+<li>主动放弃眼前毛利的自律，是对手最难抄走的护城河；代价是优质公司用 P/E 看几乎永远偏贵。</li>
+<li>Buffett 重仓 Apple 不是因为懂了芯片，而是把它重新看作转换成本极高的消费品牌。</li>
+<li>重构框架是双刃剑：能正确扩展能力圈，也能替“不懂却想参与”找借口。</li>
+<li>1963 年色拉油丑闻让运通面临约 1.5 亿美元赔付，Buffett 去餐厅和商户观察人们是否照常用卡。</li>
+<li>危机抄底要两条同时成立：损失一次性且有上限，核心信任网络可观察地完好。</li>
+<li>1972 年 Berkshire 以 2500 万美元买下净有形资产约 800 万的 See's，推动 Buffett 从烟蒂派转向质量派。</li>
+<li>经济商誉是超出有形资产、几乎不需追加资本的盈利能力，在通胀时代尤其值钱。</li>
+<li>经济商誉只在轻资产、有定价权的生意上成立，“漂亮 50”的腰斩说明为质量付价不等于付任何价。</li>
+</ol></div>
 <div class="qa-head">深入思考</div>
 <details><summary>消费股被认为"最好懂"，但"好懂"会不会反而是最危险的舒适区？</summary>
 <div>"看得懂产品"与"看得懂生意为什么持续赚钱"是两回事。你天天用某品牌，容易把"喜欢"当"懂"——这正是 Lynch 警告的陷阱。消费品的护城河往往藏在不可见处：供应链成本、渠道议价、品牌心智、转换成本。真正的功课是把"我爱用"翻译成"对手为什么抢不走它的利润"。熟悉是起点，绝不是理由。</div></details>

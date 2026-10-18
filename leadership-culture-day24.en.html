@@ -44,6 +44,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -235,6 +244,25 @@ Buying a business means entrusting your capital to people you may never meet. Ma
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Behavioral ecology · The marginal value theorem (Eric Charnov, 1976)</b>: a forager should leave a food patch once its marginal intake drops below the average for the whole habitat. That is the same problem as "if reinvestment returns fall below the shareholders' opportunity cost, give the money back." The difference: the animal leaves on its own, while capital only moves if the CEO lets go.</li>
+<li><b>Psychology · Groupthink (Irving Janis, 1972)</b>: studying fiascos like the Bay of Pigs, Janis found that tight-knit groups suppress dissent and manufacture a false consensus. The third symptom of the institutional imperative, subordinates supplying the numbers the leader wants, is exactly this. Unlike groupthink, which lives in one room, the imperative spreads across companies to peers.</li>
+<li><b>Evolutionary biology · The handicap principle (Amotz Zahavi, 1975)</b>: a peacock's tail is believable because it is costly and a weak bird cannot afford one. Skin in the game works the same way: a commitment backed by one's own fortune is hard to fake. Unlike the tail, whose cost is pure waste, an owner's stake ties his downside to the shareholders', so the cost is itself the incentive.</li>
+<li><b>Distributed systems · Single points of failure and Raft leader election (Ongaro &amp; Ousterhout, 2014)</b>: a reliable cluster never bets everything on one leader node; when the leader fails, the rest elect a new one by pre-agreed rules and the log carries on. Good succession is the same: the handover rules and the "log" (the culture) are already replicated across many nodes. What differs is that nodes are interchangeable, while a CEO's judgment cannot be fully copied.</li>
+<li><b>Complexity science · The adaptive cycle (C. S. Holling)</b>: as an ecosystem matures it grows more connected and efficient but less resilient, until one disturbance can bring the whole thing down. A strong culture hardening into a cage follows the same curve. The difference: a forest reorganizes itself after collapse, while a company rarely gets a second chance.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>A CEO's most important and most neglected job is capital allocation: deciding where every dollar of retained earnings goes.</li>
+<li>A company should retain earnings only when the marginal return on reinvestment beats the shareholders' own opportunity cost.</li>
+<li>Henry Singleton at Teledyne issued stock to acquire when his shares were dear and bought them back heavily when they were cheap.</li>
+<li>AOL and Time Warner merged at the top using overvalued stock and wrote off about $99 billion of goodwill two years later.</li>
+<li>Buffett's institutional imperative is the organizational inertia that makes rational managers copy peers and spend whatever funds are available.</li>
+<li>Citigroup kept dancing through the 2007 subprime boom and within a year faced huge write-downs and a government rescue.</li>
+<li>Skin in the game is not about how many shares managers own but whether they truly bear the downside of their decisions.</li>
+<li>WeWork's founder cashed out, borrowed and dealt with the company so the upside was his and the downside the shareholders'.</li>
+<li>The real moat is a culture that keeps propagating after the founder leaves, and succession is its stress test.</li>
+<li>A strong culture is a moat in stable times but can harden into a cage that refuses change when upheaval demands it.</li>
+</ol></div>
 <div class="faq">
   <h3>Going Deeper</h3>
   <details><summary>Is the contrarian capital allocation praised in <em>The Outsiders</em> — buy back low, issue high — a replicable method, or survivorship bias?</summary>

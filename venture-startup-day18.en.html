@@ -39,6 +39,15 @@ details[open] summary::before{content:"▾ "}
 details .answer{padding:0 20px 18px 20px;font-size:0.92rem;color:#3a3220;line-height:1.75}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -217,6 +226,25 @@ The logic of public markets—margin of safety, moats, intrinsic value—partly 
     <div class="reflect">If you could only make three early-stage bets, and two would likely go to zero, would you still use this money for angel investing? Or does it belong where you genuinely have judgment?</div>
   </div>
 </div>
+
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Complexity science · Preferential attachment (Barabási and Albert, 1999)</b>: new nodes in a network prefer to link to nodes that already have many links, and that rich-get-richer feedback produces a power-law distribution in which a few hubs hold most connections. The likeness: winner-take-all comes from positive feedback in both. The difference: hubs grow on their own after the fact, while a VC has to pick one in advance from a crowd of nodes that look much alike.</li>
+<li><b>Evolutionary biology · r/K selection (MacArthur and Wilson, 1967)</b>: r-strategists produce many offspring and invest little in each, so most die; K-strategists have few and raise them carefully. Spray-and-pray VC is r; concentrated value investing is K. Unlike a species, whose strategy the environment picks, an investor can choose the wrong game.</li>
+<li><b>Ecology · Competitive exclusion (Gause, 1934)</b>: two Paramecium species competing for the same food cannot coexist; one gets pushed out, and coexistence comes from niche differentiation, which is exactly "escaping competition." Unlike a monopoly, a differentiated species only needs to survive, not earn excess profit, and it faces no antitrust regulator.</li>
+<li><b>Philosophy of science · Kuhn's anomalies (Thomas Kuhn, 1962)</b>: normal science sets aside anomalies that do not fit the paradigm, and new paradigms often grow from the anomalies only a few take seriously, much like Thiel's "important truth very few people agree with you on." The difference: a scientific discovery must persuade peers in public, while a founder's secret is worth most before the crowd accepts it.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Early-stage returns follow a power law: the best investment in a successful fund often equals or beats all the others combined.</li>
+<li>Correlation Ventures data show that about 65% of venture deals fail to return capital and only about 4% return more than 10x.</li>
+<li>In a power-law world, a "safe" deal capped at two or three times is a failure, because it uses up room for a potential hundredfold winner.</li>
+<li>An individual who backs only three to five startups will very likely miss the one winner, so the power law becomes a trap.</li>
+<li>Paul Graham holds that the first question for a startup is whether it makes something people really want before the money runs out.</li>
+<li>"Do things that don't scale" and "default alive or default dead" reduce a startup story to two testable facts: retention and cash runway.</li>
+<li>Thiel argues that competition is for losers: profits come from escaping competition and building a monopoly, not from winning it.</li>
+<li>Durable monopolies rest on proprietary technology, network effects, economies of scale and brand, yet Nokia, Kodak and Yahoo show none last forever.</li>
+<li>In Wiltbank's 2007 study, 52% of exited angel investments returned less than the capital invested, and individual angels often see deals others passed on.</li>
+<li>Concentration suits predictable public companies and broad diversification suits unpredictable startups, so first figure out which game you are playing.</li>
+</ol></div>
 
 <div class="thinking">
   <div class="label">Going Deeper</div>

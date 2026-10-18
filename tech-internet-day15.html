@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 15</div>
@@ -211,6 +220,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">你关注的某个平台，它真正掌握的是用户关系，还是只是供给侧的一个通道？如果监管要求它开放互通或下调抽成，它的利润还剩多少？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>生物进化 · 正频率依赖选择（Heliconius 警戒色）</b>：毒蝶的警戒花纹越常见，捕食者越快学会躲开，常见色型越安全，稀有色型被吃得更多，于是一个色型统治一片地区。像网络效应：价值随「用户」数上升。不像的是，这里没有谁拥有网络、收取租金。</li>
+<li><b>神经科学 · 赫布学习与突触缩放</b>：Hebb 1949 年提出「一起放电的神经元连在一起」，常用的通路越用越强，正是报酬递增。但 Turrigiano 等 1998 年发现神经元会按比例整体缩放突触强度，防止强者无限膨胀。大脑自带这道刹车，平台经济的刹车只能由外部的监管来踩。</li>
+<li><b>复杂性科学 · 优先连接与无标度网络</b>：Barabási 与 Albert 1999 年用「新节点偏爱连向已有很多连接的节点」解释了少数超级枢纽的出现，这和聚合者掌握需求端是同一种富者愈富。Albert、Jeong、Barabási 2000 年又发现，这种网络耐随机故障，却怕针对枢纽的打击。平台也一样：用户零星流失不要紧，被监管点名拆解才伤筋动骨。</li>
+<li><b>生态学 · 群落演替</b>：先锋物种在裸岩上扎根、造出土壤，随后往往被更适应新环境的物种取代。像光纤狂热：先行者铺好了基础设施，收益却归后来者。不像的是，先锋植物不是在押注，被取代也谈不上「血本无归」。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>网络效应指产品的价值随用户增多而上升，不同于只带来成本优势的规模效应。</li>
+<li>网络效应既能让领先者越来越领先，也能让流失中的网络像 MySpace 那样崩塌得同样快。</li>
+<li>用户能低成本多归属、切换成本低或子网络割裂时，网络效应护城河就会变弱。</li>
+<li>伟大的公司加上过高的买入价，结果仍是糟糕的投资，价格决定了回报区间。</li>
+<li>Buffett 认为投资的关键不是行业增长多快，而是一家公司竞争优势的持久性。</li>
+<li>2000 年泡沫之后，思科跌约 90%，微软用约 16 年回到高点，亚马逊则从谷底长成复利机器。</li>
+<li>真实的技术革命和投资泡沫常常同时发生，趋势成真不等于早期出资人能赚钱。</li>
+<li>光纤狂热留下了支撑云时代的暗光纤，WorldCom 却在 2002 年破产，与铁路狂热如出一辙。</li>
+<li>Ben Thompson 的聚合理论认为，掌握用户关系和需求端的平台能按自己的条件压制供给方。</li>
+<li>平台的护城河越深，监管靶子越大，强制互通、限制抽成会直接改写商业模式。</li>
+</ol></div>
 <div class="qa-head">深入思考</div>
 <details><summary>网络效应被奉为最强护城河，但 MySpace、Nokia、Yahoo 都曾"赢家通吃"——如何判断一条网络护城河是真的不可逆，还是只是暂时领先？</summary>
 <div>线索不在"现在多领先"，而在<strong>切换与多归属的成本</strong>。真正难逆转的网络往往嵌入高切换成本（数据、身份、金融关系）；脆弱的网络则由产品体验驱动、用户可随时迁移。务实做法：假设网络效应"可逆"，并为此在估值上留出折扣。</div></details>

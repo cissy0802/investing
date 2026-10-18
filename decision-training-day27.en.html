@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -233,6 +242,25 @@ The final product of investing is not a stock; it is a chain of decisions. Yet t
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Neuroscience · Memory reconsolidation (Nader, Schafe &amp; LeDoux, 2000)</b>: a rat's fear memory, once recalled, becomes unstable again and has to be re-stored, so every act of remembering is a chance to rewrite. Hindsight bias looks like reconsolidation at the level of belief, and the decision journal is an external copy that recall cannot edit. Unlike it: reconsolidation happens in synapses, the bias happens in the story.</li>
+<li><b>Distributed systems · The write-ahead log</b>: a database writes its intent to an append-only log before touching the data, and after a crash it recovers from the log, not from memory. The decision journal is the same design: write first, then act. The difference is that a write-ahead log exists to replay operations, while a journal exists to cross-examine the outcome.</li>
+<li><b>Psychology · Skinner's "superstitious" pigeons (1948)</b>: Skinner fed pigeons on a fixed timer regardless of what they did, and they turned whatever they happened to be doing, turning or head-bobbing, into rituals. That is the "bad decision + good outcome" cell: the reward has nothing to do with the behavior, yet the behavior gets reinforced. Unlike pigeons, people can write down their reasons and confront them later.</li>
+<li><b>Evolution · Natural selection only sees results</b>: selection never asks whether a mutation was a "good call", only whether it left offspring, which makes it pure resulting. It is not fooled by luck only because vast populations over countless generations average the noise away. An individual investor makes a few dozen big decisions in a lifetime, has no such sample, and so must grade the process instead of trusting results the way evolution can.</li>
+<li><b>Eastern philosophy · The Bhagavad Gita on action without attachment to fruits</b>: Krishna tells Arjuna that he has a right to his actions but never to their fruits (2:47). That points the same way as judging yourself by process rather than by one trade's P&amp;L. The difference: the Gita asks you to let go of outcomes, while an investor still needs results, in large samples, to recalibrate the process.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Hindsight bias makes people believe they "knew it all along" once they see the outcome, which blocks real learning from experience.</li>
+<li>A decision journal records four things before the outcome is known: the thesis, expected scenarios and odds, where you might be wrong, and what signal would prove it.</li>
+<li>Reviewing against the written record from the time is what lets you separate "was the decision right" from "was the outcome good".</li>
+<li>Gawande separates errors of ignorance from errors of ineptitude; most investing losses are the second kind, known steps skipped in excitement.</li>
+<li>After the WHO surgical safety checklist was piloted in eight hospitals, major complications fell about 36% and in-hospital deaths about 47%.</li>
+<li>A good investing checklist is distilled from your own and others' real failures and includes a red-card item that vetoes a deal outright.</li>
+<li>A pre-mortem assumes the decision has already failed and works backward to the causes, countering overconfidence and groupthink.</li>
+<li>Splitting decision quality and outcome quality gives four cells; the most dangerous is a bad decision with a good outcome, which reinforces bad habits.</li>
+<li>Mauboussin's test is whether you can lose on purpose; investing is luck-heavy in the short run, so judge yourself by process, not a single P&amp;L.</li>
+<li>LTCM lost about $4.6 billion in roughly four months in 1998; its earlier high returns had hidden tail risk that had not yet blown up.</li>
+</ol></div>
 <div class="faq">
   <h3>Going Deeper</h3>
   <details><summary>Decision journals, checklists, and pre-mortems all take time, and most people can't sustain them—how do you embed them in your process rather than a burst of enthusiasm?</summary>

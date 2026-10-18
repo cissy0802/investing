@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 28</div>
@@ -203,6 +212,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">如果把量化的意义从"跑赢市场"改成"不再被情绪打败"，你会怎么设计属于自己的规则？其中多少是真优势，多少只是对回测曲线的迷恋？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>心理学 · 可复现危机</b>：2015 年 Open Science Collaboration 在《Science》上重做 100 项心理学研究，只有约 36% 的重复实验再次得到显著结果——和 Hou、Xue、Zhang 复现 452 个异象是同一个病：多重检验加发表偏好，把噪声包装成发现。不像的是，心理学效应若是真的，不会因为被发表而变弱；市场里的异象即便是真的，也会被读到论文的资金套利掉。</li>
+<li><b>生物进化 · 频率依赖选择</b>：坦噶尼喀湖的食鳞鱼嘴巴偏左或偏右，哪一型多了，猎物就专防那一侧，少数型反而占优，两型比例来回摆动（Hori，1993）。因子拥挤是同一结构：用的人越多，溢价越薄。不同在于鱼不读论文，市场的「摆动」快得多。</li>
+<li><b>分布式系统 · 相关故障</b>：多副本冗余的前提是各副本独立出错；同一个软件 bug、同一个机架断电，冗余就一起失效。2007 年 8 月的量化地震也是如此：一篮子看似分散的股票中性策略，因为押着同一批信号，在同几天里一起踩踏。</li>
+<li><b>哲学 · 尤利西斯契约</b>：Jon Elster 在《Ulysses and the Sirens》（1979）里，把「让人把自己绑上桅杆」当作理性的预先承诺：清醒时知道自己将来会失控，就先锁死选项。个人量化的规则化再平衡正是这根绳子；不同的是，绳子绑得太紧也会害人——规则本身若是过拟合出来的，越守纪律越亏。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>因子投资把超额收益拆成价值、动量、质量、规模、低波动等可解释、跨大量股票成立的系统性溢价。</li>
+<li>因子溢价通常有两类解释：承担风险的补偿，或投资者追高杀跌等系统性行为偏差。</li>
+<li>价值因子在 2010–2020 年长期跑输成长股，AQR 连年受挫，2020 年底才强势反弹。</li>
+<li>异象公开发表后平均衰减约 58%，资金拥挤会进一步侵蚀因子溢价。</li>
+<li>Sharpe 的主动管理算术是恒等式：扣除成本后，主动管理整体必然跑输被动管理。</li>
+<li>Buffett 2007 年的十年赌局里，标普 500 指数基金累计 +125.8%，对冲基金组合约 +36%。</li>
+<li>大奖章基金靠海量、短持有、相互独立的微小信号重复下注，把约 50.75% 的胜率变成复利。</li>
+<li>大奖章 1993 年起对外关闭、规模封顶，Renaissance 的公开基金却表现平庸，说明真正的优势无法规模化、也买不到。</li>
+<li>Hou、Xue 与 Zhang 检验 452 个已发表异象，约 65% 无法复现，回测优势多半是过拟合。</li>
+<li>个人量化的现实价值是用规则剔除情绪、低换手和耐心，而不是靠价格数据挖出 alpha。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="6814cb15f2677e03">深入思考</h3>
 <details><summary>因子被发表、被做成 ETF、被大量资金涌入之后会衰减——那"公开的因子"还值得投吗？</summary>

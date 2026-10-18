@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{grid-template-columns:1fr}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 55</div>
@@ -209,6 +218,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">挑一只浮亏的持仓，只用基本面语言写三句话说明为何继续持有。若有一句提到「已经跌了这么多」，价格就混进了你的论点。</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>心理学 · 复现危机（Open Science Collaboration，2015）</b>：100 项发表过的心理学研究被重做，原本几乎都显著，重做后只有约 36% 仍显著。和 Sullivan 的样本外检验同一个结构：显著性要除以没被看见的尝试次数。不像在于，交易规则还会因为被人使用而失效，心理学效应不会因为被发表而变弱。</li>
+<li><b>分布式系统 · 重试风暴（retry storm）</b>：服务变慢，客户端按规则超时重试，重试又加重负载，引发更多超时。1987 年的组合保险是同一个回路：按规则卖出压低价格，更低的价格再触发卖出。工程上的解法是指数退避加随机抖动，让各方不再同时行动；市场缺少一个统一调度这些规则的人。</li>
+<li><b>生物进化 · 负频率依赖选择</b>：坦噶尼喀湖的食鳞鱼嘴分左歪右歪，哪种多，猎物就更防着那一侧，少数派反而占优，比例来回摆动（Hori，Science，1993）。技术规则被套利掉是同一种机制：用的人越多，优势越小。不像的是，鱼群会摆回来，一条被公开的规则常常一去不返。</li>
+<li><b>心理学 · 后见之明偏差（Baruch Fischhoff，1975）</b>：知道结果后，人会觉得结果本来就可预见，并不自觉地改写自己当初的判断。艾略特波浪的数法可事后调整，正是把这种偏差做成了方法。区别在于，后见偏差是无意的记忆改写，波浪数法是公开允许的事后改写。</li>
+<li><b>佛学 · 五蕴中的「受」与「想」</b>：受是苦乐的感受，想是对它的认取与命名；修观是看见感受升起，而不让它直接变成判断。价格下跌就是一个「受」，把它读成「论点错了」才是「想」。不像在于，禅修追求不被感受推动，投资里一旦有杠杆，价格这个感受就必须拥有否决权。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>动量是横截面上的相对强弱排序：过去 3–12 个月的强势股，往后 3–12 个月相对占优。</li>
+<li>动量的时间尺度就是它的全部内容：1 个月是反转，3–12 个月是动量，3–5 年又回到反转。</li>
+<li>动量崩盘集中在熊市末端的急速反弹，1932 年两个月亏约 91%，2009 年春亏约 73%。</li>
+<li>成交量与价格变动的幅度正相关、与方向无关，它度量的是分歧，不是多空力量对比。</li>
+<li>1987 年 10 月 19 日的天量来自组合保险的机械卖出，量价最值钱的用途是区分机械性抛售与基本面重估。</li>
+<li>任何技术规则的显著性，都要除以为找到它而试过的规则数；Sullivan 等人校正后，最佳规则在样本外消失了。</li>
+<li>同一条趋势跟踪规则在 2008 年大赚、在 2011–2019 年原地踏步，「有效」离开状态就没有意义。</li>
+<li>可证伪性是技术分析内部的分界线：均线交叉可以检验，艾略特波浪的数法可事后调整、无法检验。</li>
+<li>价格信号只该管仓位、杠杆和流动性等风险问题，不该进入「这门生意值多少钱」的价值判断。</li>
+<li>Bill Miller 在 2008 年把「更便宜」当成新的买入依据，而伯克希尔与 Amazon 的深跌说明价格止损也会在最不该出局时出局。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="649edc50117ec3e8">深入思考</h3>
 <details><summary>如果动量确实存在，价值投资者为什么不直接用它？</summary><div>因为它与你的其余约束不兼容。动量需要几十上百个头寸、100% 以上的年换手，以及在崩盘中不减仓的执行力；而集中、长期、低税负恰是长期投资者最大的结构性优势。<strong>借一个策略的信号却不承担它的成本结构，通常得到两者最差的组合</strong>：分散度不够，享受不到统计规律；换手却高到足以交税。可移植的只有一条——不要逆着 3–12 个月的相对弱势「越跌越加」，除非你说得出新事实。</div></details>

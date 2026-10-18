@@ -49,6 +49,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 58</div>
@@ -210,6 +219,25 @@ Most analysis forecasts demand: how many will use it, how big the market gets. T
 <div class="reflect">Write down the long-term technology call you hold with the most confidence. Then write: assuming it comes true in full, who exactly makes money, and whose money is it?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Ecology · the Lotka–Volterra predator–prey model (1925–1926)</b>: abundant prey lets predators multiply, they eat the prey down and then starve, and the two curves oscillate out of phase. Capital is the predator, excess return the prey, and both swings come from a growth lag. The difference: predators cannot see the future, while capital can see capacity under construction and often chooses not to look.</li>
+<li><b>System dynamics · the Beer Game and the bullwhip effect</b>: each tier reorders rationally from the orders in front of it, and with shipping delays the whole supply chain swings violently. Same parts: lag plus local rationality. The difference is that capital-cycle supply data is mostly public.</li>
+<li><b>Evolution · the Red Queen hypothesis (Leigh Van Valen, 1973)</b>: a species must keep evolving just to stay in place. Each round of textile-mill equipment spending was the same race, running faster only to avoid falling behind. The difference: evolution offers no option to shut down and leave, and Buffett had one.</li>
+<li><b>Neuroscience · reward prediction error (Schultz et al., 1997)</b>: dopamine neurons fire only for outcomes better than expected, and a fully predicted reward produces no signal, just as a consensus view stops paying. The difference: a brain lowers its own expectations, while a market erases the excess return through other people's capital.</li>
+<li><b>Distributed systems · the thundering herd</b>: when a lock is released, every waiting process wakes at once to grab it and the system bogs down; the fix is randomized backoff. Everyone laying fiber at once was a thundering herd. The difference: an industry has no scheduler, so the only move is to act later yourself.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>The capital cycle runs: high returns attract capital, capital becomes capacity, capacity crushes returns, and the reverse also holds.</li>
+<li>Demand is hardest to forecast, but supply is written in public capex and financing records, so the capital-cycle framework watches supply.</li>
+<li>It usually takes two to five years from attractive returns to new capacity coming online, and that lag is where capital-cycle excess returns come from.</li>
+<li>Dry bulk ships ordered at the 2008 freight-rate peak launched in 2010–2012 and held the industry at low returns for nearly a decade.</li>
+<li>Sentiment is a fast variable that says whether an asset is cheap now; capital supply is a slow variable that says whether the business will earn money in five years.</li>
+<li>After Elpida's bankruptcy and Micron's acquisition, DRAM consolidated to three players, so supply had already cleared when sentiment was at its worst.</li>
+<li>The capital cycle gives direction, not timing, and using it as a timing tool is its most expensive misuse.</li>
+<li>The three observable signals are capex relative to depreciation, how open financing windows are, and whether management is paid on ROIC or on scale.</li>
+<li>Buffett's textile post-mortem shows that each firm's expansion looks rational alone but cancels out collectively, a prisoner's dilemma.</li>
+<li>Late-1990s telecom investors were right about internet demand yet lost heavily because everyone laid fiber at the same time.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If the capital cycle is this observable, why has it not been arbitraged away?</summary><div>Because the holding period it demands exceeds what most capital will tolerate. Capacity takes two to five years to land and far longer to clear, while funds are judged quarterly and individuals check accounts monthly; in the stretch between being right and being proven right, your judgment simply looks wrong. This is not an information edge but a <strong>term-structure arbitrage</strong>, and the reward is paid to those who can bear looking foolish for years. The constraint lies not in information but in human nature and incentive structures—neither of which will be eliminated.</div></details>

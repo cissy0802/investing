@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 36</div>
@@ -188,6 +197,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">回看你最得意的一笔盈利：如果诚实地区分运气与技能，其中有多少是真本事，多少只是那次刚好走运？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>心理学 · Meehl 的统计预测</b>：1954 年 Paul Meehl 发现，简单统计公式预测病人结局常胜过资深医生，与"从不推翻计算机"同构：直觉正是偏差来源。不像的是，病情不会因公式被发现而改变，市场规律会被套利掉。</li>
+<li><b>生物进化 · Haldane 的固定概率</b>：1927 年 J.B.S. Haldane 算出，带 1% 优势的突变在大种群里最终扩散的概率只有约 2%，多数好突变死于早期随机漂变。这是"仓位过大、活不到大数定律生效"的生物版；进化靠无数次突变摊薄风险，只是没人替它控制仓位。</li>
+<li><b>分布式系统 · 相关故障</b>：多副本只在故障彼此独立时可靠，同机架、同电源的副本会一起宕机，LTCM 几百笔"独立"头寸同爆是同一个错。不同在于机房的相关性多能事先画出，市场的相关性会在危机里突然跳到 1。</li>
+<li><b>佛学 · 缘起</b>：佛学说结果由众多因缘和合而成，没有一个独立的"我"单独造就它；Simons 每天问"今天走不走运"，同样把成绩从"我"身上卸下、交还给条件。不像的是，佛学要放下执着，Simons 仍要赢。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>大奖章基金 1988–2018 年化扣费后约 39%，是有记录以来最好的长期业绩。</li>
+<li>大奖章主动限制外部资金、把规模封在约 100 亿美元，容量是高收益无法翻开的另一面。</li>
+<li>Jim Simons 不问生意能否被理解，只问价格序列里有没有统计上可重复的微小偏差。</li>
+<li>文艺复兴科技只雇做过真科学的数学家、物理学家和统计学家，从不雇华尔街出身的人。</li>
+<li>"不干预"纪律要求模型上线后人不推翻计算机，因为直觉和讲得通的故事是系统性偏差的来源。</li>
+<li>个人投资者能迁移的不是"别推翻模型"，而是别让故事和情绪推翻事先定好的规则。</li>
+<li>50.75% 的胜率配上海量独立下注和小仓位，会被大数定律放大成近乎确定的收益。</li>
+<li>微小优势有三种失效方式：过拟合让优势是假的、下注其实不独立、仓位大到熬不过连败。</li>
+<li>2020 年员工专属的大奖章涨约 76%，同公司的外部基金 RIEF 却亏约 19–20%。</li>
+<li>从 Simons 身上能带走的是态度而非策略：尊重数据、承认无知、用纪律压住情绪。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="b6554e3258cfab2e">深入思考</h3>
 <details><summary>大奖章证伪了"有效市场假说"吗？</summary>

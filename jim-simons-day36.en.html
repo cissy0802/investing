@@ -41,6 +41,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -217,6 +226,25 @@ Outside the temple of value investing stands a mathematician who barely understo
     <div class="reflect">Look back at your proudest gain: if you honestly separate luck from skill, how much was real ability, and how much was simply being lucky that time?</div>
   </div>
 </div>
+
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Psychology · Meehl's clinical vs. statistical prediction</b>: In 1954 Paul Meehl showed that simple statistical formulas often predicted patient outcomes better than experienced clinicians. Same structure as "never override the computer": human intuition is where the bias enters. The difference: patients don't change because a formula found them out, while market patterns get arbitraged away.</li>
+<li><b>Evolution · Haldane's fixation probability</b>: In 1927 J.B.S. Haldane worked out that a mutation carrying a 1% advantage, in a large population, ends up spreading only about 2% of the time; most good mutations die early to random drift. That is the biological version of a position too large to survive until the law of large numbers kicks in. Evolution spreads the risk across countless mutations, as Medallion does across thousands of small independent bets; the difference is that evolution has no goal and nobody sizes its positions.</li>
+<li><b>Distributed systems · Correlated failures</b>: Replicas only make a system reliable if their failures are independent; replicas on the same rack, power feed or config push go down together. LTCM's hundreds of "independent" positions blowing up at once is the identical mistake. The difference: data-center correlations can mostly be mapped in advance, while market correlations jump to 1 in a crisis.</li>
+<li><b>Buddhism · Dependent origination</b>: Buddhism holds that every outcome arises from many converging conditions, with no independent "self" producing it alone. Simons asking each morning "am I lucky today?" rather than "am I smart today?" likewise lifts the result off the self and hands it back to conditions. Unlike Buddhism, though, Simons is not letting go of attachment; he still keeps discipline and still wants to win.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>The Medallion Fund returned about 39% a year after fees from 1988 to 2018, the best long-run record on file.</li>
+<li>Medallion deliberately shut out outside money and capped itself near $10 billion; capacity is the hidden flip side of its returns.</li>
+<li>Jim Simons never asked whether a business was understandable, only whether a price series held a statistically repeatable bias.</li>
+<li>Renaissance Technologies hired mathematicians, physicists and statisticians who had done real science, never people from Wall Street.</li>
+<li>The no-override rule means humans never overrule a live model, because intuition and plausible stories are sources of systematic bias.</li>
+<li>For individual investors, the transferable lesson is not "obey the model" but "don't let stories and emotions override your preset rules."</li>
+<li>A 50.75% win rate, spread across huge numbers of independent small bets, becomes a near-certain profit through the law of large numbers.</li>
+<li>A tiny edge fails in three ways: overfitting makes it fake, the bets are not truly independent, or positions are too big to survive a losing streak.</li>
+<li>In 2020 the employee-only Medallion Fund gained about 76% while the same firm's outside fund RIEF lost about 19-20%.</li>
+<li>What carries over from Simons is an attitude, not a strategy: respect the data, admit ignorance, and let discipline override emotion.</li>
+</ol></div>
 
 <div class="faq">
   <h3>Going Deeper</h3>

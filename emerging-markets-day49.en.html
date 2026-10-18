@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 49</div>
@@ -202,6 +211,25 @@ Emerging markets are where investors most often get the judgment right and the c
 <div class="reflect">Recall the last time you bought because "this country has a future". Had you estimated how many years of growth the price already contained? If not, you bought a narrative, not a judgment.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolution · The Red Queen hypothesis</b>: Leigh Van Valen proposed in 1973 that species keep evolving yet merely hold their place against competitors. A Dow flat for seventeen years while the economy grew 370% is the same running-to-stand-still. Where it differs: the Red Queen's rivals are other species; here growth is eaten by new-share dilution and entry valuation.</li>
+<li><b>Distributed systems · Byzantine fault tolerance</b>: The Byzantine Generals Problem (Lamport and colleagues, 1982) separates nodes that crash from nodes that lie, and the liars need a dedicated protocol. A DCF assumes cash flows are shared honestly pro rata; a governance failure is the lying node, which is why the risk is discrete. Where it differs: BFT relies on an honest majority to outvote the faulty, and minority shareholders have no such majority against a controlling owner.</li>
+<li><b>Distributed systems · Correlated failures</b>: Replication assumes failures are independent; replicas on the same rack or power feed go down together. Devaluation, falling equities and capital flight arriving at once are that shared power feed: the country names are diversified, the source of risk is not. Where it differs: a data center can move replicas to another region, while the common dollar-liquidity cycle is hard to route around.</li>
+<li><b>Neuroscience · Reward prediction error</b>: Schultz, Dayan and Montague (<em>Science</em>, 1997) showed that dopamine neurons barely respond to a fully expected reward and fire for the surprise above expectation. Returns, likewise, come only from growth the price has not counted. A story everyone believes, like "the next China," is a predicted reward that neither brain nor market pays for again. Where it differs: the brain updates its expectation automatically, while investors often pay for an old story as if it were news.</li>
+<li><b>Philosophy · Ulysses and the Sirens</b>: Jon Elster (1979) used Homer's episode to analyze precommitment: knowing you will waver, you tie yourself to the mast in advance. A weight cap plus scheduled rebalancing is that rope. Where it differs: Ulysses had one passage to survive; rebalancing must be carried out again every time the story is loudest.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>You buy not a country's GDP but specific companies' per-share value, separated by three leaks: dilution, unlisted growth and entry valuation.</li>
+<li>Buffett noted that from end-1964 to end-1981 U.S. GNP rose about 370% while the Dow went essentially nowhere.</li>
+<li>Governance is a valuation input, not a moral score: it decides how much cash flow actually reaches minority shareholders.</li>
+<li>Governance risk is discrete: in 2009 Satyam admitted about $1.04 billion of cash was fabricated, and the stock fell about 78% that day.</li>
+<li>Weak governance does not mean uninvestable; it means buy only at a lower price and with a lower position cap.</li>
+<li>A foreign-currency asset carries a currency position you never chose, and devaluation tends to coincide with falling equities and capital flight.</li>
+<li>The forward cost of hedging roughly equals the interest-rate gap, so permanently hedging a high-yield currency can consume the entire excess return.</li>
+<li>Marks insists on asking separately whether a country is good and whether the price is good; most investors ask only the first.</li>
+<li>From 2003 to 2024 India's Nifty 50 compounded about 16% in rupees, but dollar investors got roughly 12–13% after depreciation.</li>
+<li>Write allocation as rules, a weight cap plus scheduled rebalancing, so you trim automatically when the story is loudest, like Ulysses tied to the mast.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If GDP growth and equity returns are negatively correlated over the long run, why does capital keep flowing to fast-growing economies?</summary><div>Because the negative correlation is a <em>long-run cross-sectional statistic</em>, while capital faces <em>short-run opportunities in the time series</em>. Periods of fast growth bring earnings upgrades and spreading narratives, which genuinely lift prices in the near term — the negative correlation is the consequence of that lift: valuation is pulled forward, and the return that remains is pushed into the future as a negative. The inference is not to avoid fast-growing markets but to treat entry price as a second decision, independent of the growth judgment.</div></details>

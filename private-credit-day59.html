@@ -55,6 +55,15 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 .str .h span{font-size:0.78rem;color:#b8893a;font-weight:600;font-style:italic;margin-left:6px}
 .str .r{font-size:0.85rem;color:#7a6a4a;display:block;margin:3px 0;padding-left:2px}
 .str .r b{color:#8b6a28;font-weight:600;font-style:normal}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 59</div>
@@ -223,6 +232,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">把近一年新增持仓分两类：自己研究后买的，和被推荐或广告触发的。两类的后续表现有差别吗？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>分布式系统 · CAP 定理</b>：Brewer 2000 年提出、Gilbert 与 Lynch 2002 年证明：网络分区时，一致性与可用性只能保一个。半流动性基金的闸门是同一个选择——挤兑时放弃「随时可取」的可用性，换取留下者与离开者按同一净值公平分账的一致性。不像在：数据库的分区是故障，基金的「分区」是所有人同时想走，而且这个取舍事先写进了合同。</li>
+<li><b>神经科学 · Gazzaniga 的「解释器」</b>：裂脑实验里，左脑拿不到真实原因，照样流畅地编出一个说得通的解释。Level 3 估值也是在没有成交的地方给出平滑可信的数字。不像在：管理人并非全无信息，只是信息只有他一个人看得到。</li>
+<li><b>生物进化 · 进化失配</b>：在旧环境里磨出来的性状，换了环境可能变成负担。私募信贷 2008 至 2021 年的低违约纪录，整段长在零利率加扩张期里，换一个利率环境未必还成立。不像在：基金可以改条款、换策略，适应比物种快得多。</li>
+<li><b>心理学 · 单纯曝光效应</b>：Zajonc 1968 年发现，见得越多的东西越让人觉得可亲。产品通过顾问和广告反复找上门，熟悉感先于理解建立起来。不像在：曝光效应不需要任何人得利，零售化背后却站着一条分销激励链。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>私募信贷是旧生意换了持有人：中端市场贷款因 Basel III 等监管从银行表内搬进了基金。</li>
+<li>私募信贷比公开高收益债多出的收益，主要是在为流动性补偿和基金杠杆付费。</li>
+<li>底层借款人和贷款条款都不公开，Graham 要求的「充分分析」在私募信贷里做不到。</li>
+<li>2008 至 2021 年的低违约纪录全部落在零利率和扩张期，没有经历过完整的违约周期。</li>
+<li>半流动性基金的闸门在所有人同时赎回时按比例失效，这正是它保护留下者的设计。</li>
+<li>BREIT 闸门断续运行十四个月才全额兑付，是半流动性结构迄今唯一一次完整压力测试。</li>
+<li>Level 3 净值是管理人用模型算出的估值，平稳曲线可能只是因为没人每天报价。</li>
+<li>利率抬升期上市 BDC 相对 NAV 折价 10% 到 25%，非上市 BDC 的净值却几乎不动。</li>
+<li>Woodford 基金把每日赎回套在难变现的资产上，错配在外壳而不在资产本身。</li>
+<li>零售化的速度由分销激励决定，适当性监管总是慢一步，时间差由买方承担。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="1b9d42aa25c670a5">深入思考</h3>
 <details><summary>私募信贷会是下一个 2008 吗？</summary><div>结构上不同，大概不是「突然崩塌」：这些基金多数没有存款、没有每日赎回义务，杠杆 0.8 至 1.25 倍，而 2008 年的投行是 30 倍量级。但传导路径更隐蔽：银行向它们提供信贷额度，保险公司大量持有其份额，同一笔底层风险可能在不同层级被重复计算。更可能的结局是<strong>漫长的低回报与缓慢确认的损失</strong>——没有雷曼时刻，只有连续十几个季度的净值微调和退不出来的队列，而后者更难察觉。</div></details>

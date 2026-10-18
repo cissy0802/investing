@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -244,6 +253,24 @@ Financial crises are the investor's most expensive textbook. 1929 taught us to s
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Complexity science · Self-organized criticality</b>: In the 1987 sandpile model of Per Bak and colleagues, grains are added one at a time and the slope climbs to a critical state on its own; from then on, a single grain may move a few others or bring down the whole face. LTCM and 2008 look the same: the longer the calm, the higher the leverage, until the system walks itself to the edge. The difference is that sand does not watch volatility. People do, and calm itself is what tempts them to keep adding grains.</li>
+<li><b>Distributed systems · Correlated failure</b>: Three-way replication is only reliable if replicas fail independently; once they share a power feed or a single config push, three copies are really one. "Correlations go to one" is the same structure. The difference is that engineers can deliberately separate failure domains, while market participants all drink from one pool of liquidity.</li>
+<li><b>Neuroscience · Fear extinction</b>: Pavlov already saw that an extinguished conditioned response can spontaneously recover: extinction is new learning laid over the old memory, not its erasure. An individual's memory of risk works the same way, but between generations not even that dormant memory is passed on, so each new cohort has to get burned for itself.</li>
+<li><b>Evolutionary biology · Monoculture</b>: In the 1840s Ireland relied heavily on a single potato variety, the Lumper, and when late blight arrived the crop was nearly wiped out. In 2008 institutions ran similar models and trusted the same AAA ratings, so one shock swept the whole field. The difference: a farm's uniformity comes from breeding, finance's from everyone copying the same answer sheet.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Graham's definition of investment requires thorough analysis, safety of principal, and a satisfactory return; missing any one makes it speculation, a technical test rather than a moral one.</li>
+<li>After 1929 the Dow fell from 381 to 41, an 89% loss, and did not regain its peak until November 1954, a full 25 years later.</li>
+<li>LTCM ran bond spread convergence trades at roughly 25x leverage, and after Russia's 1998 default its $4.7 billion of capital shrank to $400 million within months.</li>
+<li>Whether leverage is usable depends on forced liquidation: leverage that can be margin-called in the worst case will eventually blow up.</li>
+<li>When a valuation rests on a TAM ten years out rather than this year's cash flow, price loses any falsifiable anchor and the story becomes bubble fuel.</li>
+<li>Cisco doubled its revenue from 2000 to 2010 while its stock fell from $80 to $8; the company was not wrong, the entry price was.</li>
+<li>Overvaluation does not mean an imminent crash: Greenspan warned of irrational exuberance in late 1996, and bears still missed the index doubling afterward.</li>
+<li>In a systemic crisis, frozen liquidity and forced selling push correlations toward one, so diversification that worked in calm times fails all at once.</li>
+<li>Buffett's 2008 investments in Goldman and GE depended on cash and a valuation anchor prepared long before the crisis.</li>
+<li>Diversification, like three-way replication, is only as reliable as the independence of its failures; sharing one pool of liquidity makes it hollow.</li>
+</ol></div>
 <div class="qa-head">Deeper Questions</div>
 
 <details><summary>What's the root similarity across the four crises — and why does every generation repeat them?</summary>

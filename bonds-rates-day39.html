@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 39</div>
@@ -190,6 +199,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">你现在的回报预期和估值假设，有多少悄悄依赖着"利率会一直很低"？如果这个前提不成立，你的组合里什么会先垮？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>复杂性科学 · 自组织临界（Per Bak，1987）</b>：Bak 与 Tang、Wiesenfeld 的沙堆模型里，多落一粒沙，可能只滚一下，也可能引发整片雪崩；英国 LDI 危机同构：收益率一跳，追保、抛售、再跳连成级联。不像在于：沙堆是自己慢慢长到临界态的，LDI 的临界是杠杆人为堆出来的，而且有英格兰银行这只手能伸进来把沙子拿走。</li>
+<li><b>心理学 · 群体智慧（Francis Galton，1907）</b>：高尔顿统计集市上几百人猜一头牛的重量，中位数几乎正中；收益率曲线也是无数下注汇成的一个估计。不像在于：猜牛的人彼此独立，债市参与者互相盯着、还被央行购债推着走，独立性一丢，集体投票就会失真。</li>
+<li><b>心理学 · 双曲折现（George Ainslie）</b>：利率当分母，是给未来的钱打折；人脑也在打折，只是走双曲线：今天和明天差很多，一年后和一年零一天几乎一样。不像在于：市场折现率前后一致，人的折现会让偏好随时间翻转。</li>
+<li><b>佛学 · 无常与缘起</b>：把四十年降息当成自然法则，是把因缘和合的状态当成了自性；佛学说一切有为法依条件生灭，低利率也只是一组条件凑出来的结果。不像在于：佛学劝人放下对恒常的执取，投资者却仍得选一个折现率才能下手。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>久期衡量债券价格对利率的敏感度：久期为 8 的债券，利率上行 1%，价格大约下跌 8%。</li>
+<li>零利率并不消灭风险，只是把风险挪进了久期，超长期债券等于一根被利率撬动的长杠杆。</li>
+<li>2022 年英国养老金的 LDI 策略用杠杆持有超长国债，收益率飙升引发追保与抛售螺旋，逼得英格兰银行入场购债。</li>
+<li>收益率曲线倒挂是市场对紧缩已经过头的集体判断，1955 年以来美国每次衰退前都出现过倒挂。</li>
+<li>收益率曲线是概率信号而非择时工具：倒挂到衰退的时滞可达 6 到 24 个月，量化宽松还会扭曲长端。</li>
+<li>信用利差是公司债相对同期限国债多出的收益，是市场为违约、流动性和风险厌恶一次性开出的价码。</li>
+<li>美国高收益债利差 2007 年被压到约 250 个基点，2008 年底飙至约 2000 个基点，Howard Marks 的 Oaktree 在恐慌中逆势买入困境债。</li>
+<li>利率是一切资产定价的分母，Buffett 把它比作作用在资产价格上的重力。</li>
+<li>1981 至 2021 年美国 10 年期国债收益率从约 15.8% 降到约 0.5%，这场世纪顺风抬升了几乎所有资产。</li>
+<li>Per Bak 的沙堆模型与 LDI 危机同构：杠杆把系统推到临界点，一个小扰动就可能引发连锁雪崩。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="d17d04018b2a96ae">深入思考</h3>
 <details><summary>既然利率如此重要，普通投资者是否应该预测利率来做决策？</summary>

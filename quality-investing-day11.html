@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 11</div>
@@ -212,6 +221,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">你持仓中估值最高的"优质股"，当前价格隐含了怎样的增长假设？若它只兑现一半，你今天还会以这个价买入吗？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>生物进化 · 红皇后假说（Leigh Van Valen，1973）</b>：物种得不停进化，才能在同样进化的对手中间保住原位；高 ROIC 招来资本与对手，护城河就是让公司跑得比追兵快的那部分。不像在于，进化里没有永久的护城河，而少数公司真能把超额回报守上几十年。</li>
+<li><b>生态学 · 承载力与逻辑斯蒂增长</b>：种群在资源充裕时近似指数增长，逼近环境承载力 K 后增速归零，这正是再投资跑道从长变短的形状。不像在于，See's Candies 撞上天花板后能把现金交给 Berkshire 去别处繁殖，一个种群却没法把多余的增长能力出口给别的物种。</li>
+<li><b>心理学 · 光环效应（Edward Thorndike，1920）</b>：Thorndike 发现，评分者对一个人某项特质的好印象，会渗进对其他所有特质的打分；漂亮 50 就是"好公司"的光环渗进了"好价格"的判断。不像的是，光环效应多是一次性的印象偏差，股市里这层光环却被价格一路放大，最后由熊市一次清算。</li>
+<li><b>分布式系统 · 租约（Gray &amp; Cheriton，1989）</b>：持有租约的节点可以不必每次请求都去协商、放心使用缓存，但租约到期必须续约，否则作废。"什么都别做"像一份要不断续约的租约：手上不动，脑子按期复查。不像的是，租约的到期时间写死在协议里，质量退化却从不提前通知。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>质量投资把问题从"它有多便宜"换成"它能以多高回报率把利润再投回去、投多久"。</li>
+<li>Terry Smith 把 Fundsmith 的策略压成三句话：买好公司，别买太贵，然后什么都别做。</li>
+<li>Fundsmith Equity 在 2022 年回撤约 14%、跑输大盘，说明"别买太贵"和"买好公司"同等重要。</li>
+<li>增长只有在 ROIC 高于资本成本时才创造价值；ROIC 低于资本成本时，扩张越快股东亏得越多。</li>
+<li>航空业长期 ROIC 低于资本成本，Buffett 1989 年投资 US Air 优先股几近全损，是增长吞钱的反面教材。</li>
+<li>Munger 指出，长期看股票回报会向背后生意的 ROIC 收敛，持有越久，买入价越不重要。</li>
+<li>真正的复利机器要兼具高 ROIC 和长再投资跑道；See's Candies 回报极高，增量资本却几乎无处可投。</li>
+<li>1972 年漂亮 50 的市盈率普遍在 40–90 倍，1973–74 熊市里宝丽来跌约 91%：好公司买太贵也会变成坏投资。</li>
+<li>护城河是延缓均值回归的结构性力量，像红皇后假说里的物种，好公司得一直奔跑才能守住超额回报。</li>
+<li>"什么都别做"指不做交易、但持续复查；质量假设被证伪时，持有不动就从美德变成固执。</li>
+</ol></div>
 <div class="qa-head">深入思考</div>
 <details><summary>高 ROIC 本身会吸引竞争而自我消解吗？质量是否注定向均值回归？</summary>
 <div>资本主义的默认引力正是均值回归——高回报招来资本与对手，把超额利润磨平。这正是"护城河"存在的全部理由：它是<strong>延缓均值回归的结构性力量</strong>（品牌、网络效应、转换成本、规模、特许牌照）。所以真问题不是"ROIC 现在多高"，而是"这道价差能扛住竞争多少年"。多数高 ROIC 公司的回报终将衰减，少数能维持数十年——后者才是 Munger 口中"买贵也无妨"的对象。把"当前 ROIC"误当"持久 ROIC"，是质量投资最常见的致命错误。</div></details>

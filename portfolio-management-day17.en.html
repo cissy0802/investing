@@ -43,6 +43,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -247,6 +256,24 @@ Picking the right stock is only half the job; the other half is <strong>how much
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · Correlated failure</b>: Three replicas are redundancy only if they sit in different racks and availability zones; behind one switch, they fail together. Several big positions sharing one hidden risk factor are the same setup. The difference: data-center correlations are physical and auditable in advance, while market correlations are manufactured in a panic by everyone heading for the same exit.</li>
+<li><b>Evolutionary biology · Bet-hedging (Dan Cohen, 1966)</b>: Desert annual plants let only a fraction of their seeds germinate each year and keep the rest dormant. Average yield drops, but one drought can't wipe out the line, because selection maximizes geometric mean fitness across generations, the same math as Kelly. The difference: no plant estimates the odds; lineages that didn't hedge simply went extinct, so extinction did the half-Kelly arithmetic for them.</li>
+<li><b>Complexity science · Ergodicity (Ole Peters)</b>: The average of a thousand people betting once is not what happens to one person betting a thousand times; in multiplicative processes the two diverge, and an individual lives only in the time average. The difference: in physics ergodicity is a property of the system, while an investor can use position size to push himself back onto the survivable side.</li>
+<li><b>Neuroscience · Precision weighting in predictive processing</b>: When the brain meets a prediction error, it must first judge whether it is noise or a signal to revise the model, based on how reliable the error seems. Telling a price drop from a broken thesis is the same problem. The difference: the brain does this many times a second, while an investor faces it a few times a year, with too little feedback to calibrate.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Concentration forces you to think harder about each holding; with a real edge it is leverage, without one it just amplifies luck.</li>
+<li>After the 1964 salad oil scandal, Buffett confirmed through field checks that the American Express brand was intact and put about 40% of his partnership into it.</li>
+<li>Bessembinder found that about 58% of US stocks from 1926 to 2016 failed to beat Treasury bills, while about 4% of companies created nearly all net wealth.</li>
+<li>The Kelly criterion sets the optimal bet fraction from win probability and payoff odds, maximizing geometric growth rather than single-bet expectation.</li>
+<li>Betting beyond the Kelly fraction lowers long-run growth and drifts toward ruin, so practitioners use half Kelly as a buffer against estimation error.</li>
+<li>Ed Thorp sized positions with Kelly and had almost no losing years, while LTCM, levered about 25 to 1, lost about $4.6 billion within weeks in 1998.</li>
+<li>A lower price means a wider margin of safety and justifies a bigger position, but only if the thesis is intact; a broken thesis makes the drop a warning, not a discount.</li>
+<li>In the 2008 to 2009 crisis, Buffett invested in Goldman Sachs and GE and bought BNSF, betting big when the margin of safety was widest, not when it felt comfortable.</li>
+<li>In Buffett's example, a dollar doubling yearly for 20 years ends near $692,000 if held but near $25,200 if taxed every year; unrealized gains act as an interest-free loan from the government.</li>
+<li>Clinging to an overvalued or deteriorating stock just to avoid taxes is a costlier mistake than paying the tax.</li>
+</ol></div>
 <div class="qa-head">Going Deeper</div>
 
 <details><summary>Concentration and Kelly both point to "bet heavily on your edge," yet what ordinary investors most lack is a reliable probability estimate — does that mean diversification is the rational choice for most?</summary>

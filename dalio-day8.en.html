@@ -43,6 +43,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.quad{grid-template-columns:1fr}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -241,6 +250,25 @@ Ray Dalio treats investing as a machine you can take apart: the economy is drive
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · Bet-hedging</b>: Desert annual plants keep part of their seed dormant rather than betting on which year brings rain; Dan Cohen's 1966 model showed this trades average yield for survival across years, the same refusal to forecast as All Weather. The difference: seeds have no leverage, so they can only germinate less, never scale up the low-risk leg.</li>
+<li><b>Distributed systems · Correlated failures</b>: Put three replicas in one rack and a single power cut takes them all down, so replicas are spread across independent fault domains; that is the question of whether the legs only look uncorrelated in a bull market. Unlike racks, assets cannot be physically separated, and their correlations rise on their own in a crisis.</li>
+<li><b>Complexity science · Holling's adaptive cycle</b>: Ecologist C. S. Holling described ecosystems as cycling through growth, accumulation, release and reorganization, growing more fragile the longer they accumulate, much like a long-term debt cycle reaching its limit and deleveraging. The difference: a forest has no central bank, so the four tools of a beautiful deleveraging have no counterpart.</li>
+<li><b>Neuroscience · Three stages of skill learning (Fitts and Posner, 1967)</b>: Beginners talk themselves through explicit rules; with practice the skill passes to procedural memory and runs automatically, the same path Dalio takes in turning principles into algorithms. Where they part: an automated brain can no longer state its rules, while principles written as code stay readable and editable.</li>
+<li><b>Buddhism · Seeing things as they are</b>: Practice begins by seeing suffering clearly, without embellishment, and the Four Noble Truths open with suffering; like "Pain + Reflection = Progress", both treat facing discomfort as the way in. The difference: Buddhism, having seen clearly, lets go of attachment to outcomes, while Dalio seeks truth precisely to get the outcomes he wants.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>The All Weather strategy does not forecast; it aims for a portfolio that no single economic environment can break.</li>
+<li>All Weather divides the world into four quadrants by growth and inflation and splits risk contribution, not dollars, evenly among them.</li>
+<li>In 2008 the S&amp;P 500 fell about 37% while All Weather lost only about 3.9%, cushioned by long-duration Treasuries.</li>
+<li>Risk parity is vulnerable to stagflation and hidden leverage: in 2022 stocks and bonds fell together and All Weather lost about 9%.</li>
+<li>Dalio's debt machine has three layers: a productivity trend, 5–10 year short-term debt cycles, and 50–75 year long-term debt cycles.</li>
+<li>The debt cycle describes a shape, not a timetable, and Dalio's own calls in 2010 and 2019 both missed.</li>
+<li>Turning decisions into principles means writing implicit judgment down as explicit rules, pruning them through review, then encoding recurring decisions as algorithms.</li>
+<li>The failed 1982 bet against US stocks nearly bankrupted Bridgewater and became the starting point of its principles.</li>
+<li>Believability-weighting weighs opinions by track record and quality of reasoning, not by rank and not by headcount.</li>
+<li>Radical transparency needs emotional safety as a precondition, or it decays into mutual attack.</li>
+</ol></div>
 <div class="qa-head">Going Deeper</div>
 
 <details><summary>Can an individual investor really replicate All Weather, or is it an institutional luxury?</summary>

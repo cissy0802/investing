@@ -43,6 +43,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -251,6 +260,24 @@ Finance is the bloodstream of the economy — and one of the most dangerous aren
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · Metastable failure</b>: Bronson and colleagues (2021) described systems that run fine until a small trigger sets off a retry storm; the extra load sustains itself, and the system stays down even after the trigger is gone. A bank run has the same shape: withdrawals cause more withdrawals. The difference: retries are mechanical, while a run is driven by each depositor guessing what the others will do.</li>
+<li><b>Neuroscience · Reward prediction error (Schultz, Dayan &amp; Montague, 1997)</b>: dopamine neurons signal how much better or worse an outcome was than expected, so learning depends on timely feedback. Long-tail insurance breaks exactly this: the reward for underpricing arrives this year, the asbestos claims decades later, so people and firms learn the wrong lesson. Unlike neurons, though, a firm can book delayed feedback in advance through reserves and actuarial work.</li>
+<li><b>Evolutionary biology · Cancer as cheating in multicellular cooperation (Aktipis et al., 2015)</b>: cancer cells escape the body's limits on proliferation, win locally and wreck the whole organism; premium growth bought by underpricing is the same kind of local boom. The difference: cells have no choice, while an insurer's management can always say no.</li>
+<li><b>Eastern philosophy · Laozi on knowing when to stop</b>: chapter 44 of the Tao Te Ching says that knowing contentment avoids disgrace and knowing when to stop avoids danger, and so one endures. National Indemnity letting premiums shrink by more than 80% rather than write underpriced policies is knowing when to stop. Unlike Laozi's stopping, which lets go of desire, Buffett's is waiting for a better price: the appetite stays, only postponed.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Banks borrow short and lend long with equity of roughly a tenth of assets, so small asset losses become leveraged blows to equity.</li>
+<li>A bank's fate rests on a risk culture outsiders cannot see, and once confidence evaporates, a run is measured in hours.</li>
+<li>Silicon Valley Bank fell in 2023 from losses on long-duration bonds plus a run by uninsured depositors, who pulled about $42 billion on March 9 alone.</li>
+<li>Insurers collect premiums now and pay claims later, and the float in between can be invested; Buffett lit this engine by buying National Indemnity in 1967.</li>
+<li>With a combined ratio below 100%, float is negative-cost capital; above 100%, it is a loan whose interest hides in future claims.</li>
+<li>Long-tail claims can surface decades later, and under-reserving turns once-cheap float into a ruinous liability.</li>
+<li>GEICO's low-cost direct model is a flywheel: low costs allow low prices, which attract low-risk drivers, whose better loss ratios reinforce the cost edge.</li>
+<li>GEICO nearly went bankrupt in 1976 from reckless expansion and thin reserves, showing that a moat buys time, not immunity.</li>
+<li>Because any insurance product can be copied instantly, the only lasting edge is Buffett-style underwriting discipline: let volume shrink rather than write underpriced policies.</li>
+<li>Fast premium growth bought by underpricing is like a cancer's local boom: usually not a moat but the fuse on a time bomb.</li>
+</ol></div>
 <div class="qa-head">Deeper Questions</div>
 
 <details><summary>Banks and insurers both run on leverage and confidence — so why has Buffett long held insurance heavily while growing ever more cautious on banks?</summary>

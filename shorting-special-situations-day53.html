@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 53</div>
@@ -202,6 +211,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">回想你最近一次买入：能说出卖方是谁、为什么卖吗？说不出，就说明你不知道自己的优势从何而来。</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>分布式系统 · 重试风暴</b>：服务一慢，客户端超时重试，负载翻倍直到压垮；逼空是同一个正反馈，空头被迫买回推高股价，再逼出下一批买回。不像的是：工程师能加熔断，空头的熔断只有认赔，而认赔本身就是那次重试。</li>
+<li><b>心理学 · 描述—经验差距（Hertwig 等，2004）</b>：被告知概率时人们高估罕见事件，靠亲身经验学习时反而低估。并购套利者连赚几年小钱，正是在用经验给一成的失败定价；而价差报的是描述版的概率。</li>
+<li><b>进化生物学 · 遗传漂变（木村资生，1968）</b>：基因频率可以只因抽样而变，与适应度无关；分拆股的抛压也来自派发比例和投资授权，不来自公司好坏。不像的是：漂变方向随机，强制卖压方向可预测，所以能被利用。</li>
+<li><b>进化生物学 · 频率依赖选择</b>：策略的回报随采用者增多而下降。堀道雄 1993 年在《Science》报告，坦噶尼喀湖食鳞鱼的嘴歪左或歪右，哪种少，哪种偷袭就更易得手，比例于是在一半上下摆动。分拆异象的衰减同构；不同在于鱼要几代才调回，市场一份公告就够。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>做空最大收益 100%、最大亏损无上限，赢时仓位缩小、输时仓位放大，与做多正好相反。</li>
+<li>做空必须在方向和时间上同时正确，「太贵了」不是理由，还需要催化剂与时间表。</li>
+<li>2008 年大众汽车逼空说明，空头的估值判断即使没错，也可能被对手盘先挤死。</li>
+<li>Buffett 的并购套利四问里，第四问「交易失败会怎样」决定的是你能不能活下来。</li>
+<li>并购套利的价差是市场对失败概率的报价，收益分布左偏，形态上等同于卖出违约保险。</li>
+<li>反垄断审查是制度变量而不是概率常数，此前十年的历史失败率没有参考价值。</li>
+<li>困境证券投资买的是资本结构里的位置，回收率取决于清偿顺序和支点证券落在哪一层。</li>
+<li>通用汽车 2009 年重整显示，绝对优先原则只是法律起点，最终分配由谈判决定。</li>
+<li>分拆的超额收益来自被迫抛售的指数基金和机构，而不是新公司更优秀。</li>
+<li>收益异象公开后会衰减，McLean 与 Pontiff 测得已发表因子的收益平均缩水约 58%。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="0e6f68bc5455d33e">深入思考</h3>
 <details><summary>做空者是市场的害虫，还是免疫系统？</summary><div>证据偏向后者。Wirecard 的疑点在 2019 年前就被记者与空头指出，而德国监管机构 BaFin 的反应是在 2019 年 2 月临时禁止做空该股并调查记者，2020 年 6 月公司承认约 19 亿欧元资金并不存在。滥用同样真实——先建仓、再散布未经核实的材料。分野不在于允不允许做空，而在于对<strong>信息真实性</strong>是否同等追责。</div></details>

@@ -43,6 +43,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -239,6 +248,25 @@ The efficient-market view assumes rational investors, but it is humans who set p
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Neuroscience · the left-brain "interpreter" (Michael Gazzaniga)</b>: when a split-brain patient's right hemisphere acts on an instruction, the left hemisphere instantly invents a fluent reason, and the patient believes it. Same structure as cognitive fluency: coherence stands in for evidence. The difference: the interpreter explains one's own behavior; the investor explains the market's.</li>
+<li><b>Buddhism · mindfulness and calm-insight practice</b>: mindfulness inserts a gap of awareness between stimulus and response, noticing a thought arise without following it, much as a checklist wakes System 2 at key moments. Unlike it, Buddhism is not after better judgments; it aims to see that the "self" doing the judging is itself dependently arisen.</li>
+<li><b>Evolutionary biology · the smoke-detector principle (Randolph Nesse)</b>: missing a predator once can be fatal, a false alarm only costs effort, so defenses are tuned to overreact; loss aversion's asymmetry looks like the same setting. But a paper loss is not being eaten: telling fire from burnt toast is telling value destruction from price swings.</li>
+<li><b>Complexity science · the army-ant death spiral (T. C. Schneirla, 1944)</b>: army ants move by following the pheromone of the ant ahead, which works well, until the column closes on itself and circles to exhaustion. Like the herd, a local rule that is usually right turns lethal at the extreme. Unlike it, ants have no career risk and cannot see themselves circling.</li>
+<li><b>Distributed systems · thundering herds and jitter</b>: when many clients retry on the same backoff schedule, they hit the server in the same instant and knock it over; engineers fix it by adding random delay to each client. That is the structure of the "algorithmic herd." The difference: a system can inject randomness directly, while a market can only desynchronize through genuinely different judgments.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Human irrationality is a systematic, predictable, replicable bias, not random noise that cancels out.</li>
+<li>Fast, automatic System 1 answers first and lazy System 2 rubber-stamps it, so a coherent story gets mistaken for a correct one.</li>
+<li>Kahneman found the year-to-year ranking correlation of 25 wealth advisers over 8 years was about 0.01: the firm was rewarding luck.</li>
+<li>Expert intuition is reliable only in high-validity, fast-feedback settings, and markets are low-validity with delayed feedback.</li>
+<li>Loss aversion means a loss hurts roughly twice as much as an equal gain pleases, measured from a reference point that is usually the purchase price.</li>
+<li>The disposition effect makes investors sell winners too early and hold losers, yet the winners they sell go on to beat the losers they keep.</li>
+<li>Avoiding permanent loss of capital is wisdom; avoiding temporary price swings is a trap.</li>
+<li>Overconfidence drives overtrading: Barber and Odean found the most active traders trailed the market by about 6.5 points a year.</li>
+<li>At the 2000 dot-com top, Robertson's Tiger fund was right too early and closed, while Druckenmiller chased the bubble and left after heavy losses.</li>
+<li>Contrarian investing needs both a correct judgment and the staying power to be vindicated; opposing the crowd for its own sake is also a bias.</li>
+</ol></div>
 <div class="qa-head">Going Deeper</div>
 
 <details><summary>Can knowing a bias eliminate it? Why does Kahneman, after a lifetime of study, say he still falls for them?</summary>

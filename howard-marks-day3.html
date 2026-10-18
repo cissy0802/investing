@@ -77,6 +77,15 @@ header h1{font-size:1.6rem}
 .level2-row{grid-template-columns:1fr}
 .level2-cell.first{border-right:none;border-bottom:1px dashed #d4b87a}
 }
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 03</div>
@@ -333,6 +342,26 @@ Howard Marks 是 Oaktree Capital 的创始人，过去三十年坚持以备忘�
 <div class="reflect">为你最大的持仓写两段话：(A) 这只股票当前的市场共识是什么；(B) 我的判断与共识具体在哪一点不同。如果 (B) 与 (A) 没有可识别的差异，你拥有它的理由可能只是"跟随"，而非 edge。</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>复杂性科学 · 自组织临界（Per Bak 等，1987）</b>：沙堆在平静中被推到临界，下一粒沙可能只滑几粒，也可能引发整面崩塌，雪崩大小服从幂律；这正是「价格平静但结构脆弱」。不像的是，沙子不会恐慌，市场参与者的预期却会反过来重塑沙堆。</li>
+<li><b>佛学 · 无常与中道</b>：「绝大多数事物都有周期」近乎无常的投资版；钟摆两极也像佛陀拒绝的苦行与纵欲两边。不像在于，Marks 要认清钟摆位置、借两极的错价获利，中道要的是不再被两极牵着摆。</li>
+<li><b>神经科学 · 奖赏预测误差（Schultz、Dayan、Montague，1997）</b>：多巴胺神经元对超出预期的奖赏放电，对已预期的几乎不反应；价格也只对超出共识的信息动。不像的是，市场的「预期」是无数人各自下注的合成。</li>
+<li><b>分布式系统 · TCP 拥塞控制的 AIMD</b>：发送窗口加性慢慢放大，一丢包就乘性砍半，像信用周期的「慢慢开门、骤然关门」。不像的是，AIMD 是为收敛到稳定而设计的，信用收缩由恐慌驱动，往往砍过头。</li>
+<li><b>生物进化 · 频率依赖选择（Maynard Smith 的鹰鸽博弈）</b>：策略的收益取决于多少个体在用，人人当鹰时当鸽反而划算；「好公司就买」也是人人都用便无利可图。不像的是，进化里没人在想，第二层思考要主动推断别人怎么想。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>Marks 把周期拆成经济、利润、信用、心理四层，四层同向叠加时，市场涨跌都会超过应有的幅度。</li>
+<li>识别周期不等于预测拐点：能判断此刻站在周期哪一段，却无法知道时间，所以姿势是调温度而非择时。</li>
+<li>2007 年 7 月的备忘录《The Race to the Bottom》没有预测时间，却在雷曼倒下前 14 个月指出了市场所处的位置。</li>
+<li>投资者情绪像钟摆，在贪婪与恐惧、乐观与悲观之间摆动，平均位置在中点，却极少停留在中点。</li>
+<li>钟摆可以在极端停留多年，所以钟摆位置只适合做温和的仓位调节信号，不适合做大型反向交易。</li>
+<li>风险不是波动率，而是永久损失资本的概率；亏损 50% 之后，需要上涨 100% 才能回本。</li>
+<li>SVB 在 2023 年倒闭说明，信用风险近零、价格平静的资产，可能因存款集中、久期错配和挤兑心理而结构脆弱。</li>
+<li>风险管理不是消除风险而是给风险定价：只在得到充分补偿时才承担，低波动和 VaR 模型会制造虚假安全感。</li>
+<li>Marks 的第二层思考要求看法与共识不同而且正确；机械逆向和无差异的跟随都不构成 edge。</li>
+<li>2008—2009 年 Oaktree 抄底困境债，依据是价格极度悲观、卖家被迫抛售，而不是预测反弹的时点。</li>
+</ol></div>
+
 <nav><a href="index.html">← 返回 投资经典</a></nav>
 <footer>BigCat · Investing · Day 03 · 2026</footer>
 </div><script defer="" src="https://hub.cissychen.com/comments.js"></script>

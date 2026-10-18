@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 30</div>
@@ -191,6 +200,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">算出你的储蓄率对应的"自由倒计时"。再问：如果自由明天就到，你会做什么？若答案和你今天想做的事高度重叠，你或许比想象中更接近自由。</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>神经科学 · 奖赏预测误差（Schultz、Dayan、Montague，1997）</b>：多巴胺神经元对意外的奖赏放电，奖赏一旦可预期，放电就转移到预示它的信号上，奖赏本身不再引起反应；收入跳档后幸福很快回到原点是同一个结构。不像在于：多巴胺是学习信号，不等于快乐本身。</li>
+<li><b>东方哲学 · 老子的「知足者富」</b>：《道德经》第三十三章说知足者富，第四十六章说祸莫大于不知足，和 Heller 那句「够了」几乎同构：富不在数量，在有没有刻度。不像在于：老子的知足是向内收，Bogle 把「够了」做成了 Vanguard 的所有权结构，让利给别人。</li>
+<li><b>西方哲学 · 斯多葛的控制二分</b>：爱比克泰德《手册》开篇把事情分成取决于我的和不取决于我的，只在前者上用力；Munger 的「低期望、不自怜」是同一套操作。不像在于：斯多葛追求不动心，Munger 并不回避痛苦，只拒绝反复咀嚼它。</li>
+<li><b>复杂性科学 · 遍历性问题（Ole Peters，2019）</b>：物理学家 Peters 在《自然·物理》上指出，许多人的平均（集合平均）不等于一个人一生的平均（时间平均）。序列风险正是这个裂缝：成功率 95% 讲的是一千条历史路径，你只走得了一条，开局暴跌就足以把那一条锁死。不像在于：遍历性讲的是乘性过程的数学性质，4% 法则还掺了通胀、寿命和人会调整行为。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>Kahneman 与 Deaton 2010 年把幸福拆成两把尺子：生活评价随收入对数上升，情绪幸福感过门槛后趋平。</li>
+<li>2023 年的对抗式合作发现：多数人的幸福仍随收入上升，但约 20% 本就不幸福的人过 10 万美元后再无改善。</li>
+<li>钱高效地消除缺钱带来的痛苦，却解决不了与钱无关的不幸；安全线以下，钱的边际效用极高。</li>
+<li>知道多少算够是一种稀缺能力，没有刻度的财富目标是一条永远后退的地平线。</li>
+<li>Bogle 把 Vanguard 设计成由基金持有人共同拥有，把本可归自己的利润让给了千万普通投资者。</li>
+<li>「够了」是过了安全线之后的智慧；对尚未过线或有抚养责任的人，追求更多是刚需而非贪婪。</li>
+<li>逆向地过好一生：先列出必然毁掉人生的思维——嫉妒、怨恨、报复、自怜——再坚决避开。</li>
+<li>Munger 说的低期望针对的是世界的公平和他人的回报，不是对自己工作的标准。</li>
+<li>FIRE 达到自由所需的时间主要取决于储蓄率：存 10% 约需 40 年，存 50% 约需 17 年。</li>
+<li>4% 法则是美国 30 年历史回测得出的概率，序列风险和更长的退休期都会削弱它的安全边际。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="af56eda609446063">深入思考</h3>
 <details><summary>如果金钱对幸福的边际效用在过线后急剧递减，那么长期投资者不知疲倦地追求复利最大化，是否本身就是一种理性上的错配？</summary>

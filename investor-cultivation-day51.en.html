@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 51</div>
@@ -199,6 +208,24 @@ The first fifty issues were about method: valuation, cycles, moats, portfolios. 
 <div class="reflect">Write down one holding where you agree with consensus, and explain why your reason for agreeing has nothing to do with the consensus itself.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Neuroscience · Hebbian learning</b>: In 1949 Donald Hebb proposed that neurons active at the same time strengthen their connection, so memory lives in the links, not in single cells. Reading compounds the same way: the value sits in the density of connections between ideas. The difference is that the brain prunes unused synapses automatically, while notes never weed themselves; structuring them is manual work.</li>
+<li><b>Psychology · Hindsight bias</b>: In Baruch Fischhoff's 1975 experiments, people told an outcome overestimated how predictable it had been, and could not tell that the outcome had rewritten their memory. A decision journal's timestamp is an external memory built against exactly this. The difference: the lab rewriting is unintentional, whereas quietly adding reasons in a review usually carries a motive of self-justification.</li>
+<li><b>Eastern philosophy · Confucius on knowing</b>: The Analects (2.17) holds that to know what you know and to know what you do not know is itself knowledge, counting an accurate description of the boundary as knowledge. That is the same shape as "a circle of competence is only as good as the precision of its edge." The difference is that Confucius describes a cultivated attitude, while this lesson adds an executable test: can you rebuild the strongest opposing argument?</li>
+<li><b>Psychology · Asch conformity experiments</b>: From 1951 Solomon Asch had subjects judge line lengths while confederates unanimously gave the wrong answer; about three quarters went along at least once, but a single truthful ally cut conformity sharply. The likeness: independent judgment often needs not more courage but one reference point outside the group. The unlikeness: line length is checkable on the spot, while markets take years to deliver a verdict, so the isolation lasts far longer.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Reading pays off through the density of connections between ideas years later, and like compounding it is almost invisible early on.</li>
+<li>Investing deals with rare, non-repeating events, so reading is the only way to turn other people's samples into your own priors.</li>
+<li>Reading that never enters a searchable structure is close to unread, and a hundred retellings of the same sources add no independence.</li>
+<li>LTCM had two Nobel laureates and still collapsed in 1998, because it treated a model's domain of validity as universal law.</li>
+<li>A decision journal records, before buying, the thesis, probabilities on key assumptions, falsifying conditions and your emotional state.</li>
+<li>Buffett paid for Dexter Shoe in stock rather than cash, turning one business misjudgment into roughly eightfold opportunity cost.</li>
+<li>The mind silently rewrites past reasons to fit outcomes, and a decision journal's timestamp is an external memory against hindsight bias.</li>
+<li>The test of honesty about a circle of competence is whether you can rebuild the strongest opposing argument well enough for its holders to accept.</li>
+<li>Admitting "I don't understand it" is fine; Buffett's error with Amazon was treating it as a twenty-year license not to learn.</li>
+<li>True independence is unrelated to consensus and must match your capital structure, or the drawdown from being early makes a right call worthless.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>Can AI substitute for "the compounding of reading"?</summary><div>A model can synthesize ten thousand pages in seconds, but what it replaces is <em>retrieval and summarization</em>, not the formation of judgment. Judgment depends on your familiarity with the opposing case and on recognizing which sentence in the noise matters — and the latter depends on the structure you already carry. The more realistic risk is that everyone reads the same high-quality summary and independence falls (Day 50's contagion rate). The workable division of labor: let the AI retrieve and rebut — instruct it to play the strongest opposition — and keep the selection and the bet for yourself.</div></details>

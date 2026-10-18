@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 50</div>
@@ -200,6 +209,25 @@ Markets never price an asset on cash flows alone. They price it on <strong>the s
 <div class="reflect">Write three falsifying conditions for your largest position. If you find yourself unwilling to write them, that is precisely the evidence that this position needs them most.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Philosophy of science · Popper's falsifiability</b>: Karl Popper argued that a theory able to explain any outcome is not science; his example was Adler's psychology, which fit every behavior he could imagine. That is exactly the "framework that can always explain everything." The difference: for Popper an unrefuted theory merely survives for now, while an investor has to bet inside that "for now."</li>
+<li><b>Neuroscience · Gazzaniga's "interpreter"</b>: A split-brain patient's right hemisphere saw a snow scene and the left hand picked a shovel; the left hemisphere, which never saw the snow, instantly explained that you need a shovel to clean out the chicken shed. Fluent story, no access to the truth. Unlike the patient, market participants have all the information and still invent causes afterward.</li>
+<li><b>Evolutionary biology · Dawkins's "meme"</b>: In The Selfish Gene (1976), Richard Dawkins proposed that ideas replicate like genes, selected for how well they spread rather than whether they are true, the same structure as "transmissibility is orthogonal to truth." The difference: genes face survival every generation, while a market narrative is culled only when price collapses, which can take years.</li>
+<li><b>Buddhism · papañca (conceptual proliferation)</b>: The Pali Madhupindika Sutta describes the mind starting from a single contact and proliferating concepts and judgments until it is entangled in its own constructions. A price moves, and interpretation, forecast and identity pile on top: the same proliferation. Unlike Buddhist practice, which aims to still papañca, an investor cannot drop stories, only price them and fence them in.</li>
+<li><b>Distributed systems · correlated failure</b>: Three replicas tolerate faults only if they do not fail together; put them on one rack and one power supply and three copies are really one. "A hundred opinions may share one source" is the same problem: an apparent majority, a single independent origin. The difference: a rack is visible, while the common source of opinions is usually well hidden.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Every valuation input has a story upstream; numbers exist not to prove the story but to price it and expose its cost.</li>
+<li>Damodaran's method translates a story into five checkable numbers: market size, share, margin, reinvestment and risk.</li>
+<li>In 2014 Damodaran valued Uber at about $5.9 billion; Gurley countered that the story itself expands the market, and each was half right.</li>
+<li>Narratives spread by contagion and recovery rates, so a widely believed story is proven easy to retell, not proven true.</li>
+<li>The story that the internet would reshape business was right, yet the Nasdaq fell about 78% from its March 2000 peak: the price was wrong.</li>
+<li>Spotting a bubble narrative is doable but timing its collapse is not: after Shiller warned the Fed of irrational exuberance in December 1996, the market rose for three more years.</li>
+<li>The narrative fallacy: assigning a cause to a price move after the fact almost always works, which is exactly why it has no predictive value.</li>
+<li>On October 19, 1987 the S&amp;P 500 fell 20.47% in one day with no news anywhere near that magnitude.</li>
+<li>One test separates a model from a narrative: would the explanation have made the same prediction beforehand?</li>
+<li>Every position needs two sheets of paper: what the price assumes, and which observable facts would falsify the story.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If spotting a bubble narrative cannot be used for timing, what operational value does it have?</summary><div>The value lies in <em>changing the structure of the decision rather than its direction</em>: lowering the position cap on that asset class, raising the price threshold for new purchases, and writing the rebalancing rule in advance so that no decision has to be improvised at peak emotion. None of the three requires predicting the turn; each only requires admitting you are in a high-uncertainty regime. Reading "you cannot time it" as "you need not respond" is the most common error.</div></details>

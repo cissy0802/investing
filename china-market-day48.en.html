@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 48</div>
@@ -203,6 +212,24 @@ The principles of value investing do not stop at borders; what changes are the <
 <div class="reflect">Rank your holdings by legal distance: direct ownership, cross-border custody, contractual control. What share sits in the farthest bucket — and did you choose that number, or did it accumulate?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · Punctuated equilibrium (Eldredge and Gould, 1972)</b>: In the fossil record, species sit in long stasis and then change abruptly, which mirrors the point that policy risk is discrete. The 2021 "Double Reduction" did not trim earnings gradually; it replaced the environment overnight. The difference: natural selection has no decision-maker, while a rule change has someone who signs it and someone who can reverse it.</li>
+<li><b>Complexity science · Reynolds's boids (1987)</b>: Each simulated bird follows only a few neighbours, yet the whole flock turns as one with no bird seeing the whole picture; retail momentum-chasing and institutional crowding are the same local following. Unlike a flock, a market has a weighing machine: sooner or later prices are calibrated against cash flow.</li>
+<li><b>Evolutionary biology · Hamilton's kin selection (1964)</b>: A worker bee giving up reproduction looks "inefficient" until you take the gene's view, where it is optimal; she is optimizing for shared genes, not for herself. An SOE's suppressed margins work the same way: what is misread is the objective function, not efficiency. The difference: a bee's objective is fixed by heredity, while an SOE's is set by an outside owner and can be rewritten, as the post-2022 SOE re-rating showed.</li>
+<li><b>Distributed systems · Certificate chains of trust</b>: A browser trusts a site through every link signed down from a root certificate; revoke any intermediate link and you cannot connect, even if the server is fine. A Cayman share tied to an onshore entity through a VIE sits behind similar layers of "signatures". The difference: a certificate chain can be verified cryptographically, whereas the VIE links hold only as long as regulators tolerate them.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Buffett declines to forecast macro swings, not the institutions that set the rules: swings are noise, rules are parameters.</li>
+<li>The chance that rules change belongs in a higher discount rate and a shorter credible forecast horizon, not in guessing the next policy document.</li>
+<li>The 2021 "Double Reduction" halved US-listed Chinese tutoring stocks within two trading days because it abolished the business model itself.</li>
+<li>Policy risk does not make a market uninvestable; it means buying only at a lower price and making sure the worst-case permanent loss is bearable.</li>
+<li>Individual investors hold roughly a fifth of A-share free float but generate about four-fifths of turnover, so traders, not holders, set the marginal price.</li>
+<li>Mispricing lasts longer in a high-turnover market, and exploiting it depends on capital duration and nerve rather than superior judgment.</li>
+<li>Institutionalization is not automatically rational: the 2020-21 fund crowding into "core assets" merely swapped retail herding for institutional herding.</li>
+<li>The SOE discount is often rational, because employment, price stability and supply security sit in the objective function and part of the cash flow never reaches shareholders.</li>
+<li>Implicit state guarantees protect creditors, not shareholders; treating government support as a floor under the share price applies bond logic to equity.</li>
+<li>Most US-listed Chinese stocks are Cayman shares linked onshore through a VIE, and for that certificate risk the only margin of safety is a position cap.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If policy risk can be priced with a higher discount rate, why do many investors still avoid the market entirely?</summary><div>Because a discount rate handles <em>continuous</em> risk, while regime risk is usually <em>discrete</em>: it does not show up as 20% less cash flow but as a business going to zero or a certificate ceasing to function. For discrete, fat-tailed risks whose probabilities cannot be estimated reliably, raising the discount rate is the wrong instrument — a position cap is the right one. Wholesale avoidance can therefore be rational, but the cost is certain: you forgo an asset pool whose expected return is highest exactly when pricing is most pessimistic.</div></details>

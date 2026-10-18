@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 46</div>
@@ -199,6 +208,24 @@ Investors pour almost all their attention into "how much you make" and routinely
 <div class="reflect">List every cross-border asset you hold: do you know the withholding behind each one, and the tax that triggers at death? If there's a blank here, is it worth one professional consultation to light it up?</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Psychology · The marshmallow test (Walter Mischel)</b>: In Stanford studies of the late 1960s and early 1970s, children who held off on one treat got two later; the long-term capital-gains rate is the same reward for waiting a little longer. The difference: the tax discount is written into law and pays out on schedule, while a 2018 replication by Watts and colleagues found early self-control predicts later achievement far more weakly than once claimed.</li>
+<li><b>Distributed systems · Write-back caching</b>: A write-through cache commits every change to disk at once; a write-back cache accumulates changes and writes once on eviction. "Pay tax at every doubling" versus "pay once at the end" are exactly these two policies. Where they differ: write-back fears a crash losing data, while deferral fears a higher future tax rate.</li>
+<li><b>Physics · Landauer's principle (1961)</b>: Rolf Landauer showed that erasing one bit dissipates at least kT ln 2 of heat, and Charles Bennett showed in 1973 that reversible computation can sidestep that cost; rebalancing with new cash or inside deferred accounts is a way of avoiding the "erase." Where they differ: Landauer's bound is physical law, while tax rules are policy and can change.</li>
+<li><b>Evolutionary biology · Spandrels (Gould &amp; Lewontin, 1979)</b>: The triangles between arches are byproducts of the structure, not built for decoration; many biological traits are byproducts too, and calling them adaptations tells the wrong story. A low tax rate is likewise a byproduct of holding a good asset, not a reason to hold it. Where they differ: evolution has no decision-maker, while an investor can be led around by the byproduct.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>For decades-long compounders, taxes are often the single biggest cost, larger than commissions and management fees combined.</li>
+<li>In the US, gains held over a year are taxed at 0/15/20%, while short-term gains face ordinary rates up to 37%.</li>
+<li>China exempts individuals' A-share capital gains for now and taxes dividends by holding period, with none after one year.</li>
+<li>A low tax rate is a byproduct of owning a good asset; clinging to a deteriorating business to save tax is the tax tail wagging the dog.</li>
+<li>An unrealized gain is an interest-free loan from the Treasury; Buffett's $1 doubled 20 times ends nearly 28x apart depending on when tax is paid.</li>
+<li>Asset location means putting high-tax, inefficient assets in deferred accounts and keeping long-term stocks in taxable accounts at low rates.</li>
+<li>Rebalance first with new money and dividends, or inside deferred accounts, so that no taxable sale is triggered.</li>
+<li>Tax-loss harvesting defers tax rather than eliminating it, and must respect the US 30-day wash-sale rule.</li>
+<li>In the 2022 US downturn many mutual funds still paid out large capital gains, while ETFs, thanks to in-kind redemptions, paid almost none.</li>
+<li>A non-US individual holding US stocks directly can face US estate tax of up to 40% on value above $60,000.</li>
+</ol></div>
 <div class="faq">
 <h3>Deeper Questions</h3>
 <details><summary>How do I tell "sensible tax optimization" from "the tax tail wagging the dog"?</summary>

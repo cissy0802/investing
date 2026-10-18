@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 47</div>
@@ -200,6 +209,24 @@ Accumulation poses a single question: is the pile big enough? The moment a portf
 <div class="reflect">Write down your annual "floor spending," then write down the income sources that cover it for life and adjust with inflation. The gap is your true exposure to longevity risk.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · Bet-hedging (Dan Cohen, 1966)</b>: Cohen studied desert annual plants that let only part of their seeds germinate each year, leaving the rest dormant in the soil. Fitness multiplies across generations, so one year with zero offspring means extinction, and selection favors the geometric mean over the arithmetic mean: the same structure as sequence risk plus a cash bucket. The difference: natural selection tunes the seed bank's ratio with no one deciding, while a retiree has to write the refill rule down.</li>
+<li><b>Distributed systems · Graceful degradation</b>: under overload, a large service switches off non-core features like recommendations and previews to keep login and payments alive. A floor income covering rigid spending, with flexible spending cut first in bad years, is the same layering. Unlike a service, though, features come back once traffic subsides; shares sold at the bottom leave compounding for good.</li>
+<li><b>Psychology · Implementation intentions (Peter Gollwitzer, 1999)</b>: a plan written as "if X, then Y" gets carried out more reliably than a bare resolution, because the moment of action no longer requires weighing options. Pre-written spending-cut and refill rules work by this mechanism. The difference: psychology only asks whether you follow through; a withdrawal rule also has to be mathematically sound.</li>
+<li><b>Stoic philosophy · Premeditatio malorum (Seneca)</b>: Seneca urged rehearsing exile, loss and poverty in the mind so that real misfortune would not unseat you; designing around history's worst starting year, as SAFEMAX does, is the same "imagine the worst first." The difference: the Stoic rehearses to change an attitude, Bengen to compute a number, and he rehearsed only bad cases that actually happened.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>The 4% rule is Bengen's 1994 stress-test result: the largest initial withdrawal rate that survived 30 years from the worst historical start.</li>
+<li>SAFEMAX is a floor, not a return forecast; inflation, not crashes, pushed it down, to about 4.1% for late-1960s stagflation starts.</li>
+<li>The 4% rule rests on 20th-century US data and rigid withdrawals; flexible rules such as Guyton-Klinger guardrails raise the sustainable rate.</li>
+<li>Once money is withdrawn every year, the order of returns matters as much as their average, and the first decade largely decides the outcome.</li>
+<li>A $1 million portfolio withdrawing $50,000 a year ends about $330,000 apart when the same ten returns are merely reversed in order.</li>
+<li>Against sequence risk, pre-written spending-cut rules, such as taking less in bad years and skipping inflation raises, work better than changing the stock-bond mix.</li>
+<li>The bucket approach parks about two years of net spending in cash and short bonds, buying the right never to sell at the bottom rather than higher returns.</li>
+<li>Bucket strategies usually trail simple rebalancing slightly in the math; their value is turning the mental-accounting bias into a tool for sticking to the plan.</li>
+<li>Planning on average life expectancy means roughly even odds of failure, and only the mortality pooling of lifetime annuities hedges living too long.</li>
+<li>First weld down a floor for rigid spending with lifetime, inflation-adjusted income, then let the rest take risk; 1970s nominal annuities show why inflation matters.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>The 4% rule rests on 20th-century American data. Swap in Japan's sequence from 1990 — does a "safe withdrawal rate" still exist?</summary><div>Take the Nikkei's peak of 38,957 at the end of 1989 as the starting point: for more than two decades the nominal index sat below that level, and any withdrawal plan depending on equity appreciation fails. This is not a tail-risk thought experiment; it is one real country's real thirty years. The lesson is not to change 4% into 3% but to change the structure: tie the withdrawal to current portfolio value (variable rather than rigid), and hand rigid spending to income sources that do not depend on the market.</div></details>

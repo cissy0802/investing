@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{grid-template-columns:1fr}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 56</div>
@@ -214,6 +223,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">查一下你主要指数基金上次成分调整的日期与换手率：为了跟踪误差归零，你付出了什么？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>分布式系统 · CAP 定理</b>：Brewer 2000 年提出、Gilbert 与 Lynch 2002 年证明：网络分区时，系统只能在一致性和可用性之间二选一。闪崩里的做市商面对的是同一道题：看不清真实价格时，宁可撤掉报价（保一致）也不愿继续成交（保可用）。不像的是，分布式系统的取舍由设计者事先写定，做市商的撤退却是各自决定、同时发生，没有任何故障切换。</li>
+<li><b>生物进化 · 红皇后假说</b>：Van Valen 1973 年提出，物种必须不停进化，才能在竞争者同样进化时维持原地。高频交易的速度军备竞赛是同一结构：每快一微秒，只是不被别人甩下。不同在于市场可以人为加一段「减速带」叫停竞赛，自然界没有裁判。</li>
+<li><b>心理学 · 坎贝尔定律</b>：社会心理学家 Donald Campbell 在 1970 年代指出，一个量化指标越被用来做决策，越会扭曲它要衡量的行为。被动基金只按跟踪误差考核，于是对价格失去感觉。像在单一指标重塑了行为；不像在基金并没有作弊，它只是忠实执行，代价由持有人承担。</li>
+<li><b>神经科学 · 传出副本</b>：大脑会用对自身动作的预测抵消感觉信号，所以人挠自己不觉得痒（Blakemore、Wolpert、Frith，1998）。指数效应消失也是这样：纳入一旦可以提前预测，套利者就先把冲击抵消掉了。差别是大脑抵消的是自己发出的信号，市场抵消的是别人的被迫交易。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>买卖价差是为「立刻成交」支付的租金，流动性是市场当下的状态，不是资产的属性。</li>
+<li>价差由处理成本、存货风险和逆向选择构成，危机中价差扩大是定价正确，不是贪婪。</li>
+<li>2010 年 5 月 6 日闪崩里没有基本面改变，消失的不是价值，而是做市商的报价。</li>
+<li>ETF 份额价格与净值之间没有法律保证，只靠授权参与者（AP）的套利把两者钉在一起。</li>
+<li>2020 年 3 月 LQD 折价约 5%，更可能是 ETF 先于陈旧的净值发现了真实价格。</li>
+<li>日内可交易的份额包着压力日不能交易的底层，这种流动性错配是 ETF 最脆弱的地方。</li>
+<li>做市型高频交易压缩了散户的显性成本，掠夺型高频交易把冲击成本转嫁给大额机构订单。</li>
+<li>换手率越低，微结构对投资者越无关：长期投资者的优势在时间尺度，不在速度。</li>
+<li>Shleifer 用标普 500 纳入证明股票需求曲线向下倾斜，被动基金在再平衡日是不看价格的买家。</li>
+<li>指数效应已衰减到近乎为零，正如大脑会抵消可预测的信号，可预测的冲击会被提前抵消。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="ab5d282676ed5c08">深入思考</h3>
 <details><summary>既然 ETF 只是包装，为什么有人说它构成系统性风险？</summary><div>担忧不在包装，而在<strong>规模与错配的组合</strong>。当一只日内可交易的产品持有本质上以周为单位成交的市场（高收益债、银行贷款），它就承诺了底层无法兑现的事。压力日的路径是机械的：份额被抛售 → 折价扩大 → AP 赎回 → 底层被迫卖出 → 更多抛售。2020 年 3 月这条链条走了一半，被央行的资产负债表打断。一条纪律就够：<strong>不要用可能在压力日动用的钱，买底层在压力日不能交易的产品。</strong></div></details>

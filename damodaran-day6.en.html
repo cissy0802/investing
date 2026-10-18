@@ -51,6 +51,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -242,6 +251,24 @@ Aswath Damodaran, the NYU Stern professor known as the "Dean of Valuation," cont
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · Byzantine consensus and correlated faults</b>: Relative valuation is a majority vote: however peers are priced, that is taken as right. Consensus protocols (Lamport et al., 1982) guarantee agreement, not that the agreed value is correct; Knight and Leveson's 1986 experiment found that independently written program versions often failed together on the same inputs. A whole sector in a bubble is exactly that kind of correlated fault. The difference: software can be checked against a spec, while markets have no written-down "correct price".</li>
+<li><b>Complexity science · the butterfly effect (Edward Lorenz)</b>: Move WACC and perpetual growth by 1% each and value swings from 79 to 138, which looks like sensitive dependence on initial conditions. But DCF is not chaotic: it is a smooth formula whose sensitivity comes from the terminal-value denominator, discount rate minus growth, blowing up as it nears zero, closer to approaching a critical point.</li>
+<li><b>Evolutionary biology · life-history trade-offs</b>: An organism's energy budget is finite, so growth, reproduction and repair compete for it; growth is never free, just as growth in a company must be earned through reinvestment. Unlike nature, which quickly culls growth strategies that cost more than they return, capital markets can keep a WeWork-style expansion alive for years with outside money.</li>
+<li><b>Buddhism · attachment to views</b>: Among the five wrong views, Buddhism names clinging to one's own views as supreme, which is precisely "falling in love with your own story" and reading every rebuttal as others not getting it. The difference: Buddhism asks you to release attachment to all views, while Damodaran wants you to hold a story, only one that numbers can overturn at any time.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>DCF defines an asset's value as its expected cash flows discounted at a risk-reflecting rate; the only real inputs are cash flow, growth and risk.</li>
+<li>The perpetual growth rate cannot stay above the risk-free rate for long, or the company would eventually outgrow the whole economy.</li>
+<li>Terminal value is often 60-80% of a DCF, and moving WACC and perpetual growth 1% each swings per-share value from 79 to 138.</li>
+<li>Multiples like P/E and P/S are standardized prices, not value; pricing off peers assumes the market prices the whole sector correctly.</li>
+<li>In March 2000 Cisco traded above 130 times earnings, and being "reasonable relative to peers" did not stop an 85%+ fall by 2002.</li>
+<li>Peer multiples work like a majority vote in a distributed system: when a whole sector bubbles, it is a correlated fault, many copies of one error.</li>
+<li>Damodaran sees a good valuation as a bridge between stories and numbers: every story must become a number, and every number needs a story.</li>
+<li>Damodaran's 2014 valuation of Uber at about $5.9 billion erred by telling too small a story, missing how Uber would expand the whole ride market.</li>
+<li>Expected growth equals reinvestment rate times ROIC, so growth adds value only when ROIC beats the cost of capital; otherwise faster growth destroys more.</li>
+<li>WeWork's growth was real but its unit economics were negative, taking it from a roughly $47 billion valuation in 2019 to bankruptcy in 2023.</li>
+</ol></div>
 <!-- Deep Questions -->
 <div class="card">
   <div class="card-header">

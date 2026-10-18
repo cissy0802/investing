@@ -49,6 +49,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 57</div>
@@ -204,6 +213,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">把一只转债拆成「等额正股 + 一笔现金」，你会选哪个？若仍选转债，是因为它更好，还是因为它让你更容易熬住波动？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>中国哲学 · 孟子的「鱼与熊掌」</b>：孟子说二者不可得兼，只能舍一取一；转债号称两样都要，实际是两样都打了折：票息低于普通债，期权又付了溢价。不像在于，孟子讲的是价值取舍，没有价格；转债的「兼得」有标价，只是标在你不看的地方。</li>
+<li><b>分布式系统 · 共因故障（common-mode failure）</b>：两个副本放在同一机房、共用一路电源，看似冗余，一次断电就同时失效；转债的债底和期权押在同一家发行人身上，信用与正股往往一起恶化。不像的是，系统可以把副本拆到不同可用区，转债的两层保护拆不开。</li>
+<li><b>心理学 · 风险稳态（Gerald Wilde，1982）</b>：Wilde 认为人心里有一个目标风险水平，安全措施一加，行为就更冒险，把风险补回来；持有人因「有优先级保护」而放松对生意的审查，是同一种补偿。不像在于，风险稳态理论本身争议很大，USAir 的减记却是实打实的账。</li>
+<li><b>生物进化 · 两头下注（bet-hedging，Dan Cohen 1966）</b>：Cohen 用沙漠一年生植物说明，每年只让一部分种子发芽、其余休眠，会拉低平均产量，却能避免一场大旱全军覆没；转债也是用低票息换一条熬得住的路径。不像的是，进化里压低方差能提高长期几何增长率，转债并不提高期望回报。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>可转债等于低息债券加内嵌看涨期权，期权的价钱早已从被压低的票息里扣走。</li>
+<li>可转债的下行保护来自发行人的偿债能力而非结构，债底会随信用和正股一起塌。</li>
+<li>1987 年 Berkshire 买入 Salomon 可转优先股，债底保住了本金，期权部分十年几乎没带来额外回报。</li>
+<li>中国转债的强赎、回售、下修三条条款都由发行人书写，强赎的真实目的是逼持有人转股。</li>
+<li>英科转债 2021 年盘中最高约 3618 元，错过强赎截止日的持有人只能按约 100 元的赎回价被兑付。</li>
+<li>可转优先股的优先顺位只在清算时兑现，「有保护」的感觉常让持有人放松对生意本身的审查。</li>
+<li>Buffett 1989 年买入结构几乎相同的 USAir 与 Gillette 可转优先股，结局相反，差别只在生意能否持续赚钱。</li>
+<li>混合证券的优厚条件来自对方的急迫，2008 年 Berkshire 投资 Goldman Sachs 的条件在平静市场里买不到。</li>
+<li>美国转债主要由套利基金做 delta 对冲定价，2008 年融资断裂加卖空禁令让该策略下跌约三分之一。</li>
+<li>转债不提高期望回报，只换来一条更容易坚持的路径，像进化里牺牲平均产量换低方差的两头下注。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="0e96dd5675c264a2">深入思考</h3>
 <details><summary>强赎条款是否让可转债长期永远劣于正股？</summary><div>单只标的上是的——右尾被 130% 附近切掉，而长期回报恰恰来自右尾。但组合层面不成立：强赎迫使资金回流，等于系统性地「涨了就走」，在震荡市中反优于买入持有，只在单边牛市里显著落后。这与备兑开仓（Day 52）结构相似，差别是转债的期权是你买的、备兑的是你卖的。问题不是优劣，是与市场形态是否匹配。</div></details>

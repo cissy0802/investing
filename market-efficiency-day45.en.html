@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 45</div>
@@ -195,6 +204,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">Recall a moment you were sure "the market was clearly wrong." In hindsight, were you right? If so, did you actually profit? If not, was it a wrong call, or a failure to hold until prices reverted? The gap between the two is the gulf between being right on paper and earning real returns.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Philosophy of science · The Duhem-Quine thesis</b>: Duhem (1906) and Quine (1951) argued that no hypothesis is ever tested alone; every experiment puts a bundle of auxiliary assumptions on trial with it. Fama's joint-hypothesis problem has exactly this shape. The difference: physicists can shore up auxiliary assumptions one by one with independent experiments, while an asset-pricing model is hard to validate apart from market data.</li>
+<li><b>Neuroscience · Predictive coding (Rao &amp; Ballard, 1999)</b>: the cortex mainly passes "prediction errors" upward and cancels what it already expected; in an efficient market, prices likewise move only on news nobody anticipated. Unlike the brain, the market has no single model to update, only countless traders placing separate bets.</li>
+<li><b>Evolutionary biology · Evolutionarily stable strategies (Maynard Smith &amp; Price, 1973)</b>: in the hawk-dove game, the more hawks there are, the worse hawking pays, so the population settles at a mixed ratio. Information gatherers and free riders in the Grossman-Stiglitz paradox balance the same way, leaving "just enough" inefficiency. The difference: animals adjust the ratio through reproduction, investors through fees and fund flows, which is far faster.</li>
+<li><b>Evolutionary biology · The Red Queen hypothesis (Van Valen, 1973)</b>: species must keep evolving just to stay in place because their rivals evolve too; factor premiums shrinking by about 58% after publication are the same chase. Unlike a predator-prey arms race that takes thousands of generations, arbitrage erodes a factor within years.</li>
+<li><b>Complexity science · Self-organized criticality (Bak, Tang &amp; Wiesenfeld, 1987)</b>: add sand to a pile grain by grain and mostly nothing happens, until one grain sets off an avalanche of any size, with no "typical" scale. That resembles Shiller's finding that prices swing far more than news can justify. Unlike sand grains, traders anticipate the avalanche, and the anticipation itself shifts its timing.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>An efficient market does not mean prices are always right; it means there is no free information you can systematically exploit.</li>
+<li>Fama's 1970 framework has three levels: weak form covers past prices, semi-strong covers all public information, strong form even covers inside information.</li>
+<li>Prices follow a random walk because rational traders instantly buy away any predictable rise; randomness is the mark of a smart market.</li>
+<li>SPIVA data show that over 20 years more than 90% of US large-cap active funds lagged the S&amp;P 500, the hardest evidence for indexing.</li>
+<li>Semi-strong efficiency means public news is priced within seconds to minutes, so buying after reading good news is almost always too late.</li>
+<li>The joint-hypothesis problem: any test of market efficiency is also a test of some pricing model, so abnormal returns never say which one failed.</li>
+<li>Value, size and momentum factors have long beaten the market, and whether they are risk compensation or systematic investor error remains unsettled.</li>
+<li>McLean and Pontiff found that factor returns fall by about 58% on average after academic publication: a free lunch starts vanishing once served.</li>
+<li>The Grossman-Stiglitz paradox shows a perfectly efficient market cannot exist; it must leave just enough inefficiency to reward the people doing research.</li>
+<li>The 2013 Nobel shared by Fama and Shiller signals that "markets are broadly efficient" and "prices are occasionally badly wrong" both hold, at different levels.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If active management underperforms the index, why does EMH still leave it a door?</summary>

@@ -45,6 +45,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 24</div>
@@ -204,6 +213,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">你的长期持仓里，若明天创始人 / 灵魂人物离场，这门生意的超额回报还在吗？你赌的是人，还是制度？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>行为生态学 · 边际价值定理（Eric Charnov，1976）</b>：觅食动物在一片食源上的边际收获跌到整个栖息地的平均水平以下，就该离开去找下一片。这和「再投资回报低于股东机会成本就把钱还回去」是同一道题。不像在于，动物离开是自己走，资本要靠 CEO 主动放手。</li>
+<li><b>心理学 · 群体思维（Irving Janis，1972）</b>：Janis 分析猪湾事件等决策失误，发现凝聚力强的小团体会压下异议、制造一致的假象。机构强制力的第三条（下属替领导的渴望奉上测算）正是这种病。不像的是，群体思维发生在一间会议室，机构强制力还会跨公司传染给同行。</li>
+<li><b>进化生物学 · 累赘原理（Amotz Zahavi，1975）</b>：孔雀的大尾巴之所以可信，是因为它有代价、弱者装不起。利益共担同理：押上自己身家的承诺才难伪造。不像的是，尾巴的代价是纯消耗，管理层的持股却让他的下行和股东绑在一起，代价本身就是激励。</li>
+<li><b>分布式系统 · 单点故障与 Raft 选主（Ongaro &amp; Ousterhout，2014）</b>：可靠的集群不把命押在某一台主节点上，主节点一挂，其余节点按事先写好的规则选出新主，日志照常延续。好的接班也是这样：交接规则和「日志」（文化）早已复制到多个节点。不像的是，节点可以互换，CEO 的判断力不能完全复制。</li>
+<li><b>复杂性科学 · 适应循环（C. S. Holling）</b>：生态系统在成熟期连接越来越紧、效率越来越高，韧性却越来越低，一次扰动就可能整体崩塌。强文化僵化成枷锁是同一条曲线。不像的是，森林崩塌后会自行重组，公司往往没有第二次机会。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>CEO 最重要也最常被忽视的工作是资本配置，即决定每一块留存利润流向何处。</li>
+<li>只有当再投资的边际回报高于股东自行投资的机会成本时，公司才该留存利润。</li>
+<li>Teledyne 的 Singleton 在股价高时增发并购、股价低时大举回购，是逆向资本配置的范本。</li>
+<li>AOL 与 Time Warner 在顶部用高估股票合并，两年后减记约 990 亿美元商誉。</li>
+<li>Buffett 所说的机构强制力，是让理性管理者跟风同行、花光可用资金的组织惯性。</li>
+<li>2007 年 Citigroup 在次贷狂欢中随大流跳舞，一年后巨额减记、靠政府救助，是机构强制力的教科书案例。</li>
+<li>利益共担的关键不是持股多少，而是管理层是否真实承担决策的下行。</li>
+<li>WeWork 创始人套现、借款、关联交易，让上行归己、下行归股东，是伪共担的标本。</li>
+<li>真正的护城河是能在创始人离场后自行延续的文化，接班就是对它的压力测试。</li>
+<li>强文化在稳定期是护城河，在需要剧变时可能僵化成拒绝转型的枷锁。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="b5c53cf45840f864">深入思考</h3>
 <details><summary>《The Outsiders》推崇的逆向资本配置（低价回购、高位增发），是可复制的方法，还是幸存者偏差？</summary>

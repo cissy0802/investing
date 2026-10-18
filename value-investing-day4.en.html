@@ -75,6 +75,15 @@ header h1{font-size:1.6rem}
 .matrix-grid{grid-template-columns:50px 1fr 1fr}
 .matrix-cell{min-height:auto;padding:10px 8px;font-size:0.82rem}
 }
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -379,6 +388,24 @@ Benjamin Graham (1894–1976) is the person Buffett calls "the second most impor
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Distributed systems · Byzantine fault tolerance</b>: Lamport, Shostak and Pease showed in 1982 that tolerating f faulty nodes takes at least 3f+1 nodes. Redundancy is the price of not knowing what will break, just as a margin of safety is room for your own valuation error. The difference: the protocol has an exact lower bound, while valuation error has no formula, so the discount is a judgment about asset quality.</li>
+<li><b>Evolution · r- and K-selection</b>: MacArthur and Wilson (1967) contrasted two reproductive strategies: many offspring with little investment each, or few with heavy investment. Cigar-butt investing, broad and high-turnover, looks like r; the concentrated, long-held compounder looks like K. But ecologists later found the dichotomy too crude, and stocks do not breed.</li>
+<li><b>Buddhism · noting without following</b>: in meditation a thought arises and you watch it without being carried off, much as Mr. Market knocks with a quote you are free to ignore. Unlike: meditation aims to drop grasping altogether, while the investor, having seen the mood clearly, still trades when the quote is silly.</li>
+<li><b>Western philosophy · Kant</b>: the <i>Critique of Pure Reason</i> (1781) holds that thoughts without content are empty and intuitions without concepts are blind. Qualitative without quantitative is a story, quantitative without qualitative is coincidence: the same two-way dependence. Kant, though, is describing the conditions of knowledge, not weighting evidence.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>A margin of safety is a buffer for valuation error, uncertainty and shocks, not a source of excess return.</li>
+<li>No discount fits every asset: about 25% may suffice for a stable consumer brand, while a cyclical, indebted company needs 50% or more.</li>
+<li>In 1973 Buffett paid about $10.6M for roughly 9% of the Washington Post, a margin of safety above 75%.</li>
+<li>Cigar butts are mediocre companies bought very cheaply; returns are capped at liquidation value over price, so they demand wide diversification and turnover.</li>
+<li>Berkshire's textile mill showed that no purchase price rescues a business destroying value in a structurally declining industry.</li>
+<li>See's Candies cost $25M and sent $1.35B of pretax profit to Berkshire from 1972 to 2007, compounding on high ROIC and little reinvestment.</li>
+<li>Graham's Mr. Market parable treats price as a moody partner's quote and value as the business's facts; trade only when the quote is silly.</li>
+<li>In the March 2020 COVID crash, justified cuts, excess pessimism and pure emotion sat in the same quotes, and indiscriminate selling was the opportunity.</li>
+<li>Quantitative analysis sets the floor and qualitative the ceiling: a moat must show up in ROIC, and the numbers must have a business explanation.</li>
+<li>The split between cigar butts and compounders mirrors biology's r-strategy of many cheap offspring versus the K-strategy of few well-tended ones.</li>
+</ol></div>
 <nav><a href="index.en.html">← Back to Investing</a></nav>
 <footer>BigCat · Investing · Day 04 · 2026</footer>
 

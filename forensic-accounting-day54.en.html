@@ -46,6 +46,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 54</div>
@@ -199,6 +208,25 @@ A financial statement is not the truth. It is an assertion made under rules that
 <div class="reflect">Open a holding's compensation plan and find the one or two metrics that decide management's bonus. If you were CEO and 2% short of the target this year, which accounting estimate would you reach for first? That is the line item to examine.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · Zahavi's handicap principle (Amotz Zahavi, 1975)</b>: A peacock's tail is believable because faking it costs too much; cash is more believable than profit because it is harder to fake than an estimate. The difference: an animal pays for its signal with its body, while WorldCom showed that moving a cost into another column can relocate an "expensive" signal cheaply.</li>
+<li><b>Psychology · Campbell's law (Donald Campbell, 1970s)</b>: The more a quantitative indicator is used for social decisions, the more it gets corrupted and the more it distorts the process it measures. Results that "just hit the target" fit the pattern; the difference is that Campbell described institutions bending slowly, while fraud is someone deliberately turning an estimate.</li>
+<li><b>Distributed systems · The Byzantine Generals Problem (Lamport, Shostak, Pease, 1982)</b>: Consensus among possible traitors needs enough independent nodes cross-checking each other, and the auditor is meant to be that independent node. Unlike the model, which assumes faulty nodes fail separately, Arthur Andersen earned half its Enron fees from consulting: verifier and verified shared one failure domain, so extra checks bought nothing.</li>
+<li><b>Complexity science · The Red Queen hypothesis (Leigh Van Valen, 1973)</b>: A species must keep running just to stay in place, because its rivals evolve too. The accrual anomaly being arbitraged away, and fraudsters using AI to make filings read as "normal," are that race. The difference: biological arms races have no referee, while markets have enforcement and penalties that can tilt the track.</li>
+<li><b>Chinese philosophy · Xunzi, "On the Rectification of Names"</b>: Names have no fixed fitness; they hold by agreement. Accounting line items are agreements too, so when ASC 606 changed the rules, the same business got new numbers. Like Lincoln's dog, the label is conventional but the thing is not. The difference: Xunzi wanted rulers to guard names, whereas in filings the renaming is often done by the party being watched.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Owner earnings are net income plus non-cash charges minus maintenance capex, as Buffett defined them in his 1986 shareholder letter.</li>
+<li>Maintenance capex cannot be read off the statements, so owner earnings are inherently a range, not a precise number.</li>
+<li>WorldCom booked line costs as capital spending, inflating both profit and operating cash flow, so watching cash flow alone would not have caught it.</li>
+<li>Accruals equal net income minus operating cash flow; Sloan showed in 1996 that the larger the accrual component, the less persistent the earnings.</li>
+<li>The accrual anomaly had largely vanished by around 2003: a published factor gets arbitraged away by its own readers.</li>
+<li>Enron's mark-to-market accounting booked the estimated value of long contracts as profit up front, while the cash lagged and the gap kept widening.</li>
+<li>Every dollar of revenue faces three questions: did control really transfer, will the cash be collected, and is it reported gross or net?</li>
+<li>Groupon's switch from gross to net revenue before its IPO cut 2010 revenue from $713 million to $312 million, with the business unchanged.</li>
+<li>Accounting fraud usually starts with incentives: Arthur Andersen audited Enron while collecting large consulting fees from it, so the watchdog was paid by the watched.</li>
+<li>Red flags such as an auditor change or a CFO exit are not proof of fraud; their right use is to shift the burden of proof onto the company.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>Can an ordinary investor really detect fraud by reading filings?</summary><div>Usually not — and it is not necessary. Nine-tenths of the value of forensic work is <strong>keeping yourself out of the worst cohort of companies</strong>, not catching the next Enron. A cheap exclusion screen is enough: five-year OCF/net income, the accrual ratio, the DSO trend, auditor and CFO changes. That is a ten-minute pass per company; if it fails, move on. The cost of passing is trivial — there are thousands of others — while the cost of a miss can be permanent.</div></details>

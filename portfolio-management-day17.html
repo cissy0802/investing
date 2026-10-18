@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 17</div>
@@ -220,6 +229,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">数一下你过去一年的换手次数：有多少笔是基本面真的变了，又有多少笔只是情绪、无聊或"落袋为安"——它们各付了多少不必要的税？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>分布式系统 · 相关故障</b>：三副本只有放在不同机架、不同可用区才算冗余，同一台交换机一坏全挂；几个重仓暗藏同一风险因子也是这样。不像的是，机房故障的相关性是物理的、事先可查，市场相关性却在恐慌时由集体出逃自己生成。</li>
+<li><b>生物进化 · 两头下注（Dan Cohen，1966）</b>：沙漠一年生植物每年只让一部分种子发芽、其余休眠，平均产量低些，却不会被一个旱年全军覆没；自然选择最大化的是跨代的几何平均适合度，和 Kelly 是同一道数学题。不像的是，植物没人估胜率，是没两头下注的谱系先被淘汰掉，「半 Kelly」由灭绝替它们算好了。</li>
+<li><b>复杂性科学 · 遍历性（Ole Peters）</b>：一千人各赌一次的平均，不等于一个人连赌一千次的结果；乘法过程里两者分道扬镳，个体只能活在时间平均里。不像的是，物理里遍历与否是系统性质，投资者却能靠仓位大小把自己推回能活下来的那一侧。</li>
+<li><b>神经科学 · 预测加工的「精度加权」</b>：大脑收到预测误差时，要先判断这是噪声还是该改模型的信号，判断依据是对误差可靠性的估计；分辨「价格下跌」与「论点破裂」是同一道题。不像的是，大脑每秒做千百次，投资者一年只碰几次，没有足够反馈来校准。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>集中持仓逼人提高思考强度，有 edge 时是杠杆，没有 edge 时只是把运气放大。</li>
+<li>1964 年色拉油丑闻后，Buffett 实地调研确认运通品牌未损，把合伙基金约 40% 押在运通上。</li>
+<li>Bessembinder 统计 1926–2016 年美股，约 58% 个股跑不赢国库券，净财富几乎全来自约 4% 的公司。</li>
+<li>Kelly 公式按胜率和赔率给出最优下注比例，优化的是几何复利增长，而不是单注期望。</li>
+<li>下注超过 Kelly 比例会让长期增长不升反降、趋向破产，实务中多用半 Kelly 给估计误差留缓冲。</li>
+<li>Ed Thorp 用 Kelly 控制仓位，几乎没有亏损年份；LTCM 约 25:1 杠杆过注，1998 年几周亏掉约 46 亿美元。</li>
+<li>价格越低安全边际越大，仓位理应越重，但前提是买入论点没坏，论点破裂时下跌是警报不是折扣。</li>
+<li>2008–2009 年危机中，Buffett 注资高盛与 GE、收购 BNSF，在安全边际最大而非情绪最舒服时下重注。</li>
+<li>每年兑现纳税会让每年翻倍的 1 美元 20 年后从约 69 万美元降到约 2.5 万，未实现盈利是政府的无息贷款。</li>
+<li>为避税死守已高估或基本面恶化的股票，是比交税更贵的错误。</li>
+</ol></div>
 <div class="qa-head">深入思考</div>
 <details><summary>集中与 Kelly 都指向"重注于优势"，但普通投资者最稀缺的恰恰是可靠的概率估计——这是否意味着对多数人，分散才是理性的？</summary>
 <div>大概率是的。集中与 Kelly 的前提都是"你拥有可验证的 edge 和大致可信的胜率估计"，而 Bessembinder 的数据说明随手集中更可能押中那 58% 跑输国库券的一方。对没有独到认知的人，<strong>承认无知、用分散（如低成本指数）保护自己，本身就是最高级的理性</strong>。集中是少数真有 edge 者的特权——误把别人的特权当成通用法则，是最常见的破产路径之一。</div></details>

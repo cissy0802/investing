@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 44</div>
@@ -191,6 +200,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">把组合分成"搭便车的被动核心"与"自己踩油门的主动卫星"两堆。后者过去三年，真的跑赢了"把它也换成指数"吗？若没有，你为"主动的幻觉"付了多少费？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>生物进化 · 生产者-搭便车者博弈（Barnard &amp; Sibly，1981）</b>：觅食的鸟群里，有的自己找食，有的专抢别人找到的；搭便车者稀少时占尽便宜，多了就没人找食，大家一起挨饿，最后稳定在某个频率依赖的比例。这和格罗斯曼-斯蒂格利茨悖论是同一个结构。不像在于：鸟群几天内就能换策略、自动回到平衡，被动资金的反馈却慢得多，临界比例在哪也没人看得见。</li>
+<li><b>复杂性科学 · 群体智慧的独立性前提（Lorenz 等，PNAS 2011）</b>：实验里让受试者看到彼此的估计后，答案的多样性塌缩，群体的平均反而偏了、却更自信。价格发现同样靠彼此独立的判断；不同的是，被动资金不是去抄别人的答案，而是干脆不答题，只按权重跟随。</li>
+<li><b>心理学 · 旁观者效应（Darley &amp; Latané，1968）</b>：在场的人越多，每个人越倾向认为“总有别人会出手”。指数持有人对定价和投票也是这样，把苦活默认交给“别人”。不像的是，旁观者往往是因为责任分散而犹豫，指数投资者则是经过计算后理性地选择不出手。</li>
+<li><b>分布式系统 · 拜占庭容错（Lamport、Shostak、Pease，1982）</b>：共识要成立，n 个节点里出错的不能超过 f 个，且 n ≥ 3f+1，系统有一条清楚的“最低诚实比例”。市场也需要最低限度的主动定价者，但这条线算不出来，只能在越过之后才发觉。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>夏普 1991 年的算术：扣除成本后，主动管理的平均一块钱必然跑输被动管理的平均一块钱。</li>
+<li>指数基金不研究、不估值，它的有效性建立在仍有主动投资者认真定价之上，本质是搭便车。</li>
+<li>据 Morningstar，2019 年 8 月美国被动股票基金资产首次超过主动，各约 4.3 万亿美元。</li>
+<li>博格在 2018 年的《华尔街日报》专栏里警告，少数巨型机构终将握有几乎所有美国大公司的投票控制权。</li>
+<li>贝莱德、先锋、道富三巨头是标普 500 中约九成公司的最大单一股东，投出约四分之一选票。</li>
+<li>共同所有权指同一批机构同时持有同行竞争对手，Azar 等人的航空业研究认为它推高了票价，但结论仍有争议。</li>
+<li>格罗斯曼-斯蒂格利茨悖论：信息有成本，价格若完全有效，花钱获取信息的人就得不到回报。</li>
+<li>Gabaix 与 Koijen 的非弹性市场假说估算，每向股市净投入 1 美元，总市值约被推高 5 美元。</li>
+<li>指数纳入效应（如 2020 年特斯拉纳入标普 500）说明，价格可能反映资金的机械流向而非价值判断。</li>
+<li>抽屉指数收主动费却贴着指数持仓；Active Share 研究显示，只有主动份额高的基金才可能创造超额收益。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="a817f172e1759108">深入思考</h3>
 <details><summary>指数化真的会"压垮市场"吗，还是杞人忧天？</summary>

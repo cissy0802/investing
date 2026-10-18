@@ -46,6 +46,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{font-size:0.8rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -233,6 +242,24 @@ Quant investing is usually caricatured at two extremes: a money-printing machine
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Psychology · The replication crisis</b>: In 2015 the Open Science Collaboration reran 100 psychology studies in <i>Science</i>; only about 36% of the replications came out significant again. It is the same disease Hou, Xue and Zhang found in 452 anomalies: multiple testing plus publication bias dressing noise up as discovery. The difference is that a real psychological effect does not weaken because it was published, whereas a real market anomaly gets arbitraged away by the money that reads the paper.</li>
+<li><b>Evolution · Frequency-dependent selection</b>: Scale-eating cichlids in Lake Tanganyika have mouths bent left or right; whichever type becomes common, prey guard that side, so the rarer type wins and the ratio oscillates (Hori, 1993). Factor crowding has the same shape: the more users, the thinner the premium. Except fish do not read papers, so markets swing much faster.</li>
+<li><b>Distributed systems · Correlated failure</b>: Replication only protects you if replicas fail independently; one shared software bug or one rack losing power and the redundancy fails all at once. The August 2007 quant quake worked the same way: seemingly diversified market-neutral funds held the same signals and stampeded in the same few days.</li>
+<li><b>Philosophy · The Ulysses contract</b>: In <i>Ulysses and the Sirens</i> (1979), Jon Elster treats being tied to the mast as rational precommitment: knowing you will lose control later, you lock your options while clear-headed. Rules-based rebalancing is that rope. Unlike Ulysses, though, a rule that was itself overfit makes discipline costly: the tighter you hold on, the more you lose.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Factor investing breaks excess returns into explainable, broad-based premiums such as value, momentum, quality, size and low volatility.</li>
+<li>Factor premiums are usually explained either as compensation for bearing risk or as systematic behavioral biases like chasing winners.</li>
+<li>The value factor lagged growth through 2010-2020, AQR suffered for years, and value only rebounded sharply from late 2020.</li>
+<li>Anomaly returns decay by about 58% on average after publication, and crowded capital erodes factor premiums further.</li>
+<li>Sharpe's arithmetic of active management is an identity: after costs, active management as a whole must trail passive.</li>
+<li>In Buffett's 2007 ten-year bet, the S&amp;P 500 index fund returned 125.8% cumulatively versus about 36% for the hedge fund portfolio.</li>
+<li>Medallion turns a hit rate of roughly 50.75% into compounding by repeating huge numbers of short-lived, independent tiny bets.</li>
+<li>Medallion closed to outside money in 1993 and capped its size, while Renaissance's public funds were mediocre: real edge does not scale and cannot be bought.</li>
+<li>Hou, Xue and Zhang tested 452 published anomalies and about 65% failed to replicate, so most backtested edge is overfitting.</li>
+<li>The realistic value of quant for an individual is removing emotion through rules, low turnover and patience, not mining alpha from price data.</li>
+</ol></div>
 <div class="faq">
   <h3>Going Deeper</h3>
   <details><summary>Factors decay once published, ETF-ified, and flooded with money—so are "public factors" still worth holding?</summary>

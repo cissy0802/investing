@@ -42,6 +42,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 34</div>
@@ -192,6 +201,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">给你最重的一笔持仓分别打分：Graham 维度（价格是否有安全边际）与 Fisher 维度（企业是否真正卓越）。哪一端是你更容易放水的？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>统计 · 心理学 · Galton 的「群体智慧」</b>：1907 年 Galton 在《Nature》发表《Vox Populi》，集市上约 800 人猜一头牛的重量，中位数离真值不到 1%。闲聊法靠的也是这种横截面：各自独立的误差互相抵消。不像在于，Galton 要的是人数，Fisher 更看重信源的位置——对手被迫承认的一句，抵得过十个路人的猜测。</li>
+<li><b>分布式系统 · 拜占庭容错（Lamport 等，1982）</b>：要在 f 个节点可能撒谎时达成共识，至少需要 3f+1 个节点，这正是「至少三类独立信源」的工程版本。不像的是，拜占庭协议里各节点对等，而闲聊法里信源天然不对称：管理层最可能「撒谎」，对手的证词因为不利于自己反而最可信。</li>
+<li><b>生物进化 · 红皇后假说（Leigh Van Valen，1973）</b>：物种得不停演化才能保住原位，否则被竞争者淘汰。护城河也是这样，Motorola 从称霸到 2011 年拆分，正是停下来的那一方。不像在于，物种没法「卖出」，投资者可以，而且该提前写好什么信号算落后。</li>
+<li><b>心理学 · 承诺升级（Barry Staw，1976）</b>：Staw 的实验里，为先前决定负责的人，在决定显出失败后反而追加更多投入。「几乎永不卖出」被误用成「永不认错」，就是这种机制。区别在于，Fisher 的长持预设了持续复核质量标准，承诺升级恰恰是拒绝复核。</li>
+<li><b>佛学 · 不执着与无常</b>：佛学讲诸行无常，痛苦来自把会变的东西当成不变的去抓。好的长持像「坐着但不抓着」：持有，同时承认企业会变。不像的是，佛学的出路是放下，Fisher 的出路是继续盯着，只在事实推翻判断时才放手。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>闲聊法从竞争对手、客户、供应商和前员工口中交叉印证一家公司的质量，而不是只读财报。</li>
+<li>连竞争对手都被迫承认某家公司最强的那一点，比任何管理层路演都更可信。</li>
+<li>闲聊法只能用公开信息，2010–2012 年美国专家网络内幕交易案说明越界就是违法。</li>
+<li>Philip Fisher 1955 年买入 Motorola，一直持有到 2004 年去世，近 50 年是他最大的持仓。</li>
+<li>只有三个卖出理由：买入判断被事实证伪、基本面恶化、出现明显更好的机会；股价涨多不算。</li>
+<li>「几乎永不卖出」不等于永不认错：技术颠覆会让护城河失效，Motorola 2011 年被拆分就是警钟。</li>
+<li>漂亮 50 说明长持救不了错误的买入价，1972 年高价追入的优质股在 1973–74 年跌去七到九成。</li>
+<li>Fisher 十五要点里最关键的四根支柱：销售跑道、研发的经济性、守得住的利润率、管理层的诚信。</li>
+<li>Buffett 自称 85% Graham、15% Fisher，1972 年收购 See's Candies 是他为质量支付溢价的分水岭。</li>
+<li>闲聊法与拜占庭容错同构：都靠多个独立信源的交叉核对，去容忍其中少数信源说谎。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="d6a7d8237c0b3384">深入思考</h3>
 <details><summary>在信息高度对称、专家网络受监管的今天，Fisher 的"闲聊法"还成立吗？</summary>

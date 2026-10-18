@@ -48,6 +48,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 47</div>
@@ -200,6 +209,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">写下你的"底线支出"年额，再写下能终身、且随通胀调整地覆盖它的收入来源。差额就是你真正暴露在长寿风险下的部分。</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>进化生物学 · 两头下注（bet-hedging，Dan Cohen，1966）</b>：Cohen 研究沙漠一年生植物：每年只让一部分种子发芽，其余休眠留在土里。适合度跨代相乘，一个颗粒无收的年份就是灭绝，所以选择压的是几何平均而非算术平均——正是序列风险加现金桶的结构。不像在于：种子库的比例由自然选择调出，无人决策；退休者的回填规则却得自己写下来。</li>
+<li><b>分布式系统 · 优雅降级（graceful degradation）</b>：大型服务过载时先关掉推荐、预览这类非核心功能，保住登录和支付；底线收入覆盖刚性支出、坏年份先砍弹性那栏，是同一种分层。不像的是，流量退去后功能立刻恢复，谷底卖掉的股份却永久退出了复利。</li>
+<li><b>心理学 · 执行意图（Peter Gollwitzer，1999）</b>：事先写成「如果 X，就做 Y」的计划，比单纯下决心更容易被执行，因为触发时刻不必再临场权衡；预先写好的减支规则和回填规则就是这个机制。不同在于，心理学只管做不做得到，提取规则还得在数学上站得住。</li>
+<li><b>斯多葛哲学 · 预想厄运（premeditatio malorum，塞涅卡）</b>：塞涅卡主张提前在心里演练流放、丧失与贫穷，灾祸真来时才不失措；SAFEMAX 拿历史上最糟的起点做设计，是同一种「先想最坏」。不像在于：斯多葛的演练为了改变心态，Bengen 的演练为了算出一个数，而且只演练了真实出现过的坏情形。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>4% 法则是 Bengen 1994 年的压力测试结论：历史最糟起点下，组合仍能撑过 30 年的最大初始提取率。</li>
+<li>SAFEMAX 是下限而非收益预期；把它压到 4% 的主因是通胀，1960 年代末滞胀起点约 4.1%。</li>
+<li>4% 法则基于美国 20 世纪数据并假设刻板提款，Guyton-Klinger 护栏法这类弹性规则能推高可持续提取率。</li>
+<li>一旦每年从组合里抽钱，收益的顺序就和平均收益一样重要，提取期的头十年几乎决定全局。</li>
+<li>100 万组合每年提取 5 万，同一组十年收益只把顺序颠倒，期末相差约 33 万美元。</li>
+<li>对付序列风险，事先写好的减支规则（坏年份少提、暂停通胀调整）比调整股债配置更有效。</li>
+<li>桶策略把约两年净支出放进现金和短债，买到的不是更高收益，而是不必在谷底卖出的权利。</li>
+<li>桶策略在数学上通常略逊于简单再平衡，价值在于把心理账户这个偏差反过来当执行工具。</li>
+<li>按平均预期寿命做退休规划约等于一半失败概率，只有终身年金的死亡率分担能对冲活得太久。</li>
+<li>先用终身且随通胀调整的收入焊住刚性支出的底线，再让其余资产去冒险；1970 年代的名义年金说明通胀不可忽略。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="5e115bbfbceb634a">深入思考</h3>
 <details><summary>4% 法则来自美国 20 世纪的数据。换成日本 1990 年起的序列，还存在"安全提取率"吗？</summary><div>以日经 1989 年末 38,957 点的顶部为起点，此后二十余年名义指数长期低于起点，依赖股票增值的提取方案都会失败——这是一个真实国家的真实三十年。启示不是把 4% 改成 3%，而是改结构：提取额与市值挂钩（浮动而非刻板），刚性支出交给不依赖市场的收入来源。</div></details>

@@ -47,6 +47,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.matrix{grid-template-columns:1fr}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 55</div>
@@ -204,6 +213,25 @@ Dismissing technical analysis wholesale as astrology is lazy; treating it as a b
 <div class="reflect">Pick a position sitting at a loss and write three sentences, in fundamentals language only, on why you still hold it. If one of them says "it has already fallen so much," price has crept into your thesis.</div>
 </div>
 </div>
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Psychology · The replication crisis (Open Science Collaboration, 2015)</b>: 100 published psychology studies were rerun; nearly all had been significant, but only about 36% stayed significant. Same structure as Sullivan's out-of-sample test: significance must be divided by the attempts nobody saw. The difference: a trading rule also decays because people use it, while a psychological effect does not weaken from being published.</li>
+<li><b>Distributed systems · Retry storms</b>: a service slows, clients time out and retry by rule, the retries add load, and more requests time out. Portfolio insurance in 1987 ran the same loop: rule-based selling pushed prices down, and lower prices triggered more selling. Engineers break it with exponential backoff plus random jitter so clients stop acting in unison; a market has no one scheduling everyone's rules.</li>
+<li><b>Evolution · Negative frequency-dependent selection</b>: scale-eating cichlids in Lake Tanganyika have mouths bent left or right; whichever form is more common, prey guard that side, so the minority wins and the ratio oscillates (Hori, Science, 1993). Rules being arbitraged away is the same mechanism: the more users, the smaller the edge. Unlike the fish, a published rule often never swings back.</li>
+<li><b>Psychology · Hindsight bias (Baruch Fischhoff, 1975)</b>: once people know an outcome, they feel it was predictable and quietly revise what they thought beforehand. Elliott wave counting, adjustable after the fact, turns that bias into a method. The difference is that hindsight bias is an unintended rewrite of memory; wave counting openly permits the rewrite.</li>
+<li><b>Buddhism · Feeling (vedanā) and perception (saññā) among the five aggregates</b>: feeling is the pleasant or painful tone, perception the labeling of it; insight practice watches feeling arise without letting it turn straight into judgment. A falling price is a feeling; reading it as "my thesis is wrong" is the labeling. The difference: meditation aims not to be moved by feeling, while an investor with leverage must give that feeling a veto.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Momentum is a cross-sectional ranking of relative strength: stocks strong over the past 3 to 12 months tend to outperform over the next 3 to 12.</li>
+<li>The time scale is the whole content of momentum: one month means reversal, 3 to 12 months means momentum, 3 to 5 years means reversal again.</li>
+<li>Momentum crashes cluster in sharp rebounds at the end of bear markets: about 91% lost in two months of 1932 and about 73% in spring 2009.</li>
+<li>Volume correlates with the size of price moves, not their direction; it measures disagreement, not a tug of war between bulls and bears.</li>
+<li>The record volume of October 19, 1987 came from mechanical portfolio-insurance selling; volume's most valuable use is telling forced selling from fundamental repricing.</li>
+<li>The significance of any technical rule must be divided by the number of rules tried to find it; after Sullivan and colleagues corrected for this, the best rule vanished out of sample.</li>
+<li>The same trend-following rule soared in 2008 and went nowhere from 2011 to 2019, so "it works" means nothing without the market regime.</li>
+<li>Falsifiability is the dividing line inside technical analysis: a moving-average crossover can be tested, while Elliott wave counts can be adjusted after the fact.</li>
+<li>Price signals belong to risk questions such as position size, leverage, and liquidity, never to the judgment of what a business is worth.</li>
+<li>Bill Miller treated "cheaper" as a new reason to buy in 2008, while the deep drawdowns at Berkshire and Amazon show price-based stops ejecting you exactly when you should stay.</li>
+</ol></div>
 <div class="faq">
 <h3>Going Deeper</h3>
 <details><summary>If momentum is real, why doesn't a value investor just use it?</summary><div>Because it is incompatible with your other constraints. Momentum demands dozens to hundreds of positions, turnover above 100% a year, and the nerve not to cut during a crash — while concentration, long holding periods and low tax drag are a long-term investor's three great structural advantages. <strong>Borrowing a strategy's signal without accepting its cost structure usually yields the worst of both</strong>: too little diversification to capture the statistical regularity, enough turnover to owe the tax. Only one thing transfers: don't keep averaging into 3–12 month relative weakness unless you can state a new fact.</div></details>

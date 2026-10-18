@@ -60,6 +60,15 @@ header h1{font-size:1.6rem}
 .cmp-row{grid-template-columns:1fr}
 .cmp-cell.first,.cmp-cell.mid{border-right:none;border-bottom:1px dashed #d4b87a}
 }
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -362,6 +371,26 @@ Seth Klarman founded Baupost Group in 1982 with $27M; 44 years later it manages 
     <div class="reflect">Essence: "<strong>Value is a verb, not a label</strong> — it describes the direction of intrinsic value over time, not just today's discount."&nbsp;&nbsp;Reflection: in your portfolio, find the position with the lowest P/E or P/B. Ask: is it cheap because the market mis-judges short-term (opportunity), or because ROIC has fallen for years running (trap)? No discount can rescue the latter.</div>
   </div>
 </div>
+
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolutionary biology · Bet-hedging and geometric-mean fitness (Dan Cohen, 1966)</b>: Desert annual plants let only part of their seeds germinate each year and keep the rest dormant in the soil, giving up yield in good years so the lineage survives the bad ones. Fitness across generations multiplies, so a single zero is permanent: the same arithmetic as "lose 50%, need 100% to get back." The difference: seeds hedge by random spreading, while Klarman decides when to act by judging how far price sits below value.</li>
+<li><b>Ecology · Competitive exclusion (G. F. Gause, 1934)</b>: Gause showed with two Paramecium species that competitors for the same resource cannot coexist for long; survivors carve out niches others leave empty, and bankruptcy claims are exactly such a niche. Unlike a species, an investor rarely keeps a niche: once profits are visible, rivals crowd in and graze it flat, as happened to merger arbitrage.</li>
+<li><b>Distributed systems · Correlated failures</b>: Three replicas are only safe if the three machines do not fail together; one rack losing power or one shared software bug can wipe out the redundancy overnight. LTCM's many positions fell together when liquidity dried up, the same failure mode. The difference: engineers can lower correlation by spreading hardware apart, while in a market panic nearly every asset becomes correlated at once.</li>
+<li><b>Eastern philosophy · Laozi's wu wei</b>: "Doing nothing, yet leaving nothing undone": refraining from rash action is itself a stance, the same shape as "waiting is a strategy, not the absence of one." The difference: Laozi's non-action is not a crouch before a pounce, whereas Klarman's cash is a call option with the strike already written down; he waits in order to act.</li>
+<li><b>Buddhism · Impermanence (anicca)</b>: Buddhism warns against mistaking a moment's appearance for a thing's nature, and a value trap makes exactly that error, treating today's low price as a fixed attribute. The difference: impermanence has no direction, while the whole point of a value trap is direction: intrinsic value keeps falling, and falls faster than the discount.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Good investing seeks asymmetric positions with limited downside and open upside, not the highest expected return.</li>
+<li>The math of losses is lopsided: a 50% loss needs a 100% gain to recover, and a 75% loss needs 300%.</li>
+<li>LTCM ran negatively skewed arbitrage at 25x leverage and lost $4.6B in four months of 1998; the bet structure, not the view, sank it.</li>
+<li>Leverage turns an asymmetric position symmetric or even negatively skewed, because forced liquidation strikes at the worst moment.</li>
+<li>Excess returns in complex situations come from structural selling pressure, clear catalysts, and high information barriers combined.</li>
+<li>Klarman bought Lehman bankruptcy claims at roughly 20–30% of face and recovered about 35–40%, with returns uncorrelated to stocks.</li>
+<li>Once a complex situation gets crowded, as merger arbitrage did in 2003–05, it stops being an opportunity.</li>
+<li>Holding cash when opportunities are scarce is writing yourself a call option whose strike is a future extreme bargain.</li>
+<li>A value trap is cheap because intrinsic value itself is falling; judge it by the direction of ROIC, free cash flow, and capital allocation, not P/E.</li>
+<li>Desert plants germinating only some seeds, like Klarman's cash position, give up average return so a bad year cannot knock them out.</li>
+</ol></div>
 
 <!-- Deep Resources -->
 <div class="card">

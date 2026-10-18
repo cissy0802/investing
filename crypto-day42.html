@@ -46,6 +46,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 42</div>
@@ -196,6 +205,24 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">写下你愿意给加密资产的最大仓位百分比，并诚实自问：这个数字是基于"我输得起多少"，还是基于"我希望赚多少"？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>哲学 · 塞尔的「制度性事实」</b>：John Searle 在《社会实在的建构》（1995）里说，钱之所以是钱，是因为大家集体承认「X 在情境 C 中算作 Y」。比特币的价格正是这样一份集体承认。不像的是，塞尔的例子大多有国家和法律背书，比特币想只靠代码维持这份共识。</li>
+<li><b>佛学 · 中观的「无自性」</b>：中观说万物不凭自身而有，只依因缘安立；比特币的价格不靠现金流、只依他人相信而立，恰是一种「无自性」的资产。不像在于：中观会说一切法都无自性，股票的「内在价值」也是依折现率和预测假设安立的；本篇把现金流当成实在的锚，佛学眼里这条界线没那么分明。</li>
+<li><b>分布式系统 · 拜占庭将军问题（Lamport 等，1982）</b>：如何让互不信任、可能有叛徒的节点对同一份账达成一致，是比特币「技术面」真正解决的问题。不像的是，经典解法要求节点身份已知、叛徒少于三分之一；比特币用算力代替身份，换来的是概率性而非确定性的终局。</li>
+<li><b>生物进化 · 两头下注（bet-hedging）</b>：Dan Cohen 1966 年的模型解释了沙漠一年生植物为何每年只让部分种子发芽：谱系的长期增长看几何平均，一个旱年全军覆没就是灭绝。这和卡 2、卡 4 的「先活下来」同构。不像的是，植物的比例由选择慢慢调定，人的仓位却常在牛市里被情绪调大。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>比特币不产生现金流，只能被定价、不能用 DCF 估值，这是 Damodaran 的核心区分。</li>
+<li>定价资产可以因为更多人相信而上涨，但买入者手里没有内在价值这个锚。</li>
+<li>2100 万枚的总量硬顶保证比特币不会被稀释，却回答不了它值多少。</li>
+<li>加密资产的真正风险是路径：熬回来之前，可能先被 80% 级回撤或交易所暴雷清零。</li>
+<li>回撤越深回本越难：跌 50% 要涨 100%，跌 80% 要涨 400%，跌 90% 要涨 900%。</li>
+<li>区块链技术可能是真创新，单个代币可能是击鼓传花，两者要分开判断。</li>
+<li>Howard Marks 2021 年公开修正了自己 2017 年对加密的否定，示范了既怀疑又愿意搞懂。</li>
+<li>杠铃策略把核心仓放在可估值资产上，只用能全损的一小块钱去博加密的非对称上行。</li>
+<li>Paul Tudor Jones 只给比特币 1–2% 仓位；同一种资产，仓位决定它是可承受的押注还是致命风险源。</li>
+<li>沙漠植物只让部分种子发芽的两头下注和杠铃策略同构，防的都是一次归零。</li>
+</ol></div>
 <div class="faq">
 <h3 data-tts="c96dd9825f806466">深入思考</h3>
 <details><summary>长期价值投资者，到底该不该完全回避加密资产？</summary>

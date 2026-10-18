@@ -76,6 +76,15 @@ header h1{font-size:1.6rem}
 .level2-row{grid-template-columns:1fr}
 .level2-cell.first{border-right:none;border-bottom:1px dashed #d4b87a}
 }
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -370,6 +379,26 @@ Howard Marks, founder of Oaktree Capital, has spent the last three decades writi
     <div class="reflect">For your largest holding, write two short paragraphs: (A) the current market consensus on this stock; (B) precisely where my view differs from that consensus. If (B) has no identifiable difference from (A), you may own it only by following — not by edge.</div>
   </div>
 </div>
+
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Complexity science · Self-organized criticality (Per Bak et al., 1987)</b>: A quiet sandpile drifts toward a critical slope, and the next grain may move a few neighbors or bring down a whole face, with avalanche sizes following a power law; that is "calm prices, fragile structure." The difference: sand does not panic, while market participants' expectations reshape the pile itself.</li>
+<li><b>Buddhism · Impermanence and the Middle Way</b>: "Most things will prove to be cyclical" is close to an investor's version of impermanence, and the pendulum's two poles echo the asceticism and indulgence the Buddha rejected. Unlike Marks, who reads the pendulum to profit from mispricing at the extremes, the Middle Way aims to stop being swung at all.</li>
+<li><b>Neuroscience · Reward prediction error (Schultz, Dayan and Montague, 1997)</b>: Dopamine neurons fire for rewards better than expected and barely respond to rewards already predicted; prices likewise move only on information beyond consensus. The difference: a brain holds one predictor, while a market's "expectation" is the sum of countless separate bets.</li>
+<li><b>Distributed systems · TCP congestion control (AIMD)</b>: The sending window grows additively and is cut multiplicatively at the first lost packet, much like credit that opens slowly and slams shut. Unlike AIMD, which is designed to converge, a credit crunch is driven by fear and usually overshoots.</li>
+<li><b>Evolution · Frequency-dependent selection (Maynard Smith's hawk-dove game)</b>: A strategy's payoff depends on how many others use it; when everyone plays hawk, playing dove pays. "Good company, buy it" stops paying once everyone does it. The difference: evolution involves no thinking, while second-level thinking means actively modeling what others think.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>Marks splits the cycle into four layers (economy, profits, credit, psychology), and when all four move together, markets overshoot in both directions.</li>
+<li>Recognizing the cycle is not predicting the turn: you can judge where you stand but not when, so the move is adjusting the temperature, not timing.</li>
+<li>The July 2007 memo "The Race to the Bottom" did not predict a date, yet identified the market's position 14 months before Lehman collapsed.</li>
+<li>Investor psychology swings like a pendulum between greed and fear, optimism and pessimism; its average is the midpoint, but it rarely rests there.</li>
+<li>The pendulum can stay at an extreme for years, so its position is a signal for modest position sizing, not for large contrarian bets.</li>
+<li>Risk is not volatility but the probability of permanent capital loss; after a 50% loss, you need a 100% gain to get back to even.</li>
+<li>SVB's 2023 failure showed that assets with near-zero credit risk and calm prices can be structurally fragile through concentrated deposits, duration mismatch and run psychology.</li>
+<li>Risk management means pricing risk, not eliminating it: take risk only when well paid, and distrust the false comfort of low volatility and VaR models.</li>
+<li>Marks's second-level thinking requires a view that differs from consensus and is also right; mechanical contrarianism and undifferentiated agreement are both no edge.</li>
+<li>Oaktree's 2008–2009 distressed-debt buying rested on extreme pessimism and forced sellers, not on calling the timing of the rebound.</li>
+</ol></div>
 
 <nav><a href="index.en.html">← Back to Investing</a></nav>
 <footer>BigCat · Investing · Day 03 · 2026</footer>

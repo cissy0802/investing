@@ -44,6 +44,15 @@ details div{padding:0 18px 16px;font-size:0.92rem;color:#3a3220}
 .qa-head{font-size:1.2rem;color:#7a5c1f;font-weight:700;margin:40px 0 6px;text-align:center}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}.viz-table{font-size:0.76rem}.viz-table th,.viz-table td{padding:6px 6px}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 <header>
 <div class="kicker">Investing · Day 10</div>
@@ -212,6 +221,25 @@ footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 <div class="reflect">你最近买入的标的里，有几只是因为身边人、媒体或社群在讨论才进入视野的？剥掉这层社会信号，它还站得住吗？</div>
 </div>
 </div>
+<div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+<li><b>神经科学 · 左脑「解释器」（Michael Gazzaniga）</b>：裂脑病人的右脑接到指令做了动作，左脑会立刻编出一个流畅的理由，本人深信不疑。这和「认知流畅性」是同一个结构：连贯感顶替了证据。不像在于，解释器编的是自己行为的缘由，投资者编的是行情的缘由。</li>
+<li><b>佛学 · 正念与「止观」</b>：正念在刺激和反应之间插进一段觉察，看见念头升起而不立刻跟着走，作用像检查表在关键节点叫醒系统2。不像的是，佛学不求判断更准，而是看清做判断的那个「我」也是缘起的建构。</li>
+<li><b>进化生物学 · 烟雾报警器原理（Randolph Nesse）</b>：漏报一次天敌可能致命，误报只费点力气，所以防御反应被调得宁可过敏，损失厌恶的不对称像同一套设定。不像在于，浮亏不是被吃掉；分清是火还是烤面包的烟，就是分清价值毁损和价格波动。</li>
+<li><b>复杂性科学 · 行军蚁的「死亡漩涡」（T. C. Schneirla，1944）</b>：行军蚁靠「跟着前面那只的信息素走」行进，平时高效；队伍一旦首尾相接，就会绕圈直到力竭。像羊群：局部规则多数时候对，只在极端处致命。不像的是，蚂蚁没有职业风险，也看不见自己在绕圈。</li>
+<li><b>分布式系统 · 惊群与随机抖动（jitter）</b>：大量客户端用同一套退避策略重试，会在同一时刻一起压垮服务器；工程解法是给每个客户端加随机延迟，打散同步。这正是「算法羊群」的结构。不像在于，系统可以直接注入随机性，市场里的去同步只能靠真正不同的判断。</li>
+</ul></div>
+<div class="tk"><h3>十条要点</h3><ol class="takeaways">
+<li>人的非理性是系统性、可预测、可复现的偏差，不是会互相抵消的随机噪音。</li>
+<li>系统1快速自动地抢答，系统2常常偷懒背书，于是讲得通的故事被误当成正确。</li>
+<li>Kahneman 算出 25 名理财顾问连续 8 年的排名相关系数约 0.01，公司其实在奖励运气。</li>
+<li>专家直觉只在高效度、反馈快的环境里可靠，而市场是低效度、反馈滞后的环境。</li>
+<li>损失厌恶指同等金额的亏损之痛约为盈利之乐的两倍，参考点通常是买入价。</li>
+<li>处置效应让散户过早卖出赢家、死守输家，而被卖掉的赢家此后反而跑赢留下的输家。</li>
+<li>厌恶永久性资本损失是智慧，厌恶暂时性价格波动则是陷阱。</li>
+<li>过度自信驱动过度交易：Barber 与 Odean 发现交易最频繁的散户每年落后市场约 6.5 个百分点。</li>
+<li>2000 年互联网顶部，Robertson 的 Tiger 基金对得太早被迫清盘，Druckenmiller 追入泡沫后巨亏离职。</li>
+<li>逆向投资要同时做到判断正确和撑到被验证，为反对而反对同样是一种偏差。</li>
+</ol></div>
 <div class="qa-head">深入思考</div>
 <details><summary>偏差能靠"知道"消除吗？为什么 Kahneman 研究了一辈子仍说自己照样会犯？</summary>
 <div>知道不等于免疫。这些偏差是系统1的<strong>默认设置</strong>，由进化塑造、运行在意识之下，不会因为读了书就关闭。Kahneman 坦言自己的直觉错误并未因研究而减少——改善的不是"少犯"，而是"在重大决策上识别出该慢下来的信号"。这正是检查表、决策日记、外部视角存在的意义：与其指望意志力修正系统1，不如设计<strong>流程</strong>，在关键节点强制调用系统2。环境设计胜过自我说服。</div></details>

@@ -45,6 +45,15 @@ nav a{color:#7a5c1f;text-decoration:none;font-size:0.92rem;padding:8px 18px;bord
 nav a:hover{background:#b8893a;color:#fff}
 footer{text-align:center;padding:30px 0 10px;font-size:0.8rem;color:#b8a888}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:24px 20px}.card h2{font-size:1.2rem}}
+.crossx,.tk{margin-top:44px}
+.crossx h3,.tk h3{font-size:1.1rem;color:#7a5c1f;border-bottom:1px solid #d4b87a;padding-bottom:8px;margin-bottom:14px}
+.crossx ul{list-style:none;margin:0;padding:6px 22px;border:1px solid rgba(79,109,122,.32);border-radius:6px;background:rgba(79,109,122,.05)}
+.crossx li{margin:14px 0;font-size:.95rem;color:#2a2418}
+.crossx b{color:#4f6d7a}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(184,137,58,.35);border-radius:6px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(184,137,58,.15);font-size:.95rem;line-height:1.75;color:#2a2418}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#b8893a}
 </style></head><body><div class="container">
 
 <header>
@@ -228,6 +237,24 @@ Bubbles are not an invention of modern finance. Long before candlestick charts a
   </div>
 </div>
 
+<div class="crossx"><h3>Crossovers</h3><ul>
+<li><b>Evolution · Fisherian runaway</b>: R. A. Fisher proposed in 1930 that when females prefer long tails, tails keep lengthening simply because they are preferred, drifting ever further from any survival use. Like tulip prices propped up only by the next buyer's desire, it is self-referential positive feedback. The difference: nature's brake is slow predation, while the market's brake is one auction where nobody bids.</li>
+<li><b>Neuroscience · Reward prediction error</b>: Schultz, Dayan and Montague showed in 1997 that dopamine neurons fire for "better than expected," not for reward itself; once a reward is predicted, the signal fades. That is why euphoria needs ever-faster gains to feel exciting. Unlike the brain, which recalibrates its expectations, the leverage in an account does not scale itself back down.</li>
+<li><b>Psychology · Asch conformity experiments</b>: In 1951 Solomon Asch asked subjects to compare line lengths; about three in four went along with a plainly wrong majority at least once. Mackay's crowds going mad in herds need only a few confederates in a lab. The difference: a line's length is checkable on the spot, while an asset's value is revealed years later, so herding is far harder to correct.</li>
+<li><b>Distributed systems · Metastable failure</b>: Bronson and colleagues described at HotOS 2021 systems that look stable under high load until a small blip triggers a retry storm; retries add load, and the system stays collapsed even after the blip is gone. The Mississippi run has the same shape: the more redemptions, the less can be paid, and the less can be paid, the more people redeem. Engineers answer with rate limits and backoff, the counterpart of disciplined rules written in advance.</li>
+</ul></div>
+<div class="tk"><h3>Ten takeaways</h3><ol class="takeaways">
+<li>When a price rests only on someone paying more next, decoupled from cash flow, you are buying a greater-fool bet.</li>
+<li>Tulip Mania traded contracts on bulbs that would bloom next year, and prices fell over 90% within days once the chain broke.</li>
+<li>Anne Goldgar's archival research found far fewer ruined tulip speculators than Mackay's legend suggests.</li>
+<li>The fiercest fuel for a bubble is credit expansion, as newly printed money floods into assets with no cash-flow anchor.</li>
+<li>John Law paired money printing with Mississippi Company shares in a self-reinforcing loop that reversed once holders demanded coin.</li>
+<li>The South Sea Company swapped its rising shares for government debt, so the share price itself fueled further price gains.</li>
+<li>Newton took profits on South Sea stock and then bought back near the top, showing bubbles break discipline rather than intelligence.</li>
+<li>Kindleberger split bubbles into five acts: displacement, boom, euphoria, insider profit-taking and panic, a skeleton unchanged for three centuries.</li>
+<li>The bubble framework cannot time the top; its real use is recognizing the current act and sizing positions, leverage and cash to match.</li>
+<li>Dopamine responds only to better-than-expected outcomes, so euphoria needs ever-faster price gains to stay exciting.</li>
+</ol></div>
 <div class="faq">
   <h3>Further Reflection</h3>
   <details><summary>If the five-stage structure of bubbles has been so stable for three hundred years, why do rational investors still fall into them again and again—is it a lack of knowledge, or the structure itself?</summary>
